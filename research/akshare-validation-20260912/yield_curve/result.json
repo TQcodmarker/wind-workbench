@@ -1,0 +1,86 @@
+{
+  "case": "yield_curve",
+  "function": "bond_china_yield",
+  "arguments": {
+    "start_date": "20260901",
+    "end_date": "20260911"
+  },
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T11:56:21.136693+00:00",
+  "function_signature": "(start_date: str = '20200204', end_date: str = '20210124') -> pandas.DataFrame",
+  "source_file": "bond\\bond_china.py",
+  "source_sha256": "e9cc2c0d450f93a1c3b66b5cca4fe30b49feb4fe02ffe4980fc8edf3e45c6810",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "returned_data",
+  "rows": 27,
+  "columns": [
+    "曲线名称",
+    "日期",
+    "3月",
+    "6月",
+    "1年",
+    "3年",
+    "5年",
+    "7年",
+    "10年",
+    "30年"
+  ],
+  "non_null_counts": {
+    "曲线名称": 27,
+    "日期": 27,
+    "3月": 27,
+    "6月": 27,
+    "1年": 27,
+    "3年": 27,
+    "5年": 27,
+    "7年": 27,
+    "10年": 27,
+    "30年": 18
+  },
+  "sample": [
+    {
+      "曲线名称": "中债中短期票据收益率曲线(AAA)",
+      "日期": "2026-09-01T00:00:00.000",
+      "3月": 1.48,
+      "6月": 1.4911,
+      "1年": 1.534,
+      "3年": 1.6768,
+      "5年": 1.7424,
+      "7年": 1.8796,
+      "10年": 2.0792,
+      "30年": null
+    },
+    {
+      "曲线名称": "中债国债收益率曲线",
+      "日期": "2026-09-01T00:00:00.000",
+      "3月": 1.2353,
+      "6月": 1.2741,
+      "1年": 1.2252,
+      "3年": 1.2548,
+      "5年": 1.4004,
+      "7年": 1.5295,
+      "10年": 1.6834,
+      "30年": 2.138
+    }
+  ],
+  "date_ranges": {
+    "日期": {
+      "min": "2026-09-01",
+      "max": "2026-09-11"
+    }
+  },
+  "elapsed_ms": 1260,
+  "http_requests_sent": 1,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "GET",
+      "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-09-01&endDate=2026-09-11&gjqx=0&qxId=ycqx&locale=cn_ZH",
+      "status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 15450,
+      "body_file": "response-01.txt",
+      "elapsed_ms": 1239
+    }
+  ]
+}

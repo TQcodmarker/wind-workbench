@@ -1,0 +1,32 @@
+{
+  "local_code_count": 14023,
+  "local_target_date": "2026-09-11",
+  "match_rule": "raw interbank bondcode + .IB equals local excelCode; no name or cross-market inference",
+  "raw_rows": 3574,
+  "unique_codes": 3060,
+  "duplicate_code_groups": 499,
+  "conflicting_core_value_codes": [
+    "102683461.IB"
+  ],
+  "matched_unique_codes": 358,
+  "matched_percent": 2.5529,
+  "matched_duplicate_code_groups": 83,
+  "matched_conflicting_codes": [],
+  "matched_with_latest_yield": 358,
+  "matched_previously_fetched": 160,
+  "matched_previously_not_fetched": 198,
+  "source_display_date": "09-11 20:00",
+  "matched_trade_dates": [
+    "2026-09-11"
+  ],
+  "sdk_raw_row_count_equal": true,
+  "sdk_vs_raw_value_mismatches": {
+    "成交净价": 0,
+    "最新收益率": 0,
+    "涨跌": 0,
+    "加权收益率": 0,
+    "交易量": 0,
+    "债券简称": 0
+  },
+  "not_proven": "Required-field completeness, original-rule inclusion, full AKShare coverage, historical coverage, real-time latency, or ChinaBond per-security valuations"
+}

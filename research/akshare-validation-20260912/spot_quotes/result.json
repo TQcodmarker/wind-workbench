@@ -1,0 +1,72 @@
+{
+  "case": "spot_quotes",
+  "function": "bond_spot_quote",
+  "arguments": {},
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T11:56:25.449142+00:00",
+  "function_signature": "() -> pandas.DataFrame",
+  "source_file": "bond\\bond_china.py",
+  "source_sha256": "e9cc2c0d450f93a1c3b66b5cca4fe30b49feb4fe02ffe4980fc8edf3e45c6810",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "returned_data",
+  "rows": 15,
+  "columns": [
+    "报价机构",
+    "债券简称",
+    "买入净价",
+    "卖出净价",
+    "买入收益率",
+    "卖出收益率"
+  ],
+  "non_null_counts": {
+    "报价机构": 15,
+    "债券简称": 15,
+    "买入净价": 15,
+    "卖出净价": 15,
+    "买入收益率": 15,
+    "卖出收益率": 15
+  },
+  "sample": [
+    {
+      "报价机构": "重庆农村商行",
+      "债券简称": "22国开03",
+      "买入净价": 100.58,
+      "卖出净价": 100.61,
+      "买入收益率": 1.3138,
+      "卖出收益率": 1.2637
+    },
+    {
+      "报价机构": "重庆农村商行",
+      "债券简称": "24国开清发01",
+      "买入净价": 104.46,
+      "卖出净价": 104.67,
+      "买入收益率": 1.5633,
+      "卖出收益率": 1.5133
+    }
+  ],
+  "date_ranges": {},
+  "elapsed_ms": 1148,
+  "http_requests_sent": 2,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "GET",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/ClsYldCurvCurvGO",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 7251,
+      "body_file": "response-01.json",
+      "elapsed_ms": 329
+    },
+    {
+      "sequence": 2,
+      "method": "POST",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-md-bond/CbMktMakQuot",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 15484,
+      "body_file": "response-02.json",
+      "elapsed_ms": 806
+    }
+  ]
+}

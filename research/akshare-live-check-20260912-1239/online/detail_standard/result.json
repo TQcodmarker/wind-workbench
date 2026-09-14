@@ -1,0 +1,40 @@
+{
+  "case": "detail_standard",
+  "function": "bond_info_detail_cm",
+  "arguments": {
+    "symbol": "26河北23"
+  },
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T12:42:10.643015+00:00",
+  "function_signature": "(symbol: str = '淮安农商行CDSD2022021012') -> pandas.DataFrame",
+  "source_file": "bond\\bond_info_cm.py",
+  "source_sha256": "7669b7c1dd09bb002db97cb303d278e7c162bd00f7cf6106223bbebba62cdf17",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "failed",
+  "error_type": "KeyError",
+  "error": "'pageTotal'",
+  "elapsed_ms": 494,
+  "http_requests_sent": 2,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "GET",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/ClsYldCurvCurvGO",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 7251,
+      "body_file": "response-01.json",
+      "elapsed_ms": 271
+    },
+    {
+      "sequence": 2,
+      "method": "POST",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bond-md/BondMarketInfoList2",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 238,
+      "body_file": "response-02.json",
+      "elapsed_ms": 217
+    }
+  ]
+}

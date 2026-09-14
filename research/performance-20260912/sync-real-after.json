@@ -1,0 +1,18 @@
+{
+  "mode": "parallel_2_workers_real",
+  "windowStart": "2026-09-13T00:12:24+08:00",
+  "windowEnd": "2026-09-13T00:13:24+08:00",
+  "seconds": 60,
+  "completed": 269,
+  "rowsPerMinute": 269,
+  "jobId": "5166f6be-e33b-454c-b142-0a72ef5de08b",
+  "generation": 5,
+  "jobStatus": "running",
+  "jobCounts": {
+    "completed": 7343,
+    "failed": 1,
+    "pending": 11191,
+    "running": 2,
+    "unmapped": 3
+  }
+}

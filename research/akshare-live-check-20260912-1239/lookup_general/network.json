@@ -1,0 +1,17 @@
+[
+  {
+    "sequence": 1,
+    "method": "GET",
+    "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/ClsYldCurvCurvGO",
+    "error_type": "ConnectionError",
+    "error": "HTTPSConnectionPool(host='www.chinamoney.com.cn', port=443): Max retries exceeded with url: /ags/ms/cm-u-bk-currency/ClsYldCurvCurvGO (Caused by NewConnectionError(\"HTTPSConnection(host='www.chinamoney.com.cn', port=443): Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的",
+    "elapsed_ms": 4
+  },
+  {
+    "sequence": 2,
+    "method": "GET",
+    "url": "https://www.chinamoney.com.cn/chinese/bkcurvclosedyhis/?bondType=CYCC000&reference=1",
+    "blocked_before_send": true,
+    "reason": "Outside public-query allowlist, denied host, or per-case request budget"
+  }
+]

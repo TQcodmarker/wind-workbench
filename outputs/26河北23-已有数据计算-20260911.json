@@ -1,0 +1,662 @@
+{
+  "source": "wind_mcp_saved_response",
+  "sourcePath": "D:\\code\\wind工作台\\runtime\\single-bond-ytm-809336-20260911.json",
+  "sourceSessionId": "ea76c1f6-40ed-48c3-b77d-df8184368747",
+  "evaluationDate": "2026-09-11",
+  "scope": "single_bond_sample",
+  "newWindDataCalls": 0,
+  "publishedSnapshot": false,
+  "rules": {
+    "version": "rules-v3-mcp-values-no-clauses",
+    "mappingVersion": "regions-v1",
+    "cutoff": "2025-08-08",
+    "terms": [
+      3,
+      5,
+      7,
+      10,
+      15,
+      20,
+      30
+    ],
+    "regions": [
+      {
+        "id": "shanghai",
+        "name": "上海市",
+        "tier": 1,
+        "order": 1
+      },
+      {
+        "id": "beijing",
+        "name": "北京市",
+        "tier": 1,
+        "order": 2
+      },
+      {
+        "id": "guangdong",
+        "name": "广东省",
+        "tier": 1,
+        "order": 3
+      },
+      {
+        "id": "shenzhen",
+        "name": "深圳市",
+        "tier": 1,
+        "order": 4
+      },
+      {
+        "id": "zhejiang",
+        "name": "浙江省",
+        "tier": 1,
+        "order": 5
+      },
+      {
+        "id": "jiangsu",
+        "name": "江苏省",
+        "tier": 1,
+        "order": 6
+      },
+      {
+        "id": "fujian",
+        "name": "福建省",
+        "tier": 2,
+        "order": 7
+      },
+      {
+        "id": "xiamen",
+        "name": "厦门市",
+        "tier": 2,
+        "order": 8
+      },
+      {
+        "id": "ningbo",
+        "name": "宁波市",
+        "tier": 2,
+        "order": 9
+      },
+      {
+        "id": "hebei",
+        "name": "河北省",
+        "tier": 2,
+        "order": 10
+      },
+      {
+        "id": "shandong",
+        "name": "山东省",
+        "tier": 2,
+        "order": 11
+      },
+      {
+        "id": "anhui",
+        "name": "安徽省",
+        "tier": 2,
+        "order": 12
+      },
+      {
+        "id": "shanxi",
+        "name": "山西省",
+        "tier": 2,
+        "order": 13
+      },
+      {
+        "id": "henan",
+        "name": "河南省",
+        "tier": 2,
+        "order": 14
+      },
+      {
+        "id": "hubei",
+        "name": "湖北省",
+        "tier": 2,
+        "order": 15
+      },
+      {
+        "id": "sichuan",
+        "name": "四川省",
+        "tier": 2,
+        "order": 16
+      },
+      {
+        "id": "hunan",
+        "name": "湖南省",
+        "tier": 2,
+        "order": 17
+      },
+      {
+        "id": "jiangxi",
+        "name": "江西省",
+        "tier": 2,
+        "order": 18
+      },
+      {
+        "id": "chongqing",
+        "name": "重庆市",
+        "tier": 2,
+        "order": 19
+      },
+      {
+        "id": "inner_mongolia",
+        "name": "内蒙古自治区",
+        "tier": 3,
+        "order": 20
+      },
+      {
+        "id": "hainan",
+        "name": "海南省",
+        "tier": 3,
+        "order": 21
+      },
+      {
+        "id": "liaoning",
+        "name": "辽宁省",
+        "tier": 3,
+        "order": 22
+      },
+      {
+        "id": "shaanxi",
+        "name": "陕西省",
+        "tier": 3,
+        "order": 23
+      },
+      {
+        "id": "tibet",
+        "name": "西藏自治区",
+        "tier": 3,
+        "order": 24
+      },
+      {
+        "id": "dalian",
+        "name": "大连市",
+        "tier": 3,
+        "order": 25
+      },
+      {
+        "id": "tianjin",
+        "name": "天津市",
+        "tier": 3,
+        "order": 26
+      },
+      {
+        "id": "xinjiang",
+        "name": "新疆维吾尔自治区",
+        "tier": 3,
+        "order": 27
+      },
+      {
+        "id": "xpcc",
+        "name": "新疆生产建设兵团",
+        "tier": 3,
+        "order": 28
+      },
+      {
+        "id": "ningxia",
+        "name": "宁夏回族自治区",
+        "tier": 3,
+        "order": 29
+      },
+      {
+        "id": "qingdao",
+        "name": "青岛市",
+        "tier": 3,
+        "order": 30
+      },
+      {
+        "id": "guangxi",
+        "name": "广西壮族自治区",
+        "tier": 3,
+        "order": 31
+      },
+      {
+        "id": "gansu",
+        "name": "甘肃省",
+        "tier": 3,
+        "order": 32
+      },
+      {
+        "id": "jilin",
+        "name": "吉林省",
+        "tier": 3,
+        "order": 33
+      },
+      {
+        "id": "guizhou",
+        "name": "贵州省",
+        "tier": 3,
+        "order": 34
+      },
+      {
+        "id": "yunnan",
+        "name": "云南省",
+        "tier": 3,
+        "order": 35
+      },
+      {
+        "id": "heilongjiang",
+        "name": "黑龙江省",
+        "tier": 3,
+        "order": 36
+      },
+      {
+        "id": "qinghai",
+        "name": "青海省",
+        "tier": 3,
+        "order": 37
+      }
+    ],
+    "historyStart": "2026-09-01",
+    "rounding": "ROUND_HALF_UP",
+    "weight": "发行规模（亿元）",
+    "formula": "Σ（收盘价到期收益率 × 发行规模）÷ Σ发行规模",
+    "yieldDefinition": {
+      "metric": "ytm",
+      "priceBasis": "close",
+      "label": "收盘价到期收益率",
+      "source": "Wind"
+    },
+    "clausePolicy": "not_collected_or_filtered",
+    "dataAcceptance": "mcp_returned_values",
+    "dateBasis": "query_date"
+  },
+  "fieldMappingVersion": "wind-fields-v4-mcp-values",
+  "record": {
+    "code": "809336.IB",
+    "bondId": "809336.IB",
+    "issueDate": "2026-04-20",
+    "issueAmountYi": "88.2",
+    "bondType": "general",
+    "remainingYears": "9.6082",
+    "yieldPct": "1.7691",
+    "yieldMetric": "ytm",
+    "yieldPriceBasis": "close",
+    "yieldDate": "2026-09-11",
+    "valuationDate": "2026-09-11",
+    "valueStatus": "valid",
+    "regionId": "hebei",
+    "_validationErrors": [],
+    "_descriptive": {
+      "name": "26河北23",
+      "fullName": null,
+      "issuer": "河北省人民政府",
+      "maturityDate": "2036-04-21",
+      "duration": "8.7035",
+      "currency": "CNY",
+      "yieldSourceField": "2026年9月11日的收盘价收益率",
+      "reportedYieldDates": [],
+      "couponPct": "1.89",
+      "outstandingBalanceYi": "88.2",
+      "closeNetPrice": "101.0634",
+      "sourceUnits": {
+        "bondId": [
+          null
+        ],
+        "name": [
+          null
+        ],
+        "issuer": [
+          null
+        ],
+        "issueDate": [
+          null
+        ],
+        "maturityDate": [
+          null
+        ],
+        "issueAmountYi": [
+          "亿元"
+        ],
+        "currency": [
+          null
+        ],
+        "bondType": [
+          null
+        ],
+        "remainingYears": [
+          "年"
+        ],
+        "duration": [
+          null
+        ],
+        "couponPct": [
+          "%"
+        ],
+        "outstandingBalanceYi": [
+          "亿"
+        ],
+        "closeNetPrice": [
+          "元"
+        ],
+        "yieldPct": [
+          "%"
+        ],
+        "yieldMetric": [
+          "%"
+        ],
+        "yieldPriceBasis": [
+          "%"
+        ],
+        "yieldSourceField": [
+          "%"
+        ],
+        "valueStatus": [
+          "%"
+        ],
+        "regionId": [
+          null
+        ]
+      }
+    }
+  },
+  "decision": {
+    "disposition": "included",
+    "category": "eligible",
+    "reason": "符合固定口径",
+    "term": 10,
+    "cohort": "on_or_after_20250808"
+  },
+  "counts": {
+    "source": 1,
+    "duplicates": 0,
+    "missing": 0,
+    "nonPositiveAmount": 0,
+    "terms": 0,
+    "eligible": 1,
+    "deduplicated": 1
+  },
+  "groups": [
+    {
+      "cohort": "on_or_after_20250808",
+      "regionId": "hebei",
+      "termYears": 10,
+      "bondScope": "all",
+      "cellState": "value",
+      "yieldPct": "1.76910000",
+      "sampleCount": 1,
+      "issueAmountSumYi": "88.2",
+      "weightedYieldSum": "156.03462",
+      "yieldMetric": "ytm",
+      "yieldPriceBasis": "close"
+    },
+    {
+      "cohort": "on_or_after_20250808",
+      "regionId": "hebei",
+      "termYears": 10,
+      "bondScope": "general",
+      "cellState": "value",
+      "yieldPct": "1.76910000",
+      "sampleCount": 1,
+      "issueAmountSumYi": "88.2",
+      "weightedYieldSum": "156.03462",
+      "yieldMetric": "ytm",
+      "yieldPriceBasis": "close"
+    }
+  ],
+  "fieldSources": {
+    "bondId": [
+      {
+        "name": "主证券代码",
+        "value": "809336.IB",
+        "unit": null,
+        "requestId": "404edb7a-5eba-499c-a437-d5716f0a835e",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 5
+      }
+    ],
+    "name": [
+      {
+        "name": "证券简称",
+        "value": "26河北23",
+        "unit": null,
+        "requestId": "155d5fba-32dc-4d9a-a882-71d754c647ed",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 1
+      },
+      {
+        "name": "证券简称",
+        "value": "26河北23",
+        "unit": null,
+        "requestId": "404edb7a-5eba-499c-a437-d5716f0a835e",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 1
+      },
+      {
+        "name": "证券简称",
+        "value": "26河北23",
+        "unit": null,
+        "requestId": "c58b2735-3ddd-4b05-b122-487e100a57c7",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 1
+      },
+      {
+        "name": "证券简称",
+        "value": "26河北23",
+        "unit": null,
+        "requestId": "b2c31e8d-97cc-42da-b5cc-48080d64c433",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 1
+      }
+    ],
+    "fullName": [],
+    "issuer": [
+      {
+        "name": "2026年9月11日债务主体名称",
+        "value": "河北省人民政府",
+        "unit": null,
+        "requestId": "c58b2735-3ddd-4b05-b122-487e100a57c7",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 2
+      }
+    ],
+    "issueDate": [
+      {
+        "name": "发行起始日期",
+        "value": "2026-04-20",
+        "unit": null,
+        "requestId": "404edb7a-5eba-499c-a437-d5716f0a835e",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 10
+      }
+    ],
+    "maturityDate": [
+      {
+        "name": "到期日期",
+        "value": "2036-04-21",
+        "unit": null,
+        "requestId": "404edb7a-5eba-499c-a437-d5716f0a835e",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 11
+      }
+    ],
+    "issueAmountYi": [
+      {
+        "name": "发行总额",
+        "value": 88.2,
+        "unit": "亿元",
+        "requestId": "404edb7a-5eba-499c-a437-d5716f0a835e",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 2
+      }
+    ],
+    "currency": [
+      {
+        "name": "交易币种",
+        "value": "CNY",
+        "unit": null,
+        "requestId": "155d5fba-32dc-4d9a-a882-71d754c647ed",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 5
+      },
+      {
+        "name": "交易币种",
+        "value": "CNY",
+        "unit": null,
+        "requestId": "404edb7a-5eba-499c-a437-d5716f0a835e",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 3
+      }
+    ],
+    "bondType": [
+      {
+        "name": "所属概念板块",
+        "value": "利率债;地方政府再融资债;再融资一般债;地方政府一般债;借新还旧债券;全部公募债",
+        "unit": null,
+        "requestId": "404edb7a-5eba-499c-a437-d5716f0a835e",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 9
+      }
+    ],
+    "remainingYears": [
+      {
+        "name": "2026年9月11日的实际剩余期限",
+        "value": 9.6082,
+        "unit": "年",
+        "requestId": "b2c31e8d-97cc-42da-b5cc-48080d64c433",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 3
+      }
+    ],
+    "duration": [
+      {
+        "name": "2026年9月11日基于净价的收盘价修正久期",
+        "value": 8.7035,
+        "unit": null,
+        "requestId": "155d5fba-32dc-4d9a-a882-71d754c647ed",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 8
+      }
+    ],
+    "couponPct": [
+      {
+        "name": "2026年9月11日票面利率",
+        "value": 1.89,
+        "unit": "%",
+        "requestId": "404edb7a-5eba-499c-a437-d5716f0a835e",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 12
+      }
+    ],
+    "outstandingBalanceYi": [
+      {
+        "name": "2026年9月11日的债券余额",
+        "value": 88.2,
+        "unit": "亿",
+        "requestId": "155d5fba-32dc-4d9a-a882-71d754c647ed",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 6
+      }
+    ],
+    "closeNetPrice": [
+      {
+        "name": "2026年9月11日的收盘价净价",
+        "value": 101.0634,
+        "unit": "元",
+        "requestId": "155d5fba-32dc-4d9a-a882-71d754c647ed",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 9
+      }
+    ],
+    "yieldPct": [
+      {
+        "name": "2026年9月11日的收盘价收益率",
+        "value": 1.7691,
+        "unit": "%",
+        "requestId": "155d5fba-32dc-4d9a-a882-71d754c647ed",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 3
+      }
+    ],
+    "yieldMetric": [
+      {
+        "name": "2026年9月11日的收盘价收益率",
+        "value": 1.7691,
+        "unit": "%",
+        "requestId": "155d5fba-32dc-4d9a-a882-71d754c647ed",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 3
+      }
+    ],
+    "yieldPriceBasis": [
+      {
+        "name": "2026年9月11日的收盘价收益率",
+        "value": 1.7691,
+        "unit": "%",
+        "requestId": "155d5fba-32dc-4d9a-a882-71d754c647ed",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 3
+      }
+    ],
+    "yieldDate": [],
+    "valuationDate": [],
+    "yieldSourceField": [
+      {
+        "name": "2026年9月11日的收盘价收益率",
+        "value": 1.7691,
+        "unit": "%",
+        "requestId": "155d5fba-32dc-4d9a-a882-71d754c647ed",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 3
+      }
+    ],
+    "reportedYieldDates": [],
+    "valueStatus": [
+      {
+        "name": "2026年9月11日的收盘价收益率",
+        "value": 1.7691,
+        "unit": "%",
+        "requestId": "155d5fba-32dc-4d9a-a882-71d754c647ed",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 3
+      },
+      {
+        "name": "2026年9月11日的收盘价收益率",
+        "value": 1.7691,
+        "unit": "%",
+        "requestId": "155d5fba-32dc-4d9a-a882-71d754c647ed",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 3
+      },
+      {
+        "name": "2026年9月11日的收盘价收益率",
+        "value": 1.7691,
+        "unit": "%",
+        "requestId": "155d5fba-32dc-4d9a-a882-71d754c647ed",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 3
+      }
+    ],
+    "regionId": [
+      {
+        "name": "2026年9月11日债务主体名称",
+        "value": "河北省人民政府",
+        "unit": null,
+        "requestId": "c58b2735-3ddd-4b05-b122-487e100a57c7",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 2
+      }
+    ]
+  }
+}

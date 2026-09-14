@@ -1,0 +1,12 @@
+[
+  {
+    "sequence": 1,
+    "method": "POST",
+    "url": "http://webapi.cninfo.com.cn/api/sysapi/p_sysapi1121?sdate=2026-09-01&edate=2026-09-11",
+    "status": 200,
+    "content_type": "application/json;charset=utf-8",
+    "bytes": 57553,
+    "body_file": "response-01.json",
+    "elapsed_ms": 252
+  }
+]

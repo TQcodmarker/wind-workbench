@@ -1,0 +1,12 @@
+[
+  {
+    "sequence": 1,
+    "method": "POST",
+    "url": "https://yield.chinabond.com.cn/cbweb-mn/indices/singleIndexQueryResult?indexid=2c9081e50e8767dc010e87a6a60b0050&qxlxt=00&ltcslx=&zslxt=PJSZFDQSYL&zslxt1=PJSZFDQSYL&lx=1&locale=zh_CN",
+    "status": 200,
+    "content_type": "application/json;charset=UTF-8",
+    "bytes": 139163,
+    "body_file": "response-01.json",
+    "elapsed_ms": 1273
+  }
+]

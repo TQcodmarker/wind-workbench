@@ -1,0 +1,35 @@
+{
+  "case": "index_catalog",
+  "function": "bond_available_index_cbond",
+  "arguments": {},
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T13:07:20.054880+00:00",
+  "function_signature": "()",
+  "source_file": "bond\\bond_cbond.py",
+  "source_sha256": "d482a6b57b7595e0d75e833dc85314ab1f2bb7cb89d12b211bdf5301c5ac64eb",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "returned_data",
+  "rows": 313,
+  "columns": [
+    "index",
+    "value"
+  ],
+  "non_null_counts": {
+    "index": 313,
+    "value": 313
+  },
+  "sample": [
+    {
+      "index": 1,
+      "value": "新综合指数"
+    },
+    {
+      "index": 2,
+      "value": "高等级科技创新债券综合指数"
+    }
+  ],
+  "date_ranges": {},
+  "elapsed_ms": 4,
+  "http_requests_sent": 0,
+  "network": []
+}

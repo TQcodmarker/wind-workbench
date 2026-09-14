@@ -1,0 +1,26 @@
+{
+  "as_of_date": "2026-09-11",
+  "akshare_version": "1.18.94",
+  "field_count": 20,
+  "acquired_including_substitutes": 18,
+  "missing_columns": [
+    "O",
+    "R"
+  ],
+  "status_counts": {
+    "obtained": 4,
+    "derived": 3,
+    "derived_substitute": 8,
+    "obtained_substitute": 3,
+    "missing": 2
+  },
+  "new_validated_query_cases": 6,
+  "reused_query_contracts": 7,
+  "sample_bonds": 5,
+  "market_reference_applicable_bonds": 4,
+  "matched_trade_bonds": 358,
+  "original_workbook_bonds": 14023,
+  "index_duration_reference": 8.9583,
+  "index_yield_reference_pct": 1.7024,
+  "scope": "Field-level capability, including user-authorized substitutes. Not full-universe completion."
+}

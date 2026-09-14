@@ -1,0 +1,1 @@
+{"case": "yield_curve", "status": "returned_data", "rows": 27, "columns": ["\u66f2\u7ebf\u540d\u79f0", "\u65e5\u671f", "3\u6708", "6\u6708", "1\u5e74", "3\u5e74", "5\u5e74", "7\u5e74", "10\u5e74", "30\u5e74"], "http_requests_sent": 1}

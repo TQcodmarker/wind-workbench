@@ -1,0 +1,57 @@
+// Real local API smoke check. Only GETs are allowed; export is a local download.
+import {chromium} from 'playwright';
+import assert from 'node:assert/strict';
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+const base=process.env.BOND_TEST_URL||'http://127.0.0.1:8765',target=process.env.BOND_TEST_DATE||'2026-09-11';
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const checks=[],errors=[],writes=[],requests=[];
+try{
+ const page=await browser.newPage({viewport:{width:1440,height:960},acceptDownloads:true});page.setDefaultTimeout(10000);
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.route('**/api/**',route=>{const request=route.request(),url=new URL(request.url());requests.push({method:request.method(),path:url.pathname,query:url.search});if(request.method()==='GET')return route.continue();writes.push(url.pathname);return route.abort()});
+ await page.goto(`${base}/workbench?date=${target}`);
+ const table=()=>page.getByRole('table',{name:'已保存个券数据',exact:true});
+ const settled=()=>page.locator('.available-data[aria-busy="false"]').waitFor();
+ await table().waitFor();await settled();
+ assert.equal(await table().locator('tbody tr').count(),25);
+ assert.equal(requests.filter(r=>r.path.endsWith('/available')).length,0);
+ assert.equal(requests.filter(r=>/\/available\/(?!summary$|page$)[^/]+$/.test(r.path)).length,0);
+ checks.push('Initial table loads 25 rows using summary/page only, with no full dataset or per-bond evidence');
+ await page.getByLabel('个券发行组',{exact:true}).selectOption('all');await settled();
+ await page.getByLabel('个券数据状态',{exact:true}).selectOption('eligible');await settled();
+ const expectedCount=Number((await page.locator('.saved-pagination > span').innerText()).replace(/[^0-9]/g,''));
+ assert(expectedCount>25,'This smoke test needs more than one page of eligible bonds');
+ const code=(await table().locator('.saved-bond-link span').first().innerText()).trim();
+ await page.getByLabel('搜索债券代码或名称',{exact:true}).fill(code);await settled();
+ assert.equal(await table().locator('tbody tr').count(),1);
+ assert((await table().innerText()).includes(code));
+ checks.push('Server-side cohort/status/code filters return the matching bond');
+ await table().locator('.saved-bond-link').first().click();
+ const drawer=page.getByRole('dialog');await drawer.locator('.saved-source-fields section').first().waitFor();
+ assert(requests.some(r=>r.path.endsWith('/available/'+encodeURIComponent(code))));
+ assert(await drawer.getByRole('link',{name:'查看 AKShare 查询依据',exact:true}).count()>0);
+ await page.keyboard.press('Escape');
+ checks.push('Selected bond evidence loads on demand with AKShare query links');
+ await page.getByLabel('搜索债券代码或名称',{exact:true}).fill('');await settled();
+ const downloadEvent=page.waitForEvent('download');await page.getByRole('button',{name:'导出已有个券',exact:true}).click();
+ const download=await downloadEvent,csv=await readFile(await download.path(),'utf8');
+ let quoted=false,lineCount=1;
+ for(let i=0;i<csv.length;i++){if(csv[i]==='"'){if(quoted&&csv[i+1]==='"')i++;else quoted=!quoted}else if(csv[i]==='\n'&&!quoted)lineCount++}
+ assert.equal(lineCount-1,expectedCount,'Export must include all matches, not only the visible 25 rows');
+ assert.match(csv,/实际指标/);assert.match(csv,/AKShare/);
+ assert.equal(requests.filter(r=>r.path.endsWith('/available')).length,1);
+ checks.push(`Explicit export fetches full data once and exports all ${expectedCount} matches`);
+ await page.getByRole('tab',{name:'已有样本汇总',exact:true}).click();
+ await page.getByRole('table',{name:'已有样本汇总',exact:true}).waitFor();
+ assert.match(await page.locator('.saved-summary-formula').innerText(),/当前发行组可纳入 \d+ 只/);
+ await page.getByRole('tab',{name:'地区汇总视图',exact:true}).click();
+ await page.locator('.valuation-table').waitFor();
+ assert.equal(await page.locator('.valuation-table .region-row').count(),37);
+ assert.equal(requests.filter(r=>r.path.endsWith('/available')).length,1);
+ checks.push('Summary and 37-region matrix render from summary cells without a full dataset read');
+ assert.deepEqual(writes,[]);assert.deepEqual(errors,[]);
+ checks.push('No data-source/sync changes, API mutations or browser errors');
+ await mkdir('test-results',{recursive:true});
+ await writeFile('test-results/browser-paginated-data-report.json',JSON.stringify({passed:checks.length,checks,expectedCount,exportedRows:lineCount-1,errors,writes,requests},null,2));
+ console.log(JSON.stringify({passed:checks.length,checks,exportedRows:lineCount-1},null,2));
+}finally{await browser.close()}

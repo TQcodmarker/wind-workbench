@@ -1,0 +1,1 @@
+{"case": "treasury_yield", "status": "returned_data", "rows": 6177, "columns": ["date", "value"], "http_requests_sent": 1}

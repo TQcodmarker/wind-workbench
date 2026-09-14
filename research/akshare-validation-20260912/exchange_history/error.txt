@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\code\wind工作台\scripts\verify_akshare_bonds.py", line 113, in run_case
+    frame = function(**arguments)
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\akshare\bond\bond_zh_sina.py", line 138, in bond_zh_hs_daily
+    data_df["date"] = pd.to_datetime(data_df["date"], errors="coerce").dt.date
+                                     ~~~~~~~^^^^^^^^
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\pandas\core\indexes\range.py", line 525, in get_loc
+    raise KeyError(key)
+KeyError: 'date'

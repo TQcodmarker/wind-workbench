@@ -1,0 +1,127 @@
+{
+  "analysisReadAt": "2026-09-12T23:15:05.834256+08:00",
+  "targetDate": "2026-09-11",
+  "frozenCapturedAt": "2026-09-12T23:13:56+08:00",
+  "frozenDatasetCollectedAt": "2026-09-12T23:13:39+08:00",
+  "frozenSources": {
+    "summary": "summary.json",
+    "bonds": "bond-diagnostics.csv",
+    "bondCount": 18540
+  },
+  "method": "按冻结 CSV 的证券代码与诊断分组，对照 SQLite akshare_queries 已保存的 bond_spot_deal 原始响应。使用目标日、有效数值收益率和同券最新成交时点去重；不新增网络请求，不写业务数据库。",
+  "queries": [
+    {
+      "queryId": "akshare-525b244b-5ef1-48a4-aa96-1c648293bae8",
+      "runId": "0be74478-a13d-4264-a1e3-531fae40ff4e",
+      "function": "bond_spot_deal",
+      "arguments": {},
+      "retrievedAt": "2026-09-12T21:39:44+08:00",
+      "requestedTargetDate": "2026-09-11",
+      "status": "succeeded",
+      "sdkRows": 3574,
+      "rawRows": 3574,
+      "rawUniqueBondCodes": 3060,
+      "rawSourceDateCounts": {"2026-09-11": 3574},
+      "targetDateValidUniqueTradesAllBondTypes": 2786,
+      "conflictedCodes": 0,
+      "confirmedLocalGovernmentBondCodes": 469,
+      "confirmedLocalCodesInFrozenDataset": 469,
+      "localYieldAlreadyMaterialized": 41,
+      "localYieldNotMaterialized": 428
+    },
+    {
+      "queryId": "akshare-690c62e5-d72e-4b09-b46c-36cd8b759283",
+      "runId": "9ed383ef-e2a4-4b68-9c1d-d0476782bc94",
+      "function": "bond_spot_deal",
+      "arguments": {},
+      "retrievedAt": "2026-09-12T21:46:10+08:00",
+      "requestedTargetDate": "2026-09-11",
+      "status": "succeeded",
+      "sdkRows": 3574,
+      "rawRows": 3574,
+      "rawUniqueBondCodes": 3060,
+      "rawSourceDateCounts": {"2026-09-11": 3574},
+      "targetDateValidUniqueTradesAllBondTypes": 2786,
+      "conflictedCodes": 0,
+      "confirmedLocalGovernmentBondCodes": 469,
+      "confirmedLocalCodesInFrozenDataset": 469,
+      "localYieldAlreadyMaterialized": 41,
+      "localYieldNotMaterialized": 428
+    }
+  ],
+  "combinedCoverage": {
+    "frozenLocalGovernmentBonds": 18540,
+    "targetDateValidUniqueTradesAllBondTypes": 2786,
+    "conflictedCodes": 0,
+    "localCodesWithAnyRawTrade": 469,
+    "localCodesWithValidRawYield": 469,
+    "localCodesWithRawTradeButNoValidYield": 0,
+    "localCodesWithoutRawTradeInSavedResponses": 18071,
+    "validYieldAlreadyMaterialized": 41,
+    "validYieldNotMaterialized": 428,
+    "notMaterializedButStaticComplete": 4,
+    "notMaterializedAndStaticIncomplete": 424,
+    "immediatelyAdditionalDisplayedYieldsFromSavedEvidence": 4,
+    "immediatelyAdditionalEligibleBondsFromSavedEvidence": 0
+  },
+  "frozenDiagnosticCrossTab": [
+    {"bucket": "eligible", "frozenBonds": 40, "validRawTrade": 40, "validRawYieldNotMaterialized": 0},
+    {"bucket": "missing_required_static", "frozenBonds": 16241, "validRawTrade": 424, "validRawYieldNotMaterialized": 424},
+    {"bucket": "only_missing_target_day_yield", "frozenBonds": 152, "validRawTrade": 0, "validRawYieldNotMaterialized": 0},
+    {"bucket": "outside_term_grid", "frozenBonds": 514, "validRawTrade": 5, "validRawYieldNotMaterialized": 4},
+    {"bucket": "matured", "frozenBonds": 1593, "validRawTrade": 0, "validRawYieldNotMaterialized": 0}
+  ],
+  "staticCompleteUnmaterializedTrades": [
+    {"code": "104792.IB", "name": "20广东债35", "rawYieldPct": "1.3678", "bucket": "outside_term_grid", "termYears": 4, "remainingYears": "3.671232876712328767123287671"},
+    {"code": "104839.IB", "name": "20四川债92", "rawYieldPct": "2.1500", "bucket": "outside_term_grid", "termYears": 24, "remainingYears": "23.82191780821917808219178082"},
+    {"code": "157564.IB", "name": "19福建03", "rawYieldPct": "1.2745", "bucket": "outside_term_grid", "termYears": 2, "remainingYears": "2.375342465753424657534246575"},
+    {"code": "157631.IB", "name": "19河南13", "rawYieldPct": "1.5300", "bucket": "outside_term_grid", "termYears": 8, "remainingYears": "7.509589041095890410958904110"}
+  ],
+  "ordinaryCollectionRuns": [
+    {
+      "runId": "0be74478-a13d-4264-a1e3-531fae40ff4e",
+      "createdAt": "2026-09-12T21:39:42+08:00",
+      "finishedAt": "2026-09-12T21:41:26+08:00",
+      "newDetailLimit": 20,
+      "candidateCount": 468,
+      "detailCacheCountAfterRun": 25,
+      "materializedBondsAfterRun": 25,
+      "eligibleBondsAfterRun": 20
+    },
+    {
+      "runId": "9ed383ef-e2a4-4b68-9c1d-d0476782bc94",
+      "createdAt": "2026-09-12T21:46:09+08:00",
+      "finishedAt": "2026-09-12T21:47:15+08:00",
+      "newDetailLimit": 20,
+      "candidateCount": 448,
+      "detailCacheCountAfterRun": 45,
+      "materializedBondsAfterRun": 45,
+      "eligibleBondsAfterRun": 40
+    }
+  ],
+  "codeFindings": [
+    {
+      "file": "backend/akshare_provider.py",
+      "function": "collect",
+      "finding": "MAX_DETAIL_QUERIES=20 限制每批新增详情查询，未限制原始成交响应保存。每批最终对所有已有详情进行收益率匹配；前两批分别新增 20 只详情，得到 20、40 只可汇总券。"
+    },
+    {
+      "file": "backend/akshare_sync.py",
+      "function": "_materialize",
+      "finding": "全市场同步补名单和基本信息；仅继承旧数据集已物化的同日 yieldPct，没有重新读取已保存 bond_spot_deal 原始响应。因此后续详情补齐不会自动补入先前下载的成交收益率。"
+    },
+    {
+      "file": "backend/akshare_sync.py",
+      "function": "_details",
+      "finding": "详情按证券代码升序同步，没有优先选择已有成交行情、未到期或符合目标期限的债券。"
+    }
+  ],
+  "interpretationLimits": [
+    "18,071 只券未出现在本次已保存公开成交快照中，不等于证明它们当日没有成交。",
+    "428 条原始收益率未物化，不等于能够立即新增 428 只合格样本；其中 424 只尚缺必需详情。",
+    "152 只静态字段齐全且仅缺目标日收益率的券，与本次已保存原始成交行情的交集为 0。",
+    "四条已具备详情的未物化行情均不在 3、5、7、10、15、20、30 年目标期限内；重放它们只能补充显示值，不能增加当前合格样本数。",
+    "统计使用冻结 CSV 分母，后台同步之后的进度变化不属于本文件统计范围。",
+    "指数和曲线替代指标没有被当作个券成交收益率计入本诊断。"
+  ]
+}

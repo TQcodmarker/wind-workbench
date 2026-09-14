@@ -1,0 +1,98 @@
+[
+  {
+    "case": "general",
+    "code": "809336.IB",
+    "row": 2,
+    "name": "26河北23",
+    "coupon_source": "1.8900",
+    "coupon_excel": 1.89,
+    "issue_date_source": "2026-04-20",
+    "issue_date_excel": "2026-04-20",
+    "maturity": "2036-04-21",
+    "term_calc": 9.852054794520548,
+    "term_excel": 9.84383561643836,
+    "amount_issued": "88.2",
+    "balance_excel": 88.2,
+    "issuer": "河北省政府",
+    "full_name": "2026年河北省政府再融资一般债券(五期)-2026年河北省政府一般债券(六期)",
+    "exercise_flag_source": "否",
+    "clause_excel": 0,
+    "wind_curve": 1.83219178082192,
+    "comparisons": {
+      "aaa": 1.812291780821918,
+      "aaa_minus": 1.8793246575342468
+    }
+  },
+  {
+    "case": "special",
+    "code": "101900.IB",
+    "row": 14024,
+    "name": "23浙江01",
+    "coupon_source": "2.9700",
+    "coupon_excel": 2.97,
+    "issue_date_source": "2023-02-10",
+    "issue_date_excel": "2023-02-10",
+    "maturity": "2030-02-13",
+    "term_calc": 3.663013698630137,
+    "term_excel": 3.66027397260274,
+    "amount_issued": "13.2",
+    "balance_excel": 13.2,
+    "issuer": "浙江省政府",
+    "full_name": "2023年浙江省棚改专项债券(一期)-2023年浙江省政府专项债券(一期)",
+    "exercise_flag_source": "否",
+    "clause_excel": 0,
+    "wind_curve": 1.44621917808219,
+    "comparisons": {
+      "aaa": 1.435378904109589,
+      "aaa_minus": 1.6261547945205481
+    }
+  },
+  {
+    "case": "amortizing",
+    "code": "2571241.IB",
+    "row": 225,
+    "name": "25江西债68",
+    "coupon_source": "1.9500",
+    "coupon_excel": 1.95,
+    "issue_date_source": "2025-10-30",
+    "issue_date_excel": "2025-10-30",
+    "maturity": "2035-10-31",
+    "term_calc": 9.378082191780821,
+    "term_excel": 9.37260273972603,
+    "amount_issued": "3.44",
+    "balance_excel": 3.44,
+    "issuer": "江西省政府",
+    "full_name": "2025年江西省地方政府再融资一般债券(七期)",
+    "exercise_flag_source": "否",
+    "clause_excel": "债券提前偿还",
+    "wind_curve": 1.8086301369863,
+    "comparisons": {
+      "aaa": 1.7887301369863016,
+      "aaa_minus": 1.8640095890410961
+    }
+  },
+  {
+    "case": "matured",
+    "code": "2405398.IB",
+    "row": 649,
+    "name": "24湖北债16",
+    "coupon_source": "1.8800",
+    "coupon_excel": 1.88,
+    "issue_date_source": "2024-05-31",
+    "issue_date_excel": "2024-05-31",
+    "maturity": "2026-06-03",
+    "term_calc": 0,
+    "term_excel": 0,
+    "amount_issued": "32.9289",
+    "balance_excel": 0,
+    "issuer": "湖北省政府",
+    "full_name": "2024年湖北省政府再融资一般债券(三期)",
+    "exercise_flag_source": "否",
+    "clause_excel": 0,
+    "wind_curve": 0,
+    "comparisons": {
+      "aaa": null,
+      "aaa_minus": null
+    }
+  }
+]

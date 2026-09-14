@@ -1,0 +1,254 @@
+[
+  {
+    "name": "bondFullName",
+    "value": "2025年江西省地方政府再融资一般债券(七期)"
+  },
+  {
+    "name": "bondDefinedCode",
+    "value": "hgfffizm7x"
+  },
+  {
+    "name": "bondName",
+    "value": "25江西债68"
+  },
+  {
+    "name": "bondCode",
+    "value": "2571241"
+  },
+  {
+    "name": "isinCode",
+    "value": "---"
+  },
+  {
+    "name": "entyFullName",
+    "value": "江西省政府"
+  },
+  {
+    "name": "entyDefinedCode",
+    "value": "300721"
+  },
+  {
+    "name": "trusteeCode",
+    "value": null
+  },
+  {
+    "name": "trustee",
+    "value": null
+  },
+  {
+    "name": "custodian",
+    "value": "---"
+  },
+  {
+    "name": "bondTypeCode",
+    "value": "100011"
+  },
+  {
+    "name": "bondType",
+    "value": "地方政府债"
+  },
+  {
+    "name": "bondCcy",
+    "value": "---"
+  },
+  {
+    "name": "issueDate",
+    "value": "2025-10-30"
+  },
+  {
+    "name": "mrtyDate",
+    "value": "2035-10-31"
+  },
+  {
+    "name": "lstngDate",
+    "value": "2025-11-04"
+  },
+  {
+    "name": "dlstngDate",
+    "value": "---"
+  },
+  {
+    "name": "bondPeriod",
+    "value": "10年"
+  },
+  {
+    "name": "parValue",
+    "value": "100.00"
+  },
+  {
+    "name": "issuePrice",
+    "value": "100.0000"
+  },
+  {
+    "name": "plndIssueAmnt",
+    "value": "3.44"
+  },
+  {
+    "name": "issueAmnt",
+    "value": "3.44"
+  },
+  {
+    "name": "intrstBss",
+    "value": "---"
+  },
+  {
+    "name": "couponType",
+    "value": "附息式固定利率"
+  },
+  {
+    "name": "frstValueDate",
+    "value": "2025-10-31"
+  },
+  {
+    "name": "couponFrqncy",
+    "value": "半年"
+  },
+  {
+    "name": "parCouponRate",
+    "value": "1.9500"
+  },
+  {
+    "name": "isYldRate",
+    "value": "---"
+  },
+  {
+    "name": "refyld",
+    "value": "---"
+  },
+  {
+    "name": "refyldPlusFlag",
+    "value": "0"
+  },
+  {
+    "name": "bnchmkRateNm",
+    "value": "---"
+  },
+  {
+    "name": "bnchmkRate",
+    "value": "---"
+  },
+  {
+    "name": "bnchmkSpreadRate",
+    "value": "---"
+  },
+  {
+    "name": "crcltnScp",
+    "value": "---"
+  },
+  {
+    "name": "spclPrjctVrty",
+    "value": "---"
+  },
+  {
+    "name": "note",
+    "value": "---"
+  },
+  {
+    "name": "bondRisInfoList",
+    "value": []
+  },
+  {
+    "name": "startenty",
+    "value": "---"
+  },
+  {
+    "name": "startDefinedCode",
+    "value": "---"
+  },
+  {
+    "name": "evstofbonddflt",
+    "value": null
+  },
+  {
+    "name": "exerciseInfoFlag",
+    "value": "否"
+  },
+  {
+    "name": "ntnlPrncplAmnt",
+    "value": "---"
+  },
+  {
+    "name": "crdtPrmmRateInvstRtrnRate",
+    "value": "---"
+  },
+  {
+    "name": "refEnty",
+    "value": "---"
+  },
+  {
+    "name": "theSbjctEnty",
+    "value": "---"
+  },
+  {
+    "name": "refDebtCd",
+    "value": "---"
+  },
+  {
+    "name": "refDebtBondDfndCd",
+    "value": "---"
+  },
+  {
+    "name": "refDebtBondType",
+    "value": "---"
+  },
+  {
+    "name": "refDebtNm",
+    "value": "---"
+  },
+  {
+    "name": "theUndrlyngDebt",
+    "value": "---"
+  },
+  {
+    "name": "theUndrlyngDebtCd",
+    "value": "---"
+  },
+  {
+    "name": "theUndrlyngDebtBondDfndCd",
+    "value": "---"
+  },
+  {
+    "name": "theUndrlyngDebtBondType",
+    "value": "---"
+  },
+  {
+    "name": "totlFlowOfUndrlyngDebt",
+    "value": "---"
+  },
+  {
+    "name": "crtnDt",
+    "value": "---"
+  },
+  {
+    "name": "frstPayDt",
+    "value": "---"
+  },
+  {
+    "name": "frstCpnDt",
+    "value": "2026-04-30"
+  },
+  {
+    "name": "calcAgnt",
+    "value": "---"
+  },
+  {
+    "name": "chrgngMthds",
+    "value": "---"
+  },
+  {
+    "name": "crdtEv",
+    "value": "---"
+  },
+  {
+    "name": "brchStlmntMthd",
+    "value": "---"
+  },
+  {
+    "name": "rgstrtnCnfrmtnDay",
+    "value": "---"
+  },
+  {
+    "name": "inptTp",
+    "value": "0"
+  }
+]

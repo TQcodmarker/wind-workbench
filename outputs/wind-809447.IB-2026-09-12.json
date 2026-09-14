@@ -1,0 +1,883 @@
+{
+  "retrieved_at_beijing": "2026-09-12T12:11:18+08:00",
+  "bond_code": "809447.IB",
+  "requested_as_of": "2026-09-12",
+  "source": "Wind bond data MCP",
+  "endpoint": "https://mcp.wind.com.cn/vserver_bond_data/mcp/",
+  "official_identity_crosscheck": "https://www.chinamoney.com.cn/chinese/ltss1/20260827/3404842.html",
+  "notes": [
+    "All queried ChinaBond yield and price fields were null, including latest valuation date. Null is not zero and does not establish why data is unavailable.",
+    "Issuer rating date was returned as AAA, not a date, and is invalid.",
+    "Empty option fields do not establish that the bond has no embedded option."
+  ],
+  "queries": [
+    {
+      "tool": "get_bond_market_data",
+      "arguments": {
+        "question": "查询债券809447.IB（26青岛78）2026年9月7日至2026年9月12日期间每日已发布的中债估值到期收益率（%）、中债估值净价和全价（元/百元面值）、中债估值行权收益率（如有）及对应行权日、剩余期限（年）。当前北京时间2026年9月12日12时。必须保留每条数据实际估值日期，未发布日期不要填充或沿用前值。如果本范围内无数据，查截至2026年9月12日最近两个有已发布中债估值的日期。明确数据来源为中债，提供指标名称或字段代码及单位，不要以中证估值或成交收益率替代。"
+      },
+      "response": [
+        {
+          "data": {
+            "data": [
+              {
+                "columns": [
+                  {
+                    "name": "Wind代码",
+                    "type": "string"
+                  },
+                  {
+                    "name": "证券简称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "2026年9月7日至2026年9月12日每日中债估值净价",
+                    "type": "number",
+                    "unit": "元"
+                  },
+                  {
+                    "name": "2026年9月7日至2026年9月12日每日中债估值全价",
+                    "type": "number",
+                    "unit": "元"
+                  },
+                  {
+                    "name": "交易币种",
+                    "type": "string"
+                  },
+                  {
+                    "name": "2026年9月7日至2026年9月12日每日中债估值行权收益率",
+                    "type": "number",
+                    "unit": "%"
+                  },
+                  {
+                    "name": "2026年9月7日至2026年9月12日每日中债估值剩余期限",
+                    "type": "number",
+                    "unit": "年"
+                  },
+                  {
+                    "name": "2026年9月7日至2026年9月12日每日中债估值收益率",
+                    "type": "number",
+                    "unit": "%"
+                  },
+                  {
+                    "name": "日期",
+                    "type": "date"
+                  }
+                ],
+                "rows": [
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    null,
+                    null,
+                    "CNY",
+                    null,
+                    9.9644,
+                    null,
+                    "2026-09-07"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    null,
+                    null,
+                    "CNY",
+                    null,
+                    9.9616,
+                    null,
+                    "2026-09-08"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    null,
+                    null,
+                    "CNY",
+                    null,
+                    9.9589,
+                    null,
+                    "2026-09-09"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    null,
+                    null,
+                    "CNY",
+                    null,
+                    9.9562,
+                    null,
+                    "2026-09-10"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    null,
+                    null,
+                    "CNY",
+                    null,
+                    9.9534,
+                    null,
+                    "2026-09-11"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    null,
+                    null,
+                    "CNY",
+                    null,
+                    9.9507,
+                    null,
+                    "2026-09-12"
+                  ]
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "name": "Wind代码",
+                    "type": "string"
+                  },
+                  {
+                    "name": "证券简称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "2026年9月12日往前推已发布中债估值净价",
+                    "type": "number",
+                    "unit": "元"
+                  },
+                  {
+                    "name": "2026年9月12日往前推已发布中债估值全价",
+                    "type": "number",
+                    "unit": "元"
+                  },
+                  {
+                    "name": "交易币种",
+                    "type": "string"
+                  },
+                  {
+                    "name": "2026年9月12日往前推已发布中债估值行权收益率",
+                    "type": "number",
+                    "unit": "%"
+                  },
+                  {
+                    "name": "2026年9月12日往前推已发布中债估值剩余期限",
+                    "type": "number",
+                    "unit": "年"
+                  },
+                  {
+                    "name": "2026年9月12日往前推已发布中债估值收益率",
+                    "type": "number",
+                    "unit": "%"
+                  },
+                  {
+                    "name": "日期",
+                    "type": "date"
+                  }
+                ],
+                "rows": [
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    null,
+                    null,
+                    "CNY",
+                    null,
+                    9.9507,
+                    null,
+                    "2026-09-12"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    null,
+                    null,
+                    "CNY",
+                    null,
+                    9.9534,
+                    null,
+                    "2026-09-11"
+                  ]
+                ]
+              }
+            ]
+          },
+          "error": null
+        }
+      ],
+      "is_error": false
+    },
+    {
+      "tool": "get_bond_basicinfo",
+      "arguments": {
+        "question": "核实809447.IB的Wind代码、债券简称与完整名称，查询票面利率（%）、起息日、到期日、原始期限、付息频率、下一付息日、是否含权及具体提前赎回/回售/利率调整条款和对应行权日，并获取截至2026年9月12日最新债项信用评级、评级机构、评级日期。注明指标单位和日期；无数据或不适用请明确说明。"
+      },
+      "response": [
+        "没找到数据"
+      ],
+      "is_error": false
+    },
+    {
+      "tool": "get_bond_issuer_info",
+      "arguments": {
+        "question": "查询809447.IB（26青岛78）的发行主体全称、主体性质，以及截至2026年9月12日最新主体信用评级、评级机构和对应评级日期。区分发行主体自身评级与债项评级；如果地方政府无主体评级，明确返回不适用或无数据，不要用债项评级代替。"
+      },
+      "response": [
+        {
+          "data": {
+            "data": [
+              {
+                "columns": [
+                  {
+                    "name": "Wind代码",
+                    "type": "string"
+                  },
+                  {
+                    "name": "证券简称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "债务主体名称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "债务主体中文简称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "2026年9月12日主体信用评级",
+                    "type": "string"
+                  },
+                  {
+                    "name": "2026年9月12日主体评级机构",
+                    "type": "string"
+                  },
+                  {
+                    "name": "公司属性",
+                    "type": "string"
+                  },
+                  {
+                    "name": "2026年9月12日债项评级",
+                    "type": "string"
+                  },
+                  {
+                    "name": "2026年9月12日债项评级.评级对象类型",
+                    "type": "string"
+                  }
+                ],
+                "rows": [
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "青岛市人民政府",
+                    "",
+                    "AAA",
+                    "中证鹏元资信评估股份有限公司",
+                    "",
+                    "",
+                    "债项评级"
+                  ]
+                ]
+              }
+            ]
+          },
+          "error": null
+        }
+      ],
+      "is_error": false
+    },
+    {
+      "tool": "get_bond_market_data",
+      "arguments": {
+        "question": "查询809447.IB从2026-08-25至2026-09-11的每日中债估价收益率（到期收益率，%）、中债估价净价、中债估价全价。返回日期和数值，保留空值，不使用其他估值机构或成交行情。"
+      },
+      "response": [
+        {
+          "data": {
+            "data": [
+              {
+                "columns": [
+                  {
+                    "name": "Wind代码",
+                    "type": "string"
+                  },
+                  {
+                    "name": "证券简称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "日期",
+                    "type": "date"
+                  },
+                  {
+                    "name": "2026年8月25日至2026年9月11日每日中债估价净价",
+                    "type": "number",
+                    "unit": "元"
+                  },
+                  {
+                    "name": "2026年8月25日至2026年9月11日每日中债估价净价.估值类型",
+                    "type": "string"
+                  },
+                  {
+                    "name": "2026年8月25日至2026年9月11日每日中债估价全价",
+                    "type": "number",
+                    "unit": "元"
+                  },
+                  {
+                    "name": "交易币种",
+                    "type": "string"
+                  },
+                  {
+                    "name": "2026年8月25日至2026年9月11日每日中债估价收益率",
+                    "type": "number",
+                    "unit": "%"
+                  },
+                  {
+                    "name": "2026年8月25日至2026年9月11日每日中债估价收益率.估值类型",
+                    "type": "string"
+                  }
+                ],
+                "rows": [
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-08-25",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-08-26",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-08-27",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-08-28",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-08-29",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-08-30",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-08-31",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-09-01",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-09-02",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-09-03",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-09-04",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-09-05",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-09-06",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-09-07",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-09-08",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-09-09",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-09-10",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ],
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "2026-09-11",
+                    null,
+                    "到期收益率",
+                    null,
+                    "CNY",
+                    null,
+                    "到期收益率"
+                  ]
+                ]
+              }
+            ]
+          },
+          "error": null
+        }
+      ],
+      "is_error": false
+    },
+    {
+      "tool": "get_bond_market_data",
+      "arguments": {
+        "question": "查询809447.IB最新有数据的中债估价收益率、中债估价净价和中债估价全价，并返回实际估值日期。只查询中债估值。"
+      },
+      "response": [
+        {
+          "data": {
+            "data": [
+              {
+                "columns": [
+                  {
+                    "name": "Wind代码",
+                    "type": "string"
+                  },
+                  {
+                    "name": "证券简称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "最新中债估值净价",
+                    "type": "number",
+                    "unit": "元"
+                  },
+                  {
+                    "name": "最新中债估值全价",
+                    "type": "number",
+                    "unit": "元"
+                  },
+                  {
+                    "name": "交易币种",
+                    "type": "string"
+                  },
+                  {
+                    "name": "最新中债估值收益率",
+                    "type": "number",
+                    "unit": "%"
+                  },
+                  {
+                    "name": "最新中债估值日期",
+                    "type": "date"
+                  }
+                ],
+                "rows": [
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    null,
+                    null,
+                    "CNY",
+                    null,
+                    null
+                  ]
+                ]
+              }
+            ]
+          },
+          "error": null
+        }
+      ],
+      "is_error": false
+    },
+    {
+      "tool": "get_bond_basicinfo",
+      "arguments": {
+        "question": "查询809447.IB的债券全称、债券类型、票面利率、发行规模、起息日、到期日、付息频率、是否含权、最新债项评级、债项评级机构和债项评级日期。"
+      },
+      "response": [
+        {
+          "data": {
+            "data": [
+              {
+                "columns": [
+                  {
+                    "name": "Wind代码",
+                    "type": "string"
+                  },
+                  {
+                    "name": "证券简称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "发行总额",
+                    "type": "number",
+                    "unit": "亿元"
+                  },
+                  {
+                    "name": "交易币种",
+                    "type": "string"
+                  },
+                  {
+                    "name": "证券全称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "WIND债券一级分类",
+                    "type": "string"
+                  },
+                  {
+                    "name": "最新票面利率",
+                    "type": "number",
+                    "unit": "%"
+                  },
+                  {
+                    "name": "起息日期",
+                    "type": "date"
+                  },
+                  {
+                    "name": "到期日期",
+                    "type": "date"
+                  },
+                  {
+                    "name": "每年付息次数",
+                    "type": "number",
+                    "unit": "次"
+                  },
+                  {
+                    "name": "下一行权日",
+                    "type": "date"
+                  },
+                  {
+                    "name": "最新债项评级",
+                    "type": "string"
+                  },
+                  {
+                    "name": "最新债项评级机构",
+                    "type": "string"
+                  },
+                  {
+                    "name": "最新债项评级日期",
+                    "type": "date"
+                  }
+                ],
+                "rows": [
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    1,
+                    "CNY",
+                    "2026年青岛市政府再融资一般债券(九期)",
+                    "地方政府债",
+                    1.73,
+                    "2026-08-25",
+                    "2036-08-25",
+                    2,
+                    null,
+                    "AAA",
+                    "东方金诚国际信用评估有限公司",
+                    "2026-08-11"
+                  ]
+                ]
+              }
+            ]
+          },
+          "error": null
+        }
+      ],
+      "is_error": false
+    },
+    {
+      "tool": "get_bond_issuer_info",
+      "arguments": {
+        "question": "查询809447.IB发行主体青岛市人民政府最新主体信用评级、主体信用评级机构、主体信用评级日期。请返回实际评级日期，不用查询日期代替评级日期。"
+      },
+      "response": [
+        {
+          "data": {
+            "data": [
+              {
+                "columns": [
+                  {
+                    "name": "Wind代码",
+                    "type": "string"
+                  },
+                  {
+                    "name": "证券简称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "最新主体评级机构",
+                    "type": "string"
+                  },
+                  {
+                    "name": "最新主体信用评级日期",
+                    "type": "string"
+                  },
+                  {
+                    "name": "债务主体名称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "债务主体中文简称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "最新主体信用评级",
+                    "type": "string"
+                  }
+                ],
+                "rows": [
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "中证鹏元资信评估股份有限公司",
+                    "AAA",
+                    "青岛市人民政府",
+                    "",
+                    "AAA"
+                  ]
+                ]
+              }
+            ]
+          },
+          "error": null
+        }
+      ],
+      "is_error": false
+    },
+    {
+      "tool": "get_bond_basicinfo",
+      "arguments": {
+        "question": "查询809447.IB（26青岛78）的债券嵌入期权类型、是否含权、是否有发行人提前赎回权、是否有投资者回售权、下一行权日。"
+      },
+      "response": [
+        {
+          "data": {
+            "data": [
+              {
+                "columns": [
+                  {
+                    "name": "Wind代码",
+                    "type": "string"
+                  },
+                  {
+                    "name": "证券简称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "下一行权日",
+                    "type": "date"
+                  },
+                  {
+                    "name": "特殊条款",
+                    "type": "string"
+                  },
+                  {
+                    "name": "含权债券行权期限",
+                    "type": "number",
+                    "unit": "年"
+                  }
+                ],
+                "rows": [
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    null,
+                    "",
+                    null
+                  ]
+                ]
+              }
+            ]
+          },
+          "error": null
+        }
+      ],
+      "is_error": false
+    },
+    {
+      "tool": "get_bond_issuer_info",
+      "arguments": {
+        "question": "查询809447.IB的最新主体评级日期、主体评级展望。主体名称是青岛市人民政府。评级日期应是日期类型的实际评级公告发布日期，无数据返回空值。"
+      },
+      "response": [
+        {
+          "data": {
+            "data": [
+              {
+                "columns": [
+                  {
+                    "name": "Wind代码",
+                    "type": "string"
+                  },
+                  {
+                    "name": "证券简称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "债务主体名称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "最新主体评级展望",
+                    "type": "string"
+                  },
+                  {
+                    "name": "最新主体评级",
+                    "type": "string"
+                  },
+                  {
+                    "name": "债务主体中文简称",
+                    "type": "string"
+                  },
+                  {
+                    "name": "评级机构给出的主体评级日期",
+                    "type": "string"
+                  },
+                  {
+                    "name": "评级机构给出的主体评级日期.评级机构",
+                    "type": "string"
+                  }
+                ],
+                "rows": [
+                  [
+                    "809447.IB",
+                    "26青岛78",
+                    "青岛市人民政府",
+                    "稳定",
+                    "AAA",
+                    "",
+                    "AAA",
+                    "全部评级机构(除中债资信)"
+                  ]
+                ]
+              }
+            ]
+          },
+          "error": null
+        }
+      ],
+      "is_error": false
+    }
+  ]
+}

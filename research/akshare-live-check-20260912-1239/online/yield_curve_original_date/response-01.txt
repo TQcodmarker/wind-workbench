@@ -1,0 +1,244 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+
+
+
+
+
+ <script type="text/javascript" >
+        var ctx="/cbweb-pbc-web";
+        var ctxStatics="/cbweb-pbc-web/statics";
+ </script>
+
+
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-store" /><meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<script src="/cbweb-pbc-web/statics/js/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/cbweb-pbc-web/statics/js/jquery-ztree/jquery.ztree.core-3.5.js"></script>
+<script type="text/javascript" src="/cbweb-pbc-web/statics/js/jquery-ztree/jquery.ztree.excheck-3.5.js"></script>
+<script src="/cbweb-pbc-web/statics/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+
+<title>历史数据</title>
+	
+	
+		<link rel="stylesheet" type="text/css" href="/cbweb-pbc-web/statics/css/historyCn.css" id="css" />
+	
+<script type="text/javascript">
+function historyQuery(){
+	var startDate = document.getElementById("startDate").value;
+	var endDate = document.getElementById("endDate").value;
+	var gjqx = document.getElementById("gjqx").value;
+	var qxId = document.getElementById("qxId").value;
+	var locale = document.getElementById("locale").value;
+
+	
+	window.location.href = "/cbweb-pbc-web/pbc/historyQuery?startDate="+startDate+
+			"&endDate="+endDate+"&gjqx="+gjqx+"&qxId="+qxId+"&locale="+locale;
+}
+
+function pageLoad(){
+	var flg = "";
+	if(flg === '1'){
+		alert("结束日在开始日之前");  
+	}
+	if(flg === '2'){
+		alert("查询时间段最长为1年");
+	}
+	if(flg === '3'){
+		alert("数据为空");   
+	}
+	if(flg === '4'){
+		alert("下载时间段最长为1年");
+	}
+	
+}
+function dateDiff(date1, date2) {
+	var type1 = typeof date1, type2 = typeof date2;
+	if (type1 === 'string')
+		date1 = stringToTime(date1);
+	else if (date1.getTime)
+		date1 = date1.getTime();
+	if (type2 === 'string')
+		date2 = stringToTime(date2);
+	else if (date2.getTime)
+		date2 = date2.getTime();
+	return (date1 - date2) / (1000 * 60 * 60 * 24);
+}
+//字符串转成Time(dateDiff)所需方法
+function stringToTime(string) {
+	var f = string.split(' ', 2);
+	var d = (f[0] ? f[0] : '').split('-', 3);
+	var t = (f[1] ? f[1] : '').split(':', 3);
+	return (new Date(
+			parseInt(d[0], 10) || null,
+			(parseInt(d[1], 10) || 1) - 1,
+			parseInt(d[2], 10) || null,
+			parseInt(t[0], 10) || null,
+			parseInt(t[1], 10) || null,
+			parseInt(t[2], 10) || null
+	)).getTime();
+}
+function historyDown(){
+	var startDate = document.getElementById("startDate").value;
+	var endDate = document.getElementById("endDate").value;
+	if(dateDiff(endDate, startDate)>=366){
+		alert("下载时间段最长为1年");
+		return;
+	}
+	var gjqx = document.getElementById("gjqx").value;
+	var qxId = document.getElementById("qxId").value;
+	var locale = document.getElementById("locale").value;
+	
+	window.location.href = "/cbweb-pbc-web/pbc/historyDown?startDate="+startDate+
+	"&endDate="+endDate+"&gjqx="+gjqx+"&qxId="+qxId+"&locale="+locale;
+}
+
+</script>
+</head>
+<body onload="pageLoad()">
+	<div id="Container">
+	      <input id="locale" type="hidden" value="cn_ZH">
+		<div id="Header">
+			<div id="logo"><!-- 国债及其他收益率曲线 -->国债及其他债券收益率曲线</div>
+		</div>
+
+		<div id="Content">
+			<table width="100%">
+				<tr>
+				    <td><!-- 曲线名称 -->曲线名称</td>
+				    <td>
+						
+				       <select id="qxId">
+				                <option value="ycqx" ><!-- 全部 -->全部</option>
+							    <option value="hzsylqx" >中债国债收益率曲线</option>
+								<option value="syyhsylqx" >中债商业银行普通债收益率曲线(AAA)</option>
+								<option value="zdqpjsylqx" >中债中短期票据收益率曲线(AAA)</option>
+						</select>
+				    
+				    </td>
+				    
+					<td><!-- 开始时间 -->开始时间:</td>
+					<td>
+						
+							 
+							 
+						
+						 
+						    <input name="startDate" id="startDate" type="text" 
+						    style="width:80px"  class="date" value="2026-06-17"
+							onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false
+							 ,isShowToday:false,isShowOK:false,readOnly:true,lang:'zh-cn'});" />
+						 
+					</td>
+					
+					<td><!-- 结束时间 -->结束时间:</td>
+					<td>
+					    
+					    
+					    
+					        <input name="endDate" id="endDate" type="text" 
+						    style="width:80px" class="date" value="2026-06-17"
+							onclick="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:false
+							 ,isShowToday:false,isShowOK:false,readOnly:true,lang:'zh-cn'});" />
+					    
+					</td>
+
+					<td><!-- 期限 -->期限:</td>
+					<td>
+						<select id="gjqx">
+								<option value="0"  selected="selected"><!-- 全部 -->全部</option>
+								<option value="0.25" >3<!-- 月 -->月</option>
+								<option value="0.5" >6<!-- 月 -->月</option>
+								<option value="1" >1<!-- 年 -->年</option>
+								<option value="3" >3<!-- 年 -->年</option>
+								<option value="5" >5<!-- 年 -->年</option>
+								<option value="7" >7<!-- 年 -->年</option>
+								<option value="10" >10<!-- 年 -->年</option>
+								<option value="30" >30<!-- 年 -->年</option>
+						</select>
+					</td>
+
+					<td><input type="button" value="查询" onclick="historyQuery()" /></td>
+					<td><input type="button" value="下载" onclick="historyDown()" /></td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="gjqxData">
+			<table  border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				    <td><!-- 曲线名称 -->曲线名称</td>
+					<td><!-- 日期 -->日期</td>
+					<td>3<!-- 月 -->月</td>
+					<td>6<!-- 月 -->月</td>
+					<td>1<!-- 年 -->年</td>
+					<td>3<!-- 年 -->年</td>
+					<td>5<!-- 年 -->年</td>
+					<td>7<!-- 年 -->年</td>
+					<td>10<!-- 年 -->年</td>
+					<td>30<!-- 年 -->年</td>
+				</tr>
+				
+					<tr>
+					    <td style="text-align: left">中债国债收益率曲线</td>
+						<td>2026-06-17</td>
+						<td>1.0927</td>
+					    <td>1.1183</td>
+					    <td>1.1892</td>
+						<td>1.2971</td>
+						<td>1.4529</td>
+						<td>1.5778</td>
+						<td>1.7270</td>
+						<td>2.2181</td>
+					</tr>
+				
+					<tr>
+					    <td style="text-align: left">中债商业银行普通债收益率曲线(AAA)</td>
+						<td>2026-06-17</td>
+						<td>1.4492</td>
+					    <td>1.4516</td>
+					    <td>1.4991</td>
+						<td>1.5380</td>
+						<td>1.6651</td>
+						<td>1.8590</td>
+						<td>2.0060</td>
+						<td>2.3973</td>
+					</tr>
+				
+					<tr>
+					    <td style="text-align: left">中债中短期票据收益率曲线(AAA)</td>
+						<td>2026-06-17</td>
+						<td>1.4889</td>
+					    <td>1.5000</td>
+					    <td>1.5289</td>
+						<td>1.6792</td>
+						<td>1.8097</td>
+						<td>1.9789</td>
+						<td>2.1260</td>
+						<td></td>
+					</tr>
+				
+			</table>
+		</div>
+		<div class="Clear">
+			<!--如何你上面用到float,下面布局开始前最好清除一下。-->
+		</div>
+		<div id="Footer">
+<!-- 			<div class="footer-left"></div> -->
+			<div class="footer-right">
+				中央国债登记结算有限责任公司编制<!--  中央国债登记结算有限责任公司编制 -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>

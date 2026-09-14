@@ -1,0 +1,24 @@
+.trace-page{min-width:0}
+.trace-select{display:flex;align-items:center;gap:12px;margin:20px 0 12px;flex-wrap:wrap;font-size:13px}
+.trace-select select{min-width:250px;max-width:100%;flex:1;border:1px solid #dce3ed;padding:9px 10px;background:#fff;border-radius:5px;color:#24354a;font:inherit}
+.trace-note{color:#65758a;font-size:13px;margin-bottom:16px;overflow-wrap:anywhere}
+.trace-metadata{font-size:13px;color:#65758a;margin:0 0 20px;overflow-wrap:anywhere}
+.trace-metadata summary{width:fit-content;cursor:pointer;color:#245fa8}
+.trace-metadata p{margin:8px 0 0;line-height:1.6}
+.trace-card{background:#fff;border-top:1px solid #dce3ed;padding:20px 0;margin-bottom:8px;min-width:0;scroll-margin-top:16px}
+.trace-card h2{font-size:15px;margin:0 0 14px;color:#24354a}
+.trace-card h2 small{font-size:13px;color:#65758a;font-weight:400;margin-left:6px}
+.trace-scroll{overflow:auto;max-height:480px}
+.trace-card table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
+.trace-card th{color:#65758a;font-weight:500;text-align:left;background:#f6f8fb;position:sticky;top:0;z-index:1}
+.trace-card td,.trace-card th{padding:10px 12px;border-bottom:1px solid #e8edf3;vertical-align:top;overflow-wrap:anywhere;line-height:1.6}
+.trace-card td small{display:block;color:#65758a;margin-top:4px;font-size:12px}
+.trace-card pre{background:#f6f8fb;border:1px solid #e8edf3;border-radius:5px;max-height:380px;overflow:auto;padding:12px;font-size:13px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.trace-card details{margin:12px 0}
+.trace-card summary{cursor:pointer;font-size:13px;font-weight:500;color:#245fa8}
+.trace-card-title,.trace-pagination{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.trace-card-title{align-items:baseline}
+.trace-pagination{justify-content:flex-end;font-size:13px;margin-top:12px;font-variant-numeric:tabular-nums;color:#65758a}
+.trace-card .text-button{white-space:normal;text-align:left;font-size:13px}
+.trace-page summary:focus-visible,.trace-select select:focus-visible{outline:2px solid #245fa8;outline-offset:3px}
+@media(max-width:700px){.trace-card{padding:16px 0}.trace-select{display:block}.trace-select>*{display:block;margin-top:8px}.trace-select select{width:100%;min-width:0}.trace-card table{min-width:650px}.trace-pagination{gap:8px}}

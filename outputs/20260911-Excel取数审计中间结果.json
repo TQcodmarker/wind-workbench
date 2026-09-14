@@ -1,0 +1,1837 @@
+{
+  "schemaVersion": 1,
+  "reportType": "stopped_acquisition_pre_mapping_fix_audit",
+  "isFinalFullUniverseResult": false,
+  "targetDate": "2026-09-11",
+  "readStartedAt": "2026-09-12T18:09:24+08:00",
+  "readFinishedAt": "2026-09-12T18:09:25+08:00",
+  "latestIncludedRequestFinishedAt": "2026-09-12T18:09:01+08:00",
+  "source": "backend.available_data.read_available",
+  "projectionSha256": "597da68a99f8e7398fb36827b5bd22381436d4130482f66467e21843111ea1d5",
+  "rulesVersion": "rules-v3-mcp-values-no-clauses",
+  "mappingVersion": "wind-fields-v6-issue-coupon-alias",
+  "sourceWorkbook": {
+    "path": "D:\\Program Files\\Weixin_Documents\\xwechat_files\\wxid_tsgfdrj0ujd822_5f90\\msg\\file\\2026-09\\地方债二级盯盘.xlsx",
+    "sha256": "4b848cd2150d9517865e3cb75baf7ca1c540242fc461512f35143402705a0de3",
+    "sheet": "原数据-WIND",
+    "range": "A2:A14024"
+  },
+  "coverage": {
+    "requestedUniverseCodes": 14023,
+    "observedUniverseCodes": 4352,
+    "notYetObservedUniverseCodes": 9671,
+    "observedUniqueBonds": 4352,
+    "allAvailableBonds": 4356,
+    "outsideUniverseBonds": 4,
+    "fullyPopulatedBonds": 3439,
+    "bondsWithExplicitEmpty": 781,
+    "bondsWithColumnAbsent": 33,
+    "bondsWithNonemptyParseFailure": 100
+  },
+  "statusDefinitions": {
+    "nonempty": "当前规范化值非空；数值0是有效值。",
+    "explicitEmpty": "已匹配原始指标列存在，但选用来源单元格全部为null或空字符串。",
+    "columnAbsent": "固定时点已保存原始响应中没有该指标列；已识别的新别名不计为整列缺失。",
+    "nonemptyParseFailure": "原始相关指标含非空值，但修复前规范化值为空；本报告100项均因为收盘收益率别名尚未映射，不是Wind空值。"
+  },
+  "fieldStatusCounts": {
+    "bondId": {
+      "nonempty": 4352,
+      "explicitEmpty": 0,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "name": {
+      "nonempty": 4352,
+      "explicitEmpty": 0,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "issuer": {
+      "nonempty": 4352,
+      "explicitEmpty": 0,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "bondType": {
+      "nonempty": 4180,
+      "explicitEmpty": 172,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "issueDate": {
+      "nonempty": 4352,
+      "explicitEmpty": 0,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "maturityDate": {
+      "nonempty": 4352,
+      "explicitEmpty": 0,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "issueAmountYi": {
+      "nonempty": 4352,
+      "explicitEmpty": 0,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "couponPct": {
+      "nonempty": 4221,
+      "explicitEmpty": 131,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "currency": {
+      "nonempty": 4352,
+      "explicitEmpty": 0,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "yieldPct": {
+      "nonempty": 3439,
+      "explicitEmpty": 780,
+      "columnAbsent": 33,
+      "nonemptyParseFailure": 100
+    },
+    "remainingYears": {
+      "nonempty": 4153,
+      "explicitEmpty": 166,
+      "columnAbsent": 33,
+      "nonemptyParseFailure": 0
+    },
+    "duration": {
+      "nonempty": 4015,
+      "explicitEmpty": 304,
+      "columnAbsent": 33,
+      "nonemptyParseFailure": 0
+    },
+    "outstandingBalanceYi": {
+      "nonempty": 4319,
+      "explicitEmpty": 0,
+      "columnAbsent": 33,
+      "nonemptyParseFailure": 0
+    },
+    "closeNetPrice": {
+      "nonempty": 4148,
+      "explicitEmpty": 171,
+      "columnAbsent": 33,
+      "nonemptyParseFailure": 0
+    }
+  },
+  "byMaturity": {
+    "maturedOnOrBeforeTarget": {
+      "bonds": 167,
+      "fieldStatusCounts": {
+        "bondId": {
+          "nonempty": 167,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "name": {
+          "nonempty": 167,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "issuer": {
+          "nonempty": 167,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "bondType": {
+          "nonempty": 0,
+          "explicitEmpty": 167,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "issueDate": {
+          "nonempty": 167,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "maturityDate": {
+          "nonempty": 167,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "issueAmountYi": {
+          "nonempty": 167,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "couponPct": {
+          "nonempty": 36,
+          "explicitEmpty": 131,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "currency": {
+          "nonempty": 167,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "yieldPct": {
+          "nonempty": 0,
+          "explicitEmpty": 166,
+          "columnAbsent": 1,
+          "nonemptyParseFailure": 0
+        },
+        "remainingYears": {
+          "nonempty": 0,
+          "explicitEmpty": 166,
+          "columnAbsent": 1,
+          "nonemptyParseFailure": 0
+        },
+        "duration": {
+          "nonempty": 5,
+          "explicitEmpty": 161,
+          "columnAbsent": 1,
+          "nonemptyParseFailure": 0
+        },
+        "outstandingBalanceYi": {
+          "nonempty": 166,
+          "explicitEmpty": 0,
+          "columnAbsent": 1,
+          "nonemptyParseFailure": 0
+        },
+        "closeNetPrice": {
+          "nonempty": 0,
+          "explicitEmpty": 166,
+          "columnAbsent": 1,
+          "nonemptyParseFailure": 0
+        }
+      },
+      "yieldMissing": 167,
+      "pricePresentButYieldMissing": 0,
+      "allFourAnalyticsValuesMissing": 162
+    },
+    "notMaturedAtTarget": {
+      "bonds": 4185,
+      "fieldStatusCounts": {
+        "bondId": {
+          "nonempty": 4185,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "name": {
+          "nonempty": 4185,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "issuer": {
+          "nonempty": 4185,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "bondType": {
+          "nonempty": 4180,
+          "explicitEmpty": 5,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "issueDate": {
+          "nonempty": 4185,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "maturityDate": {
+          "nonempty": 4185,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "issueAmountYi": {
+          "nonempty": 4185,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "couponPct": {
+          "nonempty": 4185,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "currency": {
+          "nonempty": 4185,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "yieldPct": {
+          "nonempty": 3439,
+          "explicitEmpty": 614,
+          "columnAbsent": 32,
+          "nonemptyParseFailure": 100
+        },
+        "remainingYears": {
+          "nonempty": 4153,
+          "explicitEmpty": 0,
+          "columnAbsent": 32,
+          "nonemptyParseFailure": 0
+        },
+        "duration": {
+          "nonempty": 4010,
+          "explicitEmpty": 143,
+          "columnAbsent": 32,
+          "nonemptyParseFailure": 0
+        },
+        "outstandingBalanceYi": {
+          "nonempty": 4153,
+          "explicitEmpty": 0,
+          "columnAbsent": 32,
+          "nonemptyParseFailure": 0
+        },
+        "closeNetPrice": {
+          "nonempty": 4148,
+          "explicitEmpty": 5,
+          "columnAbsent": 32,
+          "nonemptyParseFailure": 0
+        }
+      },
+      "yieldMissing": 746,
+      "pricePresentButYieldMissing": 709,
+      "allFourAnalyticsValuesMissing": 32
+    },
+    "unknownMaturity": {
+      "bonds": 0,
+      "fieldStatusCounts": {
+        "bondId": {
+          "nonempty": 0,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "name": {
+          "nonempty": 0,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "issuer": {
+          "nonempty": 0,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "bondType": {
+          "nonempty": 0,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "issueDate": {
+          "nonempty": 0,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "maturityDate": {
+          "nonempty": 0,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "issueAmountYi": {
+          "nonempty": 0,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "couponPct": {
+          "nonempty": 0,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "currency": {
+          "nonempty": 0,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "yieldPct": {
+          "nonempty": 0,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "remainingYears": {
+          "nonempty": 0,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "duration": {
+          "nonempty": 0,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "outstandingBalanceYi": {
+          "nonempty": 0,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        },
+        "closeNetPrice": {
+          "nonempty": 0,
+          "explicitEmpty": 0,
+          "columnAbsent": 0,
+          "nonemptyParseFailure": 0
+        }
+      },
+      "yieldMissing": 0,
+      "pricePresentButYieldMissing": 0,
+      "allFourAnalyticsValuesMissing": 0
+    }
+  },
+  "examples": {
+    "maturedEmptyAnalytics": [
+      {
+        "code": "104605.IB",
+        "name": "19青岛债09",
+        "maturityDate": "2026-05-21",
+        "maturityCategory": "maturedOnOrBeforeTarget",
+        "values": {
+          "yieldPct": null,
+          "remainingYears": null,
+          "duration": null,
+          "outstandingBalanceYi": "0",
+          "closeNetPrice": null
+        },
+        "fieldStatuses": {
+          "yieldPct": "explicitEmpty",
+          "remainingYears": "explicitEmpty",
+          "duration": "explicitEmpty",
+          "outstandingBalanceYi": "nonempty",
+          "closeNetPrice": "explicitEmpty"
+        },
+        "fieldSources": {
+          "yieldPct": [
+            {
+              "name": "2026年9月11日的收盘价收益率",
+              "value": null,
+              "unit": "%",
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 57,
+              "columnIndex": 2
+            }
+          ],
+          "remainingYears": [
+            {
+              "name": "2026年9月11日的实际剩余期限",
+              "value": null,
+              "unit": "年",
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 57,
+              "columnIndex": 7
+            }
+          ],
+          "duration": [
+            {
+              "name": "2026年9月11日基于净价的收盘价修正久期",
+              "value": null,
+              "unit": null,
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 57,
+              "columnIndex": 8
+            }
+          ],
+          "outstandingBalanceYi": [
+            {
+              "name": "2026年9月11日的债券余额",
+              "value": 0,
+              "unit": "亿",
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 57,
+              "columnIndex": 4
+            }
+          ],
+          "closeNetPrice": [
+            {
+              "name": "2026年9月11日的收盘价净价",
+              "value": null,
+              "unit": "元",
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 57,
+              "columnIndex": 5
+            }
+          ]
+        },
+        "validationErrors": []
+      },
+      {
+        "code": "104609.IB",
+        "name": "19河南债14",
+        "maturityDate": "2026-05-27",
+        "maturityCategory": "maturedOnOrBeforeTarget",
+        "values": {
+          "yieldPct": null,
+          "remainingYears": null,
+          "duration": null,
+          "outstandingBalanceYi": "0",
+          "closeNetPrice": null
+        },
+        "fieldStatuses": {
+          "yieldPct": "explicitEmpty",
+          "remainingYears": "explicitEmpty",
+          "duration": "explicitEmpty",
+          "outstandingBalanceYi": "nonempty",
+          "closeNetPrice": "explicitEmpty"
+        },
+        "fieldSources": {
+          "yieldPct": [
+            {
+              "name": "2026年9月11日的收盘价收益率",
+              "value": null,
+              "unit": "%",
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 13,
+              "columnIndex": 2
+            }
+          ],
+          "remainingYears": [
+            {
+              "name": "2026年9月11日的实际剩余期限",
+              "value": null,
+              "unit": "年",
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 13,
+              "columnIndex": 7
+            }
+          ],
+          "duration": [
+            {
+              "name": "2026年9月11日基于净价的收盘价修正久期",
+              "value": null,
+              "unit": null,
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 13,
+              "columnIndex": 8
+            }
+          ],
+          "outstandingBalanceYi": [
+            {
+              "name": "2026年9月11日的债券余额",
+              "value": 0,
+              "unit": "亿",
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 13,
+              "columnIndex": 4
+            }
+          ],
+          "closeNetPrice": [
+            {
+              "name": "2026年9月11日的收盘价净价",
+              "value": null,
+              "unit": "元",
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 13,
+              "columnIndex": 5
+            }
+          ]
+        },
+        "validationErrors": []
+      },
+      {
+        "code": "104628.IB",
+        "name": "19四川债87",
+        "maturityDate": "2026-06-04",
+        "maturityCategory": "maturedOnOrBeforeTarget",
+        "values": {
+          "yieldPct": null,
+          "remainingYears": null,
+          "duration": null,
+          "outstandingBalanceYi": "0",
+          "closeNetPrice": null
+        },
+        "fieldStatuses": {
+          "yieldPct": "explicitEmpty",
+          "remainingYears": "explicitEmpty",
+          "duration": "explicitEmpty",
+          "outstandingBalanceYi": "nonempty",
+          "closeNetPrice": "explicitEmpty"
+        },
+        "fieldSources": {
+          "yieldPct": [
+            {
+              "name": "2026年9月11日的收盘价收益率",
+              "value": null,
+              "unit": "%",
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 55,
+              "columnIndex": 2
+            }
+          ],
+          "remainingYears": [
+            {
+              "name": "2026年9月11日的实际剩余期限",
+              "value": null,
+              "unit": "年",
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 55,
+              "columnIndex": 7
+            }
+          ],
+          "duration": [
+            {
+              "name": "2026年9月11日基于净价的收盘价修正久期",
+              "value": null,
+              "unit": null,
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 55,
+              "columnIndex": 8
+            }
+          ],
+          "outstandingBalanceYi": [
+            {
+              "name": "2026年9月11日的债券余额",
+              "value": 0,
+              "unit": "亿",
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 55,
+              "columnIndex": 4
+            }
+          ],
+          "closeNetPrice": [
+            {
+              "name": "2026年9月11日的收盘价净价",
+              "value": null,
+              "unit": "元",
+              "requestId": "80903df9-15a8-46bb-be23-f2cae9709472",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 55,
+              "columnIndex": 5
+            }
+          ]
+        },
+        "validationErrors": []
+      }
+    ],
+    "notMaturedPricePresentYieldEmpty": [
+      {
+        "code": "198842.IB",
+        "name": "23天津69",
+        "maturityDate": "2028-10-11",
+        "maturityCategory": "notMaturedAtTarget",
+        "values": {
+          "yieldPct": null,
+          "remainingYears": "2.0822",
+          "duration": "1.985",
+          "outstandingBalanceYi": "5.3338",
+          "closeNetPrice": "102.5434"
+        },
+        "fieldStatuses": {
+          "yieldPct": "explicitEmpty",
+          "remainingYears": "nonempty",
+          "duration": "nonempty",
+          "outstandingBalanceYi": "nonempty",
+          "closeNetPrice": "nonempty"
+        },
+        "fieldSources": {
+          "yieldPct": [
+            {
+              "name": "2026年9月11日收盘价收益率",
+              "value": null,
+              "unit": "%",
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 45,
+              "columnIndex": 5
+            }
+          ],
+          "remainingYears": [
+            {
+              "name": "2026年9月11日实际剩余期限",
+              "value": 2.0822,
+              "unit": "年",
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 45,
+              "columnIndex": 6
+            }
+          ],
+          "duration": [
+            {
+              "name": "2026年9月11日基于净价的收盘价修正久期",
+              "value": 1.985,
+              "unit": null,
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 45,
+              "columnIndex": 7
+            }
+          ],
+          "outstandingBalanceYi": [
+            {
+              "name": "2026年9月11日债券余额",
+              "value": 5.3338,
+              "unit": "亿",
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 45,
+              "columnIndex": 2
+            }
+          ],
+          "closeNetPrice": [
+            {
+              "name": "2026年9月11日收盘价净价",
+              "value": 102.5434,
+              "unit": "元",
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 45,
+              "columnIndex": 3
+            }
+          ]
+        },
+        "validationErrors": []
+      },
+      {
+        "code": "198854.IB",
+        "name": "23天津81",
+        "maturityDate": "2028-10-11",
+        "maturityCategory": "notMaturedAtTarget",
+        "values": {
+          "yieldPct": null,
+          "remainingYears": "2.0822",
+          "duration": "1.9851",
+          "outstandingBalanceYi": "97",
+          "closeNetPrice": "103.2091"
+        },
+        "fieldStatuses": {
+          "yieldPct": "explicitEmpty",
+          "remainingYears": "nonempty",
+          "duration": "nonempty",
+          "outstandingBalanceYi": "nonempty",
+          "closeNetPrice": "nonempty"
+        },
+        "fieldSources": {
+          "yieldPct": [
+            {
+              "name": "2026年9月11日收盘价收益率",
+              "value": null,
+              "unit": "%",
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 50,
+              "columnIndex": 5
+            }
+          ],
+          "remainingYears": [
+            {
+              "name": "2026年9月11日实际剩余期限",
+              "value": 2.0822,
+              "unit": "年",
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 50,
+              "columnIndex": 6
+            }
+          ],
+          "duration": [
+            {
+              "name": "2026年9月11日基于净价的收盘价修正久期",
+              "value": 1.9851,
+              "unit": null,
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 50,
+              "columnIndex": 7
+            }
+          ],
+          "outstandingBalanceYi": [
+            {
+              "name": "2026年9月11日债券余额",
+              "value": 97,
+              "unit": "亿",
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 50,
+              "columnIndex": 2
+            }
+          ],
+          "closeNetPrice": [
+            {
+              "name": "2026年9月11日收盘价净价",
+              "value": 103.2091,
+              "unit": "元",
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 50,
+              "columnIndex": 3
+            }
+          ]
+        },
+        "validationErrors": []
+      },
+      {
+        "code": "198855.IB",
+        "name": "23天津82",
+        "maturityDate": "2028-10-11",
+        "maturityCategory": "notMaturedAtTarget",
+        "values": {
+          "yieldPct": null,
+          "remainingYears": "2.0822",
+          "duration": "1.9854",
+          "outstandingBalanceYi": "55",
+          "closeNetPrice": "103.1956"
+        },
+        "fieldStatuses": {
+          "yieldPct": "explicitEmpty",
+          "remainingYears": "nonempty",
+          "duration": "nonempty",
+          "outstandingBalanceYi": "nonempty",
+          "closeNetPrice": "nonempty"
+        },
+        "fieldSources": {
+          "yieldPct": [
+            {
+              "name": "2026年9月11日收盘价收益率",
+              "value": null,
+              "unit": "%",
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 83,
+              "columnIndex": 5
+            }
+          ],
+          "remainingYears": [
+            {
+              "name": "2026年9月11日实际剩余期限",
+              "value": 2.0822,
+              "unit": "年",
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 83,
+              "columnIndex": 6
+            }
+          ],
+          "duration": [
+            {
+              "name": "2026年9月11日基于净价的收盘价修正久期",
+              "value": 1.9854,
+              "unit": null,
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 83,
+              "columnIndex": 7
+            }
+          ],
+          "outstandingBalanceYi": [
+            {
+              "name": "2026年9月11日债券余额",
+              "value": 55,
+              "unit": "亿",
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 83,
+              "columnIndex": 2
+            }
+          ],
+          "closeNetPrice": [
+            {
+              "name": "2026年9月11日收盘价净价",
+              "value": 103.1956,
+              "unit": "元",
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 83,
+              "columnIndex": 3
+            }
+          ]
+        },
+        "validationErrors": []
+      }
+    ],
+    "recoveredAfterEarlierEmptyYield": [
+      {
+        "code": "198833.IB",
+        "name": "23山东73",
+        "maturityDate": "2030-09-27",
+        "maturityCategory": "notMaturedAtTarget",
+        "values": {
+          "yieldPct": "1.3602"
+        },
+        "fieldStatuses": {
+          "yieldPct": "nonempty"
+        },
+        "fieldSources": {
+          "yieldPct": [
+            {
+              "name": "2026年9月11日收盘价收益率",
+              "value": null,
+              "unit": "%",
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 15,
+              "columnIndex": 5
+            },
+            {
+              "name": "2026年9月11日的收盘价收益率",
+              "value": 1.3602,
+              "unit": "%",
+              "requestId": "75b4874a-9a14-4413-829c-3dcd03929c5a",
+              "sessionId": "2badc0f5-ede7-439e-8b85-22ca6b305f87",
+              "tableIndex": 0,
+              "rowIndex": 0,
+              "columnIndex": 2
+            }
+          ]
+        },
+        "validationErrors": []
+      },
+      {
+        "code": "198840.IB",
+        "name": "23重庆53",
+        "maturityDate": "2028-10-09",
+        "maturityCategory": "notMaturedAtTarget",
+        "values": {
+          "yieldPct": "1.185"
+        },
+        "fieldStatuses": {
+          "yieldPct": "nonempty"
+        },
+        "fieldSources": {
+          "yieldPct": [
+            {
+              "name": "2026年9月11日收盘价收益率",
+              "value": null,
+              "unit": "%",
+              "requestId": "80b2691d-1f41-4005-9faf-790ed8b58e0b",
+              "sessionId": "3ad7078d-2eda-4b80-a2ca-268cfa025b75",
+              "tableIndex": 0,
+              "rowIndex": 67,
+              "columnIndex": 5
+            },
+            {
+              "name": "2026年9月11日的收盘价收益率",
+              "value": 1.185,
+              "unit": "%",
+              "requestId": "75b4874a-9a14-4413-829c-3dcd03929c5a",
+              "sessionId": "2badc0f5-ede7-439e-8b85-22ca6b305f87",
+              "tableIndex": 0,
+              "rowIndex": 1,
+              "columnIndex": 2
+            }
+          ]
+        },
+        "validationErrors": []
+      }
+    ],
+    "columnAbsent": [
+      {
+        "code": "2505498.IB",
+        "name": "25辽宁债19",
+        "maturityDate": "2045-06-13",
+        "maturityCategory": "notMaturedAtTarget",
+        "values": {
+          "yieldPct": null,
+          "remainingYears": null,
+          "duration": null,
+          "outstandingBalanceYi": null,
+          "closeNetPrice": null
+        },
+        "fieldStatuses": {
+          "yieldPct": "columnAbsent",
+          "remainingYears": "columnAbsent",
+          "duration": "columnAbsent",
+          "outstandingBalanceYi": "columnAbsent",
+          "closeNetPrice": "columnAbsent"
+        },
+        "fieldSources": {
+          "yieldPct": [],
+          "remainingYears": [],
+          "duration": [],
+          "outstandingBalanceYi": [],
+          "closeNetPrice": []
+        },
+        "validationErrors": []
+      },
+      {
+        "code": "2505499.IB",
+        "name": "25辽宁债20",
+        "maturityDate": "2055-06-13",
+        "maturityCategory": "notMaturedAtTarget",
+        "values": {
+          "yieldPct": null,
+          "remainingYears": null,
+          "duration": null,
+          "outstandingBalanceYi": null,
+          "closeNetPrice": null
+        },
+        "fieldStatuses": {
+          "yieldPct": "columnAbsent",
+          "remainingYears": "columnAbsent",
+          "duration": "columnAbsent",
+          "outstandingBalanceYi": "columnAbsent",
+          "closeNetPrice": "columnAbsent"
+        },
+        "fieldSources": {
+          "yieldPct": [],
+          "remainingYears": [],
+          "duration": [],
+          "outstandingBalanceYi": [],
+          "closeNetPrice": []
+        },
+        "validationErrors": []
+      },
+      {
+        "code": "2505501.IB",
+        "name": "25山西债21",
+        "maturityDate": "2045-06-13",
+        "maturityCategory": "notMaturedAtTarget",
+        "values": {
+          "yieldPct": null,
+          "remainingYears": null,
+          "duration": null,
+          "outstandingBalanceYi": null,
+          "closeNetPrice": null
+        },
+        "fieldStatuses": {
+          "yieldPct": "columnAbsent",
+          "remainingYears": "columnAbsent",
+          "duration": "columnAbsent",
+          "outstandingBalanceYi": "columnAbsent",
+          "closeNetPrice": "columnAbsent"
+        },
+        "fieldSources": {
+          "yieldPct": [],
+          "remainingYears": [],
+          "duration": [],
+          "outstandingBalanceYi": [],
+          "closeNetPrice": []
+        },
+        "validationErrors": []
+      }
+    ],
+    "nonemptyParseFailure": [
+      {
+        "code": "2571236.IB",
+        "name": "25江西债63",
+        "maturityDate": "2040-10-31",
+        "normalizedField": "yieldPct",
+        "normalizedValueBeforeFix": null,
+        "rawField": "2026年9月11日收盘收益率",
+        "rawValue": 2.3699,
+        "unit": "%",
+        "requestId": "31734069-ffcb-4672-8c94-05a0d5a766a8",
+        "tableIndex": 0,
+        "rowIndex": 0,
+        "columnIndex": 4,
+        "reason": "收盘收益率尚未列入修复前YIELD_FIELDS别名；原请求明确要求收盘价收益率（%）"
+      },
+      {
+        "code": "2571345.IB",
+        "name": "25陕西债62",
+        "maturityDate": "2045-11-24",
+        "normalizedField": "yieldPct",
+        "normalizedValueBeforeFix": null,
+        "rawField": "2026年9月11日收盘收益率",
+        "rawValue": 2.3573,
+        "unit": "%",
+        "requestId": "31734069-ffcb-4672-8c94-05a0d5a766a8",
+        "tableIndex": 0,
+        "rowIndex": 1,
+        "columnIndex": 4,
+        "reason": "收盘收益率尚未列入修复前YIELD_FIELDS别名；原请求明确要求收盘价收益率（%）"
+      },
+      {
+        "code": "2571259.IB",
+        "name": "25吉林债44",
+        "maturityDate": "2035-11-12",
+        "normalizedField": "yieldPct",
+        "normalizedValueBeforeFix": null,
+        "rawField": "2026年9月11日收盘收益率",
+        "rawValue": 2.1062,
+        "unit": "%",
+        "requestId": "31734069-ffcb-4672-8c94-05a0d5a766a8",
+        "tableIndex": 0,
+        "rowIndex": 2,
+        "columnIndex": 4,
+        "reason": "收盘收益率尚未列入修复前YIELD_FIELDS别名；原请求明确要求收盘价收益率（%）"
+      }
+    ]
+  },
+  "includedRequests": {
+    "00456e66-8267-4e8a-b6fa-ac01d1462daa": {
+      "finishedAt": "2026-09-12T18:01:37+08:00",
+      "responseSha256": "44a79465e1fc0bc1d52e73a7df8a29fa76176b6a4cf791b509c7f90b632e6eea"
+    },
+    "040c9c1a-5e48-4caa-ab30-de547527d62a": {
+      "finishedAt": "2026-09-12T15:15:52+08:00",
+      "responseSha256": "5a2165577ff50cf32464b0bd09dcc2559d1206c07d89a9c1e83bc884be95afeb"
+    },
+    "0532b6f1-a27a-43e8-9e35-974bbe29d033": {
+      "finishedAt": "2026-09-12T18:01:00+08:00",
+      "responseSha256": "5aaeefa13f1096d86ee2fee0b09defa742b23b6d4c021fca9c0ecb730954676d"
+    },
+    "0599c164-8439-46fa-a67c-4128fff7b5c6": {
+      "finishedAt": "2026-09-12T18:05:29+08:00",
+      "responseSha256": "206608478ed79ee18df74e9f8d0cc4fc8e6d35043ddf0af2165f98615556fa95"
+    },
+    "080b0434-f805-4659-919c-3def4aa82ff1": {
+      "finishedAt": "2026-09-12T17:56:13+08:00",
+      "responseSha256": "eee233e8d46029343f8ea1e203c6083cfed0560949fafc514dea7aff060a860b"
+    },
+    "0a1593f9-6fe1-4605-bcaa-d831b31db4e5": {
+      "finishedAt": "2026-09-12T18:01:28+08:00",
+      "responseSha256": "bf6b4d575080f53030e8c628ad3cca5f6fe3760b0baa5e46e3f8c4d88b06978a"
+    },
+    "0a302a65-27b4-4c94-aa9e-d2f0f63683ce": {
+      "finishedAt": "2026-09-12T18:07:10+08:00",
+      "responseSha256": "3abd440bfa59c682b9c7ff4c2e13ab70ccb19885c23369ff4523fc35dfa7c96c"
+    },
+    "0af7e903-e3e6-4024-b370-c306d0f2fb0a": {
+      "finishedAt": "2026-09-12T18:05:05+08:00",
+      "responseSha256": "9449279ff318120c36e97eaedbb1bbab991f9a9c613ebd3258dd7d5bf7809b94"
+    },
+    "12803c38-60b1-48bb-8e78-cbc915f28a51": {
+      "finishedAt": "2026-09-12T18:08:09+08:00",
+      "responseSha256": "5370e73de0763cc41e32cdcaaf18aaea1b241fef04cb32f761c784a8068ea584"
+    },
+    "131d2cbe-3460-4e8c-bf90-b86ae154689c": {
+      "finishedAt": "2026-09-12T17:58:46+08:00",
+      "responseSha256": "f5d97b9aa2827c0f6962ca231e1b7b97faac3db95d46d3468b220cdd3ef249a5"
+    },
+    "136ce96e-0503-4107-b97e-02019b274d83": {
+      "finishedAt": "2026-09-12T18:06:08+08:00",
+      "responseSha256": "47860feffb23e2e9aec03750dc3fd9ac6fc927597d01eb3ea345d95f310f3eb5"
+    },
+    "155d5fba-32dc-4d9a-a882-71d754c647ed": {
+      "finishedAt": "2026-09-12T13:45:33+08:00",
+      "responseSha256": "0a084f0a9ceb5e88824266b6d8dbca35e8660954f8430c124dec4e571863162a"
+    },
+    "1662e7c5-9859-442c-8040-534778e8be53": {
+      "finishedAt": "2026-09-12T15:16:34+08:00",
+      "responseSha256": "17cf8a1b64a11e66a46a8bcef9b903d519f96091fbb5e449c7284333d5a1fd3f"
+    },
+    "179edd82-f477-4764-b181-e8b8a19286cc": {
+      "finishedAt": "2026-09-12T18:03:50+08:00",
+      "responseSha256": "77bc1011e486f952cdedc7d5d1dfaf0574ee84817f75201b81fb47e6f0a7b06d"
+    },
+    "192ffb10-7f67-403d-9390-cf769a3cccf1": {
+      "finishedAt": "2026-09-12T17:59:30+08:00",
+      "responseSha256": "605746e7071f4d36505e3191f4b44d082aeae4eeb2012cf01c1bd053d4e063a5"
+    },
+    "1a7b4f77-e12f-40a8-88ca-336059b78b00": {
+      "finishedAt": "2026-09-12T18:07:32+08:00",
+      "responseSha256": "fed8eafd6489d5a728b1411e3acc39a1c0cf85898e56af26e87b4bf91aedaf3d"
+    },
+    "1ccd7943-0fa3-46e0-a666-ad5a6a15d3b2": {
+      "finishedAt": "2026-09-12T18:08:47+08:00",
+      "responseSha256": "accf2cddfe523de4afcc00fab80e51b320e7f06f484373b7f4fd20e005c3c355"
+    },
+    "23da0b06-69ab-4d88-aea1-b6a02a998bd7": {
+      "finishedAt": "2026-09-12T18:04:56+08:00",
+      "responseSha256": "93d23f41e9c261e9559ddc0e4bd09a0b7b67bd1369a86015787c537ac41bfa05"
+    },
+    "24ba8850-77be-48c9-a852-64f008f8214d": {
+      "finishedAt": "2026-09-12T18:05:56+08:00",
+      "responseSha256": "61b0be9b821aa05f20de6dcea5c5bc22791799bc3775fed798bc93cd33d48f7a"
+    },
+    "24cc056d-0817-4141-bc5c-075717bd087a": {
+      "finishedAt": "2026-09-12T17:57:36+08:00",
+      "responseSha256": "1d2fa8d4490bf0b1dd05e255945c97f80262f24adffc598d0c23b47404f7a696"
+    },
+    "2654a8dd-0bee-432f-b488-c0c73943ce82": {
+      "finishedAt": "2026-09-12T18:04:38+08:00",
+      "responseSha256": "280c1b3d64178cbb8effb7e42cc208d0abd070512c1abb1ae80abce6e4baaac1"
+    },
+    "275eea3d-766b-4c50-8960-bdc93d8ce18d": {
+      "finishedAt": "2026-09-12T18:01:19+08:00",
+      "responseSha256": "116a3fdc8908c1aed3dc9542cc00d0e7d8f77b3a2c728ad17962a8c8182ba83e"
+    },
+    "2b87b49a-f6e3-4b7f-b85e-582cdd4560f3": {
+      "finishedAt": "2026-09-12T18:05:35+08:00",
+      "responseSha256": "aa5df190e45006571873cd187ef74ea1c60b37e45c4db903cccedff5add341dc"
+    },
+    "2c5fba8b-70ac-4a61-b978-b3003e75c9b1": {
+      "finishedAt": "2026-09-12T15:16:24+08:00",
+      "responseSha256": "0aea9871a9c9796b57e5b82f057957d3dc039a46f257232d6f377cd4d28de6b3"
+    },
+    "2e14866a-f179-4c6f-aeb9-d770191251a5": {
+      "finishedAt": "2026-09-12T18:08:40+08:00",
+      "responseSha256": "d299ff2c12087124e4cf56ada1a680feadf836bf5a09a1aaec1357208ed8d23d"
+    },
+    "31734069-ffcb-4672-8c94-05a0d5a766a8": {
+      "finishedAt": "2026-09-12T18:07:00+08:00",
+      "responseSha256": "58be356c9a015559a1b29b4a52ed5eb6faecc303fb26ab65bd8b5bc73859e6f5"
+    },
+    "3316fb0e-a091-4eca-8a5d-f03037929548": {
+      "finishedAt": "2026-09-12T17:59:57+08:00",
+      "responseSha256": "22260f52a7dd70a02a56d974aa67840d90050f46b97927d8003153db9384c3e1"
+    },
+    "3357e978-203a-4ff6-ba25-8836909e2f30": {
+      "finishedAt": "2026-09-12T15:16:08+08:00",
+      "responseSha256": "9050fa22f62ab39c1006c0bf7c5227c0850f292d6aa6a35de7a6e97ceee5c2f5"
+    },
+    "35be6892-cb4b-461d-bf23-92754f20ca75": {
+      "finishedAt": "2026-09-12T18:08:30+08:00",
+      "responseSha256": "96bf37491dcdf35988600bcea7c888e0eb2d75bb7b73579bf2f975658d1dcdec"
+    },
+    "35d19844-e44b-484a-b8b0-bf02136dc909": {
+      "finishedAt": "2026-09-12T15:16:11+08:00",
+      "responseSha256": "84221c0afa5a8b3fba7883442feb377435bd6b9bb446e78d5a2bd043816dff99"
+    },
+    "382137bb-9a54-4c44-85cf-76128bc4e444": {
+      "finishedAt": "2026-09-12T18:06:48+08:00",
+      "responseSha256": "fb4c49d1429fdc3a955d6df9d016691b2225c7c93f2159c3c7536e3cb7c36daa"
+    },
+    "38c9ac9d-325b-4370-992b-61bc4adf679a": {
+      "finishedAt": "2026-09-12T17:55:44+08:00",
+      "responseSha256": "37b369aa60ae6e881878fec5871383df2dde0ca28914d5ebcc0ab9134e179b4e"
+    },
+    "38e3a2cd-4584-4d8f-8471-76bf52c0ab61": {
+      "finishedAt": "2026-09-12T17:56:49+08:00",
+      "responseSha256": "17e54076d802f3af0100c715cb1766fa20080bc2bf8faa7159728a93921da51c"
+    },
+    "3fbb6cf8-1b17-460a-8083-23ce5c1c5c94": {
+      "finishedAt": "2026-09-12T18:08:54+08:00",
+      "responseSha256": "44f2708b2fb647c63cb5bc4bb83c05eb09f3658884790663eb77b2e33ea37357"
+    },
+    "404edb7a-5eba-499c-a437-d5716f0a835e": {
+      "finishedAt": "2026-09-12T13:45:35+08:00",
+      "responseSha256": "65585e7e2d0694e8b830051425e242940dcb4123037404db0b66bb5b08b4f97e"
+    },
+    "4191aa17-45a0-48a9-9634-51d63a533e76": {
+      "finishedAt": "2026-09-12T17:58:46+08:00",
+      "responseSha256": "2017201859f7efe6cc57953a866172386f8a62423dc32ed53cccf5b8046f34cd"
+    },
+    "43e43efc-793b-4478-a759-0bf666443890": {
+      "finishedAt": "2026-09-12T18:09:01+08:00",
+      "responseSha256": "78eb08e32565e5dc5f64e4151a9e40867d9306f36bf3bdb2147df4281fa0f039"
+    },
+    "447e78c3-1a90-4212-8e6e-3ea799d7aed2": {
+      "finishedAt": "2026-09-12T18:02:15+08:00",
+      "responseSha256": "05a210d234c9d0b227e501611f476861febe7b5e7511e81f29b5faf3231a36db"
+    },
+    "4d56bd9e-5c95-426a-8806-64af7674ad02": {
+      "finishedAt": "2026-09-12T18:04:46+08:00",
+      "responseSha256": "5947d63590ddff2ce0aff24e653b877cc1a191f1e07624680e95a7a27a25a71f"
+    },
+    "4eac60bb-2a6c-4b08-978c-a44d19dbb839": {
+      "finishedAt": "2026-09-12T18:05:46+08:00",
+      "responseSha256": "4c48bbead64eb6c78f50ec9dfbd814928236a2ffaef0abf6326a733ce5ea33ac"
+    },
+    "4f9fb86f-8293-4f71-928e-453b96b38a22": {
+      "finishedAt": "2026-09-12T14:41:15+08:00",
+      "responseSha256": "7b78ba502c976e384fdbacba7d896e060873883df5e7f76ef311699e03cfb746"
+    },
+    "5411959f-6114-4a46-aebf-5f82ab422101": {
+      "finishedAt": "2026-09-12T17:57:45+08:00",
+      "responseSha256": "30a6e20ecfab857c80bd59671b9e9cbfa39bc3698d40ba56238232d63aa96c6e"
+    },
+    "580c416c-10bd-4a7d-858c-1bfddf52293a": {
+      "finishedAt": "2026-09-12T18:03:42+08:00",
+      "responseSha256": "90aee44380b62c40e2d9bca2fb722a5877c25c1d8b7863b5b18390c44770ac01"
+    },
+    "58534c02-7012-4317-987d-c725ce24c4e7": {
+      "finishedAt": "2026-09-12T15:16:30+08:00",
+      "responseSha256": "916e018f2394a1136b1020e7a3ad201b0a2ce32afabb0f758b9a22804f1650f7"
+    },
+    "5c71431f-2e27-47b6-90e2-c12b846be867": {
+      "finishedAt": "2026-09-12T18:03:33+08:00",
+      "responseSha256": "c9e216f3ccf6c0594b11c15da5ffe7a1e9dcef1e862b1d0e36281dd366dad26b"
+    },
+    "60bcc3d2-4880-468b-8755-03f25df405f2": {
+      "finishedAt": "2026-09-12T17:57:54+08:00",
+      "responseSha256": "44ad588afe077eb3a140524d9e4a60d697b0523d418fdd519138141f1d5cb17e"
+    },
+    "61245860-cf19-493a-87cf-b6077be29419": {
+      "finishedAt": "2026-09-12T18:07:59+08:00",
+      "responseSha256": "47cb2e5eff8baeaa898a06181dd9145c2e58a2c9d159876b5b5363e896140e97"
+    },
+    "6257b089-ca59-4ef1-8810-911605dd9f13": {
+      "finishedAt": "2026-09-12T18:02:54+08:00",
+      "responseSha256": "b276656d00823f512bb487efb0316128e535c6a4ded520660972b00eb5f3d618"
+    },
+    "630a2e1a-42af-4e54-953f-ac8eb4532630": {
+      "finishedAt": "2026-09-12T17:55:54+08:00",
+      "responseSha256": "2f86357f5272b3e0aa94bff62dc285d39dd0e00337025e821b89823cdb82820b"
+    },
+    "6370a650-fac1-4fbf-ba4e-aa6c076fbb6b": {
+      "finishedAt": "2026-09-12T18:00:12+08:00",
+      "responseSha256": "7d83be0a5b8c717fbe050e810322ff672fc2ad6ef8cf8574171e38f7cb04e067"
+    },
+    "642bb404-788d-48ec-b9b0-b66bab57ba16": {
+      "finishedAt": "2026-09-12T17:58:20+08:00",
+      "responseSha256": "c699663894996e72beb083ef26ce75988151d1ab9031f8c7611b350cb1da2e16"
+    },
+    "68753a9d-c754-41ad-998d-a7f0f416f381": {
+      "finishedAt": "2026-09-12T17:58:03+08:00",
+      "responseSha256": "3f823462719c570b5c40c9d3420342eedc232d05ebe29ec35df309a0d11fbe16"
+    },
+    "68c6abaf-540b-47ea-ac60-13747c8090c2": {
+      "finishedAt": "2026-09-12T18:00:32+08:00",
+      "responseSha256": "7c71d1e8075429ff67721bed826a8c1d796a6bd762f43993fc77cf9f2055a03a"
+    },
+    "6d7980b5-a86e-4652-9f21-559e350b8204": {
+      "finishedAt": "2026-09-12T15:14:11+08:00",
+      "responseSha256": "1f51218d1680d7f2fd870c648c2d53dbb902ab7dcff888d8e58c2f58980b4395"
+    },
+    "71c7aa98-2a13-4f08-93ae-b90e904c8ae7": {
+      "finishedAt": "2026-09-12T17:58:36+08:00",
+      "responseSha256": "9a97eba42899571b0ad6818e7e5aace73051f4c823074c5d2900d5db0efc9009"
+    },
+    "735e4b12-37b7-4cf0-884e-1d1574927716": {
+      "finishedAt": "2026-09-12T18:02:05+08:00",
+      "responseSha256": "04c33731196d363483d1483869b6da52d5799dc084fc58f9b42ce5c0a136223a"
+    },
+    "75b4874a-9a14-4413-829c-3dcd03929c5a": {
+      "finishedAt": "2026-09-12T18:03:18+08:00",
+      "responseSha256": "dde831b6e05c101da45491eaf61b045e3ac3b806c18892d0e970d6a6b0215ad2"
+    },
+    "78c64225-ecdc-4150-82b7-a26450aa319f": {
+      "finishedAt": "2026-09-12T18:02:26+08:00",
+      "responseSha256": "2b81075af091c538f15c4fd56a8e3a32142acab72372c5637f081f9d4e1bdabe"
+    },
+    "7aadc9b3-cc52-44a8-abd0-a07fe61fa1fb": {
+      "finishedAt": "2026-09-12T15:16:05+08:00",
+      "responseSha256": "554937c8efe3ce7ab5e02f7c332992596c1b9f0929e5e9f9b1a064386aa2944a"
+    },
+    "7b419794-cd62-45ed-9574-f9dd099cf74d": {
+      "finishedAt": "2026-09-12T18:02:44+08:00",
+      "responseSha256": "590dddffd787813e5d661c681982d8e12ea948c2c325255a48c0e83e8870f038"
+    },
+    "7ce5398d-9580-4b37-a402-a09748fae992": {
+      "finishedAt": "2026-09-12T15:15:49+08:00",
+      "responseSha256": "5b8cd026a8e9f02ad782166e84d95919f2a7c17cd6eca969610907004f238cf1"
+    },
+    "80903df9-15a8-46bb-be23-f2cae9709472": {
+      "finishedAt": "2026-09-12T18:04:18+08:00",
+      "responseSha256": "f135496d687821400e584e33ecb5dcbbefe9bea47124bcaf13bea77d2169fbbc"
+    },
+    "80b2691d-1f41-4005-9faf-790ed8b58e0b": {
+      "finishedAt": "2026-09-12T18:01:48+08:00",
+      "responseSha256": "bb8ee68c92eaa303662e1b36c9eb909ce1b358d889600960bc6859500d99ffbc"
+    },
+    "857d7343-d568-42ea-813a-e5880e319e1e": {
+      "finishedAt": "2026-09-12T15:15:59+08:00",
+      "responseSha256": "ac9e422546d50cf8091e6f60cf9abe037529d9a19cd9af3eaabfa05ce9fcb964"
+    },
+    "8906ebc2-e69a-4e83-99a3-3bac393f3d94": {
+      "finishedAt": "2026-09-12T17:53:23+08:00",
+      "responseSha256": "b7f711c37f4a4c9a6ac7fd1db666b7a992b7249e7738fde43a4aba63c897ad34"
+    },
+    "8d854192-82d9-4c2c-819c-1e700e1a79bf": {
+      "finishedAt": "2026-09-12T15:16:18+08:00",
+      "responseSha256": "273b9a4c4904d47e93577a4b2a422292e8527c36d593ca14575db8b9cee06960"
+    },
+    "8ed86c6f-ba9c-4ee1-84ff-b1f9954dc8d6": {
+      "finishedAt": "2026-09-12T15:16:16+08:00",
+      "responseSha256": "97a5d9e76ac55a868047758aca84707a78f425fb65cb8a1365818d9ac97d15a3"
+    },
+    "9012f54d-9ead-4603-9130-8408d90c8be0": {
+      "finishedAt": "2026-09-12T17:59:38+08:00",
+      "responseSha256": "4ce85d10ab34f4137163757233dea90dcffd22ca97ace887e4c690f954c9fa96"
+    },
+    "929e9f5c-1dd9-452d-aa99-398c726c193c": {
+      "finishedAt": "2026-09-12T18:07:41+08:00",
+      "responseSha256": "7dcfcdb3aa85ae396b9126748a555b42eda732bc7db669105f5728ff1153c7cc"
+    },
+    "9339fb7a-5327-4c00-9647-cadc0d6b3ee0": {
+      "finishedAt": "2026-09-12T18:01:09+08:00",
+      "responseSha256": "e0a1d22fb9d82ee393a16b464a6f3f34457387194885edaf00432daff91c786d"
+    },
+    "93f1abfb-6d5d-4ac3-9068-45bc1e007c59": {
+      "finishedAt": "2026-09-12T18:04:28+08:00",
+      "responseSha256": "bd2e750134c40a5b04fda40309317c86dc333f94149add49a3ed60478c718372"
+    },
+    "95b8191c-bdd1-4423-a825-7c504e421c55": {
+      "finishedAt": "2026-09-12T18:08:19+08:00",
+      "responseSha256": "96dbfaeb58fad6749c50528c13e9d22aa6b9e30abf710d0c6e17638c92553c83"
+    },
+    "99cc08f4-d30c-4623-9df7-15d9d1b31a7f": {
+      "finishedAt": "2026-09-12T17:56:22+08:00",
+      "responseSha256": "8fb94de25c8e7e8cb9324c16fd614701d3f9950f3dee9bb230c12125127f0c62"
+    },
+    "9c67007d-aea3-4253-93a6-9c613987fe2e": {
+      "finishedAt": "2026-09-12T17:56:59+08:00",
+      "responseSha256": "5b62e5b78a3f8c6e4883df1bb134fcf8255242113551bd0e2647adc483f12b83"
+    },
+    "9f0efa1f-5aab-4a0a-b2f1-f18fdf299040": {
+      "finishedAt": "2026-09-12T17:59:12+08:00",
+      "responseSha256": "6948aca5590110ade5259aa57c2643d84007e7d94314fa9387de20b19259abe4"
+    },
+    "a1111af7-29a9-4530-9716-599bf7d93792": {
+      "finishedAt": "2026-09-12T17:59:48+08:00",
+      "responseSha256": "d2bdf4ec0738d7a2f4c2315b14e82e990c9a250e77eec5647194e5b73a49da28"
+    },
+    "a449ab7b-b0aa-47b7-a6bb-277cf5c17d1d": {
+      "finishedAt": "2026-09-12T15:16:01+08:00",
+      "responseSha256": "0c72c192478bc283da4b5aba621c7f6c3ab5bb7489055e64f5bbae8ce3d6219e"
+    },
+    "a53a31e6-05db-4300-9c8f-ed828c1ddff1": {
+      "finishedAt": "2026-09-12T17:59:03+08:00",
+      "responseSha256": "4fe67715dfd0dd87e41100a5f668dfdd7ff1c430af60a52679735464a09b24b8"
+    },
+    "a53bb63b-3e2f-416f-ab5b-fa9632bd1c32": {
+      "finishedAt": "2026-09-12T17:53:14+08:00",
+      "responseSha256": "2d865951b04473ae92c0e105e3af471ab2e12e4fadf81230c4723387e0511c80"
+    },
+    "a5d71f54-3357-4089-b9d8-756a448cf903": {
+      "finishedAt": "2026-09-12T15:16:13+08:00",
+      "responseSha256": "ee963165c241eeb75af2c405d0d8a957889a501d84cbeb39ddeb9b06806f814c"
+    },
+    "af085c8c-4733-4bc3-acf0-6d6b7df6b236": {
+      "finishedAt": "2026-09-12T18:06:18+08:00",
+      "responseSha256": "aba4543cdf3c7b492a3089d28ae9e529f5c962629d9eb913f64d0d7b9644f7ad"
+    },
+    "afd7d21f-8b4d-47b4-bab6-e511e41a1d54": {
+      "finishedAt": "2026-09-12T15:15:56+08:00",
+      "responseSha256": "cafc4a8f1bfd45560669159daee7d437dc502601cfddfafb51686568c0e3132e"
+    },
+    "b1b54f2d-1a07-43d4-9158-4333c65210d5": {
+      "finishedAt": "2026-09-12T18:03:04+08:00",
+      "responseSha256": "2746480dc1d370b015c355e2c902a7c70933bb8d6c85b1ca9cc73baa4ff0d444"
+    },
+    "b29073e8-43a1-4d22-ac90-d80f84b2e8c1": {
+      "finishedAt": "2026-09-12T18:04:08+08:00",
+      "responseSha256": "1361cdedbce40174f1ce00a396a0b0cedfbcccf6348dea17401b7652b67b1594"
+    },
+    "b2c31e8d-97cc-42da-b5cc-48080d64c433": {
+      "finishedAt": "2026-09-12T13:45:41+08:00",
+      "responseSha256": "dc79466165c64bb9caf2c79e1678c7d68cf7df50a605eb08754b3372c8adb78a"
+    },
+    "b320472e-0fbf-4f68-b834-a13da1806f0e": {
+      "finishedAt": "2026-09-12T15:16:27+08:00",
+      "responseSha256": "8e420ddf00002ee7268fb28d9e258104e86ac0d87b43a307919ecadce7d3841e"
+    },
+    "b53a632f-5a8f-4d7a-b224-288e93259326": {
+      "finishedAt": "2026-09-12T15:16:21+08:00",
+      "responseSha256": "1d3e84c563827f7dc2af946baba8fc49493d73145a0dffe959c570b1429489a0"
+    },
+    "ba6b5dfc-5cfc-4f8e-8410-8671c04564d9": {
+      "finishedAt": "2026-09-12T18:00:22+08:00",
+      "responseSha256": "1e6ce9c522ef640a5f562c645841773483eb677f6f12cad27a49f6d231cfe97f"
+    },
+    "ba6d3e14-71e8-4944-aedd-4161c4f7dd4c": {
+      "finishedAt": "2026-09-12T18:03:59+08:00",
+      "responseSha256": "2994d01c6797b9dbab9032cf3fddf77c5485e57787d8b322a26654c7bebcb252"
+    },
+    "be33f333-5038-4da9-bf18-a2ada99cd446": {
+      "finishedAt": "2026-09-12T15:13:22+08:00",
+      "responseSha256": "06bcf896a97fc270da3f8117e84af5bcf2bf1619113c5f4d3429ef2249bbb39b"
+    },
+    "c1c10a55-8821-410f-96d0-91d537111f0b": {
+      "finishedAt": "2026-09-12T15:16:37+08:00",
+      "responseSha256": "6178051f2825bc357a746a53f9ce2081cca9634d0addf2b67ea597ea8aecc7cd"
+    },
+    "c45bdce1-2d78-4811-952e-410fe208e0e0": {
+      "finishedAt": "2026-09-12T17:56:03+08:00",
+      "responseSha256": "7f376f172c8f177db776b534fffd6d898a2459129de794d64ff5cec770056c68"
+    },
+    "c58b2735-3ddd-4b05-b122-487e100a57c7": {
+      "finishedAt": "2026-09-12T13:45:38+08:00",
+      "responseSha256": "beaaa1394f0e939336b24d3f0c4c569052bf601c52070dd8de93612df379dc9e"
+    },
+    "c7c4fba3-ee89-4554-bb18-12e9517ba257": {
+      "finishedAt": "2026-09-12T17:56:31+08:00",
+      "responseSha256": "b006b7dc248901a7741bb623e40ea7d79dcf65cb65da24055c494e9831e59210"
+    },
+    "c921d4f5-165b-48cc-9822-351ab55abf2c": {
+      "finishedAt": "2026-09-12T18:01:57+08:00",
+      "responseSha256": "3f517883ace927b59a9be975567dd2c395e231d20ab2fd85f97132b7f1e8ed0f"
+    },
+    "cce37d99-16a4-4218-9b54-3900aa2111fc": {
+      "finishedAt": "2026-09-12T17:58:37+08:00",
+      "responseSha256": "3da8c04212d47b5d926b9d26045784997c31f096e8fef1c0ecb0d0f0cb1b8ae2"
+    },
+    "cfcad10c-6990-434d-bfe4-985908fd4d50": {
+      "finishedAt": "2026-09-12T17:56:40+08:00",
+      "responseSha256": "d73d5d32422af6b2881a8893a1b1b0523462674d35173bf8f298d4b5ec72cbe3"
+    },
+    "d52d4ed4-7abe-49e5-be4f-89e15f4b34ae": {
+      "finishedAt": "2026-09-12T18:03:14+08:00",
+      "responseSha256": "7ea0529e95c36a486a68ba096f468a059bcca982cec38de668af49e40e346998"
+    },
+    "d7e0a4c7-9ec2-497e-a24e-c63e1fc3fca4": {
+      "finishedAt": "2026-09-12T18:07:50+08:00",
+      "responseSha256": "70be1d1fa2fb2962f6f5556c0aea8143ab5871ec89ef6021bb13e1f49313a6ae"
+    },
+    "d99e822e-0099-455a-9dfe-805a283addd5": {
+      "finishedAt": "2026-09-12T18:02:35+08:00",
+      "responseSha256": "bd080d057787eb146a1a7ed210d84a6bffcfaf896fea469538f5265496c15ef8"
+    },
+    "da81c128-6757-40cd-ba43-09ccd77256aa": {
+      "finishedAt": "2026-09-12T17:57:27+08:00",
+      "responseSha256": "33019420565b3bc2c2d58e0b38d3644fd8fb242494cdb0f2c184b584b8fc321b"
+    },
+    "db135950-4eab-41fb-8e64-630a37805604": {
+      "finishedAt": "2026-09-12T17:53:06+08:00",
+      "responseSha256": "33bd5a5ff29a29326a57207e91f85d9386533486e08bbb13c5c73743205c224a"
+    },
+    "ded28797-bb19-4e28-9cd7-3119e28552eb": {
+      "finishedAt": "2026-09-12T17:58:54+08:00",
+      "responseSha256": "59eb1ff13302197c6a0a7d28a4f1349137c86f0d8529460a825afe67036731e4"
+    },
+    "df3e61fa-1f80-4ee1-9450-928237ea2668": {
+      "finishedAt": "2026-09-12T15:16:40+08:00",
+      "responseSha256": "8d82d59a79064aabda6f1850a1e93306a4a5c7d06e1a85fc1d668cc78732fab5"
+    },
+    "e1262662-fa7e-413e-9249-e8786b53835c": {
+      "finishedAt": "2026-09-12T17:57:08+08:00",
+      "responseSha256": "460ec92b6fa9436d9ed8f9ccbee8fbb00ace40ea74492adbe7761881541faf3c"
+    },
+    "e15f5981-030a-477a-b5db-8f70b60463a5": {
+      "finishedAt": "2026-09-12T18:06:38+08:00",
+      "responseSha256": "464f426c1b08d37ef1b01dae436d53f6368e25f839fc07cda506a9330b07bd14"
+    },
+    "e1bf97c9-2871-46c5-b8df-08e1580eefd1": {
+      "finishedAt": "2026-09-12T18:00:41+08:00",
+      "responseSha256": "3250b55a29f9ca73821fe6d2c553792700f027f80a28b7b04c5f4238d25b87d3"
+    },
+    "e20ba123-ac91-4ea4-8463-599ba788d031": {
+      "finishedAt": "2026-09-12T18:00:50+08:00",
+      "responseSha256": "0de983ce89b6606cc0dbfcaee4afa8c617f03a7bfa51304c70c1a31d7885bea6"
+    },
+    "e4238cec-6c38-47dc-8290-c6cef7659fdd": {
+      "finishedAt": "2026-09-12T17:58:29+08:00",
+      "responseSha256": "4459abbd1df5d93c5b70acfe726176882813a5baf86671fc4373d93dd018a5b3"
+    },
+    "e62c4033-c6f4-4079-9871-b6a2849f17bc": {
+      "finishedAt": "2026-09-12T18:06:27+08:00",
+      "responseSha256": "b16a6dae4b938213b89749efb11b7516c3d7ee47d0f9dca8c196cdc2802401c1"
+    },
+    "e8b29206-daa3-42a0-af07-4ee1523c40d2": {
+      "finishedAt": "2026-09-12T18:05:24+08:00",
+      "responseSha256": "e909c7a0c6c18ca8c27af58a345dd27b92f51cbdada9cb92695a327375b379cd"
+    },
+    "eaef176c-ac9d-43f6-b8ac-c2e5a2c1b1fd": {
+      "finishedAt": "2026-09-12T17:59:20+08:00",
+      "responseSha256": "75825bfa00269d1ad51153d3ab6640f310f5fc119003bf29720791d74f786616"
+    },
+    "ec0a193a-c748-45f5-a4ee-1629c7832352": {
+      "finishedAt": "2026-09-12T18:07:21+08:00",
+      "responseSha256": "7bdb849316efe2034ab4c8a2bbf84ce2609a58d1f997680b6c3a930dc4f41849"
+    },
+    "ee8d97d1-2b6b-446a-b57f-60a856719e48": {
+      "finishedAt": "2026-09-12T17:55:37+08:00",
+      "responseSha256": "8709810714ecb3244f943120fa717320273715049a793cb54c5fb363cd50cb35"
+    },
+    "f11a089d-fcb5-4234-8ea1-1279623aa061": {
+      "finishedAt": "2026-09-12T18:03:24+08:00",
+      "responseSha256": "6e14cd86c7b3914abb08e4484712d0e0eea79b187c5d70ffc1a033d2a7f51763"
+    },
+    "f1f9a7b8-31e3-4a3e-914d-0c786058e7e9": {
+      "finishedAt": "2026-09-12T18:05:14+08:00",
+      "responseSha256": "9345a0b8e02c9bb046421a56db51c6d2c3e651991904d7733904df61c70dfd56"
+    },
+    "f4842f7a-08c2-4e49-a19d-ccbe6ee74d4a": {
+      "finishedAt": "2026-09-12T18:08:50+08:00",
+      "responseSha256": "155d4df6f75a4f98b2f9d205c7a53f70a9d73b553d435b56d883e454fba99bf2"
+    },
+    "f4fc0f15-53f2-40d5-aa27-ab831016b667": {
+      "finishedAt": "2026-09-12T15:11:40+08:00",
+      "responseSha256": "6135b2ef1f7984d6e21fd4406e81d589381499ac053d6b167b79fbc79865aff5"
+    },
+    "f5a0cda5-d353-4a69-a1e7-83ec44d79f0f": {
+      "finishedAt": "2026-09-12T17:49:00+08:00",
+      "responseSha256": "d68ebe878984875ffbd8422c3890b760ee28884dc47c1589707f3ce234aecfa8"
+    },
+    "f5af9f94-fc45-41ce-b20c-f1aabaa43f08": {
+      "finishedAt": "2026-09-12T17:49:05+08:00",
+      "responseSha256": "ab5a4f002ff9a9fb488efd43797a71b5479c4b105209b8e91b45d5a392a9e26b"
+    },
+    "fae50627-8320-4ab8-854f-f3974a631eeb": {
+      "finishedAt": "2026-09-12T17:57:17+08:00",
+      "responseSha256": "34afc234842402632060a8dcde1cc63597c0d29debe30f88a85514df7873e692"
+    }
+  },
+  "notes": [
+    "这是固定读取时点的中间审计，不是全量14,023只债券的最终结果。",
+    "四个互斥字段状态之和等于当前已观察到的Excel范围内唯一债券数；未观察到的券不计入字段缺失。",
+    "到期分组依据MCP到期日与2026-09-11比较，未使用Excel缓存金融数值。",
+    "净价非空且收益率为空，只表示该次收益率返回为空，不能断言该债券无行情；后续同口径查询可能补回。",
+    "已补回收益率的例子保留历史空值与后续非空值的原始requestID。",
+    "本审计不调用Wind、不写数据库，也不推断提前偿还或赎回信息。",
+    "补充完整原始列名审计后，将100只原始收盘收益率非空但别名未匹配的记录由列缺失改归非空解析失败；历史projectionOnly字段保留修复前read_available原统计。",
+    "整列缺失仅剩33只，五个行情指标都没有来源；收盘收益率别名补丁不需要新增Wind查询。",
+    "收盘收益率别名修复由主任务另行实施，本报告不重新读取修复后的结果，也不将预计补回值作为已修复断言。"
+  ],
+  "auditStage": "取数停止后审计，固定读取内容为收盘收益率别名修复前时点",
+  "projectionOnlyFieldStatusCounts": {
+    "bondId": {
+      "nonempty": 4352,
+      "explicitEmpty": 0,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "name": {
+      "nonempty": 4352,
+      "explicitEmpty": 0,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "issuer": {
+      "nonempty": 4352,
+      "explicitEmpty": 0,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "bondType": {
+      "nonempty": 4180,
+      "explicitEmpty": 172,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "issueDate": {
+      "nonempty": 4352,
+      "explicitEmpty": 0,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "maturityDate": {
+      "nonempty": 4352,
+      "explicitEmpty": 0,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "issueAmountYi": {
+      "nonempty": 4352,
+      "explicitEmpty": 0,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "couponPct": {
+      "nonempty": 4221,
+      "explicitEmpty": 131,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "currency": {
+      "nonempty": 4352,
+      "explicitEmpty": 0,
+      "columnAbsent": 0,
+      "nonemptyParseFailure": 0
+    },
+    "yieldPct": {
+      "nonempty": 3439,
+      "explicitEmpty": 780,
+      "columnAbsent": 133,
+      "nonemptyParseFailure": 0
+    },
+    "remainingYears": {
+      "nonempty": 4153,
+      "explicitEmpty": 166,
+      "columnAbsent": 33,
+      "nonemptyParseFailure": 0
+    },
+    "duration": {
+      "nonempty": 4015,
+      "explicitEmpty": 304,
+      "columnAbsent": 33,
+      "nonemptyParseFailure": 0
+    },
+    "outstandingBalanceYi": {
+      "nonempty": 4319,
+      "explicitEmpty": 0,
+      "columnAbsent": 33,
+      "nonemptyParseFailure": 0
+    },
+    "closeNetPrice": {
+      "nonempty": 4148,
+      "explicitEmpty": 171,
+      "columnAbsent": 33,
+      "nonemptyParseFailure": 0
+    }
+  },
+  "projectionOnlyCoverage": {
+    "requestedUniverseCodes": 14023,
+    "observedUniverseCodes": 4352,
+    "notYetObservedUniverseCodes": 9671,
+    "observedUniqueBonds": 4352,
+    "allAvailableBonds": 4356,
+    "outsideUniverseBonds": 4,
+    "fullyPopulatedBonds": 3439,
+    "bondsWithExplicitEmpty": 781,
+    "bondsWithColumnAbsent": 133,
+    "bondsWithNonemptyParseFailure": 0
+  },
+  "aliasAudit": {
+    "completedAgainst": "本报告includedRequests全部已保存原始响应",
+    "financialFieldAliasGaps": [
+      {
+        "rawField": "2026年9月11日收盘收益率",
+        "canonicalField": "yieldPct",
+        "affectedBonds": 100,
+        "nonemptyRawValues": 100,
+        "emptyRawValues": 0,
+        "requestId": "31734069-ffcb-4672-8c94-05a0d5a766a8",
+        "unit": "%",
+        "codes": [
+          "2571236.IB",
+          "2571345.IB",
+          "2571259.IB",
+          "2571280.IB",
+          "2571265.IB",
+          "2571316.IB",
+          "2571339.IB",
+          "2571297.IB",
+          "2571307.IB",
+          "2571274.IB",
+          "2571251.IB",
+          "2571342.IB",
+          "2571268.IB",
+          "2571222.IB",
+          "2571311.IB",
+          "2571304.IB",
+          "2571254.IB",
+          "2571279.IB",
+          "2571292.IB",
+          "2571325.IB",
+          "2571271.IB",
+          "2571233.IB",
+          "2571267.IB",
+          "2571282.IB",
+          "2571240.IB",
+          "2571248.IB",
+          "2571276.IB",
+          "2571295.IB",
+          "2571305.IB",
+          "2571310.IB",
+          "2571324.IB",
+          "2571219.IB",
+          "2571253.IB",
+          "2571234.IB",
+          "2571344.IB",
+          "2571262.IB",
+          "2571313.IB",
+          "2571338.IB",
+          "2571220.IB",
+          "2571273.IB",
+          "2571330.IB",
+          "2571302.IB",
+          "2571231.IB",
+          "2571256.IB",
+          "2571290.IB",
+          "2571327.IB",
+          "2571239.IB",
+          "2571214.IB",
+          "2571261.IB",
+          "2571284.IB",
+          "2571246.IB",
+          "2571223.IB",
+          "2571269.IB",
+          "2571303.IB",
+          "2571312.IB",
+          "2571255.IB",
+          "2571278.IB",
+          "2571293.IB",
+          "2571326.IB",
+          "2571341.IB",
+          "2571270.IB",
+          "2571232.IB",
+          "2571217.IB",
+          "2571212.IB",
+          "2571237.IB",
+          "2571321.IB",
+          "2571258.IB",
+          "2571281.IB",
+          "2571315.IB",
+          "2571264.IB",
+          "2571243.IB",
+          "2571332.IB",
+          "2571275.IB",
+          "2571308.IB",
+          "2571296.IB",
+          "2571329.IB",
+          "2571250.IB",
+          "2571286.IB",
+          "2571343.IB",
+          "2571314.IB",
+          "2571221.IB",
+          "2571263.IB",
+          "2571244.IB",
+          "2571224.IB",
+          "2571272.IB",
+          "2571309.IB",
+          "2571230.IB",
+          "2571238.IB",
+          "2571328.IB",
+          "2571283.IB",
+          "2571317.IB",
+          "2571323.IB",
+          "2571266.IB",
+          "2571306.IB",
+          "2571249.IB",
+          "2571334.IB",
+          "2571294.IB",
+          "2571277.IB",
+          "2571252.IB",
+          "2571235.IB"
+        ],
+        "interpretation": "原查询明确要求收盘价收益率，返回省略价字；需补充名称映射并保留原名。"
+      }
+    ],
+    "otherRequiredFinancialFieldAliasGaps": [],
+    "unmappedAncillaryFields": [
+      "债务主体中文简称",
+      "收益率/净价的债券价格类型",
+      "交易币种_2/交易币种_3",
+      "收盘价净价时间",
+      "基于净价的收盘价修正久期时间",
+      "省级行政区划及级别"
+    ],
+    "unqueriedMarketColumnBonds": 33
+  }
+}

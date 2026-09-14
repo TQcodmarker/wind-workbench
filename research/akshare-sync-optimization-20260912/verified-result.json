@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-09-12T23:47:10+08:00",
+  "evaluationDate": "2026-09-11",
+  "source": "akshare",
+  "catalogCount": 18540,
+  "savedIndividualYields": 469,
+  "eligible": 209,
+  "matchedTradesWithValidDetails": 469,
+  "matchedTrades": 469,
+  "counts": {
+    "bonds": 18540,
+    "eligible": 209,
+    "incomplete": 15185,
+    "excluded": 3146,
+    "conflicted": 0,
+    "requests": 4708,
+    "sessions": 4,
+    "substitutions": 49654,
+    "referenceOnly": 15182
+  },
+  "datasetAt": "2026-09-12T23:46:21+08:00",
+  "sync": {
+    "status": "running",
+    "completed": 4778,
+    "failed": 4,
+    "pending": 13758,
+    "marketObserved": 469,
+    "marketWithDetails": 469,
+    "marketEligible": 209
+  },
+  "wind": {
+    "source_requests": 287,
+    "source_sessions": 25
+  },
+  "spotQueryCount": 2,
+  "backendTests": 217,
+  "browserVerification": "test-results/browser-sync-optimization.json"
+}

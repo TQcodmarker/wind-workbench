@@ -1,0 +1,50 @@
+{
+  "case": "curve_catalog",
+  "function": "bond_china_close_return_map",
+  "arguments": {},
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T12:42:16.430373+00:00",
+  "function_signature": "() -> pandas.DataFrame",
+  "source_file": "bond\\bond_china_money.py",
+  "source_sha256": "91a0a2f2071b44bcbb8409290d53c93516ed826ee635789fe733ccfcb631ccb0",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "returned_data",
+  "rows": 75,
+  "columns": [
+    "value",
+    "cnLabel",
+    "enLabel"
+  ],
+  "non_null_counts": {
+    "value": 75,
+    "cnLabel": 75,
+    "enLabel": 75
+  },
+  "sample": [
+    {
+      "value": "CYCC000",
+      "cnLabel": "国债",
+      "enLabel": "Treasury Bond"
+    },
+    {
+      "value": "CYCC010",
+      "cnLabel": "央行票据",
+      "enLabel": "Central Bank Bill"
+    }
+  ],
+  "date_ranges": {},
+  "elapsed_ms": 235,
+  "http_requests_sent": 1,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "GET",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/ClsYldCurvCurvGO",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 7251,
+      "body_file": "response-01.json",
+      "elapsed_ms": 228
+    }
+  ]
+}

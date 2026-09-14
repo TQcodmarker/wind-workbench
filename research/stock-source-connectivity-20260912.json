@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-09-12T10:28:27.880316+00:00",
+  "provider": "Eastmoney public quote endpoint used by AKShare",
+  "symbol": "000001.SZ",
+  "requests": 1,
+  "retry": false,
+  "scope": "connectivity and nonempty response only; not trading-hours latency or license verification",
+  "error_type": "ConnectError",
+  "error": "[WinError 10013] \u4ee5\u4e00\u79cd\u8bbf\u95ee\u6743\u9650\u4e0d\u5141\u8bb8\u7684\u65b9\u5f0f\u505a\u4e86\u4e00\u4e2a\u8bbf\u95ee\u5957\u63a5\u5b57\u7684\u5c1d\u8bd5\u3002",
+  "elapsed_ms": 64
+}

@@ -1,0 +1,195 @@
+{
+  "evaluationDate": "2026-09-11",
+  "rulesVersion": "rules-akshare-v2-estimated-duration",
+  "groupingBasis": "modified_duration",
+  "counts": {
+    "bonds": 18540,
+    "eligible": 461,
+    "incomplete": 13992,
+    "excluded": 4087,
+    "conflicted": 0,
+    "requests": 18542,
+    "sessions": 4,
+    "substitutions": 137995,
+    "referenceOnly": 13981,
+    "durationEstimated": 461,
+    "durationCalculated": 0,
+    "durationUnavailable": 18079
+  },
+  "marketObserved": 469,
+  "durationBucketCounts": {
+    "3": 60,
+    "5": 52,
+    "7": 76,
+    "10": 98,
+    "15": 87,
+    "20": 88
+  },
+  "blockedObservedBonds": [
+    {
+      "code": "173788.IB",
+      "name": "21河北24",
+      "reason": "已知存在提前或分期还本，但缺少可靠还本计划",
+      "constraintEvidence": [
+        "用户原表 地方债二级盯盘.xlsx / 原数据-WIND / R12603（原表评估日 2026-06-17）：债券提前偿还。结构性条款提示，不含完整还本或行权计划。"
+      ]
+    },
+    {
+      "code": "199285.IB",
+      "name": "25湖北债55",
+      "reason": "已知存在提前或分期还本，但缺少可靠还本计划",
+      "constraintEvidence": [
+        "用户原表 地方债二级盯盘.xlsx / 原数据-WIND / R11275（原表评估日 2026-06-17）：债券提前偿还。结构性条款提示，不含完整还本或行权计划。"
+      ]
+    },
+    {
+      "code": "199558.IB",
+      "name": "26湖北债23",
+      "reason": "已知存在提前或分期还本，但缺少可靠还本计划",
+      "constraintEvidence": [
+        "用户原表 地方债二级盯盘.xlsx / 原数据-WIND / R11058（原表评估日 2026-06-17）：债券提前偿还。结构性条款提示，不含完整还本或行权计划。"
+      ]
+    },
+    {
+      "code": "2105223.IB",
+      "name": "21湖北债36",
+      "reason": "已知存在提前或分期还本，但缺少可靠还本计划",
+      "constraintEvidence": [
+        "用户原表 地方债二级盯盘.xlsx / 原数据-WIND / R10086（原表评估日 2026-06-17）：债券提前偿还。结构性条款提示，不含完整还本或行权计划。"
+      ]
+    },
+    {
+      "code": "2171290.IB",
+      "name": "21河北债61",
+      "reason": "已知存在提前或分期还本，但缺少可靠还本计划",
+      "constraintEvidence": [
+        "用户原表 地方债二级盯盘.xlsx / 原数据-WIND / R9242（原表评估日 2026-06-17）：债券提前偿还。结构性条款提示，不含完整还本或行权计划。"
+      ]
+    },
+    {
+      "code": "2505319.IB",
+      "name": "25湖北债36",
+      "reason": "已知存在提前或分期还本，但缺少可靠还本计划",
+      "constraintEvidence": [
+        "用户原表 地方债二级盯盘.xlsx / 原数据-WIND / R4406（原表评估日 2026-06-17）：债券提前偿还。结构性条款提示，不含完整还本或行权计划。"
+      ]
+    },
+    {
+      "code": "2605392.IB",
+      "name": "26海南债14",
+      "reason": "已知存在提前或分期还本，但缺少可靠还本计划",
+      "constraintEvidence": [
+        "用户原表 地方债二级盯盘.xlsx / 原数据-WIND / R3169（原表评估日 2026-06-17）：债券提前偿还。结构性条款提示，不含完整还本或行权计划。"
+      ]
+    },
+    {
+      "code": "2605444.IB",
+      "name": "26广西债17",
+      "reason": "已知存在提前或分期还本，但缺少可靠还本计划",
+      "constraintEvidence": [
+        "用户原表 地方债二级盯盘.xlsx / 原数据-WIND / R3131（原表评估日 2026-06-17）：债券提前偿还。结构性条款提示，不含完整还本或行权计划。"
+      ]
+    }
+  ],
+  "example": {
+    "code": "101948.IB",
+    "name": "23四川18",
+    "remainingYears": "16.47671232876712328767123288",
+    "duration": "13.05282010",
+    "termYears": 15,
+    "yieldPct": "2.0425",
+    "yieldDate": "2026-09-11",
+    "durationCalculation": {
+      "status": "estimated",
+      "modifiedYears": "13.05282010",
+      "macaulayYears": "13.18612203",
+      "bucketYears": 15,
+      "methodVersion": "fixed-cashflow-modified-duration-v1",
+      "assumptions": [
+        "本金偿还安排未核验，暂按到期一次偿还本金估算；exerciseInfoFlag=否不能证明无分期还本",
+        "计息基准未提供，按 Actual/Actual 付息周期分数估算",
+        "收益率复利口径未核验，暂按年付息频率复利的名义年收益率计算",
+        "采用合同日历付息日期，不推算节假日顺延；目标日到期的当期本息按已支付处理"
+      ],
+      "missingFields": [
+        "repaymentSchedule",
+        "intrstBss",
+        "yieldCompounding"
+      ],
+      "reason": "基于目标日收益率和已列明假设估算的个券修正久期（非官方久期）",
+      "inputs": {
+        "parCouponRate": "3.2400",
+        "couponType": "附息式固定利率",
+        "couponFrqncy": "半年",
+        "frstValueDate": "2023-02-28",
+        "frstCpnDt": "2023-08-28",
+        "mrtyDate": "2043-02-28",
+        "intrstBss": "---",
+        "exerciseInfoFlag": "否",
+        "repaymentSchedule": null,
+        "repaymentScheduleVerified": null,
+        "repaymentScheduleSource": null,
+        "yieldCompounding": null,
+        "cashflowConstraintEvidence": null,
+        "targetDate": "2026-09-11",
+        "yieldPct": "2.0425",
+        "frequencyPerYear": 2,
+        "dayCountUsed": "Actual/Actual coupon period",
+        "principalModel": "assumed_bullet",
+        "fullPricePer100": "116.79245420",
+        "futureCouponCount": 33,
+        "nextCouponDate": "2027-02-28"
+      },
+      "sourceRequestIds": [
+        "akshare-verified-detail-101948.IB",
+        "akshare-525b244b-5ef1-48a4-aa96-1c648293bae8"
+      ]
+    }
+  },
+  "archives": [
+    {
+      "date": "2026-09-11",
+      "rulesVersion": "rules-akshare-v1-dated-trade",
+      "counts": {
+        "bonds": 18540,
+        "eligible": 209,
+        "incomplete": 13984,
+        "excluded": 4347,
+        "conflicted": 0,
+        "requests": 18542,
+        "sessions": 4,
+        "substitutions": 137995,
+        "referenceOnly": 13981
+      }
+    }
+  ],
+  "rawEvidenceUnchanged": true,
+  "rawEvidence": {
+    "source_sessions": {
+      "count": 25,
+      "sha256": "a410383e4cb66508368a7be47eb5d051300075d158a671404e21dbb4172dfe2e"
+    },
+    "source_requests": {
+      "count": 287,
+      "sha256": "5ffe74eb4b42335710000c301a7033cf2313f9255e8d37f5f3aea232f8a9b018"
+    },
+    "akshare_details": {
+      "count": 18536,
+      "sha256": "e1dba204e34fad5fef2fa81b23e57100db49e5813abd4b912cce8771a61a04b2"
+    },
+    "akshare_queries": {
+      "count": 18632,
+      "sha256": "3a65c00224dc6232d40df821a68b91d3efff63b52c8f32d9e99f863c4d36ed29"
+    }
+  },
+  "fullSync": {
+    "jobId": "5166f6be-e33b-454c-b142-0a72ef5de08b",
+    "status": "partial",
+    "completed": 18536,
+    "failed": 4,
+    "marketObserved": 469,
+    "marketWithDetails": 469,
+    "marketEligible": 461,
+    "rulesVersion": "rules-akshare-v2-estimated-duration"
+  }
+}

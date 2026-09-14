@@ -1,0 +1,12 @@
+[
+  {
+    "endpoint": "/api/datasets/2026-09-11/available/104541.IB",
+    "seconds": 1.0364,
+    "bytes": 11020
+  },
+  {
+    "endpoint": "/api/datasets/2026-09-11",
+    "seconds": 0.0078,
+    "bytes": 6397
+  }
+]

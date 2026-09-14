@@ -1,0 +1,55 @@
+{
+  "case": "index_yield",
+  "function": "bond_index_general_cbond",
+  "arguments": {
+    "index_category": "地方政府债指数",
+    "indicator": "平均市值法到期收益率",
+    "period": "总值"
+  },
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T13:07:32.335313+00:00",
+  "function_signature": "(index_category: str = '新综合指数', indicator: str = '全价', period: str = '总值')",
+  "source_file": "bond\\bond_cbond.py",
+  "source_sha256": "d482a6b57b7595e0d75e833dc85314ab1f2bb7cb89d12b211bdf5301c5ac64eb",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "returned_data",
+  "rows": 4342,
+  "columns": [
+    "date",
+    "value"
+  ],
+  "non_null_counts": {
+    "date": 4342,
+    "value": 4342
+  },
+  "sample": [
+    {
+      "date": "2009-05-04T00:00:00.000",
+      "value": 1.7682
+    },
+    {
+      "date": "2009-05-05T00:00:00.000",
+      "value": 1.7683
+    }
+  ],
+  "date_ranges": {
+    "date": {
+      "min": "2009-05-04",
+      "max": "2026-09-11"
+    }
+  },
+  "elapsed_ms": 1062,
+  "http_requests_sent": 1,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "POST",
+      "url": "https://yield.chinabond.com.cn/cbweb-mn/indices/singleIndexQueryResult?indexid=8a8b2ca0447ffe14014486b77f2a0002&qxlxt=00&ltcslx=&zslxt=PJSZFDQSYL&zslxt1=PJSZFDQSYL&lx=1&locale=zh_CN",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 99432,
+      "body_file": "response-01.json",
+      "elapsed_ms": 1040
+    }
+  ]
+}

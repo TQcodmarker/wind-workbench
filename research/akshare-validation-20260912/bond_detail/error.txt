@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "D:\code\wind工作台\scripts\verify_akshare_bonds.py", line 113, in run_case
+    frame = function(**arguments)
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\akshare\bond\bond_info_cm.py", line 194, in bond_info_detail_cm
+    inner_bond_info_cm_df = bond_info_cm(bond_name=symbol)
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\akshare\bond\bond_info_cm.py", line 142, in bond_info_cm
+    total_page = data_json["data"]["pageTotal"]
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'pageTotal'

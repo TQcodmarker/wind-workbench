@@ -1,0 +1,22 @@
+[
+  {
+    "sequence": 1,
+    "method": "GET",
+    "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/ClsYldCurvCurvGO",
+    "status": 200,
+    "content_type": "application/json;charset=UTF-8",
+    "bytes": 7251,
+    "body_file": "response-01.json",
+    "elapsed_ms": 245
+  },
+  {
+    "sequence": 2,
+    "method": "GET",
+    "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/ClsYldCurvHis?lang=CN&reference=1%2C2%2C3&bondType=CYCC84B&startDate=2026-06-17&endDate=2026-06-17&termId=1&pageNum=1&pageSize=50",
+    "status": 200,
+    "content_type": "application/json;charset=UTF-8",
+    "bytes": 5942,
+    "body_file": "response-02.json",
+    "elapsed_ms": 314
+  }
+]

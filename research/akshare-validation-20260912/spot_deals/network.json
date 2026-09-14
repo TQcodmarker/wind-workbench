@@ -1,0 +1,12 @@
+[
+  {
+    "sequence": 1,
+    "method": "POST",
+    "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-md-bond/CbtPri",
+    "status": 200,
+    "content_type": "application/json;charset=UTF-8",
+    "bytes": 2173968,
+    "body_file": "response-01.json",
+    "elapsed_ms": 1396
+  }
+]

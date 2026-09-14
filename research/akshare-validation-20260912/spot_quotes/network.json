@@ -1,0 +1,22 @@
+[
+  {
+    "sequence": 1,
+    "method": "GET",
+    "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/ClsYldCurvCurvGO",
+    "status": 200,
+    "content_type": "application/json;charset=UTF-8",
+    "bytes": 7251,
+    "body_file": "response-01.json",
+    "elapsed_ms": 329
+  },
+  {
+    "sequence": 2,
+    "method": "POST",
+    "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-md-bond/CbMktMakQuot",
+    "status": 200,
+    "content_type": "application/json;charset=UTF-8",
+    "bytes": 15484,
+    "body_file": "response-02.json",
+    "elapsed_ms": 806
+  }
+]

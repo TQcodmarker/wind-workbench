@@ -1,0 +1,47 @@
+import {chromium} from 'playwright';
+import assert from 'node:assert/strict';
+import {mkdir,readFile,writeFile} from 'node:fs/promises';
+
+const origin='http://127.0.0.1:8765';
+const runId='71c39f22-c266-440e-a7b5-dc88fdefe48c';
+const sessions=await fetch(`${origin}/api/trace/sessions?runId=${runId}`).then(r=>r.json());
+const sid=sessions[0].id;
+const expected=await fetch(`${origin}/api/trace/sessions/${sid}/requests`).then(r=>r.json());
+const expectedRows=await fetch(`${origin}/api/trace/runs/${runId}/observations`).then(r=>r.json());
+assert(expected.length>0&&expectedRows.total>0);
+await mkdir('test-results',{recursive:true});
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const errors=[];
+try {
+ const page=await browser.newPage({viewport:{width:1440,height:1000},acceptDownloads:true});
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(`${origin}/trace?run=${runId}&date=2026-09-10`);
+ await page.getByRole('button',{name:'查看字段',exact:true}).first().waitFor();
+ assert.equal(await page.getByRole('button',{name:'查看请求与响应',exact:true}).count(),expected.length);
+ assert.equal(await page.getByRole('button',{name:'查看字段',exact:true}).count(),expectedRows.total);
+ await page.reload();
+ await page.getByRole('button',{name:'查看字段',exact:true}).first().waitFor();
+ assert(page.url().includes('run='+runId));
+ await page.getByRole('button',{name:'查看字段',exact:true}).first().click();
+ await page.getByLabel('逐券字段详情',{exact:true}).waitFor();
+ await page.getByLabel('逐券字段详情',{exact:true}).getByRole('button',{name:/表 \d+ \/ 行/}).first().click();
+ await page.getByText('响应 SHA-256：',{exact:false}).waitFor();
+ assert.match(await page.getByLabel('原始请求详情',{exact:true}).innerText(),/tools\/call/);
+ await page.screenshot({path:'test-results/trace-request.png'});
+ const downloadPromise=page.waitForEvent('download');
+ await page.getByRole('link',{name:'导出完整溯源 JSON',exact:true}).click();
+ const download=await downloadPromise;
+ await download.saveAs('test-results/trace-export.json');
+ const exported=JSON.parse(await readFile('test-results/trace-export.json','utf8'));
+ assert.equal(exported.requests.length,expected.length);
+ assert.equal(exported.observations.length,expectedRows.total);
+ assert.equal(exported.run.runId,runId);
+ assert(exported.requests.every(r=>!JSON.stringify(r.request).includes('Authorization')));
+ await page.setViewportSize({width:390,height:844});
+ assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ await page.screenshot({path:'test-results/trace-mobile.png'});
+ assert.deepEqual(errors,[]);
+ const report={passed:7,requestCount:expected.length,observationCount:expectedRows.total,checks:['请求与逐券记录列表','任务链接刷新恢复','字段位置跳转原始响应','原始请求与响应哈希可见','完整溯源导出数量一致','390px 页面无溢出','无脚本异常']};
+ await writeFile('test-results/trace-report.json',JSON.stringify(report,null,2));
+ console.log(JSON.stringify(report));
+} finally {await browser.close()}

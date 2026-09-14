@@ -1,0 +1,5008 @@
+[
+  {
+    "target_column": "A",
+    "original_target_name": "证券代码",
+    "actual_metric_name": "证券代码及银行间市场映射",
+    "value": "809336.IB",
+    "unit": "代码",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+    "normalized_at": "2026-09-12T13:14:53.426765+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondCode",
+    "source_arguments": {
+      "symbol": "26河北23"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "bondCode",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "B",
+    "original_target_name": "发行地区",
+    "actual_metric_name": "从发行人名称提取的地区",
+    "value": "河北省",
+    "unit": "地区",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+    "normalized_at": "2026-09-12T13:14:53.426801+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "entyFullName",
+    "source_arguments": {
+      "symbol": "26河北23"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "entyFullName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "remove_government_name_suffix",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "C",
+    "original_target_name": "证券简称",
+    "actual_metric_name": "证券简称",
+    "value": "26河北23",
+    "unit": "文本",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+    "normalized_at": "2026-09-12T13:14:53.426819+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondName",
+    "source_arguments": {
+      "symbol": "26河北23"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "bondName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "D",
+    "original_target_name": "剩余期限(年)",
+    "actual_metric_name": "剩余期限（Actual/365）",
+    "value": 9.616438356164384,
+    "unit": "年",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_day",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+    "normalized_at": "2026-09-12T13:14:53.426835+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "mrtyDate",
+    "source_arguments": {
+      "symbol": "26河北23"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "max(0,(maturity-as_of).days/365)",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "按实际天数/365计算，与Wind计年规则存在细小差异。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "E",
+    "original_target_name": "余额(亿)",
+    "actual_metric_name": "发行规模（未偿余额的规模参考）",
+    "value": 88.2,
+    "unit": "亿元",
+    "status": "obtained_substitute",
+    "status_label": "已获取（替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_issue_event",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": "2026-04-20",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+    "normalized_at": "2026-09-12T13:14:53.426849+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "issueAmnt",
+    "source_arguments": {
+      "symbol": "26河北23"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "issueAmnt",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "issuance_size_reference",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "仅作为规模替代指标，不是未偿本金；到期后发行规模仍可为正。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "F",
+    "original_target_name": "地方债类型",
+    "actual_metric_name": "从债券全称识别的一般债/专项债",
+    "value": "一般债",
+    "unit": "类别",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+    "normalized_at": "2026-09-12T13:14:53.426862+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondFullName",
+    "source_arguments": {
+      "symbol": "26河北23"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "bondFullName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "classify_general_or_special_from_full_name",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "G",
+    "original_target_name": "票面",
+    "actual_metric_name": "票面利率",
+    "value": 1.89,
+    "unit": "%",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+    "normalized_at": "2026-09-12T13:14:53.426876+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "parCouponRate",
+    "source_arguments": {
+      "symbol": "26河北23"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "H",
+    "original_target_name": "久期",
+    "actual_metric_name": "地方政府债指数平均市值法久期（基准参考）",
+    "value": 8.9583,
+    "unit": "年",
+    "status": "obtained_substitute",
+    "status_label": "已获取（替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "index_day",
+    "source_entity_id": "地方政府债指数",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+    "normalized_at": "2026-09-12T13:14:53.426899+00:00",
+    "source_function": "bond_index_general_cbond",
+    "source_field": "value",
+    "source_arguments": {
+      "index_category": "地方政府债指数",
+      "indicator": "平均市值法久期",
+      "period": "总值"
+    },
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法久期",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      }
+    ],
+    "proxy_or_calculation_method": "index_duration_reference",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_duration\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "指数级基准，不是这只债券的修正久期。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "I",
+    "original_target_name": "地方债曲线",
+    "actual_metric_name": "CFETS地方债AAA曲线期限插值收益率",
+    "value": 1.7405164383561644,
+    "unit": "%",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "curve_at_bond_tenor_day",
+    "source_entity_id": "地方政府债(AAA)",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+    "normalized_at": "2026-09-12T13:14:53.426929+00:00",
+    "source_function": "bond_china_close_return",
+    "source_field": "到期收益率",
+    "source_arguments": {
+      "symbol": "地方政府债(AAA)",
+      "period": "1",
+      "start_date": "20260911",
+      "end_date": "20260911"
+    },
+    "input_sources": [
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "linear_interpolation",
+    "dependencies": [
+      "D"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "以AAA曲线作统一比较基准，不代表对该券评级的确认；不外推。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "J",
+    "original_target_name": "中债估值",
+    "actual_metric_name": "地方债指数平均市值法到期收益率（参考）",
+    "value": 1.7024,
+    "unit": "%",
+    "status": "obtained_substitute",
+    "status_label": "已获取（替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "index_day",
+    "source_entity_id": "地方政府债指数",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.426949+00:00",
+    "source_function": "bond_index_general_cbond",
+    "source_field": "value",
+    "source_arguments": {
+      "index_category": "地方政府债指数",
+      "indicator": "平均市值法到期收益率",
+      "period": "总值"
+    },
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      }
+    ],
+    "proxy_or_calculation_method": "index_reference",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "缺少同日个券成交，提供指数均值参考；未做期限匹配，不表示个券定价。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "K",
+    "original_target_name": "免税收益",
+    "actual_metric_name": "指数收益率参考：按原表公式计算的调整收益参考",
+    "value": 2.1749,
+    "unit": "%",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.426974+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "J+0.25*G",
+    "dependencies": [
+      "J",
+      "G"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；是指数基准参考计算，不是个券实测收益或估值利差。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "L",
+    "original_target_name": "非免税曲线偏离",
+    "actual_metric_name": "指数收益率参考：替代收益率相对CFETS曲线的差值",
+    "value": -3.8116438356164517,
+    "unit": "BP",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427006+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "(J-I)*100",
+    "dependencies": [
+      "J",
+      "I"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；是指数基准参考计算，不是个券实测收益或估值利差。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "M",
+    "original_target_name": "免税曲线偏离",
+    "actual_metric_name": "指数收益率参考：按原表调整公式计算的参考差值",
+    "value": -0.0745547945205427,
+    "unit": "BP",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427039+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      },
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "(J+0.25*G-1.25*I)*100",
+    "dependencies": [
+      "J",
+      "G",
+      "I"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；是指数基准参考计算，不是个券实测收益或估值利差。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "N",
+    "original_target_name": "期限（四舍五入）",
+    "actual_metric_name": "基于Actual/365剩余期限的原表期限档位",
+    "value": 10,
+    "unit": "年档",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_day",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427053+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "30 if D>=25 else floor(D+0.5)",
+    "dependencies": [
+      "D"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "分组规则沿用原表，剩余期限继承D列Actual/365替代计年口径。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "O",
+    "original_target_name": "债券是否提前偿还",
+    "actual_metric_name": "提前偿还/本金偿还安排",
+    "value": null,
+    "unit": "标志",
+    "status": "missing",
+    "status_label": "未获取",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427066+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "exerciseInfoFlag",
+    "source_arguments": {
+      "symbol": "26河北23"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "exerciseInfoFlag",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "原始行权标志不涵盖完整本金提前偿还安排；存在与原表不一致样本，不能用否或占位值填补。",
+    "raw_exercise_flag": "否"
+  },
+  {
+    "target_column": "P",
+    "original_target_name": "综合收益",
+    "actual_metric_name": "指数收益率参考：按原表公式计算的调整收益参考",
+    "value": 2.1749,
+    "unit": "%",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427088+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "J+0.25*G",
+    "dependencies": [
+      "J",
+      "G"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；是指数基准参考计算，不是个券实测收益或估值利差。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "Q",
+    "original_target_name": "久期*余额",
+    "actual_metric_name": "地方债指数久期×发行规模（研究参考）",
+    "value": 790.12206,
+    "unit": "年×亿元",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_issue_event_x_index_day",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427109+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法久期",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "issueAmnt",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "H*E",
+    "dependencies": [
+      "H",
+      "E"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_duration\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "仅研究参考；输入为发行规模和指数久期，禁止解释为真实逐券风险敞口或据此计算真实组合久期。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "R",
+    "original_target_name": "债券是否提前偿还",
+    "actual_metric_name": "提前偿还/本金偿还安排",
+    "value": null,
+    "unit": "标志",
+    "status": "missing",
+    "status_label": "未获取",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427122+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "exerciseInfoFlag",
+    "source_arguments": {
+      "symbol": "26河北23"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "exerciseInfoFlag",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "原始行权标志不涵盖完整本金提前偿还安排；存在与原表不一致样本，不能用否或占位值填补。",
+    "raw_exercise_flag": "否"
+  },
+  {
+    "target_column": "S",
+    "original_target_name": "发行日期",
+    "actual_metric_name": "发行日期",
+    "value": "2026-04-20",
+    "unit": "日期",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427134+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "issueDate",
+    "source_arguments": {
+      "symbol": "26河北23"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "issueDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "T",
+    "original_target_name": "日期早于2025年8月8日，填1，否则为0",
+    "actual_metric_name": "发行日期早于2025-08-08的标记",
+    "value": 0,
+    "unit": "0/1",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "809336.IB",
+    "target_entity_id": "809336.IB",
+    "target_entity_name": "26河北23",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427147+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "26河北23"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643021+00:00",
+        "source_field": "issueDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "int(S<2025-08-08)",
+    "dependencies": [
+      "S"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_general\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "A",
+    "original_target_name": "证券代码",
+    "actual_metric_name": "证券代码及银行间市场映射",
+    "value": "101900.IB",
+    "unit": "代码",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427389+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondCode",
+    "source_arguments": {
+      "symbol": "23浙江01"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "bondCode",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "B",
+    "original_target_name": "发行地区",
+    "actual_metric_name": "从发行人名称提取的地区",
+    "value": "浙江省",
+    "unit": "地区",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427405+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "entyFullName",
+    "source_arguments": {
+      "symbol": "23浙江01"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "entyFullName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "remove_government_name_suffix",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "C",
+    "original_target_name": "证券简称",
+    "actual_metric_name": "证券简称",
+    "value": "23浙江01",
+    "unit": "文本",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427418+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondName",
+    "source_arguments": {
+      "symbol": "23浙江01"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "bondName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "D",
+    "original_target_name": "剩余期限(年)",
+    "actual_metric_name": "剩余期限（Actual/365）",
+    "value": 3.4273972602739726,
+    "unit": "年",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_day",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427431+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "mrtyDate",
+    "source_arguments": {
+      "symbol": "23浙江01"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "max(0,(maturity-as_of).days/365)",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "按实际天数/365计算，与Wind计年规则存在细小差异。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "E",
+    "original_target_name": "余额(亿)",
+    "actual_metric_name": "发行规模（未偿余额的规模参考）",
+    "value": 13.2,
+    "unit": "亿元",
+    "status": "obtained_substitute",
+    "status_label": "已获取（替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_issue_event",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": "2023-02-10",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427443+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "issueAmnt",
+    "source_arguments": {
+      "symbol": "23浙江01"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "issueAmnt",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "issuance_size_reference",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "仅作为规模替代指标，不是未偿本金；到期后发行规模仍可为正。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "F",
+    "original_target_name": "地方债类型",
+    "actual_metric_name": "从债券全称识别的一般债/专项债",
+    "value": "专项债",
+    "unit": "类别",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427455+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondFullName",
+    "source_arguments": {
+      "symbol": "23浙江01"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "bondFullName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "classify_general_or_special_from_full_name",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "G",
+    "original_target_name": "票面",
+    "actual_metric_name": "票面利率",
+    "value": 2.97,
+    "unit": "%",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427467+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "parCouponRate",
+    "source_arguments": {
+      "symbol": "23浙江01"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "H",
+    "original_target_name": "久期",
+    "actual_metric_name": "地方政府债指数平均市值法久期（基准参考）",
+    "value": 8.9583,
+    "unit": "年",
+    "status": "obtained_substitute",
+    "status_label": "已获取（替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "index_day",
+    "source_entity_id": "地方政府债指数",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427486+00:00",
+    "source_function": "bond_index_general_cbond",
+    "source_field": "value",
+    "source_arguments": {
+      "index_category": "地方政府债指数",
+      "indicator": "平均市值法久期",
+      "period": "总值"
+    },
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法久期",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      }
+    ],
+    "proxy_or_calculation_method": "index_duration_reference",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_duration\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "指数级基准，不是这只债券的修正久期。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "I",
+    "original_target_name": "地方债曲线",
+    "actual_metric_name": "CFETS地方债AAA曲线期限插值收益率",
+    "value": 1.3917679452054794,
+    "unit": "%",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "curve_at_bond_tenor_day",
+    "source_entity_id": "地方政府债(AAA)",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427507+00:00",
+    "source_function": "bond_china_close_return",
+    "source_field": "到期收益率",
+    "source_arguments": {
+      "symbol": "地方政府债(AAA)",
+      "period": "1",
+      "start_date": "20260911",
+      "end_date": "20260911"
+    },
+    "input_sources": [
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "linear_interpolation",
+    "dependencies": [
+      "D"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "以AAA曲线作统一比较基准，不代表对该券评级的确认；不外推。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "J",
+    "original_target_name": "中债估值",
+    "actual_metric_name": "地方债指数平均市值法到期收益率（参考）",
+    "value": 1.7024,
+    "unit": "%",
+    "status": "obtained_substitute",
+    "status_label": "已获取（替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "index_day",
+    "source_entity_id": "地方政府债指数",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427525+00:00",
+    "source_function": "bond_index_general_cbond",
+    "source_field": "value",
+    "source_arguments": {
+      "index_category": "地方政府债指数",
+      "indicator": "平均市值法到期收益率",
+      "period": "总值"
+    },
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      }
+    ],
+    "proxy_or_calculation_method": "index_reference",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "缺少同日个券成交，提供指数均值参考；未做期限匹配，不表示个券定价。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "K",
+    "original_target_name": "免税收益",
+    "actual_metric_name": "指数收益率参考：按原表公式计算的调整收益参考",
+    "value": 2.4449,
+    "unit": "%",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427546+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "J+0.25*G",
+    "dependencies": [
+      "J",
+      "G"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；是指数基准参考计算，不是个券实测收益或估值利差。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "L",
+    "original_target_name": "非免税曲线偏离",
+    "actual_metric_name": "指数收益率参考：替代收益率相对CFETS曲线的差值",
+    "value": 31.06320547945205,
+    "unit": "BP",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427575+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "(J-I)*100",
+    "dependencies": [
+      "J",
+      "I"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；是指数基准参考计算，不是个券实测收益或估值利差。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "M",
+    "original_target_name": "免税曲线偏离",
+    "actual_metric_name": "指数收益率参考：按原表调整公式计算的参考差值",
+    "value": 70.51900684931508,
+    "unit": "BP",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427605+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      },
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "(J+0.25*G-1.25*I)*100",
+    "dependencies": [
+      "J",
+      "G",
+      "I"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；是指数基准参考计算，不是个券实测收益或估值利差。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "N",
+    "original_target_name": "期限（四舍五入）",
+    "actual_metric_name": "基于Actual/365剩余期限的原表期限档位",
+    "value": 3,
+    "unit": "年档",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_day",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427619+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "30 if D>=25 else floor(D+0.5)",
+    "dependencies": [
+      "D"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "分组规则沿用原表，剩余期限继承D列Actual/365替代计年口径。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "O",
+    "original_target_name": "债券是否提前偿还",
+    "actual_metric_name": "提前偿还/本金偿还安排",
+    "value": null,
+    "unit": "标志",
+    "status": "missing",
+    "status_label": "未获取",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427631+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "exerciseInfoFlag",
+    "source_arguments": {
+      "symbol": "23浙江01"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "exerciseInfoFlag",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "原始行权标志不涵盖完整本金提前偿还安排；存在与原表不一致样本，不能用否或占位值填补。",
+    "raw_exercise_flag": "否"
+  },
+  {
+    "target_column": "P",
+    "original_target_name": "综合收益",
+    "actual_metric_name": "指数收益率参考：按原表公式计算的调整收益参考",
+    "value": 2.4449,
+    "unit": "%",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427662+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "J+0.25*G",
+    "dependencies": [
+      "J",
+      "G"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；是指数基准参考计算，不是个券实测收益或估值利差。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "Q",
+    "original_target_name": "久期*余额",
+    "actual_metric_name": "地方债指数久期×发行规模（研究参考）",
+    "value": 118.24955999999999,
+    "unit": "年×亿元",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_issue_event_x_index_day",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427684+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法久期",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "issueAmnt",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "H*E",
+    "dependencies": [
+      "H",
+      "E"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_duration\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "仅研究参考；输入为发行规模和指数久期，禁止解释为真实逐券风险敞口或据此计算真实组合久期。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "R",
+    "original_target_name": "债券是否提前偿还",
+    "actual_metric_name": "提前偿还/本金偿还安排",
+    "value": null,
+    "unit": "标志",
+    "status": "missing",
+    "status_label": "未获取",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427696+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "exerciseInfoFlag",
+    "source_arguments": {
+      "symbol": "23浙江01"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "exerciseInfoFlag",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "原始行权标志不涵盖完整本金提前偿还安排；存在与原表不一致样本，不能用否或占位值填补。",
+    "raw_exercise_flag": "否"
+  },
+  {
+    "target_column": "S",
+    "original_target_name": "发行日期",
+    "actual_metric_name": "发行日期",
+    "value": "2023-02-10",
+    "unit": "日期",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427708+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "issueDate",
+    "source_arguments": {
+      "symbol": "23浙江01"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "issueDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "T",
+    "original_target_name": "日期早于2025年8月8日，填1，否则为0",
+    "actual_metric_name": "发行日期早于2025-08-08的标记",
+    "value": 1,
+    "unit": "0/1",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101900.IB",
+    "target_entity_id": "101900.IB",
+    "target_entity_name": "23浙江01",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427722+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23浙江01"
+        },
+        "retrieved_at": "2026-09-12T12:42:10.643131+00:00",
+        "source_field": "issueDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "int(S<2025-08-08)",
+    "dependencies": [
+      "S"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_special\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "A",
+    "original_target_name": "证券代码",
+    "actual_metric_name": "证券代码及银行间市场映射",
+    "value": "2571241.IB",
+    "unit": "代码",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427904+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondCode",
+    "source_arguments": {
+      "symbol": "25江西债68"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "bondCode",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "B",
+    "original_target_name": "发行地区",
+    "actual_metric_name": "从发行人名称提取的地区",
+    "value": "江西省",
+    "unit": "地区",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427918+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "entyFullName",
+    "source_arguments": {
+      "symbol": "25江西债68"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "entyFullName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "remove_government_name_suffix",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "C",
+    "original_target_name": "证券简称",
+    "actual_metric_name": "证券简称",
+    "value": "25江西债68",
+    "unit": "文本",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427930+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondName",
+    "source_arguments": {
+      "symbol": "25江西债68"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "bondName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "D",
+    "original_target_name": "剩余期限(年)",
+    "actual_metric_name": "剩余期限（Actual/365）",
+    "value": 9.142465753424657,
+    "unit": "年",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_day",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427942+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "mrtyDate",
+    "source_arguments": {
+      "symbol": "25江西债68"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "max(0,(maturity-as_of).days/365)",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "按实际天数/365计算，与Wind计年规则存在细小差异。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "E",
+    "original_target_name": "余额(亿)",
+    "actual_metric_name": "发行规模（未偿余额的规模参考）",
+    "value": 3.44,
+    "unit": "亿元",
+    "status": "obtained_substitute",
+    "status_label": "已获取（替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_issue_event",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": "2025-10-30",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427954+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "issueAmnt",
+    "source_arguments": {
+      "symbol": "25江西债68"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "issueAmnt",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "issuance_size_reference",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "仅作为规模替代指标，不是未偿本金；到期后发行规模仍可为正。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "F",
+    "original_target_name": "地方债类型",
+    "actual_metric_name": "从债券全称识别的一般债/专项债",
+    "value": "一般债",
+    "unit": "类别",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427965+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondFullName",
+    "source_arguments": {
+      "symbol": "25江西债68"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "bondFullName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "classify_general_or_special_from_full_name",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "G",
+    "original_target_name": "票面",
+    "actual_metric_name": "票面利率",
+    "value": 1.95,
+    "unit": "%",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427977+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "parCouponRate",
+    "source_arguments": {
+      "symbol": "25江西债68"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "H",
+    "original_target_name": "久期",
+    "actual_metric_name": "地方政府债指数平均市值法久期（基准参考）",
+    "value": 8.9583,
+    "unit": "年",
+    "status": "obtained_substitute",
+    "status_label": "已获取（替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "index_day",
+    "source_entity_id": "地方政府债指数",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+    "normalized_at": "2026-09-12T13:14:53.427994+00:00",
+    "source_function": "bond_index_general_cbond",
+    "source_field": "value",
+    "source_arguments": {
+      "index_category": "地方政府债指数",
+      "indicator": "平均市值法久期",
+      "period": "总值"
+    },
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法久期",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      }
+    ],
+    "proxy_or_calculation_method": "index_duration_reference",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_duration\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "指数级基准，不是这只债券的修正久期。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "I",
+    "original_target_name": "地方债曲线",
+    "actual_metric_name": "CFETS地方债AAA曲线期限插值收益率",
+    "value": 1.7158224657534247,
+    "unit": "%",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "curve_at_bond_tenor_day",
+    "source_entity_id": "地方政府债(AAA)",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428015+00:00",
+    "source_function": "bond_china_close_return",
+    "source_field": "到期收益率",
+    "source_arguments": {
+      "symbol": "地方政府债(AAA)",
+      "period": "1",
+      "start_date": "20260911",
+      "end_date": "20260911"
+    },
+    "input_sources": [
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "linear_interpolation",
+    "dependencies": [
+      "D"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "以AAA曲线作统一比较基准，不代表对该券评级的确认；不外推。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "J",
+    "original_target_name": "中债估值",
+    "actual_metric_name": "地方债指数平均市值法到期收益率（参考）",
+    "value": 1.7024,
+    "unit": "%",
+    "status": "obtained_substitute",
+    "status_label": "已获取（替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "index_day",
+    "source_entity_id": "地方政府债指数",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428032+00:00",
+    "source_function": "bond_index_general_cbond",
+    "source_field": "value",
+    "source_arguments": {
+      "index_category": "地方政府债指数",
+      "indicator": "平均市值法到期收益率",
+      "period": "总值"
+    },
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      }
+    ],
+    "proxy_or_calculation_method": "index_reference",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "缺少同日个券成交，提供指数均值参考；未做期限匹配，不表示个券定价。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "K",
+    "original_target_name": "免税收益",
+    "actual_metric_name": "指数收益率参考：按原表公式计算的调整收益参考",
+    "value": 2.1898999999999997,
+    "unit": "%",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428053+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "J+0.25*G",
+    "dependencies": [
+      "J",
+      "G"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；是指数基准参考计算，不是个券实测收益或估值利差。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "L",
+    "original_target_name": "非免税曲线偏离",
+    "actual_metric_name": "指数收益率参考：替代收益率相对CFETS曲线的差值",
+    "value": -1.3422465753424762,
+    "unit": "BP",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428081+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "(J-I)*100",
+    "dependencies": [
+      "J",
+      "I"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；是指数基准参考计算，不是个券实测收益或估值利差。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "M",
+    "original_target_name": "免税曲线偏离",
+    "actual_metric_name": "指数收益率参考：按原表调整公式计算的参考差值",
+    "value": 4.5121917808218726,
+    "unit": "BP",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428115+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      },
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "(J+0.25*G-1.25*I)*100",
+    "dependencies": [
+      "J",
+      "G",
+      "I"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；是指数基准参考计算，不是个券实测收益或估值利差。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "N",
+    "original_target_name": "期限（四舍五入）",
+    "actual_metric_name": "基于Actual/365剩余期限的原表期限档位",
+    "value": 9,
+    "unit": "年档",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_day",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428128+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "30 if D>=25 else floor(D+0.5)",
+    "dependencies": [
+      "D"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "分组规则沿用原表，剩余期限继承D列Actual/365替代计年口径。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "O",
+    "original_target_name": "债券是否提前偿还",
+    "actual_metric_name": "提前偿还/本金偿还安排",
+    "value": null,
+    "unit": "标志",
+    "status": "missing",
+    "status_label": "未获取",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428140+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "exerciseInfoFlag",
+    "source_arguments": {
+      "symbol": "25江西债68"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "exerciseInfoFlag",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "原始行权标志不涵盖完整本金提前偿还安排；存在与原表不一致样本，不能用否或占位值填补。",
+    "raw_exercise_flag": "否"
+  },
+  {
+    "target_column": "P",
+    "original_target_name": "综合收益",
+    "actual_metric_name": "指数收益率参考：按原表公式计算的调整收益参考",
+    "value": 2.1898999999999997,
+    "unit": "%",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428162+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "J+0.25*G",
+    "dependencies": [
+      "J",
+      "G"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；是指数基准参考计算，不是个券实测收益或估值利差。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "Q",
+    "original_target_name": "久期*余额",
+    "actual_metric_name": "地方债指数久期×发行规模（研究参考）",
+    "value": 30.816551999999998,
+    "unit": "年×亿元",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_issue_event_x_index_day",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428182+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法久期",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "issueAmnt",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "H*E",
+    "dependencies": [
+      "H",
+      "E"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_duration\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "仅研究参考；输入为发行规模和指数久期，禁止解释为真实逐券风险敞口或据此计算真实组合久期。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "R",
+    "original_target_name": "债券是否提前偿还",
+    "actual_metric_name": "提前偿还/本金偿还安排",
+    "value": null,
+    "unit": "标志",
+    "status": "missing",
+    "status_label": "未获取",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428194+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "exerciseInfoFlag",
+    "source_arguments": {
+      "symbol": "25江西债68"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "exerciseInfoFlag",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "原始行权标志不涵盖完整本金提前偿还安排；存在与原表不一致样本，不能用否或占位值填补。",
+    "raw_exercise_flag": "否"
+  },
+  {
+    "target_column": "S",
+    "original_target_name": "发行日期",
+    "actual_metric_name": "发行日期",
+    "value": "2025-10-30",
+    "unit": "日期",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428206+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "issueDate",
+    "source_arguments": {
+      "symbol": "25江西债68"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "issueDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "T",
+    "original_target_name": "日期早于2025年8月8日，填1，否则为0",
+    "actual_metric_name": "发行日期早于2025-08-08的标记",
+    "value": 0,
+    "unit": "0/1",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2571241.IB",
+    "target_entity_id": "2571241.IB",
+    "target_entity_name": "25江西债68",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428218+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "25江西债68"
+        },
+        "retrieved_at": "2026-09-12T12:42:11.930405+00:00",
+        "source_field": "issueDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "int(S<2025-08-08)",
+    "dependencies": [
+      "S"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_amortizing\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "A",
+    "original_target_name": "证券代码",
+    "actual_metric_name": "证券代码及银行间市场映射",
+    "value": "2405398.IB",
+    "unit": "代码",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428373+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondCode",
+    "source_arguments": {
+      "symbol": "24湖北债16"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "bondCode",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "B",
+    "original_target_name": "发行地区",
+    "actual_metric_name": "从发行人名称提取的地区",
+    "value": "湖北省",
+    "unit": "地区",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428387+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "entyFullName",
+    "source_arguments": {
+      "symbol": "24湖北债16"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "entyFullName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "remove_government_name_suffix",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "C",
+    "original_target_name": "证券简称",
+    "actual_metric_name": "证券简称",
+    "value": "24湖北债16",
+    "unit": "文本",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428399+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondName",
+    "source_arguments": {
+      "symbol": "24湖北债16"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "bondName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "D",
+    "original_target_name": "剩余期限(年)",
+    "actual_metric_name": "剩余期限（Actual/365）",
+    "value": 0,
+    "unit": "年",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_day",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428412+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "mrtyDate",
+    "source_arguments": {
+      "symbol": "24湖北债16"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "max(0,(maturity-as_of).days/365)",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "按实际天数/365计算，与Wind计年规则存在细小差异。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "E",
+    "original_target_name": "余额(亿)",
+    "actual_metric_name": "发行规模（未偿余额的规模参考）",
+    "value": 32.9289,
+    "unit": "亿元",
+    "status": "obtained_substitute",
+    "status_label": "已获取（替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_issue_event",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": "2024-05-31",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428424+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "issueAmnt",
+    "source_arguments": {
+      "symbol": "24湖北债16"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "issueAmnt",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "issuance_size_reference",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "仅作为规模替代指标，不是未偿本金；到期后发行规模仍可为正。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "F",
+    "original_target_name": "地方债类型",
+    "actual_metric_name": "从债券全称识别的一般债/专项债",
+    "value": "一般债",
+    "unit": "类别",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428436+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondFullName",
+    "source_arguments": {
+      "symbol": "24湖北债16"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "bondFullName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "classify_general_or_special_from_full_name",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "G",
+    "original_target_name": "票面",
+    "actual_metric_name": "票面利率",
+    "value": 1.88,
+    "unit": "%",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428448+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "parCouponRate",
+    "source_arguments": {
+      "symbol": "24湖北债16"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "H",
+    "original_target_name": "久期",
+    "actual_metric_name": "地方政府债指数平均市值法久期（基准参考）",
+    "value": null,
+    "unit": "年",
+    "status": "not_applicable",
+    "status_label": "不适用",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "index_day",
+    "source_entity_id": "地方政府债指数",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428465+00:00",
+    "source_function": "bond_index_general_cbond",
+    "source_field": "value",
+    "source_arguments": {
+      "index_category": "地方政府债指数",
+      "indicator": "平均市值法久期",
+      "period": "总值"
+    },
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法久期",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      }
+    ],
+    "proxy_or_calculation_method": "index_duration_reference",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_duration\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "按已披露合同到期日，该券在评估日已到期；不生成当前收益、久期或风险参考。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "I",
+    "original_target_name": "地方债曲线",
+    "actual_metric_name": "CFETS地方债AAA曲线期限插值收益率",
+    "value": null,
+    "unit": "%",
+    "status": "not_applicable",
+    "status_label": "不适用",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "curve_at_bond_tenor_day",
+    "source_entity_id": "地方政府债(AAA)",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428485+00:00",
+    "source_function": "bond_china_close_return",
+    "source_field": "到期收益率",
+    "source_arguments": {
+      "symbol": "地方政府债(AAA)",
+      "period": "1",
+      "start_date": "20260911",
+      "end_date": "20260911"
+    },
+    "input_sources": [
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "linear_interpolation",
+    "dependencies": [
+      "D"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "按已披露合同到期日，该券在评估日已到期；不生成当前收益、久期或风险参考。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "J",
+    "original_target_name": "中债估值",
+    "actual_metric_name": "地方债指数平均市值法到期收益率（参考）",
+    "value": null,
+    "unit": "%",
+    "status": "not_applicable",
+    "status_label": "不适用",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "index_day",
+    "source_entity_id": "地方政府债指数",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428503+00:00",
+    "source_function": "bond_index_general_cbond",
+    "source_field": "value",
+    "source_arguments": {
+      "index_category": "地方政府债指数",
+      "indicator": "平均市值法到期收益率",
+      "period": "总值"
+    },
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      }
+    ],
+    "proxy_or_calculation_method": "index_reference",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "按已披露合同到期日，该券在评估日已到期；不生成当前收益、久期或风险参考。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "K",
+    "original_target_name": "免税收益",
+    "actual_metric_name": "指数收益率参考：按原表公式计算的调整收益参考",
+    "value": null,
+    "unit": "%",
+    "status": "not_applicable",
+    "status_label": "不适用",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428524+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "J+0.25*G",
+    "dependencies": [
+      "J",
+      "G"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "按已披露合同到期日，该券在评估日已到期；不生成当前收益、久期或风险参考。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "L",
+    "original_target_name": "非免税曲线偏离",
+    "actual_metric_name": "指数收益率参考：替代收益率相对CFETS曲线的差值",
+    "value": null,
+    "unit": "BP",
+    "status": "not_applicable",
+    "status_label": "不适用",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428552+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "(J-I)*100",
+    "dependencies": [
+      "J",
+      "I"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "按已披露合同到期日，该券在评估日已到期；不生成当前收益、久期或风险参考。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "M",
+    "original_target_name": "免税曲线偏离",
+    "actual_metric_name": "指数收益率参考：按原表调整公式计算的参考差值",
+    "value": null,
+    "unit": "BP",
+    "status": "not_applicable",
+    "status_label": "不适用",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428583+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      },
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "(J+0.25*G-1.25*I)*100",
+    "dependencies": [
+      "J",
+      "G",
+      "I"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "按已披露合同到期日，该券在评估日已到期；不生成当前收益、久期或风险参考。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "N",
+    "original_target_name": "期限（四舍五入）",
+    "actual_metric_name": "基于Actual/365剩余期限的原表期限档位",
+    "value": 0,
+    "unit": "年档",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_day",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428596+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "30 if D>=25 else floor(D+0.5)",
+    "dependencies": [
+      "D"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "分组规则沿用原表，剩余期限继承D列Actual/365替代计年口径。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "O",
+    "original_target_name": "债券是否提前偿还",
+    "actual_metric_name": "提前偿还/本金偿还安排",
+    "value": null,
+    "unit": "标志",
+    "status": "missing",
+    "status_label": "未获取",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428608+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "exerciseInfoFlag",
+    "source_arguments": {
+      "symbol": "24湖北债16"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "exerciseInfoFlag",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "原始行权标志不涵盖完整本金提前偿还安排；存在与原表不一致样本，不能用否或占位值填补。",
+    "raw_exercise_flag": "否"
+  },
+  {
+    "target_column": "P",
+    "original_target_name": "综合收益",
+    "actual_metric_name": "指数收益率参考：按原表公式计算的调整收益参考",
+    "value": null,
+    "unit": "%",
+    "status": "not_applicable",
+    "status_label": "不适用",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428629+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法到期收益率",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:32.335313+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "J+0.25*G",
+    "dependencies": [
+      "J",
+      "G"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "按已披露合同到期日，该券在评估日已到期；不生成当前收益、久期或风险参考。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "Q",
+    "original_target_name": "久期*余额",
+    "actual_metric_name": "地方债指数久期×发行规模（研究参考）",
+    "value": null,
+    "unit": "年×亿元",
+    "status": "not_applicable",
+    "status_label": "不适用",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "bond_issue_event_x_index_day",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428650+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法久期",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "issueAmnt",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "H*E",
+    "dependencies": [
+      "H",
+      "E"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_duration\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "按已披露合同到期日，该券在评估日已到期；不生成当前收益、久期或风险参考。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "R",
+    "original_target_name": "债券是否提前偿还",
+    "actual_metric_name": "提前偿还/本金偿还安排",
+    "value": null,
+    "unit": "标志",
+    "status": "missing",
+    "status_label": "未获取",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428663+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "exerciseInfoFlag",
+    "source_arguments": {
+      "symbol": "24湖北债16"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "exerciseInfoFlag",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "原始行权标志不涵盖完整本金提前偿还安排；存在与原表不一致样本，不能用否或占位值填补。",
+    "raw_exercise_flag": "否"
+  },
+  {
+    "target_column": "S",
+    "original_target_name": "发行日期",
+    "actual_metric_name": "发行日期",
+    "value": "2024-05-31",
+    "unit": "日期",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428675+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "issueDate",
+    "source_arguments": {
+      "symbol": "24湖北债16"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "issueDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "T",
+    "original_target_name": "日期早于2025年8月8日，填1，否则为0",
+    "actual_metric_name": "发行日期早于2025-08-08的标记",
+    "value": 1,
+    "unit": "0/1",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "2405398.IB",
+    "target_entity_id": "2405398.IB",
+    "target_entity_name": "24湖北债16",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428688+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "24湖北债16"
+        },
+        "retrieved_at": "2026-09-12T12:42:13.486884+00:00",
+        "source_field": "issueDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "int(S<2025-08-08)",
+    "dependencies": [
+      "S"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\detail_typed_matured\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "A",
+    "original_target_name": "证券代码",
+    "actual_metric_name": "证券代码及银行间市场映射",
+    "value": "101948.IB",
+    "unit": "代码",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428839+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondCode",
+    "source_arguments": {
+      "symbol": "23四川18"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "bondCode",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "B",
+    "original_target_name": "发行地区",
+    "actual_metric_name": "从发行人名称提取的地区",
+    "value": "四川省",
+    "unit": "地区",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428853+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "entyFullName",
+    "source_arguments": {
+      "symbol": "23四川18"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "entyFullName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "remove_government_name_suffix",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "C",
+    "original_target_name": "证券简称",
+    "actual_metric_name": "证券简称",
+    "value": "23四川18",
+    "unit": "文本",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428865+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondName",
+    "source_arguments": {
+      "symbol": "23四川18"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "bondName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "D",
+    "original_target_name": "剩余期限(年)",
+    "actual_metric_name": "剩余期限（Actual/365）",
+    "value": 16.476712328767125,
+    "unit": "年",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_day",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428878+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "mrtyDate",
+    "source_arguments": {
+      "symbol": "23四川18"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "max(0,(maturity-as_of).days/365)",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "按实际天数/365计算，与Wind计年规则存在细小差异。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "E",
+    "original_target_name": "余额(亿)",
+    "actual_metric_name": "发行规模（未偿余额的规模参考）",
+    "value": 117.4052,
+    "unit": "亿元",
+    "status": "obtained_substitute",
+    "status_label": "已获取（替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_issue_event",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": "2023-02-27",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428890+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "issueAmnt",
+    "source_arguments": {
+      "symbol": "23四川18"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "issueAmnt",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "issuance_size_reference",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "仅作为规模替代指标，不是未偿本金；到期后发行规模仍可为正。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "F",
+    "original_target_name": "地方债类型",
+    "actual_metric_name": "从债券全称识别的一般债/专项债",
+    "value": "专项债",
+    "unit": "类别",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428902+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "bondFullName",
+    "source_arguments": {
+      "symbol": "23四川18"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "bondFullName",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "classify_general_or_special_from_full_name",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "G",
+    "original_target_name": "票面",
+    "actual_metric_name": "票面利率",
+    "value": 3.24,
+    "unit": "%",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428914+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "parCouponRate",
+    "source_arguments": {
+      "symbol": "23四川18"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "H",
+    "original_target_name": "久期",
+    "actual_metric_name": "地方政府债指数平均市值法久期（基准参考）",
+    "value": 8.9583,
+    "unit": "年",
+    "status": "obtained_substitute",
+    "status_label": "已获取（替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "index_day",
+    "source_entity_id": "地方政府债指数",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428931+00:00",
+    "source_function": "bond_index_general_cbond",
+    "source_field": "value",
+    "source_arguments": {
+      "index_category": "地方政府债指数",
+      "indicator": "平均市值法久期",
+      "period": "总值"
+    },
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法久期",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      }
+    ],
+    "proxy_or_calculation_method": "index_duration_reference",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_duration\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "指数级基准，不是这只债券的修正久期。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "I",
+    "original_target_name": "地方债曲线",
+    "actual_metric_name": "CFETS地方债AAA曲线期限插值收益率",
+    "value": 2.1074441095890415,
+    "unit": "%",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "curve_at_bond_tenor_day",
+    "source_entity_id": "地方政府债(AAA)",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428951+00:00",
+    "source_function": "bond_china_close_return",
+    "source_field": "到期收益率",
+    "source_arguments": {
+      "symbol": "地方政府债(AAA)",
+      "period": "1",
+      "start_date": "20260911",
+      "end_date": "20260911"
+    },
+    "input_sources": [
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "linear_interpolation",
+    "dependencies": [
+      "D"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "以AAA曲线作统一比较基准，不代表对该券评级的确认；不外推。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "J",
+    "original_target_name": "中债估值",
+    "actual_metric_name": "个券最新成交收益率（估值收益率替代）",
+    "value": 2.0425,
+    "unit": "%",
+    "status": "obtained_substitute",
+    "status_label": "已获取（替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_market_day",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T12:42:14.855267+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428970+00:00",
+    "source_function": "bond_spot_deal",
+    "source_field": "最新收益率",
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_spot_deal",
+        "arguments": {},
+        "retrieved_at": "2026-09-12T12:42:14.855267+00:00",
+        "source_field": "最新收益率",
+        "execution_mode": "documented_sdk"
+      }
+    ],
+    "proxy_or_calculation_method": "individual_trade",
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\spot_deals\\response-01.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "保留真实成交日期；不是中债估值。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "K",
+    "original_target_name": "免税收益",
+    "actual_metric_name": "成交收益率：按原表公式计算的调整收益参考",
+    "value": 2.8525,
+    "unit": "%",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.428992+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_spot_deal",
+        "arguments": {},
+        "retrieved_at": "2026-09-12T12:42:14.855267+00:00",
+        "source_field": "最新收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "J+0.25*G",
+    "dependencies": [
+      "J",
+      "G"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\spot_deals\\response-01.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；按成交收益率与票息计算的调整收益参考。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "L",
+    "original_target_name": "非免税曲线偏离",
+    "actual_metric_name": "成交收益率：替代收益率相对CFETS曲线的差值",
+    "value": -6.494410958904151,
+    "unit": "BP",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.429021+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_spot_deal",
+        "arguments": {},
+        "retrieved_at": "2026-09-12T12:42:14.855267+00:00",
+        "source_field": "最新收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "(J-I)*100",
+    "dependencies": [
+      "J",
+      "I"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\spot_deals\\response-01.json",
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；属于成交收益率相对曲线的参考差值。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "M",
+    "original_target_name": "免税曲线偏离",
+    "actual_metric_name": "成交收益率：按原表调整公式计算的参考差值",
+    "value": 21.819486301369828,
+    "unit": "BP",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.429051+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_spot_deal",
+        "arguments": {},
+        "retrieved_at": "2026-09-12T12:42:14.855267+00:00",
+        "source_field": "最新收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      },
+      {
+        "function": "bond_china_close_return",
+        "arguments": {
+          "symbol": "地方政府债(AAA)",
+          "period": "1",
+          "start_date": "20260911",
+          "end_date": "20260911"
+        },
+        "retrieved_at": "2026-09-12T12:42:17.357836+00:00",
+        "source_field": "到期收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "(J+0.25*G-1.25*I)*100",
+    "dependencies": [
+      "J",
+      "G",
+      "I"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\spot_deals\\response-01.json",
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\local_curve_aaa\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；属于成交收益率相对曲线的参考差值。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "N",
+    "original_target_name": "期限（四舍五入）",
+    "actual_metric_name": "基于Actual/365剩余期限的原表期限档位",
+    "value": 16,
+    "unit": "年档",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_day",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.429065+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "mrtyDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "30 if D>=25 else floor(D+0.5)",
+    "dependencies": [
+      "D"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "分组规则沿用原表，剩余期限继承D列Actual/365替代计年口径。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "O",
+    "original_target_name": "债券是否提前偿还",
+    "actual_metric_name": "提前偿还/本金偿还安排",
+    "value": null,
+    "unit": "标志",
+    "status": "missing",
+    "status_label": "未获取",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.429077+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "exerciseInfoFlag",
+    "source_arguments": {
+      "symbol": "23四川18"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "exerciseInfoFlag",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "原始行权标志不涵盖完整本金提前偿还安排；存在与原表不一致样本，不能用否或占位值填补。",
+    "raw_exercise_flag": "否"
+  },
+  {
+    "target_column": "P",
+    "original_target_name": "综合收益",
+    "actual_metric_name": "成交收益率：按原表公式计算的调整收益参考",
+    "value": 2.8525,
+    "unit": "%",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "proxy_at_bond_day",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.429097+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_spot_deal",
+        "arguments": {},
+        "retrieved_at": "2026-09-12T12:42:14.855267+00:00",
+        "source_field": "最新收益率",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "parCouponRate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "J+0.25*G",
+    "dependencies": [
+      "J",
+      "G"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-live-check-20260912-1239\\online\\spot_deals\\response-01.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "采用用户允许的替代输入并沿用原表公式；按成交收益率与票息计算的调整收益参考。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "Q",
+    "original_target_name": "久期*余额",
+    "actual_metric_name": "地方债指数久期×发行规模（研究参考）",
+    "value": 1051.75100316,
+    "unit": "年×亿元",
+    "status": "derived_substitute",
+    "status_label": "已获取（计算替代）",
+    "is_acquired": true,
+    "is_proxy": true,
+    "entity_grain": "bond_issue_event_x_index_day",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": "2026-09-11",
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.429117+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_index_general_cbond",
+        "arguments": {
+          "index_category": "地方政府债指数",
+          "indicator": "平均市值法久期",
+          "period": "总值"
+        },
+        "retrieved_at": "2026-09-12T13:07:20.069476+00:00",
+        "source_field": "value",
+        "execution_mode": "documented_sdk"
+      },
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "issueAmnt",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "H*E",
+    "dependencies": [
+      "H",
+      "E"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json",
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_duration\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": false,
+    "note": "仅研究参考；输入为发行规模和指数久期，禁止解释为真实逐券风险敞口或据此计算真实组合久期。",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "R",
+    "original_target_name": "债券是否提前偿还",
+    "actual_metric_name": "提前偿还/本金偿还安排",
+    "value": null,
+    "unit": "标志",
+    "status": "missing",
+    "status_label": "未获取",
+    "is_acquired": false,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.429129+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "exerciseInfoFlag",
+    "source_arguments": {
+      "symbol": "23四川18"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "exerciseInfoFlag",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "原始行权标志不涵盖完整本金提前偿还安排；存在与原表不一致样本，不能用否或占位值填补。",
+    "raw_exercise_flag": "否"
+  },
+  {
+    "target_column": "S",
+    "original_target_name": "发行日期",
+    "actual_metric_name": "发行日期",
+    "value": "2023-02-27",
+    "unit": "日期",
+    "status": "obtained",
+    "status_label": "已获取",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.429141+00:00",
+    "source_function": "bond_info_detail_cm",
+    "source_field": "issueDate",
+    "source_arguments": {
+      "symbol": "23四川18"
+    },
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "issueDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": null,
+    "dependencies": [],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  },
+  {
+    "target_column": "T",
+    "original_target_name": "日期早于2025年8月8日，填1，否则为0",
+    "actual_metric_name": "发行日期早于2025-08-08的标记",
+    "value": 1,
+    "unit": "0/1",
+    "status": "derived",
+    "status_label": "已获取（计算）",
+    "is_acquired": true,
+    "is_proxy": false,
+    "entity_grain": "bond",
+    "source_entity_id": "101948.IB",
+    "target_entity_id": "101948.IB",
+    "target_entity_name": "23四川18",
+    "source_date": null,
+    "requested_as_of_date": "2026-09-11",
+    "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+    "normalized_at": "2026-09-12T13:14:53.429154+00:00",
+    "source_function": "local_calculation",
+    "source_field": null,
+    "source_arguments": {},
+    "input_sources": [
+      {
+        "function": "bond_info_detail_cm",
+        "arguments": {
+          "symbol": "23四川18"
+        },
+        "retrieved_at": "2026-09-12T13:07:39.482196+00:00",
+        "source_field": "issueDate",
+        "execution_mode": "compatibility_adapter"
+      }
+    ],
+    "proxy_or_calculation_method": "int(S<2025-08-08)",
+    "dependencies": [
+      "S"
+    ],
+    "evidence": [
+      "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\data.json"
+    ],
+    "coverage_scope": "five_sample_bonds",
+    "allow_actual_portfolio_risk": null,
+    "note": "",
+    "raw_exercise_flag": null
+  }
+]

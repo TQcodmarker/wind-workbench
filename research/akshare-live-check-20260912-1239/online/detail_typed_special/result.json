@@ -1,0 +1,88 @@
+{
+  "case": "detail_typed_special",
+  "function": "bond_info_detail_cm",
+  "arguments": {
+    "symbol": "23浙江01"
+  },
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T12:42:10.643131+00:00",
+  "function_signature": "(symbol: str = '淮安农商行CDSD2022021012') -> pandas.DataFrame",
+  "source_file": "bond\\bond_info_cm.py",
+  "source_sha256": "7669b7c1dd09bb002db97cb303d278e7c162bd00f7cf6106223bbebba62cdf17",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "returned_data",
+  "rows": 63,
+  "columns": [
+    "name",
+    "value"
+  ],
+  "non_null_counts": {
+    "name": 63,
+    "value": 60
+  },
+  "sample": [
+    {
+      "name": "bondFullName",
+      "value": "2023年浙江省棚改专项债券(一期)-2023年浙江省政府专项债券(一期)"
+    },
+    {
+      "name": "bondDefinedCode",
+      "value": "ffjae8tjvs"
+    }
+  ],
+  "date_ranges": {},
+  "elapsed_ms": 2017,
+  "http_requests_sent": 5,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "GET",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/ClsYldCurvCurvGO",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 7251,
+      "body_file": "response-01.json",
+      "elapsed_ms": 270
+    },
+    {
+      "sequence": 2,
+      "method": "POST",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bond-md/BondBaseInfoSearchCondition",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 2619,
+      "body_file": "response-02.json",
+      "elapsed_ms": 261
+    },
+    {
+      "sequence": 3,
+      "method": "POST",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bond-md/BondMarketInfoList2",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 539,
+      "body_file": "response-03.json",
+      "elapsed_ms": 892
+    },
+    {
+      "sequence": 4,
+      "method": "POST",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bond-md/BondMarketInfoList2",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 539,
+      "body_file": "response-04.json",
+      "elapsed_ms": 319
+    },
+    {
+      "sequence": 5,
+      "method": "POST",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bond-md/BondDetailInfo",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 1849,
+      "body_file": "response-05.json",
+      "elapsed_ms": 252
+    }
+  ]
+}

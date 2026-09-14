@@ -1,0 +1,35 @@
+{
+  "source_sessions": {
+    "count": 25,
+    "sha256": "a410383e4cb66508368a7be47eb5d051300075d158a671404e21dbb4172dfe2e"
+  },
+  "source_requests": {
+    "count": 287,
+    "sha256": "5ffe74eb4b42335710000c301a7033cf2313f9255e8d37f5f3aea232f8a9b018"
+  },
+  "akshare_details": {
+    "count": 18536,
+    "sha256": "e1dba204e34fad5fef2fa81b23e57100db49e5813abd4b912cce8771a61a04b2"
+  },
+  "akshare_queries": {
+    "count": 18632,
+    "sha256": "3a65c00224dc6232d40df821a68b91d3efff63b52c8f32d9e99f863c4d36ed29"
+  },
+  "snapshots": [
+    {
+      "date": "2026-09-11",
+      "counts": {
+        "bonds": 18540,
+        "eligible": 209,
+        "incomplete": 13984,
+        "excluded": 4347,
+        "conflicted": 0,
+        "requests": 18542,
+        "sessions": 4,
+        "substitutions": 137995,
+        "referenceOnly": 13981
+      },
+      "rulesVersion": "rules-akshare-v1-dated-trade"
+    }
+  ]
+}

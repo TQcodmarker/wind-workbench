@@ -1,0 +1,62 @@
+{
+  "case": "spot_deals",
+  "function": "bond_spot_deal",
+  "arguments": {},
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T12:42:14.855267+00:00",
+  "function_signature": "() -> pandas.DataFrame",
+  "source_file": "bond\\bond_china.py",
+  "source_sha256": "e9cc2c0d450f93a1c3b66b5cca4fe30b49feb4fe02ffe4980fc8edf3e45c6810",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "returned_data",
+  "rows": 3574,
+  "columns": [
+    "债券简称",
+    "成交净价",
+    "最新收益率",
+    "涨跌",
+    "加权收益率",
+    "交易量"
+  ],
+  "non_null_counts": {
+    "债券简称": 3574,
+    "成交净价": 3574,
+    "最新收益率": 3262,
+    "涨跌": 2794,
+    "加权收益率": 3262,
+    "交易量": 3060
+  },
+  "sample": [
+    {
+      "债券简称": "26国开05",
+      "成交净价": 101.27,
+      "最新收益率": 1.7728,
+      "涨跌": 0.53,
+      "加权收益率": 1.7706,
+      "交易量": 1797.3
+    },
+    {
+      "债券简称": "26超长特别国债04",
+      "成交净价": 101.29,
+      "最新收益率": 2.171,
+      "涨跌": 0.57,
+      "加权收益率": 2.167,
+      "交易量": 739.91
+    }
+  ],
+  "date_ranges": {},
+  "elapsed_ms": 1227,
+  "http_requests_sent": 1,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "POST",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-md-bond/CbtPri",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 2173968,
+      "body_file": "response-01.json",
+      "elapsed_ms": 1180
+    }
+  ]
+}

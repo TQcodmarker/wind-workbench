@@ -1,0 +1,111 @@
+[
+  {
+    "case": "bond_types",
+    "function": "bond_info_cm_query",
+    "arguments": {
+      "symbol": "债券类型"
+    },
+    "dictionary_url": "https://akshare.akfamily.xyz/data/bond/bond.html",
+    "installed_signature": "(symbol: str = '评级等级') -> pandas.DataFrame",
+    "expected_columns": [
+      "name",
+      "code"
+    ],
+    "schema_valid": true,
+    "execution_mode": "documented_sdk",
+    "result": "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\bond_types\\result.json",
+    "schema_note": ""
+  },
+  {
+    "case": "index_catalog",
+    "function": "bond_available_index_cbond",
+    "arguments": {},
+    "dictionary_url": "https://akshare.akfamily.xyz/data/bond/bond.html",
+    "installed_signature": "()",
+    "expected_columns": [
+      "index",
+      "value"
+    ],
+    "schema_valid": true,
+    "execution_mode": "documented_sdk",
+    "result": "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_catalog\\result.json",
+    "schema_note": ""
+  },
+  {
+    "case": "index_duration",
+    "function": "bond_index_general_cbond",
+    "arguments": {
+      "index_category": "地方政府债指数",
+      "indicator": "平均市值法久期",
+      "period": "总值"
+    },
+    "dictionary_url": "https://akshare.akfamily.xyz/data/bond/bond.html",
+    "installed_signature": "(index_category: str = '新综合指数', indicator: str = '全价', period: str = '总值')",
+    "expected_columns": [
+      "date",
+      "value"
+    ],
+    "schema_valid": true,
+    "execution_mode": "documented_sdk",
+    "result": "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_duration\\result.json",
+    "schema_note": "Dictionary parameter table says periods; official example and runtime use period."
+  },
+  {
+    "case": "index_yield",
+    "function": "bond_index_general_cbond",
+    "arguments": {
+      "index_category": "地方政府债指数",
+      "indicator": "平均市值法到期收益率",
+      "period": "总值"
+    },
+    "dictionary_url": "https://akshare.akfamily.xyz/data/bond/bond.html",
+    "installed_signature": "(index_category: str = '新综合指数', indicator: str = '全价', period: str = '总值')",
+    "expected_columns": [
+      "date",
+      "value"
+    ],
+    "schema_valid": true,
+    "execution_mode": "documented_sdk",
+    "result": "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\index_yield\\result.json",
+    "schema_note": "Dictionary parameter table says periods; official example and runtime use period."
+  },
+  {
+    "case": "traded_lookup",
+    "function": "bond_info_cm",
+    "arguments": {
+      "bond_code": "101948",
+      "bond_type": "地方政府债"
+    },
+    "dictionary_url": "https://akshare.akfamily.xyz/data/bond/bond.html",
+    "installed_signature": "(bond_name: str = '', bond_code: str = '', bond_issue: str = '', bond_type: str = '', coupon_type: str = '', issue_year: str = '', underwriter: str = '', grade: str = '') -> pandas.DataFrame",
+    "expected_columns": [
+      "债券简称",
+      "债券代码",
+      "发行人/受托机构",
+      "债券类型",
+      "发行日期",
+      "查询代码"
+    ],
+    "schema_valid": true,
+    "execution_mode": "documented_sdk",
+    "result": "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_lookup\\result.json",
+    "schema_note": ""
+  },
+  {
+    "case": "traded_detail",
+    "function": "bond_info_detail_cm",
+    "arguments": {
+      "symbol": "23四川18"
+    },
+    "dictionary_url": "https://akshare.akfamily.xyz/data/bond/bond.html",
+    "installed_signature": "(symbol: str = '淮安农商行CDSD2022021012') -> pandas.DataFrame",
+    "expected_columns": [
+      "name",
+      "value"
+    ],
+    "schema_valid": true,
+    "execution_mode": "compatibility_adapter",
+    "result": "D:\\code\\wind工作台\\research\\akshare-dictionary-normalized-20260912\\queries\\traded_detail\\result.json",
+    "schema_note": "SDK detail has only symbol; compatibility adapter adds the required bond_type to its internal lookup."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "measuredAt": "2026-09-12T23:55:09.608474+08:00",
+  "fixtureRows": 24,
+  "fixedNetworkDelaySeconds": 0.12,
+  "elapsedSeconds": 3.5423,
+  "rowsPerSecond": 6.775,
+  "workers": 1,
+  "completed": 24,
+  "publicNetworkRequests": 0,
+  "probe": "Only skip the 0.15s post-response wait; fixed network latency and database workflow unchanged"
+}

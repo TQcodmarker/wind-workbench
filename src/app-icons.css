@@ -1,0 +1,22 @@
+.app-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: inherit;
+}
+
+.app-icon .app-icon-surface {
+  fill: var(--app-icon-surface, #e7eef8);
+  stroke: none;
+}
+
+.app-icon .app-icon-accent {
+  fill: var(--app-icon-accent, #c1d5ed);
+  stroke: none;
+}
+
+.app-icon .app-icon-dot {
+  fill: currentColor;
+  stroke: none;
+}

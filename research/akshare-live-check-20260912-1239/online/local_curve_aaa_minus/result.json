@@ -1,0 +1,78 @@
+{
+  "case": "local_curve_aaa_minus",
+  "function": "bond_china_close_return",
+  "arguments": {
+    "symbol": "地方政府债(AAA-)",
+    "period": "1",
+    "start_date": "20260911",
+    "end_date": "20260911"
+  },
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T12:42:17.504961+00:00",
+  "function_signature": "(symbol: str = '国债', period: str = '1', start_date: str = '20231101', end_date: str = '20231101') -> pandas.DataFrame",
+  "source_file": "bond\\bond_china_money.py",
+  "source_sha256": "91a0a2f2071b44bcbb8409290d53c93516ed826ee635789fe733ccfcb631ccb0",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "returned_data",
+  "rows": 34,
+  "columns": [
+    "日期",
+    "期限",
+    "到期收益率",
+    "即期收益率",
+    "远期收益率"
+  ],
+  "non_null_counts": {
+    "日期": 34,
+    "期限": 34,
+    "到期收益率": 34,
+    "即期收益率": 34,
+    "远期收益率": 29
+  },
+  "sample": [
+    {
+      "日期": "2026-09-11T00:00:00.000",
+      "期限": 0.083,
+      "到期收益率": 1.0558,
+      "即期收益率": 1.0558,
+      "远期收益率": null
+    },
+    {
+      "日期": "2026-09-11T00:00:00.000",
+      "期限": 0.25,
+      "到期收益率": 1.0825,
+      "即期收益率": 1.0825,
+      "远期收益率": null
+    }
+  ],
+  "date_ranges": {
+    "日期": {
+      "min": "2026-09-11",
+      "max": "2026-09-11"
+    }
+  },
+  "elapsed_ms": 536,
+  "http_requests_sent": 2,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "GET",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/ClsYldCurvCurvGO",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 7251,
+      "body_file": "response-01.json",
+      "elapsed_ms": 284
+    },
+    {
+      "sequence": 2,
+      "method": "GET",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/ClsYldCurvHis?lang=CN&reference=1%2C2%2C3&bondType=CYCC84B&startDate=2026-09-11&endDate=2026-09-11&termId=1&pageNum=1&pageSize=50",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 5942,
+      "body_file": "response-02.json",
+      "elapsed_ms": 241
+    }
+  ]
+}

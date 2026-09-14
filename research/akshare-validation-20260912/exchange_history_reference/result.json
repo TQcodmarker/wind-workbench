@@ -1,0 +1,69 @@
+{
+  "case": "exchange_history_reference",
+  "function": "bond_zh_hs_daily",
+  "arguments": {
+    "symbol": "sh010107"
+  },
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T11:57:51.124356+00:00",
+  "function_signature": "(symbol: str = 'sh010107') -> pandas.DataFrame",
+  "source_file": "bond\\bond_zh_sina.py",
+  "source_sha256": "4c43432a908963b0e161aa55894eb3c6f2b8261101fb3eead6f0216636c6d534",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "returned_data",
+  "rows": 4806,
+  "columns": [
+    "date",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume"
+  ],
+  "non_null_counts": {
+    "date": 4806,
+    "open": 4806,
+    "high": 4806,
+    "low": 4806,
+    "close": 4806,
+    "volume": 4806
+  },
+  "sample": [
+    {
+      "date": "2001-08-20T00:00:00.000",
+      "open": 101.255,
+      "high": 102.835,
+      "low": 101.255,
+      "close": 102.695,
+      "volume": 60765500
+    },
+    {
+      "date": "2001-08-21T00:00:00.000",
+      "open": 102.743,
+      "high": 103.213,
+      "low": 102.683,
+      "close": 103.133,
+      "volume": 19927710
+    }
+  ],
+  "date_ranges": {
+    "date": {
+      "min": "2001-08-20",
+      "max": "2021-07-30"
+    }
+  },
+  "elapsed_ms": 469,
+  "http_requests_sent": 1,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "GET",
+      "url": "https://finance.sina.com.cn/realstock/company/sh010107/hisdata/klc_kl.js?d=2026_09_12",
+      "status": 200,
+      "content_type": "application/x-javascript",
+      "bytes": 49603,
+      "body_file": "response-01.txt",
+      "elapsed_ms": 385
+    }
+  ]
+}

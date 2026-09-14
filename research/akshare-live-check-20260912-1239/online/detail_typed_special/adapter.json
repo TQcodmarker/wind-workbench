@@ -1,0 +1,4 @@
+{
+  "description": "Runtime adapter supplies bond_type=地方政府债 to the SDK detail function internal lookup. SDK package files and upstream detail fields unchanged.",
+  "unmodified_sdk": false
+}

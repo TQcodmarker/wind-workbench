@@ -1,0 +1,30 @@
+{
+  "target": "2026-09-11",
+  "coldSeconds": 5.801913399976911,
+  "warmSeconds": 0.5200452000135556,
+  "cold": {
+    "changedBonds": 18540,
+    "totalBonds": 18540
+  },
+  "warm": {
+    "changedBonds": 0,
+    "totalBonds": 18540
+  },
+  "identicalSemanticHash": "1e2abb21c06483bcdccf96c7ebf85824d2449b322c92ae3244e358b3d096638b",
+  "counts": {
+    "bonds": 18540,
+    "eligible": 209,
+    "incomplete": 14135,
+    "excluded": 4196,
+    "conflicted": 0,
+    "requests": 11436,
+    "sessions": 4,
+    "substitutions": 89336,
+    "referenceOnly": 14132
+  },
+  "windCounts": {
+    "source_requests": 287,
+    "source_sessions": 25
+  },
+  "metadataCharacters": 80556
+}

@@ -1,0 +1,193 @@
+{
+  "scope": "Public connectivity and sample presence only; not completeness, accuracy, latency or license verification",
+  "paid_calls": 0,
+  "results": [
+    {
+      "source": "chinabond_yield_curve",
+      "method": "GET",
+      "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery",
+      "attempts": 1,
+      "checked_at_utc": "2026-09-12T11:35:59.020869+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "response_bytes": 15450,
+      "table_row_count": 29,
+      "dated_row_count": 27,
+      "sample_rows": [
+        [
+          "中债国债收益率曲线",
+          "2026-09-11",
+          "1.1968",
+          "1.2146",
+          "1.2292",
+          "1.2504",
+          "1.4226",
+          "1.5336",
+          "1.6899",
+          "2.1460"
+        ],
+        [
+          "中债商业银行普通债收益率曲线(AAA)",
+          "2026-09-11",
+          "1.4300",
+          "1.4543",
+          "1.4830",
+          "1.5551",
+          "1.5972",
+          "1.7587",
+          "1.9508",
+          "2.3125"
+        ],
+        [
+          "中债中短期票据收益率曲线(AAA)",
+          "2026-09-11",
+          "1.4800",
+          "1.5012",
+          "1.5195",
+          "1.6560",
+          "1.7292",
+          "1.8552",
+          "2.0443",
+          ""
+        ]
+      ],
+      "first_rows": [],
+      "elapsed_ms": 1731
+    },
+    {
+      "source": "chinamoney_public_deals",
+      "method": "POST",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-md-bond/CbtPri",
+      "attempts": 1,
+      "checked_at_utc": "2026-09-12T11:35:59.045026+00:00",
+      "http_status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "response_bytes": 2173968,
+      "top_level_keys": [
+        "head",
+        "data",
+        "records"
+      ],
+      "record_count": 3574,
+      "sample_records": [
+        {
+          "code": "ijbbgqcy0b",
+          "bondcode": "260205",
+          "abdAssetEncdShrtDesc": "26国开05",
+          "abdAssetEncdShrtDescByRmb": "26国开05",
+          "abdAssetEncdFullDescByRmb": "26国开05",
+          "inptTp": "0",
+          "bp": "0.53",
+          "bpNum": 0.53,
+          "bpLabel": "",
+          "blank": null,
+          "dmiLatestContraRate": "1.7728",
+          "dmiWghtdContraRate": "1.7706",
+          "dmiLatestRate": "101.27",
+          "dmiLatestRateLabel": "101.27",
+          "dmiPrvsClsngContraRate": null,
+          "dmiLatestContraRateLabel": "1.7728",
+          "dmiWghtdContraRateLabel": "1.7706",
+          "dmiTtlTradedAmnt": "1797.3000",
+          "dmiTtlTradedAmntLabel": "1797.3000",
+          "isinCode": "CND1000B6P19",
+          "termToMaturity": "9.48Y",
+          "showDate": "2026-09-11 17:52:53"
+        },
+        {
+          "code": "aaaid00004",
+          "bondcode": "2600004",
+          "abdAssetEncdShrtDesc": "26超长特别国债04",
+          "abdAssetEncdShrtDescByRmb": "26超长特别�",
+          "abdAssetEncdFullDescByRmb": "26超长特别国债04",
+          "inptTp": "0",
+          "bp": "0.57",
+          "bpNum": 0.57,
+          "bpLabel": "",
+          "blank": null,
+          "dmiLatestContraRate": "2.1710",
+          "dmiWghtdContraRate": "2.1670",
+          "dmiLatestRate": "101.29",
+          "dmiLatestRateLabel": "101.29",
+          "dmiPrvsClsngContraRate": null,
+          "dmiLatestContraRateLabel": "2.1710",
+          "dmiWghtdContraRateLabel": "2.1670",
+          "dmiTtlTradedAmnt": "739.9100",
+          "dmiTtlTradedAmntLabel": "739.9100",
+          "isinCode": "CND1000BD7S0",
+          "termToMaturity": "29.79Y",
+          "showDate": "2026-09-11 17:38:46"
+        }
+      ],
+      "public_metadata": {
+        "head": {
+          "version": "2.0",
+          "provider": "CWAP",
+          "req_code": "",
+          "rep_code": "200",
+          "rep_message": "",
+          "ts": 1789212903810,
+          "producer": "",
+          "tstext": "2026-09-12 19:35:03"
+        },
+        "data": {
+          "showDateEN": "11/09/2026 20:00",
+          "showDateCN": "09-11 20:00"
+        }
+      },
+      "elapsed_ms": 752
+    },
+    {
+      "source": "chinabond_public_valuation_samples",
+      "method": "GET",
+      "url": "https://valuation.chinabond.com.cn/cbweb-mn/val/val_query_list",
+      "attempts": 1,
+      "checked_at_utc": "2026-09-12T11:35:59.045832+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "response_bytes": 81821,
+      "table_row_count": 44,
+      "dated_row_count": 40,
+      "sample_rows": [
+        [
+          "2026-09-11",
+          "03三峡债",
+          "038006",
+          "银行间债券市场",
+          "6.8877",
+          "120.0022",
+          "0.5459",
+          "119.4562",
+          "1.8273",
+          "AAA"
+        ],
+        [
+          "2026-09-11",
+          "01国开21",
+          "010221",
+          "银行间债券市场",
+          "5.3370",
+          "115.8169",
+          "0.7492",
+          "115.0677",
+          "1.5644",
+          ""
+        ],
+        [
+          "2026-09-11",
+          "17招路02",
+          "112563",
+          "深交所",
+          "0.9041",
+          "103.5316",
+          "0.4775",
+          "103.0541",
+          "1.5380",
+          "AAA-"
+        ]
+      ],
+      "first_rows": [],
+      "elapsed_ms": 351
+    }
+  ]
+}

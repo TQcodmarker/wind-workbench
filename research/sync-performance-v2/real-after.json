@@ -1,0 +1,38 @@
+{
+  "measuredAt": "2026-09-13T00:35:08.868294+08:00",
+  "mode": "three_workers_incremental_publication",
+  "windowStart": "2026-09-13T00:32:08+08:00",
+  "windowEnd": "2026-09-13T00:35:08+08:00",
+  "seconds": 180,
+  "completed": 1054,
+  "rowsPerMinute": 351.3333333333333,
+  "speedupVsBefore": 1.4537931034482758,
+  "jobId": "5166f6be-e33b-454c-b142-0a72ef5de08b",
+  "generation": 6,
+  "jobStatus": "running",
+  "jobCounts": {
+    "completed": 12706,
+    "failed": 1,
+    "pending": 5827,
+    "running": 3,
+    "unmapped": 3
+  },
+  "httpStatuses": {
+    "200": 1051
+  },
+  "responsesPerQuery": {
+    "1": 1051
+  },
+  "windows": [
+    {
+      "seconds": 60,
+      "completed": 353,
+      "rowsPerMinute": 353.0
+    },
+    {
+      "seconds": 180,
+      "completed": 1054,
+      "rowsPerMinute": 351.3333333333333
+    }
+  ]
+}

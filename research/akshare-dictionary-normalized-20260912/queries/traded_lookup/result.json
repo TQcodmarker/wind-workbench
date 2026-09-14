@@ -1,0 +1,75 @@
+{
+  "case": "traded_lookup",
+  "function": "bond_info_cm",
+  "arguments": {
+    "bond_code": "101948",
+    "bond_type": "地方政府债"
+  },
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T13:07:33.404083+00:00",
+  "function_signature": "(bond_name: str = '', bond_code: str = '', bond_issue: str = '', bond_type: str = '', coupon_type: str = '', issue_year: str = '', underwriter: str = '', grade: str = '') -> pandas.DataFrame",
+  "source_file": "bond\\bond_info_cm.py",
+  "source_sha256": "7669b7c1dd09bb002db97cb303d278e7c162bd00f7cf6106223bbebba62cdf17",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "returned_data",
+  "rows": 1,
+  "columns": [
+    "债券简称",
+    "债券代码",
+    "发行人/受托机构",
+    "债券类型",
+    "发行日期",
+    "最新债项评级",
+    "查询代码"
+  ],
+  "non_null_counts": {
+    "债券简称": 1,
+    "债券代码": 1,
+    "发行人/受托机构": 1,
+    "债券类型": 1,
+    "发行日期": 1,
+    "最新债项评级": 1,
+    "查询代码": 1
+  },
+  "sample": [
+    {
+      "债券简称": "23四川18",
+      "债券代码": "101948",
+      "发行人/受托机构": "四川省政府",
+      "债券类型": "地方政府债",
+      "发行日期": "2023-02-27",
+      "最新债项评级": "---",
+      "查询代码": "fjgiibig8g"
+    }
+  ],
+  "date_ranges": {
+    "发行日期": {
+      "min": "2023-02-27",
+      "max": "2023-02-27"
+    }
+  },
+  "elapsed_ms": 6071,
+  "http_requests_sent": 2,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "POST",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bond-md/BondMarketInfoList2",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 539,
+      "body_file": "response-01.json",
+      "elapsed_ms": 4421
+    },
+    {
+      "sequence": 2,
+      "method": "POST",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bond-md/BondMarketInfoList2",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 539,
+      "body_file": "response-02.json",
+      "elapsed_ms": 1637
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+/* Compact settings pages: configuration first, supporting details on demand. */
+.source-page {
+  display: block !important;
+  min-width: 0;
+  overflow-x: hidden;
+  overflow-y: auto !important;
+  overscroll-behavior: contain;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #243247;
+}
+.source-page .page-heading,
+.source-page .source-layout { width: 100%; max-width: 1180px; }
+.source-page .page-heading { align-items: center; gap: 16px; margin-bottom: 22px; }
+.source-page .source-protocol { color: #64748b; font-size: 12px; }
+.source-page .source-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; align-items: start; gap: 20px; }
+.source-page .source-layout > div,
+.source-page .source-layout > aside { min-width: 0; }
+.source-page .source-card { min-width: 0; margin: 0 0 20px; padding: 22px; border: 1px solid #e2e7ed; border-radius: 6px; background: #fff; box-shadow: none; }
+.source-page .source-card h2 { margin: 0; color: #243247; font-size: 15px; font-weight: 600; line-height: 1.5; }
+.source-page .source-card h3 { margin: 0; color: #243247; font-size: 13px; font-weight: 600; }
+.source-page .source-section-title { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 12px; margin-bottom: 20px; }
+.source-page .source-section-title > span { color: #64748b; font-size: 12px; }
+.source-page .source-field { display: block; min-width: 0; margin: 20px 0 8px; color: #243247; font-size: 13px; font-weight: 500; line-height: 20px; }
+.source-page form > .source-field:first-child,
+.source-page .model-fieldset > .source-field:first-child { margin-top: 0; }
+.source-page .source-field small { margin-left: 8px; color: #64748b; font-size: 12px; font-weight: 400; }
+.source-page .required-mark { color: #b4534b; }
+.source-page .source-readonly,
+.source-page .source-secret { display: flex; align-items: center; gap: 10px; width: 100%; min-width: 0; height: 40px; margin-top: 0; padding: 0 11px; border: 1px solid #d3dce6; border-radius: 5px; background: #fff; }
+.source-page .source-readonly { background: #f4f6f8; }
+.source-page .source-readonly > svg { width: 15px; height: 15px; flex: 0 0 auto; color: #64748b; }
+.source-page .source-readonly input,
+.source-page .source-secret input { flex: 1; min-width: 0; width: 0; height: 100%; padding: 0; border: 0; border-radius: 0; background: transparent; color: #243247; font-size: 13px; outline: none; }
+.source-page .source-secret input::placeholder,
+.source-page .model-input::placeholder { color: #7b8796; }
+.source-page .source-secret .icon-button { flex: 0 0 28px; width: 28px; height: 28px; margin-right: -5px; color: #64748b; }
+.source-page .source-secret .icon-button svg { width: 16px; height: 16px; }
+.source-page .source-secret:focus-within,
+.source-page .source-readonly:focus-within,
+.source-page .model-input:focus { border-color: #245fa8; outline: 2px solid #245fa821; outline-offset: 1px; }
+.source-page .source-help,
+.source-page .source-card > p { margin: 9px 0 0; color: #64748b; font-size: 12px; line-height: 1.75; overflow-wrap: anywhere; }
+.source-page .source-card > p + .button { margin-top: 16px; }
+.source-page .source-form-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 22px; padding: 0; border: 0; }
+.source-page .source-form-actions > .text-button { margin-left: auto; }
+.source-page .button { min-height: 36px; font-size: 13px; }
+.source-page .button svg,
+.source-page .text-button svg { width: 15px; height: 15px; }
+.source-page .text-button { font-size: 13px; }
+.source-page .button:disabled,
+.source-page .text-button:disabled { cursor: not-allowed; }
+.source-page .source-details { margin-top: 20px; border-top: 1px solid #e2e7ed; }
+.source-page .source-details summary { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-top: 13px; color: #64748b; font-size: 12px; cursor: pointer; list-style: none; }
+.source-page .source-details summary::-webkit-details-marker { display: none; }
+.source-page .source-details summary svg { width: 14px; height: 14px; flex: 0 0 auto; }
+.source-page .source-details[open] summary svg { transform: rotate(180deg); }
+.source-page .source-details p { max-width: 75ch; margin: 10px 0 0; color: #64748b; font-size: 12px; line-height: 1.8; overflow-wrap: anywhere; }
+.source-page summary:focus-visible,
+.source-page a:focus-visible,
+.source-page button:focus-visible { outline: 2px solid #245fa8; outline-offset: 3px; }
+.source-page .coverage-card table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.source-page .coverage-card th,
+.source-page .coverage-card td { padding: 12px 0; border-bottom: 1px solid #e2e7ed; text-align: left; vertical-align: top; }
+.source-page .coverage-card th { color: #64748b; font-size: 12px; font-weight: 500; }
+.source-page .coverage-card td:first-child { padding-right: 18px; color: #243247; }
+.source-page .coverage-card td:last-child { color: #64748b; white-space: nowrap; }
+.source-page .coverage-card th:last-child,
+.source-page .coverage-card td:last-child { text-align: right; }
+.source-page .coverage-card tr:last-child td { border-bottom: 0; }
+.source-page .coverage-card td .source-help { margin-top: 4px; }
+.source-page .connection-card { text-align: left; }
+.source-page .source-status-list { display: grid; gap: 15px; margin: 0 0 22px; }
+.source-page .source-status-list > div { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; gap: 16px; }
+.source-page .source-status-list dt { color: #64748b; font-size: 12px; }
+.source-page .source-status-list dd { margin: 0; color: #243247; text-align: right; font-size: 13px; overflow-wrap: anywhere; }
+.source-page .source-connection-actions { display: grid; gap: 9px; }
+.source-page .connection-card > .source-help + .button { margin-top: 16px; }
+.source-page .source-usage-note { margin: 0 2px 20px; color: #64748b; font-size: 12px; }
+.source-page .model-fieldset { min-width: 0; padding: 0; margin: 0; border: 0; }
+.source-page .model-input { width: 100%; height: 40px; padding: 8px 11px; border: 1px solid #d3dce6; border-radius: 5px; background: #fff; color: #243247; font-size: 13px; }
+.source-page .model-auth-toggle { display: flex; align-items: center; gap: 8px; margin-top: 20px; color: #243247; font-size: 13px; }
+.source-page .model-auth-toggle input { accent-color: #245fa8; }
+.source-page .model-test-meta { margin-top: 16px; padding-top: 12px; border-top: 1px solid #e2e7ed; color: #64748b; font-size: 12px; line-height: 1.8; }
+.source-page input:disabled { background: #f4f6f8; }
+@media (max-width: 1100px) {
+  .source-page .source-layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .source-page .source-layout > div,
+  .source-page .source-layout > aside { display: contents; }
+  .source-page .source-layout > div > .source-card { order: 2; }
+  .source-page .source-layout > div > .source-card:first-child { order: 0; }
+  .source-page .source-layout > aside > .source-card { order: 3; }
+  .source-page .source-layout > aside > .source-card:first-child { order: 1; }
+  .source-page .source-usage-note { order: 4; }
+}
+@media (max-width: 760px) {
+  .source-page .page-heading { flex-wrap: wrap; margin-bottom: 18px; }
+  .source-page .source-card { padding: 18px; margin-bottom: 16px; }
+  .source-page .source-layout,
+  .source-page .source-layout > aside { grid-template-columns: minmax(0, 1fr); gap: 0; }
+}
+@media (max-width: 480px) {
+  .source-page .source-card { padding: 16px; }
+  .source-page .source-form-actions { gap: 8px; }
+  .source-page .source-form-actions > .text-button { margin-left: 0; }
+  .source-page .source-section-title { margin-bottom: 16px; }
+}
+

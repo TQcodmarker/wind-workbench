@@ -1,0 +1,58 @@
+{
+  "case": "bond_types",
+  "function": "bond_info_cm_query",
+  "arguments": {
+    "symbol": "债券类型"
+  },
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T13:07:17.806738+00:00",
+  "function_signature": "(symbol: str = '评级等级') -> pandas.DataFrame",
+  "source_file": "bond\\bond_info_cm.py",
+  "source_sha256": "7669b7c1dd09bb002db97cb303d278e7c162bd00f7cf6106223bbebba62cdf17",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "returned_data",
+  "rows": 30,
+  "columns": [
+    "name",
+    "code"
+  ],
+  "non_null_counts": {
+    "name": 30,
+    "code": 30
+  },
+  "sample": [
+    {
+      "name": "国债",
+      "code": "100001"
+    },
+    {
+      "name": "政策性金融债",
+      "code": "100003"
+    }
+  ],
+  "date_ranges": {},
+  "elapsed_ms": 2242,
+  "http_requests_sent": 2,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "GET",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/ClsYldCurvCurvGO",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 7251,
+      "body_file": "response-01.json",
+      "elapsed_ms": 311
+    },
+    {
+      "sequence": 2,
+      "method": "POST",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bond-md/BondBaseInfoSearchCondition",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 2619,
+      "body_file": "response-02.json",
+      "elapsed_ms": 1918
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "case": "local_issues_april",
+  "function": "bond_local_government_issue_cninfo",
+  "arguments": {
+    "start_date": "20260401",
+    "end_date": "20260430"
+  },
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T12:40:30.156336+00:00",
+  "function_signature": "(start_date: str = '20210911', end_date: str = '20211110') -> pandas.DataFrame",
+  "source_file": "bond\\bond_issue_cninfo.py",
+  "source_sha256": "b4fa19845fbfb085fdced08a0742b4f99e0a77d6fedfcf5b3f7fc27452bb59bd",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "failed",
+  "error_type": "ConnectionError",
+  "error": "HTTPConnectionPool(host='webapi.cninfo.com.cn', port=80): Max retries exceeded with url: /api/sysapi/p_sysapi1121?sdate=2026-04-01&edate=2026-04-30 (Caused by NewConnectionError(\"HTTPConnection(host='webapi.cninfo.com.cn', port=80): Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。\"))",
+  "elapsed_ms": 48,
+  "http_requests_sent": 1,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "POST",
+      "url": "http://webapi.cninfo.com.cn/api/sysapi/p_sysapi1121?sdate=2026-04-01&edate=2026-04-30",
+      "error_type": "ConnectionError",
+      "error": "HTTPConnectionPool(host='webapi.cninfo.com.cn', port=80): Max retries exceeded with url: /api/sysapi/p_sysapi1121?sdate=2026-04-01&edate=2026-04-30 (Caused by NewConnectionError(\"HTTPConnection(host='webapi.cninfo.com.cn', port=80): Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方",
+      "elapsed_ms": 7
+    }
+  ]
+}

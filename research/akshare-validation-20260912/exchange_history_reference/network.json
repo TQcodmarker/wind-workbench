@@ -1,0 +1,12 @@
+[
+  {
+    "sequence": 1,
+    "method": "GET",
+    "url": "https://finance.sina.com.cn/realstock/company/sh010107/hisdata/klc_kl.js?d=2026_09_12",
+    "status": 200,
+    "content_type": "application/x-javascript",
+    "bytes": 49603,
+    "body_file": "response-01.txt",
+    "elapsed_ms": 385
+  }
+]

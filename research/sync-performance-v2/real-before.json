@@ -1,0 +1,19 @@
+{
+  "measuredAt": "2026-09-13T00:26:33.143869+08:00",
+  "mode": "two_workers_full_publication",
+  "windowStart": "2026-09-13T00:23:33+08:00",
+  "windowEnd": "2026-09-13T00:26:33+08:00",
+  "seconds": 180,
+  "completed": 725,
+  "rowsPerMinute": 241.66666666666666,
+  "jobId": "5166f6be-e33b-454c-b142-0a72ef5de08b",
+  "generation": 5,
+  "jobStatus": "running",
+  "jobCounts": {
+    "completed": 10643,
+    "failed": 1,
+    "pending": 7891,
+    "running": 2,
+    "unmapped": 3
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "sequence": 1,
+    "method": "GET",
+    "url": "https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-09-01&endDate=2026-09-11&gjqx=0&qxId=ycqx&locale=cn_ZH",
+    "status": 200,
+    "content_type": "text/html;charset=UTF-8",
+    "bytes": 15450,
+    "body_file": "response-01.txt",
+    "elapsed_ms": 1239
+  }
+]

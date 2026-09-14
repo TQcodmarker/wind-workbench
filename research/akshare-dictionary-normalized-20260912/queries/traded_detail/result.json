@@ -1,0 +1,68 @@
+{
+  "case": "traded_detail",
+  "function": "bond_info_detail_cm",
+  "arguments": {
+    "symbol": "23四川18"
+  },
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T13:07:39.482196+00:00",
+  "function_signature": "(symbol: str = '淮安农商行CDSD2022021012') -> pandas.DataFrame",
+  "source_file": "bond\\bond_info_cm.py",
+  "source_sha256": "7669b7c1dd09bb002db97cb303d278e7c162bd00f7cf6106223bbebba62cdf17",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "returned_data",
+  "rows": 63,
+  "columns": [
+    "name",
+    "value"
+  ],
+  "non_null_counts": {
+    "name": 63,
+    "value": 60
+  },
+  "sample": [
+    {
+      "name": "bondFullName",
+      "value": "2023年四川省城乡基础设施建设专项债券(十二期)-2023年四川省政府专项债券(十二期)"
+    },
+    {
+      "name": "bondDefinedCode",
+      "value": "fjgiibig8g"
+    }
+  ],
+  "date_ranges": {},
+  "elapsed_ms": 3873,
+  "http_requests_sent": 3,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "POST",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bond-md/BondMarketInfoList2",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 539,
+      "body_file": "response-01.json",
+      "elapsed_ms": 1133
+    },
+    {
+      "sequence": 2,
+      "method": "POST",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bond-md/BondMarketInfoList2",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 539,
+      "body_file": "response-02.json",
+      "elapsed_ms": 2451
+    },
+    {
+      "sequence": 3,
+      "method": "POST",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bond-md/BondDetailInfo",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 1921,
+      "body_file": "response-03.json",
+      "elapsed_ms": 280
+    }
+  ]
+}

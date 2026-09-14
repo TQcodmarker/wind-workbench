@@ -1,0 +1,30 @@
+{
+  "case": "exchange_history",
+  "function": "bond_zh_hs_daily",
+  "arguments": {
+    "symbol": "sh101900"
+  },
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T11:56:33.918825+00:00",
+  "function_signature": "(symbol: str = 'sh010107') -> pandas.DataFrame",
+  "source_file": "bond\\bond_zh_sina.py",
+  "source_sha256": "4c43432a908963b0e161aa55894eb3c6f2b8261101fb3eead6f0216636c6d534",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "failed",
+  "error_type": "KeyError",
+  "error": "'date'",
+  "elapsed_ms": 455,
+  "http_requests_sent": 1,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "GET",
+      "url": "https://finance.sina.com.cn/realstock/company/sh101900/hisdata/klc_kl.js?d=2026_09_12",
+      "status": 404,
+      "content_type": "text/html",
+      "bytes": 162,
+      "body_file": "response-01.txt",
+      "elapsed_ms": 437
+    }
+  ]
+}

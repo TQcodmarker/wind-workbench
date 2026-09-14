@@ -1,0 +1,78 @@
+{
+  "case": "closing_curve",
+  "function": "bond_china_close_return",
+  "arguments": {
+    "symbol": "国债",
+    "period": "1",
+    "start_date": "20260911",
+    "end_date": "20260911"
+  },
+  "akshare_version": "1.18.94",
+  "checked_at_utc": "2026-09-12T11:56:32.443084+00:00",
+  "function_signature": "(symbol: str = '国债', period: str = '1', start_date: str = '20231101', end_date: str = '20231101') -> pandas.DataFrame",
+  "source_file": "bond\\bond_china_money.py",
+  "source_sha256": "91a0a2f2071b44bcbb8409290d53c93516ed826ee635789fe733ccfcb631ccb0",
+  "transport_controls": "requests hook records raw response, enforces public-query allowlist and 5 sends/case, sets timeout and disables environmental proxies; SDK parser unchanged",
+  "status": "returned_data",
+  "rows": 50,
+  "columns": [
+    "日期",
+    "期限",
+    "到期收益率",
+    "即期收益率",
+    "远期收益率"
+  ],
+  "non_null_counts": {
+    "日期": 50,
+    "期限": 50,
+    "到期收益率": 50,
+    "即期收益率": 50,
+    "远期收益率": 46
+  },
+  "sample": [
+    {
+      "日期": "2026-09-11T00:00:00.000",
+      "期限": 0.083,
+      "到期收益率": 1.1269,
+      "即期收益率": 1.1269,
+      "远期收益率": null
+    },
+    {
+      "日期": "2026-09-11T00:00:00.000",
+      "期限": 0.25,
+      "到期收益率": 1.1976,
+      "即期收益率": 1.1976,
+      "远期收益率": null
+    }
+  ],
+  "date_ranges": {
+    "日期": {
+      "min": "2026-09-11",
+      "max": "2026-09-11"
+    }
+  },
+  "elapsed_ms": 707,
+  "http_requests_sent": 2,
+  "network": [
+    {
+      "sequence": 1,
+      "method": "GET",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/ClsYldCurvCurvGO",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 7251,
+      "body_file": "response-01.json",
+      "elapsed_ms": 335
+    },
+    {
+      "sequence": 2,
+      "method": "GET",
+      "url": "https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/ClsYldCurvHis?lang=CN&reference=1%2C2%2C3&bondType=CYCC000&startDate=2026-09-11&endDate=2026-09-11&termId=1&pageNum=1&pageSize=50",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 8553,
+      "body_file": "response-02.json",
+      "elapsed_ms": 357
+    }
+  ]
+}

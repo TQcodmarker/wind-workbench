@@ -1,0 +1,3582 @@
+[
+  {
+    "excelCode": "101948.IB",
+    "abdAssetEncdFullDescByRmb": "23四川18",
+    "dmiLatestRate": "116.66",
+    "dmiLatestContraRate": "2.0425",
+    "dmiWghtdContraRate": "2.0425",
+    "showDate": "2026-09-11 17:12:28",
+    "isinCode": "CND100065184",
+    "termToMaturity": "16.47Y"
+  },
+  {
+    "excelCode": "104541.IB",
+    "abdAssetEncdFullDescByRmb": "19黑龙江债03",
+    "dmiLatestRate": "105.35",
+    "dmiLatestContraRate": "1.2200",
+    "dmiWghtdContraRate": "1.2200",
+    "showDate": "2026-09-11 16:24:35",
+    "isinCode": "CND100024363",
+    "termToMaturity": "2.52Y"
+  },
+  {
+    "excelCode": "104792.IB",
+    "abdAssetEncdFullDescByRmb": "20广东债35",
+    "dmiLatestRate": "105.40",
+    "dmiLatestContraRate": "1.3678",
+    "dmiWghtdContraRate": "1.3678",
+    "showDate": "2026-09-11 11:34:17",
+    "isinCode": "CND100036SK2",
+    "termToMaturity": "3.67Y"
+  },
+  {
+    "excelCode": "104839.IB",
+    "abdAssetEncdFullDescByRmb": "20四川债92",
+    "dmiLatestRate": "131.36",
+    "dmiLatestContraRate": "2.1500",
+    "dmiWghtdContraRate": "2.1500",
+    "showDate": "2026-09-11 15:56:10",
+    "isinCode": "CND10003CN39",
+    "termToMaturity": "23.81Y"
+  },
+  {
+    "excelCode": "157564.IB",
+    "abdAssetEncdFullDescByRmb": "19福建03",
+    "dmiLatestRate": "105.18",
+    "dmiLatestContraRate": "1.2745",
+    "dmiWghtdContraRate": "1.2745",
+    "showDate": "2026-09-11 15:03:14",
+    "isinCode": "CND10001X8B9",
+    "termToMaturity": "2.37Y"
+  },
+  {
+    "excelCode": "157631.IB",
+    "abdAssetEncdFullDescByRmb": "19河南13",
+    "dmiLatestRate": "115.27",
+    "dmiLatestContraRate": "1.5300",
+    "dmiWghtdContraRate": "1.5300",
+    "showDate": "2026-09-11 15:34:58",
+    "isinCode": "CND100023NC8",
+    "termToMaturity": "7.50Y"
+  },
+  {
+    "excelCode": "1605694.IB",
+    "abdAssetEncdFullDescByRmb": "16云南债17",
+    "dmiLatestRate": "100.39",
+    "dmiLatestContraRate": "0.9200",
+    "dmiWghtdContraRate": "0.9200",
+    "showDate": "2026-09-11 14:00:32",
+    "isinCode": "CND10000DCM4",
+    "termToMaturity": "71D"
+  },
+  {
+    "excelCode": "160594.IB",
+    "abdAssetEncdFullDescByRmb": "20江苏03",
+    "dmiLatestRate": "106.63",
+    "dmiLatestContraRate": "1.3300",
+    "dmiWghtdContraRate": "1.3300",
+    "showDate": "2026-09-11 14:05:14",
+    "isinCode": "CND10002KYC0",
+    "termToMaturity": "3.34Y"
+  },
+  {
+    "excelCode": "160773.IB",
+    "abdAssetEncdFullDescByRmb": "20湖南39",
+    "dmiLatestRate": "105.65",
+    "dmiLatestContraRate": "1.3828",
+    "dmiWghtdContraRate": "1.3828",
+    "showDate": "2026-09-11 13:46:05",
+    "isinCode": "CND100038BH0",
+    "termToMaturity": "3.71Y"
+  },
+  {
+    "excelCode": "173687.IB",
+    "abdAssetEncdFullDescByRmb": "21福建13",
+    "dmiLatestRate": "124.43",
+    "dmiLatestContraRate": "1.9200",
+    "dmiWghtdContraRate": "1.9167",
+    "showDate": "2026-09-11 16:23:02",
+    "isinCode": "CND100048L43",
+    "termToMaturity": "14.75Y"
+  },
+  {
+    "excelCode": "173695.IB",
+    "abdAssetEncdFullDescByRmb": "21云南09",
+    "dmiLatestRate": "133.24",
+    "dmiLatestContraRate": "2.1600",
+    "dmiWghtdContraRate": "2.1595",
+    "showDate": "2026-09-11 15:56:59",
+    "isinCode": "CND1000491K1",
+    "termToMaturity": "24.77Y"
+  },
+  {
+    "excelCode": "173769.IB",
+    "abdAssetEncdFullDescByRmb": "21大连09",
+    "dmiLatestRate": "103.77",
+    "dmiLatestContraRate": "1.1450",
+    "dmiWghtdContraRate": "1.1450",
+    "showDate": "2026-09-11 13:42:02",
+    "isinCode": "CND10004BNG9",
+    "termToMaturity": "1.84Y"
+  },
+  {
+    "excelCode": "173788.IB",
+    "abdAssetEncdFullDescByRmb": "21河北24",
+    "dmiLatestRate": "110.68",
+    "dmiLatestContraRate": "1.5342",
+    "dmiWghtdContraRate": "1.5342",
+    "showDate": "2026-09-11 15:13:32",
+    "isinCode": "CND10004DV37",
+    "termToMaturity": "9.84Y"
+  },
+  {
+    "excelCode": "173859.IB",
+    "abdAssetEncdFullDescByRmb": "21浙江47",
+    "dmiLatestRate": "109.16",
+    "dmiLatestContraRate": "1.3750",
+    "dmiWghtdContraRate": "1.3749",
+    "showDate": "2026-09-11 17:11:52",
+    "isinCode": "CND10004NW18",
+    "termToMaturity": "5.14Y"
+  },
+  {
+    "excelCode": "173861.IB",
+    "abdAssetEncdFullDescByRmb": "21浙江49",
+    "dmiLatestRate": "109.03",
+    "dmiLatestContraRate": "1.4000",
+    "dmiWghtdContraRate": "1.4000",
+    "showDate": "2026-09-11 15:59:00",
+    "isinCode": "CND10004NW34",
+    "termToMaturity": "5.14Y"
+  },
+  {
+    "excelCode": "173875.IB",
+    "abdAssetEncdFullDescByRmb": "21四川52",
+    "dmiLatestRate": "117.83",
+    "dmiLatestContraRate": "1.6698",
+    "dmiWghtdContraRate": "1.6698",
+    "showDate": "2026-09-11 14:18:28",
+    "isinCode": "CND10004NTZ1",
+    "termToMaturity": "10.13Y"
+  },
+  {
+    "excelCode": "173898.IB",
+    "abdAssetEncdFullDescByRmb": "21江苏29",
+    "dmiLatestRate": "116.06",
+    "dmiLatestContraRate": "1.6550",
+    "dmiWghtdContraRate": "1.6550",
+    "showDate": "2026-09-11 14:15:07",
+    "isinCode": "CND10004Q108",
+    "termToMaturity": "10.22Y"
+  },
+  {
+    "excelCode": "173971.IB",
+    "abdAssetEncdFullDescByRmb": "22上海28",
+    "dmiLatestRate": "104.22",
+    "dmiLatestContraRate": "1.3175",
+    "dmiWghtdContraRate": "1.3175",
+    "showDate": "2026-09-11 14:46:32",
+    "isinCode": "CND10005PCP0",
+    "termToMaturity": "3.03Y"
+  },
+  {
+    "excelCode": "173973.IB",
+    "abdAssetEncdFullDescByRmb": "22上海30",
+    "dmiLatestRate": "107.45",
+    "dmiLatestContraRate": "1.4625",
+    "dmiWghtdContraRate": "1.4625",
+    "showDate": "2026-09-11 16:54:53",
+    "isinCode": "CND10005PCM7",
+    "termToMaturity": "6.03Y"
+  },
+  {
+    "excelCode": "173994.IB",
+    "abdAssetEncdFullDescByRmb": "23重庆02",
+    "dmiLatestRate": "115.23",
+    "dmiLatestContraRate": "1.7300",
+    "dmiWghtdContraRate": "1.7300",
+    "showDate": "2026-09-11 16:58:29",
+    "isinCode": "CND100061Z07",
+    "termToMaturity": "11.39Y"
+  },
+  {
+    "excelCode": "173995.IB",
+    "abdAssetEncdFullDescByRmb": "23重庆03",
+    "dmiLatestRate": "117.25",
+    "dmiLatestContraRate": "2.0360",
+    "dmiWghtdContraRate": "2.0360",
+    "showDate": "2026-09-11 17:22:52",
+    "isinCode": "CND100061YV5",
+    "termToMaturity": "16.39Y"
+  },
+  {
+    "excelCode": "1805367.IB",
+    "abdAssetEncdFullDescByRmb": "18湖南债21",
+    "dmiLatestRate": "126.84",
+    "dmiLatestContraRate": "1.7350",
+    "dmiWghtdContraRate": "1.7370",
+    "showDate": "2026-09-11 16:30:13",
+    "isinCode": "CND10001RTB9",
+    "termToMaturity": "12.18Y"
+  },
+  {
+    "excelCode": "1905033.IB",
+    "abdAssetEncdFullDescByRmb": "19浙江债02",
+    "dmiLatestRate": "104.96",
+    "dmiLatestContraRate": "1.2650",
+    "dmiWghtdContraRate": "1.2650",
+    "showDate": "2026-09-11 14:54:38",
+    "isinCode": "CND10001YBW9",
+    "termToMaturity": "2.39Y"
+  },
+  {
+    "excelCode": "1905260.IB",
+    "abdAssetEncdFullDescByRmb": "19新疆债15",
+    "dmiLatestRate": "123.47",
+    "dmiLatestContraRate": "1.8150",
+    "dmiWghtdContraRate": "1.8150",
+    "showDate": "2026-09-11 17:16:52",
+    "isinCode": "CND10002CPX1",
+    "termToMaturity": "12.79Y"
+  },
+  {
+    "excelCode": "1905283.IB",
+    "abdAssetEncdFullDescByRmb": "19浙江债17",
+    "dmiLatestRate": "106.29",
+    "dmiLatestContraRate": "1.1975",
+    "dmiWghtdContraRate": "1.1975",
+    "showDate": "2026-09-11 14:26:52",
+    "isinCode": "CND10002DSX3",
+    "termToMaturity": "2.89Y"
+  },
+  {
+    "excelCode": "198187.IB",
+    "abdAssetEncdFullDescByRmb": "23重庆债07",
+    "dmiLatestRate": "116.76",
+    "dmiLatestContraRate": "2.0375",
+    "dmiWghtdContraRate": "2.0375",
+    "showDate": "2026-09-11 17:23:31",
+    "isinCode": "CND1000652J0",
+    "termToMaturity": "16.48Y"
+  },
+  {
+    "excelCode": "198194.IB",
+    "abdAssetEncdFullDescByRmb": "23安徽债23",
+    "dmiLatestRate": "114.49",
+    "dmiLatestContraRate": "1.7266",
+    "dmiWghtdContraRate": "1.7268",
+    "showDate": "2026-09-11 16:07:51",
+    "isinCode": "CND1000675G7",
+    "termToMaturity": "11.51Y"
+  },
+  {
+    "excelCode": "198204.IB",
+    "abdAssetEncdFullDescByRmb": "23江苏债09",
+    "dmiLatestRate": "114.90",
+    "dmiLatestContraRate": "1.6984",
+    "dmiWghtdContraRate": "1.6986",
+    "showDate": "2026-09-11 16:07:42",
+    "isinCode": "CND100065MX7",
+    "termToMaturity": "11.50Y"
+  },
+  {
+    "excelCode": "198212.IB",
+    "abdAssetEncdFullDescByRmb": "23湖南债11",
+    "dmiLatestRate": "114.59",
+    "dmiLatestContraRate": "1.7261",
+    "dmiWghtdContraRate": "1.7263",
+    "showDate": "2026-09-11 16:07:38",
+    "isinCode": "CND100065MD9",
+    "termToMaturity": "11.50Y"
+  },
+  {
+    "excelCode": "198249.IB",
+    "abdAssetEncdFullDescByRmb": "23广东债32",
+    "dmiLatestRate": "113.82",
+    "dmiLatestContraRate": "2.0203",
+    "dmiWghtdContraRate": "2.0203",
+    "showDate": "2026-09-11 15:46:14",
+    "isinCode": "CND10006GQZ6",
+    "termToMaturity": "16.68Y"
+  },
+  {
+    "excelCode": "198310.IB",
+    "abdAssetEncdFullDescByRmb": "23江苏债20",
+    "dmiLatestRate": "104.86",
+    "dmiLatestContraRate": "1.3825",
+    "dmiWghtdContraRate": "1.3825",
+    "showDate": "2026-09-11 11:51:03",
+    "isinCode": "CND10006MX99",
+    "termToMaturity": "3.79Y"
+  },
+  {
+    "excelCode": "198313.IB",
+    "abdAssetEncdFullDescByRmb": "23云南债15",
+    "dmiLatestRate": "102.25",
+    "dmiLatestContraRate": "1.2800",
+    "dmiWghtdContraRate": "1.2800",
+    "showDate": "2026-09-11 14:38:58",
+    "isinCode": "CND10006PJ37",
+    "termToMaturity": "1.82Y"
+  },
+  {
+    "excelCode": "198324.IB",
+    "abdAssetEncdFullDescByRmb": "23广东债66",
+    "dmiLatestRate": "113.82",
+    "dmiLatestContraRate": "2.0325",
+    "dmiWghtdContraRate": "2.0325",
+    "showDate": "2026-09-11 09:42:01",
+    "isinCode": "CND10006Y8R9",
+    "termToMaturity": "16.96Y"
+  },
+  {
+    "excelCode": "198390.IB",
+    "abdAssetEncdFullDescByRmb": "23山东债82",
+    "dmiLatestRate": "106.22",
+    "dmiLatestContraRate": "1.3800",
+    "dmiWghtdContraRate": "1.3800",
+    "showDate": "2026-09-11 11:00:00",
+    "isinCode": "CND100073QG7",
+    "termToMaturity": "4.11Y"
+  },
+  {
+    "excelCode": "198392.IB",
+    "abdAssetEncdFullDescByRmb": "23湖北债120",
+    "dmiLatestRate": "105.44",
+    "dmiLatestContraRate": "1.3884",
+    "dmiWghtdContraRate": "1.3880",
+    "showDate": "2026-09-11 17:45:13",
+    "isinCode": "CND100073QY0",
+    "termToMaturity": "4.12Y"
+  },
+  {
+    "excelCode": "198393.IB",
+    "abdAssetEncdFullDescByRmb": "23湖北债121",
+    "dmiLatestRate": "109.90",
+    "dmiLatestContraRate": "1.5350",
+    "dmiWghtdContraRate": "1.5325",
+    "showDate": "2026-09-11 14:18:31",
+    "isinCode": "CND100073R37",
+    "termToMaturity": "7.12Y"
+  },
+  {
+    "excelCode": "198425.IB",
+    "abdAssetEncdFullDescByRmb": "23天津债95",
+    "dmiLatestRate": "110.29",
+    "dmiLatestContraRate": "1.5700",
+    "dmiWghtdContraRate": "1.5700",
+    "showDate": "2026-09-11 17:08:18",
+    "isinCode": "CND100074J77",
+    "termToMaturity": "7.14Y"
+  },
+  {
+    "excelCode": "198426.IB",
+    "abdAssetEncdFullDescByRmb": "23天津债96",
+    "dmiLatestRate": "110.29",
+    "dmiLatestContraRate": "1.5700",
+    "dmiWghtdContraRate": "1.5700",
+    "showDate": "2026-09-11 15:44:18",
+    "isinCode": "CND100074J44",
+    "termToMaturity": "7.14Y"
+  },
+  {
+    "excelCode": "198430.IB",
+    "abdAssetEncdFullDescByRmb": "23重庆债59",
+    "dmiLatestRate": "103.22",
+    "dmiLatestContraRate": "1.2802",
+    "dmiWghtdContraRate": "1.2802",
+    "showDate": "2026-09-11 17:44:04",
+    "isinCode": "CND100074J85",
+    "termToMaturity": "2.14Y"
+  },
+  {
+    "excelCode": "198435.IB",
+    "abdAssetEncdFullDescByRmb": "24江苏债03",
+    "dmiLatestRate": "104.60",
+    "dmiLatestContraRate": "1.4188",
+    "dmiWghtdContraRate": "1.4208",
+    "showDate": "2026-09-11 15:47:27",
+    "isinCode": "CND10007HYD3",
+    "termToMaturity": "4.39Y"
+  },
+  {
+    "excelCode": "198515.IB",
+    "abdAssetEncdFullDescByRmb": "24山东债25",
+    "dmiLatestRate": "104.09",
+    "dmiLatestContraRate": "1.4156",
+    "dmiWghtdContraRate": "1.4156",
+    "showDate": "2026-09-11 17:45:20",
+    "isinCode": "CND100082MX2",
+    "termToMaturity": "4.77Y"
+  },
+  {
+    "excelCode": "198518.IB",
+    "abdAssetEncdFullDescByRmb": "24河南债22",
+    "dmiLatestRate": "103.79",
+    "dmiLatestContraRate": "1.4450",
+    "dmiWghtdContraRate": "1.4450",
+    "showDate": "2026-09-11 10:46:20",
+    "isinCode": "CND100083LG7",
+    "termToMaturity": "4.79Y"
+  },
+  {
+    "excelCode": "198552.IB",
+    "abdAssetEncdFullDescByRmb": "24广东债70",
+    "dmiLatestRate": "104.69",
+    "dmiLatestContraRate": "1.5909",
+    "dmiWghtdContraRate": "1.5909",
+    "showDate": "2026-09-11 17:45:09",
+    "isinCode": "CND10008CSH5",
+    "termToMaturity": "7.98Y"
+  },
+  {
+    "excelCode": "198574.IB",
+    "abdAssetEncdFullDescByRmb": "24江苏债24",
+    "dmiLatestRate": "104.37",
+    "dmiLatestContraRate": "1.5861",
+    "dmiWghtdContraRate": "1.5861",
+    "showDate": "2026-09-11 15:23:42",
+    "isinCode": "CND10008DYM1",
+    "termToMaturity": "8.01Y"
+  },
+  {
+    "excelCode": "198691.IB",
+    "abdAssetEncdFullDescByRmb": "23四川42",
+    "dmiLatestRate": "105.04",
+    "dmiLatestContraRate": "1.3700",
+    "dmiWghtdContraRate": "1.3700",
+    "showDate": "2026-09-11 15:54:53",
+    "isinCode": "CND10006PR60",
+    "termToMaturity": "3.83Y"
+  },
+  {
+    "excelCode": "198716.IB",
+    "abdAssetEncdFullDescByRmb": "23浙江39",
+    "dmiLatestRate": "107.83",
+    "dmiLatestContraRate": "1.5000",
+    "dmiWghtdContraRate": "1.5000",
+    "showDate": "2026-09-11 17:33:23",
+    "isinCode": "CND10006VNQ1",
+    "termToMaturity": "6.90Y"
+  },
+  {
+    "excelCode": "198727.IB",
+    "abdAssetEncdFullDescByRmb": "23湖南99",
+    "dmiLatestRate": "108.54",
+    "dmiLatestContraRate": "1.5221",
+    "dmiWghtdContraRate": "1.5221",
+    "showDate": "2026-09-11 16:56:04",
+    "isinCode": "CND10006VPN3",
+    "termToMaturity": "6.91Y"
+  },
+  {
+    "excelCode": "198777.IB",
+    "abdAssetEncdFullDescByRmb": "23四川69",
+    "dmiLatestRate": "113.37",
+    "dmiLatestContraRate": "2.0625",
+    "dmiWghtdContraRate": "2.0646",
+    "showDate": "2026-09-11 16:02:14",
+    "isinCode": "CND10006Z0F0",
+    "termToMaturity": "16.97Y"
+  },
+  {
+    "excelCode": "198856.IB",
+    "abdAssetEncdFullDescByRmb": "23天津83",
+    "dmiLatestRate": "102.91",
+    "dmiLatestContraRate": "1.2925",
+    "dmiWghtdContraRate": "1.2925",
+    "showDate": "2026-09-11 14:07:25",
+    "isinCode": "CND100072DQ6",
+    "termToMaturity": "2.08Y"
+  },
+  {
+    "excelCode": "198872.IB",
+    "abdAssetEncdFullDescByRmb": "23天津87",
+    "dmiLatestRate": "103.16",
+    "dmiLatestContraRate": "1.2800",
+    "dmiWghtdContraRate": "1.2800",
+    "showDate": "2026-09-11 15:17:28",
+    "isinCode": "CND100074F97",
+    "termToMaturity": "2.12Y"
+  },
+  {
+    "excelCode": "198874.IB",
+    "abdAssetEncdFullDescByRmb": "23天津89",
+    "dmiLatestRate": "110.02",
+    "dmiLatestContraRate": "1.5666",
+    "dmiWghtdContraRate": "1.5666",
+    "showDate": "2026-09-11 15:47:24",
+    "isinCode": "CND100074DZ3",
+    "termToMaturity": "7.12Y"
+  },
+  {
+    "excelCode": "198875.IB",
+    "abdAssetEncdFullDescByRmb": "23天津90",
+    "dmiLatestRate": "109.99",
+    "dmiLatestContraRate": "1.5700",
+    "dmiWghtdContraRate": "1.5700",
+    "showDate": "2026-09-11 17:08:02",
+    "isinCode": "CND100074F71",
+    "termToMaturity": "7.12Y"
+  },
+  {
+    "excelCode": "198881.IB",
+    "abdAssetEncdFullDescByRmb": "23海南36",
+    "dmiLatestRate": "103.14",
+    "dmiLatestContraRate": "1.2700",
+    "dmiWghtdContraRate": "1.2700",
+    "showDate": "2026-09-11 15:27:47",
+    "isinCode": "CND100076306",
+    "termToMaturity": "2.18Y"
+  },
+  {
+    "excelCode": "198897.IB",
+    "abdAssetEncdFullDescByRmb": "23湖南138",
+    "dmiLatestRate": "103.13",
+    "dmiLatestContraRate": "1.2723",
+    "dmiWghtdContraRate": "1.2723",
+    "showDate": "2026-09-11 17:17:57",
+    "isinCode": "CND1000763J5",
+    "termToMaturity": "2.18Y"
+  },
+  {
+    "excelCode": "198931.IB",
+    "abdAssetEncdFullDescByRmb": "24浙江03",
+    "dmiLatestRate": "104.32",
+    "dmiLatestContraRate": "1.4140",
+    "dmiWghtdContraRate": "1.4140",
+    "showDate": "2026-09-11 14:56:30",
+    "isinCode": "CND10007MXL8",
+    "termToMaturity": "4.47Y"
+  },
+  {
+    "excelCode": "198936.IB",
+    "abdAssetEncdFullDescByRmb": "24内蒙古02",
+    "dmiLatestRate": "104.75",
+    "dmiLatestContraRate": "1.4400",
+    "dmiWghtdContraRate": "1.4400",
+    "showDate": "2026-09-11 16:41:38",
+    "isinCode": "CND10007LZM3",
+    "termToMaturity": "4.46Y"
+  },
+  {
+    "excelCode": "198960.IB",
+    "abdAssetEncdFullDescByRmb": "24云南04",
+    "dmiLatestRate": "104.18",
+    "dmiLatestContraRate": "1.4410",
+    "dmiWghtdContraRate": "1.4410",
+    "showDate": "2026-09-11 16:43:21",
+    "isinCode": "CND10007NSY9",
+    "termToMaturity": "4.50Y"
+  },
+  {
+    "excelCode": "198985.IB",
+    "abdAssetEncdFullDescByRmb": "24河南14",
+    "dmiLatestRate": "104.43",
+    "dmiLatestContraRate": "1.4114",
+    "dmiWghtdContraRate": "1.4120",
+    "showDate": "2026-09-11 17:44:54",
+    "isinCode": "CND10007Q9K1",
+    "termToMaturity": "4.58Y"
+  },
+  {
+    "excelCode": "199080.IB",
+    "abdAssetEncdFullDescByRmb": "24山东债77",
+    "dmiLatestRate": "105.31",
+    "dmiLatestContraRate": "1.8455",
+    "dmiWghtdContraRate": "1.8455",
+    "showDate": "2026-09-11 15:37:40",
+    "isinCode": "---",
+    "termToMaturity": "13.22Y"
+  },
+  {
+    "excelCode": "199083.IB",
+    "abdAssetEncdFullDescByRmb": "24湖南债58",
+    "dmiLatestRate": "102.71",
+    "dmiLatestContraRate": "1.4575",
+    "dmiWghtdContraRate": "1.4574",
+    "showDate": "2026-09-11 14:57:09",
+    "isinCode": "---",
+    "termToMaturity": "5.22Y"
+  },
+  {
+    "excelCode": "199084.IB",
+    "abdAssetEncdFullDescByRmb": "24湖南债59",
+    "dmiLatestRate": "104.02",
+    "dmiLatestContraRate": "1.6350",
+    "dmiWghtdContraRate": "1.6329",
+    "showDate": "2026-09-11 15:14:43",
+    "isinCode": "CND10008Q2T6",
+    "termToMaturity": "8.22Y"
+  },
+  {
+    "excelCode": "199085.IB",
+    "abdAssetEncdFullDescByRmb": "24湖南债60",
+    "dmiLatestRate": "104.19",
+    "dmiLatestContraRate": "2.1510",
+    "dmiWghtdContraRate": "2.1510",
+    "showDate": "2026-09-11 14:00:14",
+    "isinCode": "CND10008Q2X8",
+    "termToMaturity": "28.22Y"
+  },
+  {
+    "excelCode": "199092.IB",
+    "abdAssetEncdFullDescByRmb": "24福建债46",
+    "dmiLatestRate": "104.08",
+    "dmiLatestContraRate": "1.8508",
+    "dmiWghtdContraRate": "1.8508",
+    "showDate": "2026-09-11 17:13:47",
+    "isinCode": "CND10008QDL9",
+    "termToMaturity": "13.24Y"
+  },
+  {
+    "excelCode": "199129.IB",
+    "abdAssetEncdFullDescByRmb": "25江苏债08",
+    "dmiLatestRate": "101.61",
+    "dmiLatestContraRate": "1.4604",
+    "dmiWghtdContraRate": "1.4604",
+    "showDate": "2026-09-11 17:45:06",
+    "isinCode": "CND100091B90",
+    "termToMaturity": "5.47Y"
+  },
+  {
+    "excelCode": "199225.IB",
+    "abdAssetEncdFullDescByRmb": "25广东债17",
+    "dmiLatestRate": "101.15",
+    "dmiLatestContraRate": "1.6366",
+    "dmiWghtdContraRate": "1.6366",
+    "showDate": "2026-09-11 17:13:46",
+    "isinCode": "CND100098NF3",
+    "termToMaturity": "8.67Y"
+  },
+  {
+    "excelCode": "199254.IB",
+    "abdAssetEncdFullDescByRmb": "25四川债33",
+    "dmiLatestRate": "100.98",
+    "dmiLatestContraRate": "1.4900",
+    "dmiWghtdContraRate": "1.4888",
+    "showDate": "2026-09-11 14:38:03",
+    "isinCode": "CND10009BMF2",
+    "termToMaturity": "5.73Y"
+  },
+  {
+    "excelCode": "199285.IB",
+    "abdAssetEncdFullDescByRmb": "25湖北债55",
+    "dmiLatestRate": "99.06",
+    "dmiLatestContraRate": "2.1003",
+    "dmiWghtdContraRate": "2.1003",
+    "showDate": "2026-09-11 14:20:40",
+    "isinCode": "CND10009G645",
+    "termToMaturity": "28.79Y"
+  },
+  {
+    "excelCode": "199291.IB",
+    "abdAssetEncdFullDescByRmb": "25湖北债61",
+    "dmiLatestRate": "100.47",
+    "dmiLatestContraRate": "1.8908",
+    "dmiWghtdContraRate": "1.8917",
+    "showDate": "2026-09-11 17:13:47",
+    "isinCode": "CND10009G6L5",
+    "termToMaturity": "13.79Y"
+  },
+  {
+    "excelCode": "199318.IB",
+    "abdAssetEncdFullDescByRmb": "25湖南债30",
+    "dmiLatestRate": "100.98",
+    "dmiLatestContraRate": "1.4070",
+    "dmiWghtdContraRate": "1.4084",
+    "showDate": "2026-09-11 15:08:20",
+    "isinCode": "CND10009KHY4",
+    "termToMaturity": "3.88Y"
+  },
+  {
+    "excelCode": "199334.IB",
+    "abdAssetEncdFullDescByRmb": "25广东债42",
+    "dmiLatestRate": "100.90",
+    "dmiLatestContraRate": "2.2775",
+    "dmiWghtdContraRate": "2.2775",
+    "showDate": "2026-09-11 14:34:28",
+    "isinCode": "CND10009N9S5",
+    "termToMaturity": "28.94Y"
+  },
+  {
+    "excelCode": "199360.IB",
+    "abdAssetEncdFullDescByRmb": "25江苏债39",
+    "dmiLatestRate": "101.47",
+    "dmiLatestContraRate": "1.4550",
+    "dmiWghtdContraRate": "1.4550",
+    "showDate": "2026-09-11 15:02:34",
+    "isinCode": "CND10009PB57",
+    "termToMaturity": "3.96Y"
+  },
+  {
+    "excelCode": "199363.IB",
+    "abdAssetEncdFullDescByRmb": "25江苏债42",
+    "dmiLatestRate": "101.51",
+    "dmiLatestContraRate": "1.4550",
+    "dmiWghtdContraRate": "1.4550",
+    "showDate": "2026-09-11 11:24:23",
+    "isinCode": "CND10009PB81",
+    "termToMaturity": "3.96Y"
+  },
+  {
+    "excelCode": "199375.IB",
+    "abdAssetEncdFullDescByRmb": "25河南债65",
+    "dmiLatestRate": "101.95",
+    "dmiLatestContraRate": "2.2780",
+    "dmiWghtdContraRate": "2.2780",
+    "showDate": "2026-09-11 14:44:42",
+    "isinCode": "CND10009R0B6",
+    "termToMaturity": "29.02Y"
+  },
+  {
+    "excelCode": "199395.IB",
+    "abdAssetEncdFullDescByRmb": "25内蒙古债26",
+    "dmiLatestRate": "103.25",
+    "dmiLatestContraRate": "1.7600",
+    "dmiWghtdContraRate": "1.7600",
+    "showDate": "2026-09-11 16:00:36",
+    "isinCode": "CND10009ST47",
+    "termToMaturity": "9.05Y"
+  },
+  {
+    "excelCode": "199422.IB",
+    "abdAssetEncdFullDescByRmb": "25河南债90",
+    "dmiLatestRate": "101.92",
+    "dmiLatestContraRate": "1.5681",
+    "dmiWghtdContraRate": "1.5681",
+    "showDate": "2026-09-11 16:54:20",
+    "isinCode": "CND10009WBR6",
+    "termToMaturity": "6.13Y"
+  },
+  {
+    "excelCode": "199460.IB",
+    "abdAssetEncdFullDescByRmb": "25内蒙古债36",
+    "dmiLatestRate": "102.10",
+    "dmiLatestContraRate": "1.7715",
+    "dmiWghtdContraRate": "1.7715",
+    "showDate": "2026-09-11 11:33:08",
+    "isinCode": "CND10009ZF69",
+    "termToMaturity": "9.21Y"
+  },
+  {
+    "excelCode": "199472.IB",
+    "abdAssetEncdFullDescByRmb": "25河北债79",
+    "dmiLatestRate": "104.15",
+    "dmiLatestContraRate": "2.0124",
+    "dmiWghtdContraRate": "2.0117",
+    "showDate": "2026-09-11 14:51:49",
+    "isinCode": "CND10009ZMC8",
+    "termToMaturity": "14.21Y"
+  },
+  {
+    "excelCode": "199502.IB",
+    "abdAssetEncdFullDescByRmb": "25河南债120",
+    "dmiLatestRate": "104.14",
+    "dmiLatestContraRate": "2.2848",
+    "dmiWghtdContraRate": "2.2848",
+    "showDate": "2026-09-11 14:42:47",
+    "isinCode": "CND10009ZZL1",
+    "termToMaturity": "29.24Y"
+  },
+  {
+    "excelCode": "199558.IB",
+    "abdAssetEncdFullDescByRmb": "26湖北债23",
+    "dmiLatestRate": "103.67",
+    "dmiLatestContraRate": "2.2100",
+    "dmiWghtdContraRate": "2.2100",
+    "showDate": "2026-09-11 11:27:52",
+    "isinCode": "CND1000B8FL6",
+    "termToMaturity": "19.52Y"
+  },
+  {
+    "excelCode": "199560.IB",
+    "abdAssetEncdFullDescByRmb": "26湖北债25",
+    "dmiLatestRate": "102.04",
+    "dmiLatestContraRate": "1.7666",
+    "dmiWghtdContraRate": "1.7666",
+    "showDate": "2026-09-11 11:14:02",
+    "isinCode": "CND1000B8FQ5",
+    "termToMaturity": "9.52Y"
+  },
+  {
+    "excelCode": "199564.IB",
+    "abdAssetEncdFullDescByRmb": "26四川债17",
+    "dmiLatestRate": "101.95",
+    "dmiLatestContraRate": "1.7666",
+    "dmiWghtdContraRate": "1.7666",
+    "showDate": "2026-09-11 14:24:59",
+    "isinCode": "CND1000B8MD9",
+    "termToMaturity": "9.52Y"
+  },
+  {
+    "excelCode": "199565.IB",
+    "abdAssetEncdFullDescByRmb": "26四川债18",
+    "dmiLatestRate": "105.35",
+    "dmiLatestContraRate": "2.2800",
+    "dmiWghtdContraRate": "2.2800",
+    "showDate": "2026-09-11 15:03:28",
+    "isinCode": "CND1000B8MC1",
+    "termToMaturity": "29.52Y"
+  },
+  {
+    "excelCode": "199576.IB",
+    "abdAssetEncdFullDescByRmb": "26云南债06",
+    "dmiLatestRate": "100.93",
+    "dmiLatestContraRate": "1.7738",
+    "dmiWghtdContraRate": "1.7738",
+    "showDate": "2026-09-11 15:21:49",
+    "isinCode": "CND1000B8YF9",
+    "termToMaturity": "9.53Y"
+  },
+  {
+    "excelCode": "199583.IB",
+    "abdAssetEncdFullDescByRmb": "26重庆债20",
+    "dmiLatestRate": "101.96",
+    "dmiLatestContraRate": "1.7666",
+    "dmiWghtdContraRate": "1.7667",
+    "showDate": "2026-09-11 15:04:15",
+    "isinCode": "CND1000B9DZ9",
+    "termToMaturity": "9.56Y"
+  },
+  {
+    "excelCode": "199603.IB",
+    "abdAssetEncdFullDescByRmb": "26福建债09",
+    "dmiLatestRate": "100.31",
+    "dmiLatestContraRate": "1.4900",
+    "dmiWghtdContraRate": "1.4900",
+    "showDate": "2026-09-11 17:44:59",
+    "isinCode": "CND1000BB8W2",
+    "termToMaturity": "4.61Y"
+  },
+  {
+    "excelCode": "199612.IB",
+    "abdAssetEncdFullDescByRmb": "26安徽债32",
+    "dmiLatestRate": "102.72",
+    "dmiLatestContraRate": "2.2475",
+    "dmiWghtdContraRate": "2.2475",
+    "showDate": "2026-09-11 16:03:43",
+    "isinCode": "CND1000BBLY8",
+    "termToMaturity": "19.63Y"
+  },
+  {
+    "excelCode": "199617.IB",
+    "abdAssetEncdFullDescByRmb": "26江苏债17",
+    "dmiLatestRate": "100.63",
+    "dmiLatestContraRate": "1.5779",
+    "dmiWghtdContraRate": "1.5779",
+    "showDate": "2026-09-11 11:14:01",
+    "isinCode": "CND1000BBH07",
+    "termToMaturity": "6.62Y"
+  },
+  {
+    "excelCode": "199619.IB",
+    "abdAssetEncdFullDescByRmb": "26江苏债19",
+    "dmiLatestRate": "101.01",
+    "dmiLatestContraRate": "2.0300",
+    "dmiWghtdContraRate": "2.0301",
+    "showDate": "2026-09-11 13:44:54",
+    "isinCode": "CND1000BBH80",
+    "termToMaturity": "14.62Y"
+  },
+  {
+    "excelCode": "199620.IB",
+    "abdAssetEncdFullDescByRmb": "26江苏债20",
+    "dmiLatestRate": "101.82",
+    "dmiLatestContraRate": "2.2350",
+    "dmiWghtdContraRate": "2.2329",
+    "showDate": "2026-09-11 15:42:57",
+    "isinCode": "CND1000BBGN1",
+    "termToMaturity": "19.62Y"
+  },
+  {
+    "excelCode": "2005103.IB",
+    "abdAssetEncdFullDescByRmb": "20山东债15",
+    "dmiLatestRate": "128.98",
+    "dmiLatestContraRate": "2.1500",
+    "dmiWghtdContraRate": "2.1500",
+    "showDate": "2026-09-11 11:01:18",
+    "isinCode": "CND10002LT58",
+    "termToMaturity": "23.46Y"
+  },
+  {
+    "excelCode": "2005155.IB",
+    "abdAssetEncdFullDescByRmb": "20浙江债10",
+    "dmiLatestRate": "114.07",
+    "dmiLatestContraRate": "1.6075",
+    "dmiWghtdContraRate": "1.6075",
+    "showDate": "2026-09-11 11:31:00",
+    "isinCode": "CND10002M0J1",
+    "termToMaturity": "8.47Y"
+  },
+  {
+    "excelCode": "2005206.IB",
+    "abdAssetEncdFullDescByRmb": "20甘肃债06",
+    "dmiLatestRate": "100.98",
+    "dmiLatestContraRate": "0.9500",
+    "dmiWghtdContraRate": "0.9500",
+    "showDate": "2026-09-11 13:41:24",
+    "isinCode": "CND10002RWJ4",
+    "termToMaturity": "180D"
+  },
+  {
+    "excelCode": "2005310.IB",
+    "abdAssetEncdFullDescByRmb": "20江西债12",
+    "dmiLatestRate": "101.02",
+    "dmiLatestContraRate": "1.0400",
+    "dmiWghtdContraRate": "1.0400",
+    "showDate": "2026-09-11 13:41:24",
+    "isinCode": "CND1000343M0",
+    "termToMaturity": "225D"
+  },
+  {
+    "excelCode": "2005370.IB",
+    "abdAssetEncdFullDescByRmb": "20福建债19",
+    "dmiLatestRate": "105.71",
+    "dmiLatestContraRate": "1.3475",
+    "dmiWghtdContraRate": "1.3475",
+    "showDate": "2026-09-11 13:36:27",
+    "isinCode": "CND100037NN5",
+    "termToMaturity": "3.69Y"
+  },
+  {
+    "excelCode": "2005376.IB",
+    "abdAssetEncdFullDescByRmb": "20山西债11",
+    "dmiLatestRate": "120.36",
+    "dmiLatestContraRate": "1.8760",
+    "dmiWghtdContraRate": "1.8760",
+    "showDate": "2026-09-11 15:12:31",
+    "isinCode": "CND100037NS4",
+    "termToMaturity": "13.69Y"
+  },
+  {
+    "excelCode": "2005532.IB",
+    "abdAssetEncdFullDescByRmb": "20厦门债08",
+    "dmiLatestRate": "114.57",
+    "dmiLatestContraRate": "1.6387",
+    "dmiWghtdContraRate": "1.6387",
+    "showDate": "2026-09-11 15:13:57",
+    "isinCode": "CND1000380J8",
+    "termToMaturity": "8.71Y"
+  },
+  {
+    "excelCode": "2005612.IB",
+    "abdAssetEncdFullDescByRmb": "20福建债32",
+    "dmiLatestRate": "114.50",
+    "dmiLatestContraRate": "1.6575",
+    "dmiWghtdContraRate": "1.6575",
+    "showDate": "2026-09-11 14:15:24",
+    "isinCode": "CND100038CH8",
+    "termToMaturity": "8.72Y"
+  },
+  {
+    "excelCode": "2005783.IB",
+    "abdAssetEncdFullDescByRmb": "20江苏债16",
+    "dmiLatestRate": "117.30",
+    "dmiLatestContraRate": "1.6125",
+    "dmiWghtdContraRate": "1.6125",
+    "showDate": "2026-09-11 14:38:53",
+    "isinCode": "CND10003KFR5",
+    "termToMaturity": "8.93Y"
+  },
+  {
+    "excelCode": "2005822.IB",
+    "abdAssetEncdFullDescByRmb": "20浙江债38",
+    "dmiLatestRate": "107.34",
+    "dmiLatestContraRate": "1.3800",
+    "dmiWghtdContraRate": "1.3800",
+    "showDate": "2026-09-11 15:41:42",
+    "isinCode": "CND10003L8C9",
+    "termToMaturity": "3.97Y"
+  },
+  {
+    "excelCode": "2005836.IB",
+    "abdAssetEncdFullDescByRmb": "20江苏债18",
+    "dmiLatestRate": "107.60",
+    "dmiLatestContraRate": "1.3200",
+    "dmiWghtdContraRate": "1.3225",
+    "showDate": "2026-09-11 15:54:10",
+    "isinCode": "CND10003L8L0",
+    "termToMaturity": "3.97Y"
+  },
+  {
+    "excelCode": "2005838.IB",
+    "abdAssetEncdFullDescByRmb": "20上海债09",
+    "dmiLatestRate": "107.42",
+    "dmiLatestContraRate": "1.3200",
+    "dmiWghtdContraRate": "1.3200",
+    "showDate": "2026-09-11 15:53:31",
+    "isinCode": "CND10003L697",
+    "termToMaturity": "3.96Y"
+  },
+  {
+    "excelCode": "2105008.IB",
+    "abdAssetEncdFullDescByRmb": "21陕西债02",
+    "dmiLatestRate": "108.23",
+    "dmiLatestContraRate": "1.4333",
+    "dmiWghtdContraRate": "1.4333",
+    "showDate": "2026-09-11 14:55:04",
+    "isinCode": "CND100042L98",
+    "termToMaturity": "4.36Y"
+  },
+  {
+    "excelCode": "2105040.IB",
+    "abdAssetEncdFullDescByRmb": "21安徽债04",
+    "dmiLatestRate": "109.22",
+    "dmiLatestContraRate": "1.3974",
+    "dmiWghtdContraRate": "1.3974",
+    "showDate": "2026-09-11 15:02:48",
+    "isinCode": "CND100045GF8",
+    "termToMaturity": "4.49Y"
+  },
+  {
+    "excelCode": "2105071.IB",
+    "abdAssetEncdFullDescByRmb": "21湖北债03",
+    "dmiLatestRate": "109.12",
+    "dmiLatestContraRate": "1.3990",
+    "dmiWghtdContraRate": "1.3990",
+    "showDate": "2026-09-11 14:55:19",
+    "isinCode": "CND100045M29",
+    "termToMaturity": "4.54Y"
+  },
+  {
+    "excelCode": "2105116.IB",
+    "abdAssetEncdFullDescByRmb": "21江西债05",
+    "dmiLatestRate": "103.56",
+    "dmiLatestContraRate": "1.1800",
+    "dmiWghtdContraRate": "1.1500",
+    "showDate": "2026-09-11 15:42:28",
+    "isinCode": "CND1000476P1",
+    "termToMaturity": "1.63Y"
+  },
+  {
+    "excelCode": "2105223.IB",
+    "abdAssetEncdFullDescByRmb": "21湖北债36",
+    "dmiLatestRate": "119.48",
+    "dmiLatestContraRate": "1.7177",
+    "dmiWghtdContraRate": "1.7177",
+    "showDate": "2026-09-11 15:13:32",
+    "isinCode": "CND100047VX6",
+    "termToMaturity": "14.71Y"
+  },
+  {
+    "excelCode": "2105235.IB",
+    "abdAssetEncdFullDescByRmb": "21浙江债10",
+    "dmiLatestRate": "108.84",
+    "dmiLatestContraRate": "1.3850",
+    "dmiWghtdContraRate": "1.3844",
+    "showDate": "2026-09-11 17:11:42",
+    "isinCode": "CND1000483J0",
+    "termToMaturity": "4.72Y"
+  },
+  {
+    "excelCode": "2105237.IB",
+    "abdAssetEncdFullDescByRmb": "21浙江债12",
+    "dmiLatestRate": "124.44",
+    "dmiLatestContraRate": "1.8900",
+    "dmiWghtdContraRate": "1.8900",
+    "showDate": "2026-09-11 15:37:38",
+    "isinCode": "CND1000483L6",
+    "termToMaturity": "14.72Y"
+  },
+  {
+    "excelCode": "2105269.IB",
+    "abdAssetEncdFullDescByRmb": "21广东债37",
+    "dmiLatestRate": "124.22",
+    "dmiLatestContraRate": "1.8900",
+    "dmiWghtdContraRate": "1.8900",
+    "showDate": "2026-09-11 14:13:08",
+    "isinCode": "CND1000485J5",
+    "termToMaturity": "14.74Y"
+  },
+  {
+    "excelCode": "2105286.IB",
+    "abdAssetEncdFullDescByRmb": "21广东债54",
+    "dmiLatestRate": "108.95",
+    "dmiLatestContraRate": "1.3636",
+    "dmiWghtdContraRate": "1.3649",
+    "showDate": "2026-09-11 14:32:43",
+    "isinCode": "CND100048628",
+    "termToMaturity": "4.74Y"
+  },
+  {
+    "excelCode": "2105699.IB",
+    "abdAssetEncdFullDescByRmb": "21广东债72",
+    "dmiLatestRate": "116.07",
+    "dmiLatestContraRate": "1.6500",
+    "dmiWghtdContraRate": "1.6500",
+    "showDate": "2026-09-11 11:48:37",
+    "isinCode": "CND10004LH43",
+    "termToMaturity": "9.94Y"
+  },
+  {
+    "excelCode": "2105754.IB",
+    "abdAssetEncdFullDescByRmb": "21贵州债29",
+    "dmiLatestRate": "116.27",
+    "dmiLatestContraRate": "1.6975",
+    "dmiWghtdContraRate": "1.6970",
+    "showDate": "2026-09-11 15:34:56",
+    "isinCode": "CND10004LNH6",
+    "termToMaturity": "9.96Y"
+  },
+  {
+    "excelCode": "2105829.IB",
+    "abdAssetEncdFullDescByRmb": "21安徽债38",
+    "dmiLatestRate": "116.88",
+    "dmiLatestContraRate": "1.6750",
+    "dmiWghtdContraRate": "1.6713",
+    "showDate": "2026-09-11 15:24:46",
+    "isinCode": "CND10004M792",
+    "termToMaturity": "10.03Y"
+  },
+  {
+    "excelCode": "2105880.IB",
+    "abdAssetEncdFullDescByRmb": "21宁波债24",
+    "dmiLatestRate": "119.13",
+    "dmiLatestContraRate": "1.9636",
+    "dmiWghtdContraRate": "1.9636",
+    "showDate": "2026-09-11 16:19:16",
+    "isinCode": "CND10004MC70",
+    "termToMaturity": "15.04Y"
+  },
+  {
+    "excelCode": "2105982.IB",
+    "abdAssetEncdFullDescByRmb": "21江苏债22",
+    "dmiLatestRate": "100.24",
+    "dmiLatestContraRate": "0.9196",
+    "dmiWghtdContraRate": "0.9196",
+    "showDate": "2026-09-11 14:00:32",
+    "isinCode": "CND10004NQ08",
+    "termToMaturity": "44D"
+  },
+  {
+    "excelCode": "2171072.IB",
+    "abdAssetEncdFullDescByRmb": "21广东债90",
+    "dmiLatestRate": "104.27",
+    "dmiLatestContraRate": "1.1600",
+    "dmiWghtdContraRate": "1.1600",
+    "showDate": "2026-09-11 13:30:44",
+    "isinCode": "CND10004NQ24",
+    "termToMaturity": "2.12Y"
+  },
+  {
+    "excelCode": "2171074.IB",
+    "abdAssetEncdFullDescByRmb": "21广东债92",
+    "dmiLatestRate": "104.22",
+    "dmiLatestContraRate": "1.1750",
+    "dmiWghtdContraRate": "1.1750",
+    "showDate": "2026-09-11 15:05:20",
+    "isinCode": "CND10004NQ40",
+    "termToMaturity": "2.12Y"
+  },
+  {
+    "excelCode": "2171173.IB",
+    "abdAssetEncdFullDescByRmb": "21安徽债51",
+    "dmiLatestRate": "117.19",
+    "dmiLatestContraRate": "1.6800",
+    "dmiWghtdContraRate": "1.6787",
+    "showDate": "2026-09-11 16:20:14",
+    "isinCode": "CND10004PDP1",
+    "termToMaturity": "10.21Y"
+  },
+  {
+    "excelCode": "2171176.IB",
+    "abdAssetEncdFullDescByRmb": "21安徽债54",
+    "dmiLatestRate": "100.41",
+    "dmiLatestContraRate": "0.9201",
+    "dmiWghtdContraRate": "0.9201",
+    "showDate": "2026-09-11 14:00:32",
+    "isinCode": "CND10004PDS5",
+    "termToMaturity": "75D"
+  },
+  {
+    "excelCode": "2171196.IB",
+    "abdAssetEncdFullDescByRmb": "21四川债71",
+    "dmiLatestRate": "100.34",
+    "dmiLatestContraRate": "0.9198",
+    "dmiWghtdContraRate": "0.9198",
+    "showDate": "2026-09-11 14:00:32",
+    "isinCode": "CND10004P035",
+    "termToMaturity": "60D"
+  },
+  {
+    "excelCode": "2171290.IB",
+    "abdAssetEncdFullDescByRmb": "21河北债61",
+    "dmiLatestRate": "109.97",
+    "dmiLatestContraRate": "1.5625",
+    "dmiWghtdContraRate": "1.5625",
+    "showDate": "2026-09-11 15:26:46",
+    "isinCode": "CND10004PBB5",
+    "termToMaturity": "10.20Y"
+  },
+  {
+    "excelCode": "2171303.IB",
+    "abdAssetEncdFullDescByRmb": "21湖南债100",
+    "dmiLatestRate": "117.08",
+    "dmiLatestContraRate": "1.6800",
+    "dmiWghtdContraRate": "1.6780",
+    "showDate": "2026-09-11 15:23:46",
+    "isinCode": "CND10004PCC1",
+    "termToMaturity": "10.20Y"
+  },
+  {
+    "excelCode": "2171309.IB",
+    "abdAssetEncdFullDescByRmb": "21湖南债106",
+    "dmiLatestRate": "120.64",
+    "dmiLatestContraRate": "1.9625",
+    "dmiWghtdContraRate": "1.9594",
+    "showDate": "2026-09-11 15:26:47",
+    "isinCode": "CND10004PCK4",
+    "termToMaturity": "15.20Y"
+  },
+  {
+    "excelCode": "2171347.IB",
+    "abdAssetEncdFullDescByRmb": "21内蒙古债39",
+    "dmiLatestRate": "100.45",
+    "dmiLatestContraRate": "0.9200",
+    "dmiWghtdContraRate": "0.9200",
+    "showDate": "2026-09-11 14:00:32",
+    "isinCode": "CND10004Q9Q1",
+    "termToMaturity": "82D"
+  },
+  {
+    "excelCode": "2171361.IB",
+    "abdAssetEncdFullDescByRmb": "21浙江债67",
+    "dmiLatestRate": "120.66",
+    "dmiLatestContraRate": "1.9275",
+    "dmiWghtdContraRate": "1.9275",
+    "showDate": "2026-09-11 15:56:04",
+    "isinCode": "CND10004Q1F1",
+    "termToMaturity": "15.22Y"
+  },
+  {
+    "excelCode": "2171439.IB",
+    "abdAssetEncdFullDescByRmb": "21湖南债140",
+    "dmiLatestRate": "118.72",
+    "dmiLatestContraRate": "1.9700",
+    "dmiWghtdContraRate": "1.9700",
+    "showDate": "2026-09-11 17:07:34",
+    "isinCode": "CND10004Q2Q6",
+    "termToMaturity": "15.22Y"
+  },
+  {
+    "excelCode": "2171455.IB",
+    "abdAssetEncdFullDescByRmb": "21湖北债176",
+    "dmiLatestRate": "104.07",
+    "dmiLatestContraRate": "1.2840",
+    "dmiWghtdContraRate": "1.2840",
+    "showDate": "2026-09-11 14:55:03",
+    "isinCode": "CND10004QDN4",
+    "termToMaturity": "2.25Y"
+  },
+  {
+    "excelCode": "2205076.IB",
+    "abdAssetEncdFullDescByRmb": "22广东债08",
+    "dmiLatestRate": "117.54",
+    "dmiLatestContraRate": "1.9525",
+    "dmiWghtdContraRate": "1.9525",
+    "showDate": "2026-09-11 17:10:35",
+    "isinCode": "CND10004R4S7",
+    "termToMaturity": "15.37Y"
+  },
+  {
+    "excelCode": "2205119.IB",
+    "abdAssetEncdFullDescByRmb": "22内蒙古债01",
+    "dmiLatestRate": "107.66",
+    "dmiLatestContraRate": "1.4806",
+    "dmiWghtdContraRate": "1.4806",
+    "showDate": "2026-09-11 15:19:40",
+    "isinCode": "CND10004R676",
+    "termToMaturity": "5.38Y"
+  },
+  {
+    "excelCode": "2205129.IB",
+    "abdAssetEncdFullDescByRmb": "22重庆债02",
+    "dmiLatestRate": "114.16",
+    "dmiLatestContraRate": "1.6900",
+    "dmiWghtdContraRate": "1.6933",
+    "showDate": "2026-09-11 16:43:09",
+    "isinCode": "CND10004R940",
+    "termToMaturity": "10.41Y"
+  },
+  {
+    "excelCode": "2205320.IB",
+    "abdAssetEncdFullDescByRmb": "22山东债16",
+    "dmiLatestRate": "119.15",
+    "dmiLatestContraRate": "1.9843",
+    "dmiWghtdContraRate": "1.9843",
+    "showDate": "2026-09-11 16:43:08",
+    "isinCode": "CND10004SG47",
+    "termToMaturity": "15.46Y"
+  },
+  {
+    "excelCode": "2205697.IB",
+    "abdAssetEncdFullDescByRmb": "22广东债28",
+    "dmiLatestRate": "117.69",
+    "dmiLatestContraRate": "1.9630",
+    "dmiWghtdContraRate": "1.9629",
+    "showDate": "2026-09-11 15:43:11",
+    "isinCode": "CND10004TNW8",
+    "termToMaturity": "15.67Y"
+  },
+  {
+    "excelCode": "2205714.IB",
+    "abdAssetEncdFullDescByRmb": "22山东债26",
+    "dmiLatestRate": "125.43",
+    "dmiLatestContraRate": "2.1550",
+    "dmiWghtdContraRate": "2.1550",
+    "showDate": "2026-09-11 15:00:18",
+    "isinCode": "CND10004TPG6",
+    "termToMaturity": "25.67Y"
+  },
+  {
+    "excelCode": "2205879.IB",
+    "abdAssetEncdFullDescByRmb": "22山东债34",
+    "dmiLatestRate": "124.87",
+    "dmiLatestContraRate": "2.1550",
+    "dmiWghtdContraRate": "2.1550",
+    "showDate": "2026-09-11 15:10:48",
+    "isinCode": "CND100053C20",
+    "termToMaturity": "25.71Y"
+  },
+  {
+    "excelCode": "2271024.IB",
+    "abdAssetEncdFullDescByRmb": "22广东债38",
+    "dmiLatestRate": "116.97",
+    "dmiLatestContraRate": "1.9631",
+    "dmiWghtdContraRate": "1.9633",
+    "showDate": "2026-09-11 15:11:11",
+    "isinCode": "CND100058Q37",
+    "termToMaturity": "15.76Y"
+  },
+  {
+    "excelCode": "2271167.IB",
+    "abdAssetEncdFullDescByRmb": "22四川债67",
+    "dmiLatestRate": "104.36",
+    "dmiLatestContraRate": "1.3112",
+    "dmiWghtdContraRate": "1.3112",
+    "showDate": "2026-09-11 15:07:34",
+    "isinCode": "CND100058W62",
+    "termToMaturity": "2.76Y"
+  },
+  {
+    "excelCode": "2271170.IB",
+    "abdAssetEncdFullDescByRmb": "22四川债70",
+    "dmiLatestRate": "104.36",
+    "dmiLatestContraRate": "1.3112",
+    "dmiWghtdContraRate": "1.3112",
+    "showDate": "2026-09-11 15:07:36",
+    "isinCode": "CND100058WC5",
+    "termToMaturity": "2.76Y"
+  },
+  {
+    "excelCode": "2271180.IB",
+    "abdAssetEncdFullDescByRmb": "22四川债80",
+    "dmiLatestRate": "117.23",
+    "dmiLatestContraRate": "2.0000",
+    "dmiWghtdContraRate": "2.0000",
+    "showDate": "2026-09-11 10:10:37",
+    "isinCode": "CND100059393",
+    "termToMaturity": "15.76Y"
+  },
+  {
+    "excelCode": "2271241.IB",
+    "abdAssetEncdFullDescByRmb": "22天津债51",
+    "dmiLatestRate": "116.65",
+    "dmiLatestContraRate": "2.0400",
+    "dmiWghtdContraRate": "2.0382",
+    "showDate": "2026-09-11 16:23:30",
+    "isinCode": "CND10005B123",
+    "termToMaturity": "15.78Y"
+  },
+  {
+    "excelCode": "2271337.IB",
+    "abdAssetEncdFullDescByRmb": "22浙江债39",
+    "dmiLatestRate": "117.44",
+    "dmiLatestContraRate": "1.9703",
+    "dmiWghtdContraRate": "1.9703",
+    "showDate": "2026-09-11 16:45:24",
+    "isinCode": "CND10005CPW6",
+    "termToMaturity": "15.80Y"
+  },
+  {
+    "excelCode": "2271375.IB",
+    "abdAssetEncdFullDescByRmb": "22山东债50",
+    "dmiLatestRate": "123.94",
+    "dmiLatestContraRate": "2.1550",
+    "dmiWghtdContraRate": "2.1550",
+    "showDate": "2026-09-11 15:00:24",
+    "isinCode": "CND10005CDF7",
+    "termToMaturity": "25.79Y"
+  },
+  {
+    "excelCode": "2271509.IB",
+    "abdAssetEncdFullDescByRmb": "22云南债27",
+    "dmiLatestRate": "101.52",
+    "dmiLatestContraRate": "0.9500",
+    "dmiWghtdContraRate": "0.9500",
+    "showDate": "2026-09-11 13:41:24",
+    "isinCode": "CND10005D3X4",
+    "termToMaturity": "299D"
+  },
+  {
+    "excelCode": "2271552.IB",
+    "abdAssetEncdFullDescByRmb": "22云南债28",
+    "dmiLatestRate": "104.52",
+    "dmiLatestContraRate": "1.3160",
+    "dmiWghtdContraRate": "1.3160",
+    "showDate": "2026-09-11 13:51:08",
+    "isinCode": "CND10005GHG7",
+    "termToMaturity": "2.86Y"
+  },
+  {
+    "excelCode": "2271559.IB",
+    "abdAssetEncdFullDescByRmb": "22安徽债55",
+    "dmiLatestRate": "104.48",
+    "dmiLatestContraRate": "1.3000",
+    "dmiWghtdContraRate": "1.3000",
+    "showDate": "2026-09-11 13:30:54",
+    "isinCode": "CND10005JJ85",
+    "termToMaturity": "2.89Y"
+  },
+  {
+    "excelCode": "2271579.IB",
+    "abdAssetEncdFullDescByRmb": "22甘肃债23",
+    "dmiLatestRate": "104.36",
+    "dmiLatestContraRate": "1.3100",
+    "dmiWghtdContraRate": "1.3100",
+    "showDate": "2026-09-11 16:06:52",
+    "isinCode": "CND10005JJX2",
+    "termToMaturity": "2.91Y"
+  },
+  {
+    "excelCode": "2271626.IB",
+    "abdAssetEncdFullDescByRmb": "22重庆债39",
+    "dmiLatestRate": "113.60",
+    "dmiLatestContraRate": "1.7017",
+    "dmiWghtdContraRate": "1.7019",
+    "showDate": "2026-09-11 14:44:38",
+    "isinCode": "CND10005KVS5",
+    "termToMaturity": "10.94Y"
+  },
+  {
+    "excelCode": "2271936.IB",
+    "abdAssetEncdFullDescByRmb": "22宁波债29",
+    "dmiLatestRate": "104.55",
+    "dmiLatestContraRate": "1.3110",
+    "dmiWghtdContraRate": "1.3110",
+    "showDate": "2026-09-11 13:30:55",
+    "isinCode": "CND10005TXW4",
+    "termToMaturity": "3.14Y"
+  },
+  {
+    "excelCode": "2271959.IB",
+    "abdAssetEncdFullDescByRmb": "22陕西债65",
+    "dmiLatestRate": "114.91",
+    "dmiLatestContraRate": "2.0225",
+    "dmiWghtdContraRate": "2.0225",
+    "showDate": "2026-09-11 11:10:16",
+    "isinCode": "CND10005TXV6",
+    "termToMaturity": "16.14Y"
+  },
+  {
+    "excelCode": "2292014.IB",
+    "abdAssetEncdFullDescByRmb": "22湖南债155",
+    "dmiLatestRate": "113.42",
+    "dmiLatestContraRate": "1.7171",
+    "dmiWghtdContraRate": "1.7173",
+    "showDate": "2026-09-11 16:21:39",
+    "isinCode": "CND10005WSB2",
+    "termToMaturity": "11.19Y"
+  },
+  {
+    "excelCode": "2292061.IB",
+    "abdAssetEncdFullDescByRmb": "22浙江债64",
+    "dmiLatestRate": "108.83",
+    "dmiLatestContraRate": "1.4933",
+    "dmiWghtdContraRate": "1.4933",
+    "showDate": "2026-09-11 16:10:04",
+    "isinCode": "CND10005YKP5",
+    "termToMaturity": "6.24Y"
+  },
+  {
+    "excelCode": "2305030.IB",
+    "abdAssetEncdFullDescByRmb": "23广东债04",
+    "dmiLatestRate": "114.52",
+    "dmiLatestContraRate": "1.7063",
+    "dmiWghtdContraRate": "1.7030",
+    "showDate": "2026-09-11 17:13:51",
+    "isinCode": "CND100060003",
+    "termToMaturity": "11.35Y"
+  },
+  {
+    "excelCode": "2305069.IB",
+    "abdAssetEncdFullDescByRmb": "23四川债07",
+    "dmiLatestRate": "115.95",
+    "dmiLatestContraRate": "2.0375",
+    "dmiWghtdContraRate": "2.0375",
+    "showDate": "2026-09-11 16:26:15",
+    "isinCode": "CND1000600N1",
+    "termToMaturity": "16.35Y"
+  },
+  {
+    "excelCode": "2305131.IB",
+    "abdAssetEncdFullDescByRmb": "23江苏债03",
+    "dmiLatestRate": "124.86",
+    "dmiLatestContraRate": "2.1430",
+    "dmiWghtdContraRate": "2.1430",
+    "showDate": "2026-09-11 14:47:08",
+    "isinCode": "CND100063J39",
+    "termToMaturity": "26.42Y"
+  },
+  {
+    "excelCode": "2305246.IB",
+    "abdAssetEncdFullDescByRmb": "23江西债28",
+    "dmiLatestRate": "109.11",
+    "dmiLatestContraRate": "1.4995",
+    "dmiWghtdContraRate": "1.4995",
+    "showDate": "2026-09-11 15:07:28",
+    "isinCode": "CND1000681T8",
+    "termToMaturity": "6.52Y"
+  },
+  {
+    "excelCode": "2305279.IB",
+    "abdAssetEncdFullDescByRmb": "23甘肃债06",
+    "dmiLatestRate": "116.34",
+    "dmiLatestContraRate": "2.0590",
+    "dmiWghtdContraRate": "2.0529",
+    "showDate": "2026-09-11 17:09:02",
+    "isinCode": "CND100068Z91",
+    "termToMaturity": "16.54Y"
+  },
+  {
+    "excelCode": "2305325.IB",
+    "abdAssetEncdFullDescByRmb": "23四川债23",
+    "dmiLatestRate": "115.69",
+    "dmiLatestContraRate": "2.0475",
+    "dmiWghtdContraRate": "2.0470",
+    "showDate": "2026-09-11 17:47:19",
+    "isinCode": "CND100069NK4",
+    "termToMaturity": "16.56Y"
+  },
+  {
+    "excelCode": "2305340.IB",
+    "abdAssetEncdFullDescByRmb": "23广东债13",
+    "dmiLatestRate": "109.10",
+    "dmiLatestContraRate": "1.4836",
+    "dmiWghtdContraRate": "1.4843",
+    "showDate": "2026-09-11 16:52:48",
+    "isinCode": "CND10006BDK7",
+    "termToMaturity": "6.59Y"
+  },
+  {
+    "excelCode": "2305341.IB",
+    "abdAssetEncdFullDescByRmb": "23广东债14",
+    "dmiLatestRate": "108.99",
+    "dmiLatestContraRate": "1.5025",
+    "dmiWghtdContraRate": "1.5025",
+    "showDate": "2026-09-11 15:05:07",
+    "isinCode": "CND10006BDD2",
+    "termToMaturity": "6.59Y"
+  },
+  {
+    "excelCode": "2305343.IB",
+    "abdAssetEncdFullDescByRmb": "23广东债16",
+    "dmiLatestRate": "116.11",
+    "dmiLatestContraRate": "2.0127",
+    "dmiWghtdContraRate": "2.0131",
+    "showDate": "2026-09-11 16:18:04",
+    "isinCode": "CND10006BDC4",
+    "termToMaturity": "16.59Y"
+  },
+  {
+    "excelCode": "2305393.IB",
+    "abdAssetEncdFullDescByRmb": "23浙江债20",
+    "dmiLatestRate": "108.86",
+    "dmiLatestContraRate": "1.5036",
+    "dmiWghtdContraRate": "1.5036",
+    "showDate": "2026-09-11 15:12:18",
+    "isinCode": "CND10006FN33",
+    "termToMaturity": "6.64Y"
+  },
+  {
+    "excelCode": "2305464.IB",
+    "abdAssetEncdFullDescByRmb": "23云南债13",
+    "dmiLatestRate": "105.05",
+    "dmiLatestContraRate": "1.3750",
+    "dmiWghtdContraRate": "1.3750",
+    "showDate": "2026-09-11 11:31:41",
+    "isinCode": "CND10006GR20",
+    "termToMaturity": "3.68Y"
+  },
+  {
+    "excelCode": "2305489.IB",
+    "abdAssetEncdFullDescByRmb": "23宁波债16",
+    "dmiLatestRate": "114.33",
+    "dmiLatestContraRate": "2.0425",
+    "dmiWghtdContraRate": "2.0436",
+    "showDate": "2026-09-11 15:29:16",
+    "isinCode": "CND10006H7K7",
+    "termToMaturity": "16.70Y"
+  },
+  {
+    "excelCode": "2305521.IB",
+    "abdAssetEncdFullDescByRmb": "23四川债35",
+    "dmiLatestRate": "108.26",
+    "dmiLatestContraRate": "1.5100",
+    "dmiWghtdContraRate": "1.5100",
+    "showDate": "2026-09-11 14:34:12",
+    "isinCode": "CND10006HSD7",
+    "termToMaturity": "6.70Y"
+  },
+  {
+    "excelCode": "2305552.IB",
+    "abdAssetEncdFullDescByRmb": "23安徽债60",
+    "dmiLatestRate": "113.94",
+    "dmiLatestContraRate": "2.0525",
+    "dmiWghtdContraRate": "2.0533",
+    "showDate": "2026-09-11 15:42:54",
+    "isinCode": "CND10006M7F0",
+    "termToMaturity": "16.76Y"
+  },
+  {
+    "excelCode": "2305557.IB",
+    "abdAssetEncdFullDescByRmb": "23吉林债13",
+    "dmiLatestRate": "102.13",
+    "dmiLatestContraRate": "1.2955",
+    "dmiWghtdContraRate": "1.2955",
+    "showDate": "2026-09-11 14:33:59",
+    "isinCode": "CND10006KTR9",
+    "termToMaturity": "1.74Y"
+  },
+  {
+    "excelCode": "2305849.IB",
+    "abdAssetEncdFullDescByRmb": "23安徽债81",
+    "dmiLatestRate": "105.07",
+    "dmiLatestContraRate": "1.3750",
+    "dmiWghtdContraRate": "1.3750",
+    "showDate": "2026-09-11 13:53:58",
+    "isinCode": "CND10006VQX0",
+    "termToMaturity": "3.93Y"
+  },
+  {
+    "excelCode": "2305859.IB",
+    "abdAssetEncdFullDescByRmb": "23吉林债32",
+    "dmiLatestRate": "105.28",
+    "dmiLatestContraRate": "1.4350",
+    "dmiWghtdContraRate": "1.4318",
+    "showDate": "2026-09-11 14:53:00",
+    "isinCode": "CND10006VC02",
+    "termToMaturity": "3.89Y"
+  },
+  {
+    "excelCode": "2305880.IB",
+    "abdAssetEncdFullDescByRmb": "23广东债47",
+    "dmiLatestRate": "114.67",
+    "dmiLatestContraRate": "2.0300",
+    "dmiWghtdContraRate": "2.0300",
+    "showDate": "2026-09-11 13:34:46",
+    "isinCode": "CND10006VN25",
+    "termToMaturity": "16.89Y"
+  },
+  {
+    "excelCode": "2305937.IB",
+    "abdAssetEncdFullDescByRmb": "23四川债59",
+    "dmiLatestRate": "113.29",
+    "dmiLatestContraRate": "2.0650",
+    "dmiWghtdContraRate": "2.0650",
+    "showDate": "2026-09-11 16:27:14",
+    "isinCode": "CND10006VQK7",
+    "termToMaturity": "16.93Y"
+  },
+  {
+    "excelCode": "2305957.IB",
+    "abdAssetEncdFullDescByRmb": "23安徽债91",
+    "dmiLatestRate": "113.12",
+    "dmiLatestContraRate": "2.0681",
+    "dmiWghtdContraRate": "2.0654",
+    "showDate": "2026-09-11 16:44:00",
+    "isinCode": "CND10006WZG4",
+    "termToMaturity": "16.95Y"
+  },
+  {
+    "excelCode": "231817.IB",
+    "abdAssetEncdFullDescByRmb": "24山东22",
+    "dmiLatestRate": "110.49",
+    "dmiLatestContraRate": "2.1550",
+    "dmiWghtdContraRate": "2.1550",
+    "showDate": "2026-09-11 15:05:06",
+    "isinCode": "CND10007ZXF2",
+    "termToMaturity": "27.71Y"
+  },
+  {
+    "excelCode": "231891.IB",
+    "abdAssetEncdFullDescByRmb": "24上海06",
+    "dmiLatestRate": "105.49",
+    "dmiLatestContraRate": "1.5565",
+    "dmiWghtdContraRate": "1.5565",
+    "showDate": "2026-09-11 13:32:15",
+    "isinCode": "CND100087FV9",
+    "termToMaturity": "7.87Y"
+  },
+  {
+    "excelCode": "231954.IB",
+    "abdAssetEncdFullDescByRmb": "24浙江34",
+    "dmiLatestRate": "105.33",
+    "dmiLatestContraRate": "2.1550",
+    "dmiWghtdContraRate": "2.1459",
+    "showDate": "2026-09-11 14:47:07",
+    "isinCode": "CND10008CGW9",
+    "termToMaturity": "27.96Y"
+  },
+  {
+    "excelCode": "231977.IB",
+    "abdAssetEncdFullDescByRmb": "24陕西31",
+    "dmiLatestRate": "104.06",
+    "dmiLatestContraRate": "1.5880",
+    "dmiWghtdContraRate": "1.5880",
+    "showDate": "2026-09-11 16:49:45",
+    "isinCode": "CND10008F029",
+    "termToMaturity": "8.02Y"
+  },
+  {
+    "excelCode": "232860.IB",
+    "abdAssetEncdFullDescByRmb": "24云南33",
+    "dmiLatestRate": "105.01",
+    "dmiLatestContraRate": "1.6410",
+    "dmiWghtdContraRate": "1.6405",
+    "showDate": "2026-09-11 14:40:15",
+    "isinCode": "CND10008LYL6",
+    "termToMaturity": "8.15Y"
+  },
+  {
+    "excelCode": "232885.IB",
+    "abdAssetEncdFullDescByRmb": "25湖北11",
+    "dmiLatestRate": "100.21",
+    "dmiLatestContraRate": "1.8425",
+    "dmiWghtdContraRate": "1.8444",
+    "showDate": "2026-09-11 15:20:43",
+    "isinCode": "CND10008RYJ7",
+    "termToMaturity": "13.35Y"
+  },
+  {
+    "excelCode": "232895.IB",
+    "abdAssetEncdFullDescByRmb": "25重庆02",
+    "dmiLatestRate": "101.10",
+    "dmiLatestContraRate": "1.8668",
+    "dmiWghtdContraRate": "1.8682",
+    "showDate": "2026-09-11 17:35:04",
+    "isinCode": "CND10008YM54",
+    "termToMaturity": "13.42Y"
+  },
+  {
+    "excelCode": "232908.IB",
+    "abdAssetEncdFullDescByRmb": "25四川11",
+    "dmiLatestRate": "101.55",
+    "dmiLatestContraRate": "1.6520",
+    "dmiWghtdContraRate": "1.6523",
+    "showDate": "2026-09-11 17:13:49",
+    "isinCode": "---",
+    "termToMaturity": "8.45Y"
+  },
+  {
+    "excelCode": "232982.IB",
+    "abdAssetEncdFullDescByRmb": "25湖南07",
+    "dmiLatestRate": "99.58",
+    "dmiLatestContraRate": "2.1272",
+    "dmiWghtdContraRate": "2.1274",
+    "showDate": "2026-09-11 16:21:16",
+    "isinCode": "---",
+    "termToMaturity": "18.58Y"
+  },
+  {
+    "excelCode": "232994.IB",
+    "abdAssetEncdFullDescByRmb": "25浙江14",
+    "dmiLatestRate": "100.13",
+    "dmiLatestContraRate": "1.8493",
+    "dmiWghtdContraRate": "1.8476",
+    "showDate": "2026-09-11 14:50:36",
+    "isinCode": "---",
+    "termToMaturity": "13.65Y"
+  },
+  {
+    "excelCode": "234845.IB",
+    "abdAssetEncdFullDescByRmb": "25江苏31",
+    "dmiLatestRate": "101.07",
+    "dmiLatestContraRate": "1.4730",
+    "dmiWghtdContraRate": "1.4724",
+    "showDate": "2026-09-11 16:05:35",
+    "isinCode": "CND10009BH16",
+    "termToMaturity": "5.71Y"
+  },
+  {
+    "excelCode": "234873.IB",
+    "abdAssetEncdFullDescByRmb": "25山东46",
+    "dmiLatestRate": "101.33",
+    "dmiLatestContraRate": "1.8900",
+    "dmiWghtdContraRate": "1.8900",
+    "showDate": "2026-09-11 17:13:46",
+    "isinCode": "---",
+    "termToMaturity": "13.76Y"
+  },
+  {
+    "excelCode": "235732.IB",
+    "abdAssetEncdFullDescByRmb": "25云南33",
+    "dmiLatestRate": "102.89",
+    "dmiLatestContraRate": "1.7629",
+    "dmiWghtdContraRate": "1.7629",
+    "showDate": "2026-09-11 14:32:55",
+    "isinCode": "CND10009RB22",
+    "termToMaturity": "9.03Y"
+  },
+  {
+    "excelCode": "235805.IB",
+    "abdAssetEncdFullDescByRmb": "25浙江69",
+    "dmiLatestRate": "101.40",
+    "dmiLatestContraRate": "1.7435",
+    "dmiWghtdContraRate": "1.7435",
+    "showDate": "2026-09-11 15:49:22",
+    "isinCode": "CND10009XC49",
+    "termToMaturity": "9.17Y"
+  },
+  {
+    "excelCode": "235823.IB",
+    "abdAssetEncdFullDescByRmb": "25湖南70",
+    "dmiLatestRate": "101.83",
+    "dmiLatestContraRate": "1.7534",
+    "dmiWghtdContraRate": "1.7534",
+    "showDate": "2026-09-11 11:12:43",
+    "isinCode": "CND10009ZF10",
+    "termToMaturity": "9.21Y"
+  },
+  {
+    "excelCode": "235857.IB",
+    "abdAssetEncdFullDescByRmb": "26山东02",
+    "dmiLatestRate": "104.53",
+    "dmiLatestContraRate": "2.2775",
+    "dmiWghtdContraRate": "2.2796",
+    "showDate": "2026-09-11 16:37:35",
+    "isinCode": "CND1000B1D91",
+    "termToMaturity": "29.32Y"
+  },
+  {
+    "excelCode": "235862.IB",
+    "abdAssetEncdFullDescByRmb": "26山东07",
+    "dmiLatestRate": "104.46",
+    "dmiLatestContraRate": "2.0199",
+    "dmiWghtdContraRate": "2.0187",
+    "showDate": "2026-09-11 14:48:46",
+    "isinCode": "CND1000B1DD3",
+    "termToMaturity": "14.32Y"
+  },
+  {
+    "excelCode": "235863.IB",
+    "abdAssetEncdFullDescByRmb": "26山东08",
+    "dmiLatestRate": "104.47",
+    "dmiLatestContraRate": "2.2800",
+    "dmiWghtdContraRate": "2.2795",
+    "showDate": "2026-09-11 16:10:48",
+    "isinCode": "CND1000B1DB7",
+    "termToMaturity": "29.32Y"
+  },
+  {
+    "excelCode": "235864.IB",
+    "abdAssetEncdFullDescByRmb": "26青岛10",
+    "dmiLatestRate": "101.06",
+    "dmiLatestContraRate": "1.5831",
+    "dmiWghtdContraRate": "1.5831",
+    "showDate": "2026-09-11 15:25:14",
+    "isinCode": "CND1000B28V2",
+    "termToMaturity": "6.38Y"
+  },
+  {
+    "excelCode": "235879.IB",
+    "abdAssetEncdFullDescByRmb": "26黑龙江05",
+    "dmiLatestRate": "104.38",
+    "dmiLatestContraRate": "2.2850",
+    "dmiWghtdContraRate": "2.2842",
+    "showDate": "2026-09-11 16:07:58",
+    "isinCode": "CND1000B82D7",
+    "termToMaturity": "29.50Y"
+  },
+  {
+    "excelCode": "235881.IB",
+    "abdAssetEncdFullDescByRmb": "26广西09",
+    "dmiLatestRate": "101.92",
+    "dmiLatestContraRate": "1.7600",
+    "dmiWghtdContraRate": "1.7589",
+    "showDate": "2026-09-11 14:42:33",
+    "isinCode": "CND1000B8952",
+    "termToMaturity": "9.50Y"
+  },
+  {
+    "excelCode": "235891.IB",
+    "abdAssetEncdFullDescByRmb": "26安徽20",
+    "dmiLatestRate": "104.20",
+    "dmiLatestContraRate": "2.2431",
+    "dmiWghtdContraRate": "2.2431",
+    "showDate": "2026-09-11 14:33:23",
+    "isinCode": "CND1000B8M10",
+    "termToMaturity": "19.52Y"
+  },
+  {
+    "excelCode": "235896.IB",
+    "abdAssetEncdFullDescByRmb": "26江苏16",
+    "dmiLatestRate": "102.76",
+    "dmiLatestContraRate": "2.2350",
+    "dmiWghtdContraRate": "2.2349",
+    "showDate": "2026-09-11 16:23:13",
+    "isinCode": "CND1000B8G59",
+    "termToMaturity": "19.52Y"
+  },
+  {
+    "excelCode": "235898.IB",
+    "abdAssetEncdFullDescByRmb": "26河南15",
+    "dmiLatestRate": "105.18",
+    "dmiLatestContraRate": "2.2780",
+    "dmiWghtdContraRate": "2.2780",
+    "showDate": "2026-09-11 15:57:47",
+    "isinCode": "CND1000B8ZL4",
+    "termToMaturity": "29.54Y"
+  },
+  {
+    "excelCode": "235909.IB",
+    "abdAssetEncdFullDescByRmb": "26四川25",
+    "dmiLatestRate": "103.94",
+    "dmiLatestContraRate": "2.2300",
+    "dmiWghtdContraRate": "2.2300",
+    "showDate": "2026-09-11 13:36:39",
+    "isinCode": "CND1000B99V3",
+    "termToMaturity": "19.55Y"
+  },
+  {
+    "excelCode": "235911.IB",
+    "abdAssetEncdFullDescByRmb": "26四川27",
+    "dmiLatestRate": "104.82",
+    "dmiLatestContraRate": "2.2750",
+    "dmiWghtdContraRate": "2.2750",
+    "showDate": "2026-09-11 13:49:46",
+    "isinCode": "CND1000B99W1",
+    "termToMaturity": "29.55Y"
+  },
+  {
+    "excelCode": "235922.IB",
+    "abdAssetEncdFullDescByRmb": "26贵州10",
+    "dmiLatestRate": "104.87",
+    "dmiLatestContraRate": "2.2825",
+    "dmiWghtdContraRate": "2.2825",
+    "showDate": "2026-09-11 14:43:07",
+    "isinCode": "CND1000B9P81",
+    "termToMaturity": "29.58Y"
+  },
+  {
+    "excelCode": "235942.IB",
+    "abdAssetEncdFullDescByRmb": "26内蒙古06",
+    "dmiLatestRate": "101.50",
+    "dmiLatestContraRate": "2.0800",
+    "dmiWghtdContraRate": "2.0800",
+    "showDate": "2026-09-11 16:14:15",
+    "isinCode": "CND1000BB904",
+    "termToMaturity": "14.61Y"
+  },
+  {
+    "excelCode": "2371025.IB",
+    "abdAssetEncdFullDescByRmb": "23江西债66",
+    "dmiLatestRate": "117.21",
+    "dmiLatestContraRate": "2.1550",
+    "dmiWghtdContraRate": "2.1550",
+    "showDate": "2026-09-11 15:04:43",
+    "isinCode": "CND10006Y7J8",
+    "termToMaturity": "26.96Y"
+  },
+  {
+    "excelCode": "2371110.IB",
+    "abdAssetEncdFullDescByRmb": "23浙江债62",
+    "dmiLatestRate": "111.66",
+    "dmiLatestContraRate": "2.0350",
+    "dmiWghtdContraRate": "2.0350",
+    "showDate": "2026-09-11 15:21:47",
+    "isinCode": "CND10006ZGN3",
+    "termToMaturity": "16.99Y"
+  },
+  {
+    "excelCode": "2371169.IB",
+    "abdAssetEncdFullDescByRmb": "23湖北债103",
+    "dmiLatestRate": "108.93",
+    "dmiLatestContraRate": "1.5250",
+    "dmiWghtdContraRate": "1.5250",
+    "showDate": "2026-09-11 11:39:39",
+    "isinCode": "CND100070CZ3",
+    "termToMaturity": "7.03Y"
+  },
+  {
+    "excelCode": "2371227.IB",
+    "abdAssetEncdFullDescByRmb": "23陕西债55",
+    "dmiLatestRate": "105.53",
+    "dmiLatestContraRate": "1.3850",
+    "dmiWghtdContraRate": "1.3850",
+    "showDate": "2026-09-11 15:18:59",
+    "isinCode": "CND100072CP0",
+    "termToMaturity": "4.08Y"
+  },
+  {
+    "excelCode": "2371304.IB",
+    "abdAssetEncdFullDescByRmb": "23湖南债131",
+    "dmiLatestRate": "103.24",
+    "dmiLatestContraRate": "1.2788",
+    "dmiWghtdContraRate": "1.2788",
+    "showDate": "2026-09-11 17:54:33",
+    "isinCode": "CND100073QV6",
+    "termToMaturity": "2.12Y"
+  },
+  {
+    "excelCode": "2371326.IB",
+    "abdAssetEncdFullDescByRmb": "23湖南债135",
+    "dmiLatestRate": "103.30",
+    "dmiLatestContraRate": "1.2792",
+    "dmiWghtdContraRate": "1.2792",
+    "showDate": "2026-09-11 17:54:30",
+    "isinCode": "CND100074FH6",
+    "termToMaturity": "2.12Y"
+  },
+  {
+    "excelCode": "2371340.IB",
+    "abdAssetEncdFullDescByRmb": "23河北债62",
+    "dmiLatestRate": "103.27",
+    "dmiLatestContraRate": "1.2798",
+    "dmiWghtdContraRate": "1.2798",
+    "showDate": "2026-09-11 17:26:28",
+    "isinCode": "CND100074GM4",
+    "termToMaturity": "2.13Y"
+  },
+  {
+    "excelCode": "2371368.IB",
+    "abdAssetEncdFullDescByRmb": "23宁波债30",
+    "dmiLatestRate": "102.75",
+    "dmiLatestContraRate": "1.2725",
+    "dmiWghtdContraRate": "1.2725",
+    "showDate": "2026-09-11 15:57:40",
+    "isinCode": "CND100076439",
+    "termToMaturity": "2.20Y"
+  },
+  {
+    "excelCode": "2371413.IB",
+    "abdAssetEncdFullDescByRmb": "23浙江债72",
+    "dmiLatestRate": "108.11",
+    "dmiLatestContraRate": "1.5300",
+    "dmiWghtdContraRate": "1.5300",
+    "showDate": "2026-09-11 18:07:07",
+    "isinCode": "CND1000776Q2",
+    "termToMaturity": "7.24Y"
+  },
+  {
+    "excelCode": "2405006.IB",
+    "abdAssetEncdFullDescByRmb": "24山东债02",
+    "dmiLatestRate": "105.20",
+    "dmiLatestContraRate": "1.4310",
+    "dmiWghtdContraRate": "1.4310",
+    "showDate": "2026-09-11 15:45:45",
+    "isinCode": "CND10007H6R3",
+    "termToMaturity": "4.37Y"
+  },
+  {
+    "excelCode": "2405029.IB",
+    "abdAssetEncdFullDescByRmb": "24广东债14",
+    "dmiLatestRate": "104.72",
+    "dmiLatestContraRate": "1.4200",
+    "dmiWghtdContraRate": "1.4200",
+    "showDate": "2026-09-11 15:47:27",
+    "isinCode": "CND10007HMD8",
+    "termToMaturity": "4.39Y"
+  },
+  {
+    "excelCode": "2405093.IB",
+    "abdAssetEncdFullDescByRmb": "24辽宁债02",
+    "dmiLatestRate": "104.65",
+    "dmiLatestContraRate": "1.4410",
+    "dmiWghtdContraRate": "1.4407",
+    "showDate": "2026-09-11 16:42:49",
+    "isinCode": "CND10007LBJ0",
+    "termToMaturity": "4.45Y"
+  },
+  {
+    "excelCode": "2405105.IB",
+    "abdAssetEncdFullDescByRmb": "24福建债06",
+    "dmiLatestRate": "108.30",
+    "dmiLatestContraRate": "2.0900",
+    "dmiWghtdContraRate": "2.0890",
+    "showDate": "2026-09-11 15:55:11",
+    "isinCode": "CND10007M092",
+    "termToMaturity": "17.47Y"
+  },
+  {
+    "excelCode": "2405171.IB",
+    "abdAssetEncdFullDescByRmb": "24浙江债15",
+    "dmiLatestRate": "106.78",
+    "dmiLatestContraRate": "2.0575",
+    "dmiWghtdContraRate": "2.0575",
+    "showDate": "2026-09-11 15:11:51",
+    "isinCode": "CND10007PN55",
+    "termToMaturity": "17.55Y"
+  },
+  {
+    "excelCode": "2405204.IB",
+    "abdAssetEncdFullDescByRmb": "24黑龙江债03",
+    "dmiLatestRate": "104.18",
+    "dmiLatestContraRate": "1.4400",
+    "dmiWghtdContraRate": "1.4400",
+    "showDate": "2026-09-11 17:05:34",
+    "isinCode": "CND10007TXZ3",
+    "termToMaturity": "4.59Y"
+  },
+  {
+    "excelCode": "2405284.IB",
+    "abdAssetEncdFullDescByRmb": "24山东债18",
+    "dmiLatestRate": "104.36",
+    "dmiLatestContraRate": "1.4070",
+    "dmiWghtdContraRate": "1.4070",
+    "showDate": "2026-09-11 10:38:20",
+    "isinCode": "CND10007XT00",
+    "termToMaturity": "4.66Y"
+  },
+  {
+    "excelCode": "2405289.IB",
+    "abdAssetEncdFullDescByRmb": "24辽宁债07",
+    "dmiLatestRate": "104.20",
+    "dmiLatestContraRate": "1.4410",
+    "dmiWghtdContraRate": "1.4410",
+    "showDate": "2026-09-11 16:43:20",
+    "isinCode": "CND10007YH52",
+    "termToMaturity": "4.67Y"
+  },
+  {
+    "excelCode": "2405365.IB",
+    "abdAssetEncdFullDescByRmb": "24江西债26",
+    "dmiLatestRate": "110.08",
+    "dmiLatestContraRate": "2.1550",
+    "dmiWghtdContraRate": "2.1550",
+    "showDate": "2026-09-11 15:04:48",
+    "isinCode": "CND100080S37",
+    "termToMaturity": "27.72Y"
+  },
+  {
+    "excelCode": "2405392.IB",
+    "abdAssetEncdFullDescByRmb": "24陕西债13",
+    "dmiLatestRate": "107.55",
+    "dmiLatestContraRate": "2.0975",
+    "dmiWghtdContraRate": "2.0963",
+    "showDate": "2026-09-11 15:54:10",
+    "isinCode": "CND100080Y70",
+    "termToMaturity": "17.73Y"
+  },
+  {
+    "excelCode": "2405431.IB",
+    "abdAssetEncdFullDescByRmb": "24安徽债27",
+    "dmiLatestRate": "104.09",
+    "dmiLatestContraRate": "1.4157",
+    "dmiWghtdContraRate": "1.4157",
+    "showDate": "2026-09-11 17:45:05",
+    "isinCode": "CND100082NV4",
+    "termToMaturity": "4.77Y"
+  },
+  {
+    "excelCode": "2405454.IB",
+    "abdAssetEncdFullDescByRmb": "24重庆债17",
+    "dmiLatestRate": "104.06",
+    "dmiLatestContraRate": "1.4134",
+    "dmiWghtdContraRate": "1.4134",
+    "showDate": "2026-09-11 11:05:40",
+    "isinCode": "CND100082QB9",
+    "termToMaturity": "4.78Y"
+  },
+  {
+    "excelCode": "2405590.IB",
+    "abdAssetEncdFullDescByRmb": "24四川债32",
+    "dmiLatestRate": "103.63",
+    "dmiLatestContraRate": "1.4462",
+    "dmiWghtdContraRate": "1.4462",
+    "showDate": "2026-09-11 15:49:06",
+    "isinCode": "CND100085SV6",
+    "termToMaturity": "4.83Y"
+  },
+  {
+    "excelCode": "2405633.IB",
+    "abdAssetEncdFullDescByRmb": "24陕西债20",
+    "dmiLatestRate": "105.15",
+    "dmiLatestContraRate": "1.6111",
+    "dmiWghtdContraRate": "1.6106",
+    "showDate": "2026-09-11 17:45:15",
+    "isinCode": "CND100087L45",
+    "termToMaturity": "7.88Y"
+  },
+  {
+    "excelCode": "2405642.IB",
+    "abdAssetEncdFullDescByRmb": "24山东债33",
+    "dmiLatestRate": "103.24",
+    "dmiLatestContraRate": "1.4560",
+    "dmiWghtdContraRate": "1.4560",
+    "showDate": "2026-09-11 14:44:58",
+    "isinCode": "CND100087L37",
+    "termToMaturity": "4.88Y"
+  },
+  {
+    "excelCode": "2405664.IB",
+    "abdAssetEncdFullDescByRmb": "24福建债24",
+    "dmiLatestRate": "104.28",
+    "dmiLatestContraRate": "1.6104",
+    "dmiWghtdContraRate": "1.6104",
+    "showDate": "2026-09-11 17:01:02",
+    "isinCode": "CND100088HQ3",
+    "termToMaturity": "7.90Y"
+  },
+  {
+    "excelCode": "2405665.IB",
+    "abdAssetEncdFullDescByRmb": "24福建债25",
+    "dmiLatestRate": "105.24",
+    "dmiLatestContraRate": "1.8222",
+    "dmiWghtdContraRate": "1.8222",
+    "showDate": "2026-09-11 11:02:54",
+    "isinCode": "---",
+    "termToMaturity": "12.90Y"
+  },
+  {
+    "excelCode": "2405818.IB",
+    "abdAssetEncdFullDescByRmb": "24江西债51",
+    "dmiLatestRate": "104.73",
+    "dmiLatestContraRate": "1.5850",
+    "dmiWghtdContraRate": "1.5850",
+    "showDate": "2026-09-11 16:49:10",
+    "isinCode": "CND10008CK78",
+    "termToMaturity": "7.97Y"
+  },
+  {
+    "excelCode": "2405831.IB",
+    "abdAssetEncdFullDescByRmb": "24四川债43",
+    "dmiLatestRate": "104.50",
+    "dmiLatestContraRate": "1.6152",
+    "dmiWghtdContraRate": "1.6152",
+    "showDate": "2026-09-11 17:13:45",
+    "isinCode": "CND10008CK11",
+    "termToMaturity": "7.97Y"
+  },
+  {
+    "excelCode": "2405832.IB",
+    "abdAssetEncdFullDescByRmb": "24四川债44",
+    "dmiLatestRate": "105.41",
+    "dmiLatestContraRate": "1.8292",
+    "dmiWghtdContraRate": "1.8292",
+    "showDate": "2026-09-11 15:15:04",
+    "isinCode": "CND10008CK29",
+    "termToMaturity": "12.97Y"
+  },
+  {
+    "excelCode": "2405836.IB",
+    "abdAssetEncdFullDescByRmb": "24四川债48",
+    "dmiLatestRate": "104.50",
+    "dmiLatestContraRate": "1.6152",
+    "dmiWghtdContraRate": "1.6152",
+    "showDate": "2026-09-11 17:45:19",
+    "isinCode": "CND10008CJY9",
+    "termToMaturity": "7.97Y"
+  },
+  {
+    "excelCode": "2405840.IB",
+    "abdAssetEncdFullDescByRmb": "24福建债30",
+    "dmiLatestRate": "104.13",
+    "dmiLatestContraRate": "1.6180",
+    "dmiWghtdContraRate": "1.6180",
+    "showDate": "2026-09-11 17:01:02",
+    "isinCode": "CND10008DYK5",
+    "termToMaturity": "8.01Y"
+  },
+  {
+    "excelCode": "2405847.IB",
+    "abdAssetEncdFullDescByRmb": "24河北债54",
+    "dmiLatestRate": "104.48",
+    "dmiLatestContraRate": "1.5909",
+    "dmiWghtdContraRate": "1.5920",
+    "showDate": "2026-09-11 17:13:48",
+    "isinCode": "---",
+    "termToMaturity": "8Y"
+  },
+  {
+    "excelCode": "2405876.IB",
+    "abdAssetEncdFullDescByRmb": "24安徽债72",
+    "dmiLatestRate": "103.79",
+    "dmiLatestContraRate": "1.6150",
+    "dmiWghtdContraRate": "1.6150",
+    "showDate": "2026-09-11 11:41:23",
+    "isinCode": "CND10008G5X3",
+    "termToMaturity": "8.02Y"
+  },
+  {
+    "excelCode": "2405983.IB",
+    "abdAssetEncdFullDescByRmb": "24广东债79",
+    "dmiLatestRate": "103.83",
+    "dmiLatestContraRate": "1.5900",
+    "dmiWghtdContraRate": "1.5900",
+    "showDate": "2026-09-11 09:01:55",
+    "isinCode": "---",
+    "termToMaturity": "8.04Y"
+  },
+  {
+    "excelCode": "2405984.IB",
+    "abdAssetEncdFullDescByRmb": "24广东债80",
+    "dmiLatestRate": "104.19",
+    "dmiLatestContraRate": "1.8077",
+    "dmiWghtdContraRate": "1.8077",
+    "showDate": "2026-09-11 17:36:01",
+    "isinCode": "CND10008GNG9",
+    "termToMaturity": "13.04Y"
+  },
+  {
+    "excelCode": "2405989.IB",
+    "abdAssetEncdFullDescByRmb": "24江苏债27",
+    "dmiLatestRate": "104.13",
+    "dmiLatestContraRate": "1.8130",
+    "dmiWghtdContraRate": "1.8090",
+    "showDate": "2026-09-11 17:13:48",
+    "isinCode": "CND10008GPX9",
+    "termToMaturity": "13.04Y"
+  },
+  {
+    "excelCode": "2405998.IB",
+    "abdAssetEncdFullDescByRmb": "24四川债58",
+    "dmiLatestRate": "103.60",
+    "dmiLatestContraRate": "1.6199",
+    "dmiWghtdContraRate": "1.6190",
+    "showDate": "2026-09-11 17:13:52",
+    "isinCode": "---",
+    "termToMaturity": "8.04Y"
+  },
+  {
+    "excelCode": "2471031.IB",
+    "abdAssetEncdFullDescByRmb": "24江西债66",
+    "dmiLatestRate": "106.34",
+    "dmiLatestContraRate": "1.8416",
+    "dmiWghtdContraRate": "1.8416",
+    "showDate": "2026-09-11 17:13:49",
+    "isinCode": "CND10008GZF5",
+    "termToMaturity": "13.07Y"
+  },
+  {
+    "excelCode": "2471075.IB",
+    "abdAssetEncdFullDescByRmb": "24浙江债49",
+    "dmiLatestRate": "105.54",
+    "dmiLatestContraRate": "1.8135",
+    "dmiWghtdContraRate": "1.8135",
+    "showDate": "2026-09-11 17:13:51",
+    "isinCode": "CND10008HHG9",
+    "termToMaturity": "13.12Y"
+  },
+  {
+    "excelCode": "2471088.IB",
+    "abdAssetEncdFullDescByRmb": "24广东债93",
+    "dmiLatestRate": "105.40",
+    "dmiLatestContraRate": "1.8150",
+    "dmiWghtdContraRate": "1.8150",
+    "showDate": "2026-09-11 17:13:48",
+    "isinCode": "CND10008HG38",
+    "termToMaturity": "13.12Y"
+  },
+  {
+    "excelCode": "2471138.IB",
+    "abdAssetEncdFullDescByRmb": "24福建债34",
+    "dmiLatestRate": "105.42",
+    "dmiLatestContraRate": "1.8433",
+    "dmiWghtdContraRate": "1.8433",
+    "showDate": "2026-09-11 17:13:50",
+    "isinCode": "CND10008KTL8",
+    "termToMaturity": "13.13Y"
+  },
+  {
+    "excelCode": "2471140.IB",
+    "abdAssetEncdFullDescByRmb": "24福建债36",
+    "dmiLatestRate": "104.59",
+    "dmiLatestContraRate": "1.5953",
+    "dmiWghtdContraRate": "1.5953",
+    "showDate": "2026-09-11 13:32:53",
+    "isinCode": "CND10008KTJ2",
+    "termToMaturity": "8.13Y"
+  },
+  {
+    "excelCode": "2471166.IB",
+    "abdAssetEncdFullDescByRmb": "24上海债25",
+    "dmiLatestRate": "104.63",
+    "dmiLatestContraRate": "1.6000",
+    "dmiWghtdContraRate": "1.6000",
+    "showDate": "2026-09-11 17:33:23",
+    "isinCode": "CND10008LY48",
+    "termToMaturity": "8.14Y"
+  },
+  {
+    "excelCode": "2471207.IB",
+    "abdAssetEncdFullDescByRmb": "24浙江债59",
+    "dmiLatestRate": "105.19",
+    "dmiLatestContraRate": "1.8165",
+    "dmiWghtdContraRate": "1.8165",
+    "showDate": "2026-09-11 09:01:50",
+    "isinCode": "CND10008MX06",
+    "termToMaturity": "13.21Y"
+  },
+  {
+    "excelCode": "2471216.IB",
+    "abdAssetEncdFullDescByRmb": "24江苏债35",
+    "dmiLatestRate": "100.33",
+    "dmiLatestContraRate": "1.2200",
+    "dmiWghtdContraRate": "1.2200",
+    "showDate": "2026-09-11 17:44:36",
+    "isinCode": "CND10008Q2Z3",
+    "termToMaturity": "1.22Y"
+  },
+  {
+    "excelCode": "2471218.IB",
+    "abdAssetEncdFullDescByRmb": "24江苏债37",
+    "dmiLatestRate": "103.89",
+    "dmiLatestContraRate": "1.6025",
+    "dmiWghtdContraRate": "1.6016",
+    "showDate": "2026-09-11 15:13:36",
+    "isinCode": "---",
+    "termToMaturity": "8.22Y"
+  },
+  {
+    "excelCode": "2471219.IB",
+    "abdAssetEncdFullDescByRmb": "24江苏债38",
+    "dmiLatestRate": "104.62",
+    "dmiLatestContraRate": "1.8252",
+    "dmiWghtdContraRate": "1.8192",
+    "showDate": "2026-09-11 17:13:48",
+    "isinCode": "CND10008Q349",
+    "termToMaturity": "13.22Y"
+  },
+  {
+    "excelCode": "2471252.IB",
+    "abdAssetEncdFullDescByRmb": "24云南债38",
+    "dmiLatestRate": "104.21",
+    "dmiLatestContraRate": "2.1600",
+    "dmiWghtdContraRate": "2.1596",
+    "showDate": "2026-09-11 16:10:53",
+    "isinCode": "---",
+    "termToMaturity": "28.22Y"
+  },
+  {
+    "excelCode": "2471253.IB",
+    "abdAssetEncdFullDescByRmb": "24四川债64",
+    "dmiLatestRate": "103.87",
+    "dmiLatestContraRate": "1.6342",
+    "dmiWghtdContraRate": "1.6345",
+    "showDate": "2026-09-11 17:13:50",
+    "isinCode": "---",
+    "termToMaturity": "8.22Y"
+  },
+  {
+    "excelCode": "2471254.IB",
+    "abdAssetEncdFullDescByRmb": "24四川债65",
+    "dmiLatestRate": "105.08",
+    "dmiLatestContraRate": "1.8451",
+    "dmiWghtdContraRate": "1.8451",
+    "showDate": "2026-09-11 13:50:41",
+    "isinCode": "CND10008Q2Q2",
+    "termToMaturity": "13.22Y"
+  },
+  {
+    "excelCode": "2471265.IB",
+    "abdAssetEncdFullDescByRmb": "24安徽债75",
+    "dmiLatestRate": "100.99",
+    "dmiLatestContraRate": "1.3465",
+    "dmiWghtdContraRate": "1.3465",
+    "showDate": "2026-09-11 14:22:20",
+    "isinCode": "CND10008QGJ6",
+    "termToMaturity": "3.25Y"
+  },
+  {
+    "excelCode": "2471266.IB",
+    "abdAssetEncdFullDescByRmb": "24安徽债76",
+    "dmiLatestRate": "102.03",
+    "dmiLatestContraRate": "1.4645",
+    "dmiWghtdContraRate": "1.4595",
+    "showDate": "2026-09-11 16:41:06",
+    "isinCode": "CND10008QGC1",
+    "termToMaturity": "5.25Y"
+  },
+  {
+    "excelCode": "2471267.IB",
+    "abdAssetEncdFullDescByRmb": "24安徽债77",
+    "dmiLatestRate": "102.79",
+    "dmiLatestContraRate": "1.6365",
+    "dmiWghtdContraRate": "1.6369",
+    "showDate": "2026-09-11 17:01:02",
+    "isinCode": "---",
+    "termToMaturity": "8.25Y"
+  },
+  {
+    "excelCode": "2471279.IB",
+    "abdAssetEncdFullDescByRmb": "24内蒙古债28",
+    "dmiLatestRate": "103.20",
+    "dmiLatestContraRate": "1.6324",
+    "dmiWghtdContraRate": "1.6324",
+    "showDate": "2026-09-11 17:16:52",
+    "isinCode": "---",
+    "termToMaturity": "8.24Y"
+  },
+  {
+    "excelCode": "2471290.IB",
+    "abdAssetEncdFullDescByRmb": "24新疆债64",
+    "dmiLatestRate": "103.26",
+    "dmiLatestContraRate": "1.6450",
+    "dmiWghtdContraRate": "1.6450",
+    "showDate": "2026-09-11 17:16:51",
+    "isinCode": "CND10008Q4C8",
+    "termToMaturity": "8.23Y"
+  },
+  {
+    "excelCode": "2471291.IB",
+    "abdAssetEncdFullDescByRmb": "24重庆债46",
+    "dmiLatestRate": "103.46",
+    "dmiLatestContraRate": "1.6100",
+    "dmiWghtdContraRate": "1.6100",
+    "showDate": "2026-09-11 17:16:52",
+    "isinCode": "CND10008QFF6",
+    "termToMaturity": "8.24Y"
+  },
+  {
+    "excelCode": "2471293.IB",
+    "abdAssetEncdFullDescByRmb": "24重庆债48",
+    "dmiLatestRate": "102.30",
+    "dmiLatestContraRate": "1.4600",
+    "dmiWghtdContraRate": "1.4600",
+    "showDate": "2026-09-11 11:04:57",
+    "isinCode": "CND10008QF95",
+    "termToMaturity": "5.24Y"
+  },
+  {
+    "excelCode": "2471295.IB",
+    "abdAssetEncdFullDescByRmb": "24重庆债50",
+    "dmiLatestRate": "102.26",
+    "dmiLatestContraRate": "2.1300",
+    "dmiWghtdContraRate": "2.1302",
+    "showDate": "2026-09-11 15:32:00",
+    "isinCode": "CND10008QFG4",
+    "termToMaturity": "18.24Y"
+  },
+  {
+    "excelCode": "2505014.IB",
+    "abdAssetEncdFullDescByRmb": "25广东债04",
+    "dmiLatestRate": "100.66",
+    "dmiLatestContraRate": "1.6153",
+    "dmiWghtdContraRate": "1.6153",
+    "showDate": "2026-09-11 13:57:57",
+    "isinCode": "CND10008S8R5",
+    "termToMaturity": "8.36Y"
+  },
+  {
+    "excelCode": "2505015.IB",
+    "abdAssetEncdFullDescByRmb": "25广东债05",
+    "dmiLatestRate": "101.89",
+    "dmiLatestContraRate": "1.8296",
+    "dmiWghtdContraRate": "1.8264",
+    "showDate": "2026-09-11 17:13:45",
+    "isinCode": "CND10008S8M6",
+    "termToMaturity": "13.36Y"
+  },
+  {
+    "excelCode": "2505064.IB",
+    "abdAssetEncdFullDescByRmb": "25浙江债02",
+    "dmiLatestRate": "100.14",
+    "dmiLatestContraRate": "1.8377",
+    "dmiWghtdContraRate": "1.8377",
+    "showDate": "2026-09-11 17:13:47",
+    "isinCode": "---",
+    "termToMaturity": "13.41Y"
+  },
+  {
+    "excelCode": "2505099.IB",
+    "abdAssetEncdFullDescByRmb": "25福建债09",
+    "dmiLatestRate": "101.94",
+    "dmiLatestContraRate": "1.8657",
+    "dmiWghtdContraRate": "1.8657",
+    "showDate": "2026-09-11 17:13:46",
+    "isinCode": "CND10008YX28",
+    "termToMaturity": "13.44Y"
+  },
+  {
+    "excelCode": "2505118.IB",
+    "abdAssetEncdFullDescByRmb": "25湖北债14",
+    "dmiLatestRate": "100.11",
+    "dmiLatestContraRate": "1.8605",
+    "dmiWghtdContraRate": "1.8605",
+    "showDate": "2026-09-11 14:26:24",
+    "isinCode": "---",
+    "termToMaturity": "13.44Y"
+  },
+  {
+    "excelCode": "2505133.IB",
+    "abdAssetEncdFullDescByRmb": "25内蒙古债04",
+    "dmiLatestRate": "102.41",
+    "dmiLatestContraRate": "1.6536",
+    "dmiWghtdContraRate": "1.6536",
+    "showDate": "2026-09-11 17:16:51",
+    "isinCode": "CND10008Z9V6",
+    "termToMaturity": "8.46Y"
+  },
+  {
+    "excelCode": "2505193.IB",
+    "abdAssetEncdFullDescByRmb": "25宁波债08",
+    "dmiLatestRate": "100.71",
+    "dmiLatestContraRate": "1.8700",
+    "dmiWghtdContraRate": "1.8700",
+    "showDate": "2026-09-11 17:13:49",
+    "isinCode": "CND1000917Z3",
+    "termToMaturity": "13.47Y"
+  },
+  {
+    "excelCode": "2505221.IB",
+    "abdAssetEncdFullDescByRmb": "25河北债14",
+    "dmiLatestRate": "100.85",
+    "dmiLatestContraRate": "2.1500",
+    "dmiWghtdContraRate": "2.1500",
+    "showDate": "2026-09-11 14:10:06",
+    "isinCode": "---",
+    "termToMaturity": "28.48Y"
+  },
+  {
+    "excelCode": "2505230.IB",
+    "abdAssetEncdFullDescByRmb": "25重庆债12",
+    "dmiLatestRate": "103.46",
+    "dmiLatestContraRate": "1.6620",
+    "dmiWghtdContraRate": "1.6620",
+    "showDate": "2026-09-11 17:13:48",
+    "isinCode": "CND100092FC9",
+    "termToMaturity": "8.50Y"
+  },
+  {
+    "excelCode": "2505274.IB",
+    "abdAssetEncdFullDescByRmb": "25四川债20",
+    "dmiLatestRate": "101.87",
+    "dmiLatestContraRate": "2.1275",
+    "dmiWghtdContraRate": "2.1275",
+    "showDate": "2026-09-11 14:56:14",
+    "isinCode": "CND1000950R1",
+    "termToMaturity": "18.55Y"
+  },
+  {
+    "excelCode": "2505309.IB",
+    "abdAssetEncdFullDescByRmb": "25湖南债11",
+    "dmiLatestRate": "101.91",
+    "dmiLatestContraRate": "1.6610",
+    "dmiWghtdContraRate": "1.6616",
+    "showDate": "2026-09-11 14:39:59",
+    "isinCode": "CND100095SB7",
+    "termToMaturity": "8.59Y"
+  },
+  {
+    "excelCode": "2505319.IB",
+    "abdAssetEncdFullDescByRmb": "25湖北债36",
+    "dmiLatestRate": "100.53",
+    "dmiLatestContraRate": "2.0956",
+    "dmiWghtdContraRate": "2.0956",
+    "showDate": "2026-09-11 14:20:54",
+    "isinCode": "CND100096HQ6",
+    "termToMaturity": "28.60Y"
+  },
+  {
+    "excelCode": "2505345.IB",
+    "abdAssetEncdFullDescByRmb": "25山东债26",
+    "dmiLatestRate": "102.39",
+    "dmiLatestContraRate": "1.8800",
+    "dmiWghtdContraRate": "1.8800",
+    "showDate": "2026-09-11 17:13:52",
+    "isinCode": "---",
+    "termToMaturity": "13.61Y"
+  },
+  {
+    "excelCode": "2505380.IB",
+    "abdAssetEncdFullDescByRmb": "25福建债21",
+    "dmiLatestRate": "99.19",
+    "dmiLatestContraRate": "2.1225",
+    "dmiWghtdContraRate": "2.1228",
+    "showDate": "2026-09-11 15:06:39",
+    "isinCode": "CND100098MD0",
+    "termToMaturity": "18.66Y"
+  },
+  {
+    "excelCode": "2505545.IB",
+    "abdAssetEncdFullDescByRmb": "25新疆债24",
+    "dmiLatestRate": "98.30",
+    "dmiLatestContraRate": "2.1400",
+    "dmiWghtdContraRate": "2.1388",
+    "showDate": "2026-09-11 14:44:25",
+    "isinCode": "CND10009G132",
+    "termToMaturity": "18.78Y"
+  },
+  {
+    "excelCode": "2505569.IB",
+    "abdAssetEncdFullDescByRmb": "25上海债23",
+    "dmiLatestRate": "100.37",
+    "dmiLatestContraRate": "1.6450",
+    "dmiWghtdContraRate": "1.6450",
+    "showDate": "2026-09-11 13:39:22",
+    "isinCode": "CND10009G512",
+    "termToMaturity": "8.79Y"
+  },
+  {
+    "excelCode": "2505576.IB",
+    "abdAssetEncdFullDescByRmb": "25上海债30",
+    "dmiLatestRate": "100.37",
+    "dmiLatestContraRate": "1.6450",
+    "dmiWghtdContraRate": "1.6450",
+    "showDate": "2026-09-11 13:38:14",
+    "isinCode": "CND10009G4H8",
+    "termToMaturity": "8.79Y"
+  },
+  {
+    "excelCode": "2505634.IB",
+    "abdAssetEncdFullDescByRmb": "25广东债32",
+    "dmiLatestRate": "101.07",
+    "dmiLatestContraRate": "1.4777",
+    "dmiWghtdContraRate": "1.4774",
+    "showDate": "2026-09-11 15:49:08",
+    "isinCode": "CND10009K746",
+    "termToMaturity": "5.86Y"
+  },
+  {
+    "excelCode": "2505671.IB",
+    "abdAssetEncdFullDescByRmb": "25福建债28",
+    "dmiLatestRate": "100.60",
+    "dmiLatestContraRate": "1.4072",
+    "dmiWghtdContraRate": "1.4062",
+    "showDate": "2026-09-11 14:42:07",
+    "isinCode": "CND10009JFJ1",
+    "termToMaturity": "3.84Y"
+  },
+  {
+    "excelCode": "2505687.IB",
+    "abdAssetEncdFullDescByRmb": "25宁夏债14",
+    "dmiLatestRate": "98.61",
+    "dmiLatestContraRate": "2.1300",
+    "dmiWghtdContraRate": "2.1300",
+    "showDate": "2026-09-11 14:56:14",
+    "isinCode": "CND10009K340",
+    "termToMaturity": "18.85Y"
+  },
+  {
+    "excelCode": "2505769.IB",
+    "abdAssetEncdFullDescByRmb": "25安徽债69",
+    "dmiLatestRate": "101.43",
+    "dmiLatestContraRate": "1.8919",
+    "dmiWghtdContraRate": "1.8919",
+    "showDate": "2026-09-11 10:19:26",
+    "isinCode": "CND10009KLT6",
+    "termToMaturity": "13.88Y"
+  },
+  {
+    "excelCode": "2505793.IB",
+    "abdAssetEncdFullDescByRmb": "25山东债73",
+    "dmiLatestRate": "101.23",
+    "dmiLatestContraRate": "1.6510",
+    "dmiWghtdContraRate": "1.6505",
+    "showDate": "2026-09-11 14:33:46",
+    "isinCode": "CND10009KLN9",
+    "termToMaturity": "8.88Y"
+  },
+  {
+    "excelCode": "2505819.IB",
+    "abdAssetEncdFullDescByRmb": "25湖南债34",
+    "dmiLatestRate": "101.06",
+    "dmiLatestContraRate": "1.4080",
+    "dmiWghtdContraRate": "1.4090",
+    "showDate": "2026-09-11 15:10:44",
+    "isinCode": "CND10009L652",
+    "termToMaturity": "3.89Y"
+  },
+  {
+    "excelCode": "2505850.IB",
+    "abdAssetEncdFullDescByRmb": "25浙江债56",
+    "dmiLatestRate": "102.19",
+    "dmiLatestContraRate": "1.7341",
+    "dmiWghtdContraRate": "1.7341",
+    "showDate": "2026-09-11 17:13:12",
+    "isinCode": "CND10009NNS8",
+    "termToMaturity": "8.95Y"
+  },
+  {
+    "excelCode": "2505852.IB",
+    "abdAssetEncdFullDescByRmb": "25内蒙古债22",
+    "dmiLatestRate": "101.79",
+    "dmiLatestContraRate": "1.7625",
+    "dmiWghtdContraRate": "1.7625",
+    "showDate": "2026-09-11 16:02:45",
+    "isinCode": "CND10009NB00",
+    "termToMaturity": "8.94Y"
+  },
+  {
+    "excelCode": "2505882.IB",
+    "abdAssetEncdFullDescByRmb": "25山东债79",
+    "dmiLatestRate": "101.77",
+    "dmiLatestContraRate": "1.5850",
+    "dmiWghtdContraRate": "1.5850",
+    "showDate": "2026-09-11 14:22:52",
+    "isinCode": "CND10009NG13",
+    "termToMaturity": "5.94Y"
+  },
+  {
+    "excelCode": "2505892.IB",
+    "abdAssetEncdFullDescByRmb": "25安徽债81",
+    "dmiLatestRate": "101.58",
+    "dmiLatestContraRate": "2.2275",
+    "dmiWghtdContraRate": "2.2275",
+    "showDate": "2026-09-11 14:21:43",
+    "isinCode": "CND10009P943",
+    "termToMaturity": "18.96Y"
+  },
+  {
+    "excelCode": "2505907.IB",
+    "abdAssetEncdFullDescByRmb": "25安徽债96",
+    "dmiLatestRate": "101.42",
+    "dmiLatestContraRate": "2.2275",
+    "dmiWghtdContraRate": "2.2275",
+    "showDate": "2026-09-11 14:21:26",
+    "isinCode": "CND10009P950",
+    "termToMaturity": "18.96Y"
+  },
+  {
+    "excelCode": "2505928.IB",
+    "abdAssetEncdFullDescByRmb": "25陕西债44",
+    "dmiLatestRate": "101.84",
+    "dmiLatestContraRate": "2.2400",
+    "dmiWghtdContraRate": "2.2319",
+    "showDate": "2026-09-11 16:03:49",
+    "isinCode": "CND10009P5M4",
+    "termToMaturity": "18.96Y"
+  },
+  {
+    "excelCode": "2505956.IB",
+    "abdAssetEncdFullDescByRmb": "25上海债41",
+    "dmiLatestRate": "101.24",
+    "dmiLatestContraRate": "1.7400",
+    "dmiWghtdContraRate": "1.7394",
+    "showDate": "2026-09-11 15:40:22",
+    "isinCode": "CND10009PNH6",
+    "termToMaturity": "8.97Y"
+  },
+  {
+    "excelCode": "2571002.IB",
+    "abdAssetEncdFullDescByRmb": "25广东债48",
+    "dmiLatestRate": "100.90",
+    "dmiLatestContraRate": "2.2775",
+    "dmiWghtdContraRate": "2.2775",
+    "showDate": "2026-09-11 14:40:21",
+    "isinCode": "CND10009PYC4",
+    "termToMaturity": "28.99Y"
+  },
+  {
+    "excelCode": "2571003.IB",
+    "abdAssetEncdFullDescByRmb": "25广东债49",
+    "dmiLatestRate": "100.90",
+    "dmiLatestContraRate": "2.2775",
+    "dmiWghtdContraRate": "2.2775",
+    "showDate": "2026-09-11 09:44:47",
+    "isinCode": "CND10009PYR2",
+    "termToMaturity": "28.99Y"
+  },
+  {
+    "excelCode": "2571009.IB",
+    "abdAssetEncdFullDescByRmb": "25广西债24",
+    "dmiLatestRate": "102.62",
+    "dmiLatestContraRate": "2.2300",
+    "dmiWghtdContraRate": "2.2304",
+    "showDate": "2026-09-11 15:58:01",
+    "isinCode": "CND10009R2T4",
+    "termToMaturity": "19.01Y"
+  },
+  {
+    "excelCode": "2571051.IB",
+    "abdAssetEncdFullDescByRmb": "25广东债56",
+    "dmiLatestRate": "104.12",
+    "dmiLatestContraRate": "2.0019",
+    "dmiWghtdContraRate": "2.0019",
+    "showDate": "2026-09-11 13:36:05",
+    "isinCode": "CND10009RJ57",
+    "termToMaturity": "14.04Y"
+  },
+  {
+    "excelCode": "2571151.IB",
+    "abdAssetEncdFullDescByRmb": "25河南债78",
+    "dmiLatestRate": "102.51",
+    "dmiLatestContraRate": "1.7508",
+    "dmiWghtdContraRate": "1.7508",
+    "showDate": "2026-09-11 16:00:29",
+    "isinCode": "CND10009TVS8",
+    "termToMaturity": "9.11Y"
+  },
+  {
+    "excelCode": "2571206.IB",
+    "abdAssetEncdFullDescByRmb": "25广东债66",
+    "dmiLatestRate": "103.63",
+    "dmiLatestContraRate": "2.0035",
+    "dmiWghtdContraRate": "2.0048",
+    "showDate": "2026-09-11 15:15:31",
+    "isinCode": "CND10009WCB8",
+    "termToMaturity": "14.13Y"
+  },
+  {
+    "excelCode": "2571244.IB",
+    "abdAssetEncdFullDescByRmb": "25江西债71",
+    "dmiLatestRate": "102.48",
+    "dmiLatestContraRate": "1.7651",
+    "dmiWghtdContraRate": "1.7651",
+    "showDate": "2026-09-11 14:17:24",
+    "isinCode": "CND10009WHC5",
+    "termToMaturity": "9.14Y"
+  },
+  {
+    "excelCode": "2571270.IB",
+    "abdAssetEncdFullDescByRmb": "25江西债78",
+    "dmiLatestRate": "102.22",
+    "dmiLatestContraRate": "2.2367",
+    "dmiWghtdContraRate": "2.2367",
+    "showDate": "2026-09-11 14:33:34",
+    "isinCode": "CND10009XGC5",
+    "termToMaturity": "19.18Y"
+  },
+  {
+    "excelCode": "2571291.IB",
+    "abdAssetEncdFullDescByRmb": "25江苏债45",
+    "dmiLatestRate": "100.98",
+    "dmiLatestContraRate": "1.7444",
+    "dmiWghtdContraRate": "1.7445",
+    "showDate": "2026-09-11 16:48:26",
+    "isinCode": "CND10009XLL6",
+    "termToMaturity": "9.18Y"
+  },
+  {
+    "excelCode": "2571308.IB",
+    "abdAssetEncdFullDescByRmb": "25新疆债61",
+    "dmiLatestRate": "101.39",
+    "dmiLatestContraRate": "2.2500",
+    "dmiWghtdContraRate": "2.2500",
+    "showDate": "2026-09-11 16:08:31",
+    "isinCode": "CND10009XM21",
+    "termToMaturity": "19.19Y"
+  },
+  {
+    "excelCode": "2571309.IB",
+    "abdAssetEncdFullDescByRmb": "25新疆债62",
+    "dmiLatestRate": "101.46",
+    "dmiLatestContraRate": "2.2460",
+    "dmiWghtdContraRate": "2.2455",
+    "showDate": "2026-09-11 14:00:55",
+    "isinCode": "CND10009XM39",
+    "termToMaturity": "19.19Y"
+  },
+  {
+    "excelCode": "2571314.IB",
+    "abdAssetEncdFullDescByRmb": "25云南债47",
+    "dmiLatestRate": "100.75",
+    "dmiLatestContraRate": "1.7710",
+    "dmiWghtdContraRate": "1.7710",
+    "showDate": "2026-09-11 16:48:00",
+    "isinCode": "CND10009XR67",
+    "termToMaturity": "9.19Y"
+  },
+  {
+    "excelCode": "2571316.IB",
+    "abdAssetEncdFullDescByRmb": "25云南债49",
+    "dmiLatestRate": "100.40",
+    "dmiLatestContraRate": "1.3940",
+    "dmiWghtdContraRate": "1.3940",
+    "showDate": "2026-09-11 16:32:59",
+    "isinCode": "CND10009ZZ73",
+    "termToMaturity": "2.23Y"
+  },
+  {
+    "excelCode": "2571321.IB",
+    "abdAssetEncdFullDescByRmb": "25贵州债37",
+    "dmiLatestRate": "102.07",
+    "dmiLatestContraRate": "2.2825",
+    "dmiWghtdContraRate": "2.2833",
+    "showDate": "2026-09-11 16:30:48",
+    "isinCode": "CND10009XMK6",
+    "termToMaturity": "29.19Y"
+  },
+  {
+    "excelCode": "2571414.IB",
+    "abdAssetEncdFullDescByRmb": "25四川债68",
+    "dmiLatestRate": "103.34",
+    "dmiLatestContraRate": "2.2730",
+    "dmiWghtdContraRate": "2.2730",
+    "showDate": "2026-09-11 14:59:26",
+    "isinCode": "CND10009ZRH6",
+    "termToMaturity": "29.22Y"
+  },
+  {
+    "excelCode": "2571419.IB",
+    "abdAssetEncdFullDescByRmb": "25四川债73",
+    "dmiLatestRate": "102.99",
+    "dmiLatestContraRate": "2.2376",
+    "dmiWghtdContraRate": "2.2376",
+    "showDate": "2026-09-11 14:33:29",
+    "isinCode": "CND10009ZRB9",
+    "termToMaturity": "19.22Y"
+  },
+  {
+    "excelCode": "2571459.IB",
+    "abdAssetEncdFullDescByRmb": "25浙江债80",
+    "dmiLatestRate": "102.17",
+    "dmiLatestContraRate": "1.7450",
+    "dmiWghtdContraRate": "1.7450",
+    "showDate": "2026-09-11 16:00:21",
+    "isinCode": "CND1000B0L19",
+    "termToMaturity": "9.25Y"
+  },
+  {
+    "excelCode": "2605036.IB",
+    "abdAssetEncdFullDescByRmb": "26浙江债07",
+    "dmiLatestRate": "103.56",
+    "dmiLatestContraRate": "2.2325",
+    "dmiWghtdContraRate": "2.2325",
+    "showDate": "2026-09-11 11:43:44",
+    "isinCode": "CND1000B2153",
+    "termToMaturity": "19.36Y"
+  },
+  {
+    "excelCode": "2605056.IB",
+    "abdAssetEncdFullDescByRmb": "26安徽债14",
+    "dmiLatestRate": "103.41",
+    "dmiLatestContraRate": "2.2800",
+    "dmiWghtdContraRate": "2.2800",
+    "showDate": "2026-09-11 16:13:20",
+    "isinCode": "CND1000B4WL0",
+    "termToMaturity": "29.38Y"
+  },
+  {
+    "excelCode": "2605063.IB",
+    "abdAssetEncdFullDescByRmb": "26四川债04",
+    "dmiLatestRate": "103.68",
+    "dmiLatestContraRate": "2.2775",
+    "dmiWghtdContraRate": "2.2783",
+    "showDate": "2026-09-11 16:12:11",
+    "isinCode": "CND1000B2476",
+    "termToMaturity": "29.37Y"
+  },
+  {
+    "excelCode": "2605070.IB",
+    "abdAssetEncdFullDescByRmb": "26四川债11",
+    "dmiLatestRate": "103.41",
+    "dmiLatestContraRate": "2.2800",
+    "dmiWghtdContraRate": "2.2800",
+    "showDate": "2026-09-11 11:15:39",
+    "isinCode": "CND1000B24B3",
+    "termToMaturity": "29.37Y"
+  },
+  {
+    "excelCode": "2605077.IB",
+    "abdAssetEncdFullDescByRmb": "26广东债03",
+    "dmiLatestRate": "103.13",
+    "dmiLatestContraRate": "2.2300",
+    "dmiWghtdContraRate": "2.2309",
+    "showDate": "2026-09-11 15:40:29",
+    "isinCode": "CND1000B51H3",
+    "termToMaturity": "19.39Y"
+  },
+  {
+    "excelCode": "2605078.IB",
+    "abdAssetEncdFullDescByRmb": "26广东债04",
+    "dmiLatestRate": "103.13",
+    "dmiLatestContraRate": "2.2300",
+    "dmiWghtdContraRate": "2.2300",
+    "showDate": "2026-09-11 10:47:35",
+    "isinCode": "CND1000B51F7",
+    "termToMaturity": "19.39Y"
+  },
+  {
+    "excelCode": "2605079.IB",
+    "abdAssetEncdFullDescByRmb": "26广东债05",
+    "dmiLatestRate": "103.73",
+    "dmiLatestContraRate": "2.2750",
+    "dmiWghtdContraRate": "2.2753",
+    "showDate": "2026-09-11 15:20:59",
+    "isinCode": "CND1000B51J9",
+    "termToMaturity": "29.39Y"
+  },
+  {
+    "excelCode": "2605080.IB",
+    "abdAssetEncdFullDescByRmb": "26广东债06",
+    "dmiLatestRate": "103.68",
+    "dmiLatestContraRate": "2.2775",
+    "dmiWghtdContraRate": "2.2775",
+    "showDate": "2026-09-11 15:18:48",
+    "isinCode": "CND1000B51G5",
+    "termToMaturity": "29.39Y"
+  },
+  {
+    "excelCode": "2605139.IB",
+    "abdAssetEncdFullDescByRmb": "26西藏债01",
+    "dmiLatestRate": "104.91",
+    "dmiLatestContraRate": "2.2800",
+    "dmiWghtdContraRate": "2.2838",
+    "showDate": "2026-09-11 14:47:29",
+    "isinCode": "CND1000B5CS4",
+    "termToMaturity": "29.41Y"
+  },
+  {
+    "excelCode": "2605159.IB",
+    "abdAssetEncdFullDescByRmb": "26河南债06",
+    "dmiLatestRate": "104.27",
+    "dmiLatestContraRate": "2.2800",
+    "dmiWghtdContraRate": "2.2792",
+    "showDate": "2026-09-11 15:04:38",
+    "isinCode": "CND1000B5C80",
+    "termToMaturity": "29.41Y"
+  },
+  {
+    "excelCode": "2605164.IB",
+    "abdAssetEncdFullDescByRmb": "26河南债11",
+    "dmiLatestRate": "103.64",
+    "dmiLatestContraRate": "2.2375",
+    "dmiWghtdContraRate": "2.2375",
+    "showDate": "2026-09-11 14:22:16",
+    "isinCode": "CND1000B5C98",
+    "termToMaturity": "19.41Y"
+  },
+  {
+    "excelCode": "2605165.IB",
+    "abdAssetEncdFullDescByRmb": "26河南债12",
+    "dmiLatestRate": "104.32",
+    "dmiLatestContraRate": "2.2775",
+    "dmiWghtdContraRate": "2.2777",
+    "showDate": "2026-09-11 16:13:49",
+    "isinCode": "CND1000B5CC8",
+    "termToMaturity": "29.41Y"
+  },
+  {
+    "excelCode": "2605167.IB",
+    "abdAssetEncdFullDescByRmb": "26江西债02",
+    "dmiLatestRate": "102.09",
+    "dmiLatestContraRate": "1.7675",
+    "dmiWghtdContraRate": "1.7675",
+    "showDate": "2026-09-11 15:09:49",
+    "isinCode": "CND1000B5BT4",
+    "termToMaturity": "9.41Y"
+  },
+  {
+    "excelCode": "2605174.IB",
+    "abdAssetEncdFullDescByRmb": "26江西债09",
+    "dmiLatestRate": "104.10",
+    "dmiLatestContraRate": "2.2780",
+    "dmiWghtdContraRate": "2.2779",
+    "showDate": "2026-09-11 14:45:14",
+    "isinCode": "CND1000B5BL1",
+    "termToMaturity": "29.41Y"
+  },
+  {
+    "excelCode": "2605201.IB",
+    "abdAssetEncdFullDescByRmb": "26海南债05",
+    "dmiLatestRate": "104.64",
+    "dmiLatestContraRate": "2.2726",
+    "dmiWghtdContraRate": "2.2726",
+    "showDate": "2026-09-11 15:02:11",
+    "isinCode": "CND1000B5C07",
+    "termToMaturity": "29.41Y"
+  },
+  {
+    "excelCode": "2605205.IB",
+    "abdAssetEncdFullDescByRmb": "26江苏债07",
+    "dmiLatestRate": "100.86",
+    "dmiLatestContraRate": "1.5975",
+    "dmiWghtdContraRate": "1.5975",
+    "showDate": "2026-09-11 14:34:05",
+    "isinCode": "CND1000B5CL9",
+    "termToMaturity": "6.41Y"
+  },
+  {
+    "excelCode": "2605207.IB",
+    "abdAssetEncdFullDescByRmb": "26江苏债09",
+    "dmiLatestRate": "103.89",
+    "dmiLatestContraRate": "2.2775",
+    "dmiWghtdContraRate": "2.2765",
+    "showDate": "2026-09-11 15:18:40",
+    "isinCode": "CND1000B5CJ3",
+    "termToMaturity": "29.41Y"
+  },
+  {
+    "excelCode": "2605213.IB",
+    "abdAssetEncdFullDescByRmb": "26山西债06",
+    "dmiLatestRate": "103.55",
+    "dmiLatestContraRate": "2.0250",
+    "dmiWghtdContraRate": "2.0250",
+    "showDate": "2026-09-11 15:05:59",
+    "isinCode": "CND1000B5HK0",
+    "termToMaturity": "14.42Y"
+  },
+  {
+    "excelCode": "2605226.IB",
+    "abdAssetEncdFullDescByRmb": "26湖南债04",
+    "dmiLatestRate": "103.37",
+    "dmiLatestContraRate": "2.2350",
+    "dmiWghtdContraRate": "2.2350",
+    "showDate": "2026-09-11 16:29:01",
+    "isinCode": "CND1000B5HG8",
+    "termToMaturity": "19.42Y"
+  },
+  {
+    "excelCode": "2605227.IB",
+    "abdAssetEncdFullDescByRmb": "26湖南债05",
+    "dmiLatestRate": "103.68",
+    "dmiLatestContraRate": "2.2775",
+    "dmiWghtdContraRate": "2.2775",
+    "showDate": "2026-09-11 16:04:03",
+    "isinCode": "CND1000B5HF0",
+    "termToMaturity": "29.42Y"
+  },
+  {
+    "excelCode": "2605233.IB",
+    "abdAssetEncdFullDescByRmb": "26浙江债15",
+    "dmiLatestRate": "103.47",
+    "dmiLatestContraRate": "2.2775",
+    "dmiWghtdContraRate": "2.2757",
+    "showDate": "2026-09-11 16:20:30",
+    "isinCode": "CND1000B5MW5",
+    "termToMaturity": "29.42Y"
+  },
+  {
+    "excelCode": "2605237.IB",
+    "abdAssetEncdFullDescByRmb": "26河北债04",
+    "dmiLatestRate": "102.01",
+    "dmiLatestContraRate": "1.7574",
+    "dmiWghtdContraRate": "1.7574",
+    "showDate": "2026-09-11 14:57:52",
+    "isinCode": "CND1000B5HZ8",
+    "termToMaturity": "9.42Y"
+  },
+  {
+    "excelCode": "2605238.IB",
+    "abdAssetEncdFullDescByRmb": "26河北债05",
+    "dmiLatestRate": "101.92",
+    "dmiLatestContraRate": "1.7676",
+    "dmiWghtdContraRate": "1.7676",
+    "showDate": "2026-09-11 09:51:04",
+    "isinCode": "CND1000B5HY1",
+    "termToMaturity": "9.42Y"
+  },
+  {
+    "excelCode": "2605248.IB",
+    "abdAssetEncdFullDescByRmb": "26河北债15",
+    "dmiLatestRate": "103.86",
+    "dmiLatestContraRate": "2.2790",
+    "dmiWghtdContraRate": "2.2792",
+    "showDate": "2026-09-11 16:21:07",
+    "isinCode": "CND1000B5HS3",
+    "termToMaturity": "29.42Y"
+  },
+  {
+    "excelCode": "2605249.IB",
+    "abdAssetEncdFullDescByRmb": "26河北债16",
+    "dmiLatestRate": "103.84",
+    "dmiLatestContraRate": "2.2800",
+    "dmiWghtdContraRate": "2.2791",
+    "showDate": "2026-09-11 15:41:21",
+    "isinCode": "CND1000B5HR5",
+    "termToMaturity": "29.42Y"
+  },
+  {
+    "excelCode": "2605253.IB",
+    "abdAssetEncdFullDescByRmb": "26宁夏债04",
+    "dmiLatestRate": "104.86",
+    "dmiLatestContraRate": "2.2825",
+    "dmiWghtdContraRate": "2.2832",
+    "showDate": "2026-09-11 15:50:17",
+    "isinCode": "CND1000B5XW2",
+    "termToMaturity": "29.46Y"
+  },
+  {
+    "excelCode": "2605255.IB",
+    "abdAssetEncdFullDescByRmb": "26内蒙古债02",
+    "dmiLatestRate": "103.71",
+    "dmiLatestContraRate": "2.2536",
+    "dmiWghtdContraRate": "2.2536",
+    "showDate": "2026-09-11 14:36:36",
+    "isinCode": "CND1000B6NZ4",
+    "termToMaturity": "19.47Y"
+  },
+  {
+    "excelCode": "2605256.IB",
+    "abdAssetEncdFullDescByRmb": "26内蒙古债03",
+    "dmiLatestRate": "104.70",
+    "dmiLatestContraRate": "2.2800",
+    "dmiWghtdContraRate": "2.2800",
+    "showDate": "2026-09-11 15:50:25",
+    "isinCode": "CND1000B6P01",
+    "termToMaturity": "29.47Y"
+  },
+  {
+    "excelCode": "2605258.IB",
+    "abdAssetEncdFullDescByRmb": "26河北债17",
+    "dmiLatestRate": "104.06",
+    "dmiLatestContraRate": "2.2800",
+    "dmiWghtdContraRate": "2.2789",
+    "showDate": "2026-09-11 15:28:42",
+    "isinCode": "CND1000B5RZ7",
+    "termToMaturity": "29.46Y"
+  },
+  {
+    "excelCode": "2605259.IB",
+    "abdAssetEncdFullDescByRmb": "26辽宁债08",
+    "dmiLatestRate": "102.27",
+    "dmiLatestContraRate": "1.7683",
+    "dmiWghtdContraRate": "1.7683",
+    "showDate": "2026-09-11 15:14:00",
+    "isinCode": "CND1000B5YQ2",
+    "termToMaturity": "9.47Y"
+  },
+  {
+    "excelCode": "2605265.IB",
+    "abdAssetEncdFullDescByRmb": "26江苏债11",
+    "dmiLatestRate": "102.31",
+    "dmiLatestContraRate": "2.0251",
+    "dmiWghtdContraRate": "2.0251",
+    "showDate": "2026-09-11 13:40:23",
+    "isinCode": "CND1000B5XT8",
+    "termToMaturity": "14.46Y"
+  },
+  {
+    "excelCode": "2605268.IB",
+    "abdAssetEncdFullDescByRmb": "26江苏债14",
+    "dmiLatestRate": "104.33",
+    "dmiLatestContraRate": "2.2775",
+    "dmiWghtdContraRate": "2.2774",
+    "showDate": "2026-09-11 16:56:51",
+    "isinCode": "CND1000B5XQ4",
+    "termToMaturity": "29.46Y"
+  },
+  {
+    "excelCode": "2605272.IB",
+    "abdAssetEncdFullDescByRmb": "26广东债20",
+    "dmiLatestRate": "103.58",
+    "dmiLatestContraRate": "2.2325",
+    "dmiWghtdContraRate": "2.2325",
+    "showDate": "2026-09-11 15:49:50",
+    "isinCode": "CND1000B7VD2",
+    "termToMaturity": "19.48Y"
+  },
+  {
+    "excelCode": "2605273.IB",
+    "abdAssetEncdFullDescByRmb": "26广东债21",
+    "dmiLatestRate": "104.34",
+    "dmiLatestContraRate": "2.2770",
+    "dmiWghtdContraRate": "2.2773",
+    "showDate": "2026-09-11 16:14:24",
+    "isinCode": "CND1000B7VC4",
+    "termToMaturity": "29.48Y"
+  },
+  {
+    "excelCode": "2605274.IB",
+    "abdAssetEncdFullDescByRmb": "26广东债22",
+    "dmiLatestRate": "104.39",
+    "dmiLatestContraRate": "2.2750",
+    "dmiWghtdContraRate": "2.2750",
+    "showDate": "2026-09-11 15:18:50",
+    "isinCode": "CND1000B7VF7",
+    "termToMaturity": "29.48Y"
+  },
+  {
+    "excelCode": "2605277.IB",
+    "abdAssetEncdFullDescByRmb": "26广东债25",
+    "dmiLatestRate": "103.42",
+    "dmiLatestContraRate": "2.0260",
+    "dmiWghtdContraRate": "2.0268",
+    "showDate": "2026-09-11 13:36:40",
+    "isinCode": "CND1000B7VK7",
+    "termToMaturity": "14.48Y"
+  },
+  {
+    "excelCode": "2605280.IB",
+    "abdAssetEncdFullDescByRmb": "26湖南债11",
+    "dmiLatestRate": "104.51",
+    "dmiLatestContraRate": "2.2790",
+    "dmiWghtdContraRate": "2.2790",
+    "showDate": "2026-09-11 14:17:23",
+    "isinCode": "CND1000B5YM1",
+    "termToMaturity": "29.47Y"
+  },
+  {
+    "excelCode": "2605281.IB",
+    "abdAssetEncdFullDescByRmb": "26湖南债12",
+    "dmiLatestRate": "101.91",
+    "dmiLatestContraRate": "1.7700",
+    "dmiWghtdContraRate": "1.7700",
+    "showDate": "2026-09-11 17:29:06",
+    "isinCode": "CND1000B5YL3",
+    "termToMaturity": "9.47Y"
+  },
+  {
+    "excelCode": "2605282.IB",
+    "abdAssetEncdFullDescByRmb": "26湖南债13",
+    "dmiLatestRate": "104.54",
+    "dmiLatestContraRate": "2.2775",
+    "dmiWghtdContraRate": "2.2763",
+    "showDate": "2026-09-11 15:32:18",
+    "isinCode": "CND1000B5YK5",
+    "termToMaturity": "29.47Y"
+  },
+  {
+    "excelCode": "2605284.IB",
+    "abdAssetEncdFullDescByRmb": "26福建债05",
+    "dmiLatestRate": "104.54",
+    "dmiLatestContraRate": "2.2778",
+    "dmiWghtdContraRate": "2.2779",
+    "showDate": "2026-09-11 15:35:20",
+    "isinCode": "CND1000B7X67",
+    "termToMaturity": "29.48Y"
+  },
+  {
+    "excelCode": "2605299.IB",
+    "abdAssetEncdFullDescByRmb": "26河北债19",
+    "dmiLatestRate": "101.76",
+    "dmiLatestContraRate": "1.7679",
+    "dmiWghtdContraRate": "1.7679",
+    "showDate": "2026-09-11 09:51:04",
+    "isinCode": "CND1000B8085",
+    "termToMaturity": "9.49Y"
+  },
+  {
+    "excelCode": "2605342.IB",
+    "abdAssetEncdFullDescByRmb": "26甘肃债12",
+    "dmiLatestRate": "102.37",
+    "dmiLatestContraRate": "1.7682",
+    "dmiWghtdContraRate": "1.7681",
+    "showDate": "2026-09-11 16:48:58",
+    "isinCode": "CND1000B8FX1",
+    "termToMaturity": "9.52Y"
+  },
+  {
+    "excelCode": "2605362.IB",
+    "abdAssetEncdFullDescByRmb": "26山东债29",
+    "dmiLatestRate": "101.84",
+    "dmiLatestContraRate": "1.7590",
+    "dmiWghtdContraRate": "1.7590",
+    "showDate": "2026-09-11 15:20:17",
+    "isinCode": "CND1000B8QM1",
+    "termToMaturity": "9.53Y"
+  },
+  {
+    "excelCode": "2605383.IB",
+    "abdAssetEncdFullDescByRmb": "26吉林债07",
+    "dmiLatestRate": "105.30",
+    "dmiLatestContraRate": "2.2825",
+    "dmiWghtdContraRate": "2.2803",
+    "showDate": "2026-09-11 15:50:56",
+    "isinCode": "CND1000B90N9",
+    "termToMaturity": "29.54Y"
+  },
+  {
+    "excelCode": "2605386.IB",
+    "abdAssetEncdFullDescByRmb": "26河北债21",
+    "dmiLatestRate": "102.03",
+    "dmiLatestContraRate": "1.7680",
+    "dmiWghtdContraRate": "1.7680",
+    "showDate": "2026-09-11 10:12:07",
+    "isinCode": "CND1000B8ZV3",
+    "termToMaturity": "9.54Y"
+  },
+  {
+    "excelCode": "2605392.IB",
+    "abdAssetEncdFullDescByRmb": "26海南债14",
+    "dmiLatestRate": "104.30",
+    "dmiLatestContraRate": "2.3025",
+    "dmiWghtdContraRate": "2.3025",
+    "showDate": "2026-09-11 13:32:04",
+    "isinCode": "CND1000B90L3",
+    "termToMaturity": "29.54Y"
+  },
+  {
+    "excelCode": "2605401.IB",
+    "abdAssetEncdFullDescByRmb": "26上海债08",
+    "dmiLatestRate": "100.59",
+    "dmiLatestContraRate": "1.4850",
+    "dmiWghtdContraRate": "1.4842",
+    "showDate": "2026-09-11 14:42:13",
+    "isinCode": "CND1000B91J5",
+    "termToMaturity": "4.55Y"
+  },
+  {
+    "excelCode": "2605407.IB",
+    "abdAssetEncdFullDescByRmb": "26上海债14",
+    "dmiLatestRate": "103.25",
+    "dmiLatestContraRate": "2.0305",
+    "dmiWghtdContraRate": "2.0315",
+    "showDate": "2026-09-11 13:36:58",
+    "isinCode": "CND1000B9182",
+    "termToMaturity": "14.55Y"
+  },
+  {
+    "excelCode": "2605416.IB",
+    "abdAssetEncdFullDescByRmb": "26黑龙江债06",
+    "dmiLatestRate": "101.32",
+    "dmiLatestContraRate": "1.7690",
+    "dmiWghtdContraRate": "1.7690",
+    "showDate": "2026-09-11 15:13:31",
+    "isinCode": "CND1000B9P40",
+    "termToMaturity": "9.58Y"
+  },
+  {
+    "excelCode": "2605428.IB",
+    "abdAssetEncdFullDescByRmb": "26云南债10",
+    "dmiLatestRate": "104.02",
+    "dmiLatestContraRate": "2.2825",
+    "dmiWghtdContraRate": "2.2826",
+    "showDate": "2026-09-11 14:53:24",
+    "isinCode": "CND1000B9TD2",
+    "termToMaturity": "29.59Y"
+  },
+  {
+    "excelCode": "2605444.IB",
+    "abdAssetEncdFullDescByRmb": "26广西债17",
+    "dmiLatestRate": "102.02",
+    "dmiLatestContraRate": "2.2500",
+    "dmiWghtdContraRate": "2.2500",
+    "showDate": "2026-09-11 15:15:37",
+    "isinCode": "CND1000BB8V4",
+    "termToMaturity": "19.61Y"
+  },
+  {
+    "excelCode": "2605511.IB",
+    "abdAssetEncdFullDescByRmb": "26重庆债28",
+    "dmiLatestRate": "102.59",
+    "dmiLatestContraRate": "2.0350",
+    "dmiWghtdContraRate": "2.0350",
+    "showDate": "2026-09-11 15:25:38",
+    "isinCode": "CND1000BBW73",
+    "termToMaturity": "14.66Y"
+  },
+  {
+    "excelCode": "809076.IB",
+    "abdAssetEncdFullDescByRmb": "23北京10",
+    "dmiLatestRate": "102.34",
+    "dmiLatestContraRate": "1.2200",
+    "dmiWghtdContraRate": "1.2270",
+    "showDate": "2026-09-11 16:07:25",
+    "isinCode": "CND100068YL1",
+    "termToMaturity": "1.53Y"
+  },
+  {
+    "excelCode": "809179.IB",
+    "abdAssetEncdFullDescByRmb": "24湖南33",
+    "dmiLatestRate": "105.43",
+    "dmiLatestContraRate": "1.8283",
+    "dmiWghtdContraRate": "1.8277",
+    "showDate": "2026-09-11 16:09:46",
+    "isinCode": "CND10008CS54",
+    "termToMaturity": "12.98Y"
+  },
+  {
+    "excelCode": "809270.IB",
+    "abdAssetEncdFullDescByRmb": "25江苏43",
+    "dmiLatestRate": "102.05",
+    "dmiLatestContraRate": "1.5400",
+    "dmiWghtdContraRate": "1.5400",
+    "showDate": "2026-09-11 16:53:40",
+    "isinCode": "CND10009R2Q0",
+    "termToMaturity": "6.01Y"
+  }
+]

@@ -1,0 +1,130 @@
+import {chromium} from 'playwright';
+import {createServer} from 'node:http';
+import {readFile,mkdir,writeFile} from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+
+// These fixtures exercise display/export compatibility without requesting Wind data.
+const ytm={metric:'ytm',priceBasis:'close',label:'收盘价到期收益率',source:'Wind'};
+const legacy={metric:'chinabond_valuation',priceBasis:'valuation',label:'中债估值收益率',source:'中债'};
+const terms=[3,5,7,10,15,20,30];
+const regions=[{id:'shanghai',name:'上海市',tier:1,order:1}];
+const newVersion='rules-v3-mcp-values-no-clauses';
+const currentPolicy={clausePolicy:'not_collected_or_filtered',dataAcceptance:'mcp_returned_values',dateBasis:'query_date'};
+const rules=(definition,version)=>({...version===newVersion?currentPolicy:{},version,formula:`Σ（${definition.label} × 发行规模）÷ Σ发行规模`,cutoff:'2025-08-08',terms,yieldDefinition:definition});
+const currentRules=rules(ytm,newVersion);
+function dataset(date){
+ const definition=['2026-09-10','2026-09-07'].includes(date)?ytm:legacy;
+ const version=date==='2026-09-10'?newVersion:date==='2026-09-07'?'rules-v2-ytm-close':'rules-v1';
+ const cells=['before_20250808','on_or_after_20250808'].flatMap(cohort=>['all','general','special'].flatMap(bondScope=>terms.map(termYears=>({cohort,bondScope,termYears,regionId:'shanghai',cellState:'ready',yieldPct:'2.0000',sampleCount:2,issueAmountSumYi:'20',weightedYieldSum:'40'}))));
+ const snapshot={source:'demo',publishedRunId:'fixture-'+date,publishedAt:date+'T12:00:00Z',rulesVersion:version,mappingVersion:'regions-v1',yieldDefinition:definition,rules:rules(definition,version),regions,cells};
+ if(date==='2026-09-08'){delete snapshot.yieldDefinition;delete snapshot.rules}
+ return {source:'demo',evaluationDate:date,yieldDefinition:ytm,dataState:'ready',latestAttempt:null,snapshot};
+}
+const dist=path.resolve('dist');
+const server=createServer(async(req,res)=>{
+ try{
+  const url=new URL(req.url,'http://localhost');
+  const target=path.resolve(dist,'.'+decodeURIComponent(url.pathname));
+  if(!target.startsWith(dist+path.sep)&&target!==dist){res.writeHead(403);res.end();return}
+  const asset=url.pathname.startsWith('/assets/');
+  const file=asset?target:path.join(dist,'index.html');
+  const body=await readFile(file);
+  res.writeHead(200,{'Content-Type':file.endsWith('.js')?'text/javascript':file.endsWith('.css')?'text/css':'text/html'});res.end(body);
+ }catch{res.writeHead(404);res.end()}
+});
+await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+const origin=`http://127.0.0.1:${server.address().port}`;
+let browser;
+const checks=[],errors=[];
+let sourceReport='legacy';
+try{
+ browser=await chromium.launch({channel:'chrome',headless:true});
+ const page=await browser.newPage({viewport:{width:1440,height:900},acceptDownloads:true});
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.route('**/api/**',async route=>{
+  const url=new URL(route.request().url());let body;
+  if(url.pathname==='/api/bootstrap')body={mode:'demo',latestDate:'2026-09-10',historyStart:'2026-09-01',maxDate:'2026-09-11',regions,terms,yieldDefinition:ytm};
+  else if(url.pathname==='/api/rules')body=currentRules;
+  else if(url.pathname==='/api/runs')body=[];
+  else if(url.pathname==='/api/source')body={yieldDefinition:ytm,mode:'demo',pipeline:null,toolCount:0,endpoint:'https://mcp.wind.com.cn/vserver_bond_data/mcp/',configured:false,connectionStatus:'未验证',dataStatus:'未验证',storage:'test',verificationIsCurrent:false,verification:sourceReport==='none'?null:{...(sourceReport==='ytm'?{yieldDefinition:ytm,rulesVersion:'rules-v2-ytm-close'}:{}),targetDate:'2026-09-09',checkedAt:'2026-09-09',message:'legacy',checks:[{name:sourceReport==='ytm'?'提前偿还与赎回条款':'中债估值收益率与实际估值日',status:'未通过',detail:''}],preview:[]}};
+  else if(/^\/api\/datasets\/[^/]+\/acquisition$/.test(url.pathname))body=null;
+  else if(/^\/api\/datasets\/[^/]+\/available$/.test(url.pathname))body={evaluationDate:url.pathname.split('/').at(-2),scope:'saved_sample',complete:false,rulesVersion:newVersion,mappingVersion:'wind-fields-v4-mcp-values',yieldDefinition:ytm,counts:{bonds:0,eligible:0,incomplete:0,excluded:0,conflicted:0,requests:0,sessions:0},bonds:[],cells:[],warnings:[]};
+  else if(url.pathname.startsWith('/api/datasets/'))body=dataset(url.pathname.split('/').at(-1));
+  else if(url.pathname==='/api/analysis')body={mode:'compare',message:'收益率口径不同，保留目标日数据。',targetDate:'2026-09-10',baseDate:'2026-09-09',yieldDefinition:ytm,baseYieldDefinition:legacy,comparisonBlocked:true,context:{cohort:'before_20250808',scope:'special',term:10},rows:[{...dataset('2026-09-10').snapshot.cells.find(c=>c.bondScope==='special'&&c.termYears===10),regionName:'上海市',baseYieldPct:'1.9000',changeBP:'10',baseSampleCount:2,baseAmountYi:'20',sampleChange:0,amountChangeYi:'0',link:'/workbench?date=2026-09-10'}],highlights:[{termYears:10,bondScope:'special',regionName:'上海市',changeBP:'10',sampleChange:0,amountChangeYi:'0',link:'/workbench?date=2026-09-10'}]};
+  else throw new Error('Unexpected API request: '+url.pathname);
+  await route.fulfill({json:body});
+ });
+ const visit=async(date)=>{await page.goto(`${origin}/workbench?date=${date}&scope=special`);await page.locator('.cell-button').first().waitFor()};
+ const exported=async()=>{const event=page.waitForEvent('download');await page.getByRole('button',{name:'导出数据',exact:true}).click();const download=await event;return readFile(await download.path(),'utf8')};
+ await visit('2026-09-10');
+ assert.equal(await page.locator('.matrix-caption strong').textContent(),ytm.label);
+ assert.match(await page.locator('caption').textContent(),/收盘价到期收益率/);
+ await page.locator('.cell-button').first().click();
+ assert.match(await page.locator('.detail-result').textContent(),/收盘价到期收益率/);
+ assert.match(await page.locator('.detail-section .formula-box').first().textContent(),/收盘价到期收益率/);
+ await page.keyboard.press('Escape');
+ await page.getByRole('button',{name:'计算口径',exact:true}).click();
+ assert.match(await page.locator('.rule-list .formula-box').textContent(),/收盘价到期收益率/);
+ assert.match(await page.locator('.snapshot-label').textContent(),/rules-v3-mcp-values-no-clauses/);
+ assert.match(await page.locator('.rule-list').textContent(),/按查询日期归档，直接采用 Wind MCP 返回的非空数值/);
+ assert.match(await page.locator('.rule-list').textContent(),/暂不采集和记录提前偿还、发行人赎回信息，也不用于筛选/);
+ assert.doesNotMatch(await page.locator('.rule-list').textContent(),/条款未知|实际行情日期不匹配/);
+ await page.keyboard.press('Escape');
+ const newCsv=await exported();
+ assert.match(newCsv,/"收益率口径","价格口径","收益率来源"/);
+ assert.match(newCsv,/"收盘价到期收益率","close","Wind"/);
+ checks.push('新快照矩阵、详情、规则和 CSV 采用收盘价到期收益率');
+ await page.getByRole('button',{name:'AI 助手',exact:true}).click();
+ await page.getByRole('button',{name:'与另一天比较',exact:true}).click();
+ await page.getByText('两日计算规则或收益率口径不同，未计算收益率变化及涨跌排序。',{exact:true}).waitFor();
+ assert.match(await page.locator('.answer').textContent(),/目标口径：收盘价到期收益率；基准口径：中债估值收益率/);
+ assert.equal(await page.locator('.summary-highlights').count(),0);
+ assert.equal(await page.getByRole('columnheader',{name:'变化 BP',exact:true}).count(),0);
+ checks.push('跨口径对比显示双方口径并隐藏涨跌和排序，即使响应误含变化数值');
+ await visit('2026-09-09');
+ assert.equal(await page.locator('.matrix-caption strong').textContent(),legacy.label);
+ await page.getByRole('button',{name:'计算口径',exact:true}).click();
+ assert.match(await page.locator('.rule-list .formula-box').textContent(),/中债估值收益率/);
+ assert.match(await page.locator('.snapshot-label').textContent(),/rules-v1/);
+ assert.match(await page.locator('.rule-list').textContent(),/条款未知、提前偿还或赎回/);
+ assert.doesNotMatch(await page.locator('.rule-list').textContent(),/暂不采集和记录/);
+ await page.keyboard.press('Escape');
+ const legacyCsv=await exported();
+ assert.match(legacyCsv,/"中债估值收益率","valuation","中债"/);
+ assert.doesNotMatch(legacyCsv,/收盘价到期收益率/);
+ checks.push('历史快照保留中债标签、历史公式和 CSV 元数据');
+ await visit('2026-09-08');
+ assert.equal(await page.locator('.matrix-caption strong').textContent(),legacy.label);
+ await page.getByRole('button',{name:'计算口径',exact:true}).click();
+ assert.match(await page.locator('.rule-list .formula-box').textContent(),/中债估值收益率/);
+ assert.match(await page.locator('.snapshot-label').textContent(),/rules-v1/);
+ checks.push('缺少收益率元数据的旧快照不会被当前默认口径重新标记');
+ await page.keyboard.press('Escape');
+ await page.getByRole('button',{name:'Wind 数据源',exact:true}).click();
+ await page.getByText('历史中债口径核验：以下为已保存的中债估值核验结果，不能作为新到期收益率口径的可用性结论。',{exact:true}).waitFor();
+ assert.match(await page.locator('.coverage-card').first().textContent(),/新取数使用收盘价到期收益率/);
+ checks.push('旧核验报告明确标记为历史中债口径，避免误认新YTM覆盖');
+ await visit('2026-09-07');
+ await page.getByRole('button',{name:'计算口径',exact:true}).click();
+ assert.match(await page.locator('.snapshot-label').textContent(),/rules-v2-ytm-close/);
+ assert.match(await page.locator('.rule-list').textContent(),/实际行情日期不匹配、条款未知、提前偿还或赎回/);
+ assert.doesNotMatch(await page.locator('.rule-list').textContent(),/暂不采集和记录/);
+ checks.push('旧 YTM 快照保留原日期验收和条款筛选规则');
+ await page.keyboard.press('Escape');
+ sourceReport='ytm';
+ await page.getByRole('button',{name:'Wind 数据源',exact:true}).click();
+ await page.getByText('历史规则核验：以下结果采用当时的字段验收与条款筛选规则，不代表当前数据可用性。',{exact:true}).waitFor();
+ assert.match(await page.locator('.coverage-card').first().textContent(),/历史数据核验/);
+ checks.push('旧 YTM 核验报告按历史规则标记');
+ sourceReport='none';
+ await page.reload();
+ await page.getByRole('heading',{name:'工作台所需数据',exact:true}).waitFor();
+ assert.match(await page.locator('.coverage-card').first().textContent(),/提前偿还及发行人赎回暂不采集、记录或用于筛选/);
+ assert.doesNotMatch(await page.locator('.coverage-card tbody').textContent(),/提前偿还|赎回|实际行情日期/);
+ checks.push('当前数据要求删除条款与额外日期证明列');
+ assert.deepEqual(errors,[]);
+ await mkdir('test-results',{recursive:true});
+ await writeFile('test-results/browser-ytm-report.json',JSON.stringify({passed:checks.length,checks,errors},null,2));
+ console.log(JSON.stringify({passed:checks.length,checks},null,2));
+}finally{await browser?.close();await new Promise(resolve=>server.close(resolve))}

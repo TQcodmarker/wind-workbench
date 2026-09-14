@@ -1,0 +1,10 @@
+[
+  {
+    "sequence": 1,
+    "method": "POST",
+    "url": "http://webapi.cninfo.com.cn/api/sysapi/p_sysapi1121?sdate=2026-04-01&edate=2026-04-30",
+    "error_type": "ConnectionError",
+    "error": "HTTPConnectionPool(host='webapi.cninfo.com.cn', port=80): Max retries exceeded with url: /api/sysapi/p_sysapi1121?sdate=2026-04-01&edate=2026-04-30 (Caused by NewConnectionError(\"HTTPConnection(host='webapi.cninfo.com.cn', port=80): Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方",
+    "elapsed_ms": 7
+  }
+]

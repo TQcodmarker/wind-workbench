@@ -1,0 +1,12 @@
+{
+  "measuredAt": "2026-09-13T00:21:41.946073+08:00",
+  "fixtureRows": 24,
+  "fixedNetworkDelaySeconds": 0.12,
+  "elapsedSeconds": 3.9349,
+  "rowsPerSecond": 6.099,
+  "workers": 3,
+  "completed": 24,
+  "publicNetworkRequests": 0,
+  "budgetSeconds": 4.8,
+  "passed": true
+}

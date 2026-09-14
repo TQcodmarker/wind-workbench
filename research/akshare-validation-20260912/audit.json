@@ -1,0 +1,289 @@
+{
+  "akshare_version": "1.18.94",
+  "test_cases": 12,
+  "statuses": {
+    "failed": 3,
+    "returned_data": 9
+  },
+  "http_requests_sent": 20,
+  "paid_calls": 0,
+  "results": [
+    {
+      "case": "bond_detail",
+      "function": "bond_info_detail_cm",
+      "arguments": {
+        "symbol": "26河北23"
+      },
+      "status": "failed",
+      "rows": null,
+      "error": "'pageTotal'"
+    },
+    {
+      "case": "bond_lookup",
+      "function": "bond_info_cm",
+      "arguments": {
+        "bond_code": "809336"
+      },
+      "status": "failed",
+      "rows": null,
+      "error": "'pageTotal'"
+    },
+    {
+      "case": "bond_lookup_typed",
+      "function": "bond_info_cm",
+      "arguments": {
+        "bond_code": "809336",
+        "bond_type": "地方政府债"
+      },
+      "status": "returned_data",
+      "rows": 1,
+      "error": null
+    },
+    {
+      "case": "bond_types",
+      "function": "bond_info_cm_query",
+      "arguments": {
+        "symbol": "债券类型"
+      },
+      "status": "returned_data",
+      "rows": 30,
+      "error": null
+    },
+    {
+      "case": "closing_curve",
+      "function": "bond_china_close_return",
+      "arguments": {
+        "symbol": "国债",
+        "period": "1",
+        "start_date": "20260911",
+        "end_date": "20260911"
+      },
+      "status": "returned_data",
+      "rows": 50,
+      "error": null
+    },
+    {
+      "case": "exchange_history",
+      "function": "bond_zh_hs_daily",
+      "arguments": {
+        "symbol": "sh101900"
+      },
+      "status": "failed",
+      "rows": null,
+      "error": "'date'"
+    },
+    {
+      "case": "exchange_history_reference",
+      "function": "bond_zh_hs_daily",
+      "arguments": {
+        "symbol": "sh010107"
+      },
+      "status": "returned_data",
+      "rows": 4806,
+      "error": null
+    },
+    {
+      "case": "local_issues",
+      "function": "bond_local_government_issue_cninfo",
+      "arguments": {
+        "start_date": "20260901",
+        "end_date": "20260911"
+      },
+      "status": "returned_data",
+      "rows": 169,
+      "error": null
+    },
+    {
+      "case": "spot_deals",
+      "function": "bond_spot_deal",
+      "arguments": {},
+      "status": "returned_data",
+      "rows": 3574,
+      "error": null
+    },
+    {
+      "case": "spot_quotes",
+      "function": "bond_spot_quote",
+      "arguments": {},
+      "status": "returned_data",
+      "rows": 15,
+      "error": null
+    },
+    {
+      "case": "treasury_issues",
+      "function": "bond_treasure_issue_cninfo",
+      "arguments": {
+        "start_date": "20260901",
+        "end_date": "20260911"
+      },
+      "status": "returned_data",
+      "rows": 38,
+      "error": null
+    },
+    {
+      "case": "yield_curve",
+      "function": "bond_china_yield",
+      "arguments": {
+        "start_date": "20260901",
+        "end_date": "20260911"
+      },
+      "status": "returned_data",
+      "rows": 27,
+      "error": null
+    }
+  ],
+  "closing_curve": {
+    "returned_rows": 50,
+    "raw_pagination": {
+      "reference": [
+        "1",
+        "2",
+        "3"
+      ],
+      "nowDate": "2026-09-12 19:56:33",
+      "endDateCN": "2026-09-11",
+      "total": 54,
+      "pageTotal": 2,
+      "firstBondType": "CYCC000",
+      "pageSize": 50,
+      "startDateCN": "2026-09-11",
+      "showKey": "1,2,3,",
+      "dateList": [
+        "2026-09-11"
+      ],
+      "message": null,
+      "pageNum": 1
+    },
+    "available_required_tenors": [
+      {
+        "日期": "2026-09-11T00:00:00.000",
+        "期限": 3.0,
+        "到期收益率": 1.2531,
+        "即期收益率": 1.2533,
+        "远期收益率": 1.5995
+      },
+      {
+        "日期": "2026-09-11T00:00:00.000",
+        "期限": 5.0,
+        "到期收益率": 1.4226,
+        "即期收益率": 1.4266,
+        "远期收益率": 1.7695
+      },
+      {
+        "日期": "2026-09-11T00:00:00.000",
+        "期限": 7.0,
+        "到期收益率": 1.5336,
+        "即期收益率": 1.5412,
+        "远期收益率": 1.9766
+      },
+      {
+        "日期": "2026-09-11T00:00:00.000",
+        "期限": 10.0,
+        "到期收益率": 1.6897,
+        "即期收益率": 1.7057,
+        "远期收益率": 2.3773
+      },
+      {
+        "日期": "2026-09-11T00:00:00.000",
+        "期限": 15.0,
+        "到期收益率": 1.9723,
+        "即期收益率": 2.0174,
+        "远期收益率": 2.5911
+      },
+      {
+        "日期": "2026-09-11T00:00:00.000",
+        "期限": 20.0,
+        "到期收益率": 2.1337,
+        "即期收益率": 2.2018,
+        "远期收益率": 2.1671
+      },
+      {
+        "日期": "2026-09-11T00:00:00.000",
+        "期限": 30.0,
+        "到期收益率": 2.146,
+        "即期收益率": 2.1952,
+        "远期收益率": 2.4226
+      }
+    ],
+    "max_returned_tenor": 46.0
+  },
+  "spot_quotes": {
+    "returned_rows": 15,
+    "raw_pagination": {
+      "total": 12253,
+      "count": 817,
+      "pageSize": 15,
+      "optionCn": "<option value=\"\" selected>全部</option>\n<option value=\"工商银行\" >工商银行</option>\n<option value=\"建设银行\" >建设银行</option>\n<option value=\"交通银行\" >交通银行</option>\n<option value=\"中信银行\" >中信银行</option>\n<option value=\"招商银行\" >招商银行</option>\n<option value=\"光大银行\" >光大银行</option>\n<option value=\"华夏银行\" >华夏银行</option>\n<option value=\"广发银行\" >广发银行</option>\n<option value=\"兴业银行\" >兴业银行</option>\n<option value=\"民生银行\" >民生银行</option>\n<option value=\"恒丰银行\" >恒丰银行</option>\n<option value=\"浙商银行\" >浙商银行</option>\n<option value=\"渤海银行\" >渤海银行</option>\n<option value=\"进出口行\" >进出口行</option>\n<option value=\"国开行\" >国开行</option>\n<option value=\"北京银行\" >北京银行</option>\n<option value=\"北京农商银行\" >北京农商银行</option>\n<option value=\"中信证券\" >中信证券</option>\n<option value=\"中金公司\" >中金公司</option>\n<option value=\"邮储银行\" >邮储银行</option>\n<option value=\"上海银行\" >上海银行</option>\n<option value=\"申万宏源证券\" >申万宏源证券</option>\n<option value=\"上海农商银行\" >上海农商银行</option>\n<option value=\"天津银行\" >天津银行</option>\n<option value=\"重庆农村商行\" >重庆农村商行</option>\n<option value=\"河北银行\" >河北银行</option>\n<option value=\"盛京银行\" >盛京银行</option>\n<option value=\"大连银行\" >大连银行</option>\n<option value=\"南京银行\" >南京银行</option>\n<option value=\"江苏银行\" >江苏银行</option>\n<option value=\"华泰证券\" >华泰证券</option>\n<option value=\"国联民生证券\" >国联民生证券</option>\n<option value=\"杭州银行\" >杭州银行</option>\n<option value=\"宁波银行\" >宁波银行</option>\n<option value=\"浙商证券股份有限公司\" >浙商证券股份有限公司</option>\n<option value=\"杭州联合银行\" >杭州联合银行</option>\n<option value=\"徽商银行\" >徽商银行</option>\n<option value=\"福建海峡银行\" >福建海峡银行</option>\n<option value=\"泉州银行\" >泉州银行</option>\n<option value=\"江西银行\" >江西银行</option>\n<option value=\"九江银行\" >九江银行</option>\n<option value=\"齐鲁银行\" >齐鲁银行</option>\n<option value=\"青岛银行\" >青岛银行</option>\n<option value=\"青岛农商行\" >青岛农商行</option>\n<option value=\"郑州银行\" >郑州银行</option>\n<option value=\"中原银行\" >中原银行</option>\n<option value=\"民生证券\" >民生证券</option>\n<option value=\"汉口银行\" >汉口银行</option>\n<option value=\"广州银行\" >广州银行</option>\n<option value=\"广东南粤银行\" >广东南粤银行</option>\n<option value=\"东莞银行\" >东莞银行</option>\n<option value=\"广东华兴银行\" >广东华兴银行</option>\n<option value=\"广发证券\" >广发证券</option>\n<option value=\"万联证券\" >万联证券</option>\n<option value=\"广东南海农商行\" >广东南海农商行</option>\n<option value=\"广东顺德农商行\" >广东顺德农商行</option>\n<option value=\"招商证券\" >招商证券</option>\n<option value=\"平安证券\" >平安证券</option>\n<option value=\"天风证券\" >天风证券</option>\n<option value=\"贵阳银行\" >贵阳银行</option>\n<option value=\"东方财富证券\" >东方财富证券</option>\n<option value=\"富邦华一银行\" >富邦华一银行</option>\n<option value=\"厦门国际银行\" >厦门国际银行</option>\n<option value=\"星展银行\" >星展银行</option>\n<option value=\"美国上海\" >美国上海</option>\n<option value=\"花旗银行\" >花旗银行</option>\n<option value=\"渣打中国\" >渣打中国</option>\n<option value=\"摩根大通银行\" >摩根大通银行</option>\n<option value=\"瑞穗银行\" >瑞穗银行</option>\n<option value=\"三菱日联银行(中国)\" >三菱日联银行(中国)</option>\n<option value=\"东亚银行\" >东亚银行</option>\n<option value=\"农业银行\" >农业银行</option>\n",
+      "page": 1,
+      "showDateEN": "11/09/2026 20:00",
+      "option": "<option value=\"\" selected>All</option>\n<option value=\"工商银行\" >ICBC</option>\n<option value=\"建设银行\" >CCB</option>\n<option value=\"交通银行\" >BCOH</option>\n<option value=\"中信银行\" >CTCB</option>\n<option value=\"招商银行\" >China Merchants Bank</option>\n<option value=\"光大银行\" >China Everbright Bank</option>\n<option value=\"华夏银行\" >HXBJ</option>\n<option value=\"广发银行\" >CGB</option>\n<option value=\"兴业银行\" >CIB</option>\n<option value=\"民生银行\" >MSBK</option>\n<option value=\"恒丰银行\" >EBCL</option>\n<option value=\"浙商银行\" >CZB</option>\n<option value=\"渤海银行\" >China Bohai Bank</option>\n<option value=\"进出口行\" >EIBC</option>\n<option value=\"国开行\" >CDB</option>\n<option value=\"北京银行\" >BOBJ</option>\n<option value=\"北京农商银行\" >BJRC</option>\n<option value=\"中信证券\" >CITIC Securities</option>\n<option value=\"中金公司\" >CICC</option>\n<option value=\"邮储银行\" >PSBC</option>\n<option value=\"上海银行\" >BOS</option>\n<option value=\"申万宏源证券\" >Shenwan Hongyuan Securities</option>\n<option value=\"上海农商银行\" >Shanghai Rural Commercial Bank</option>\n<option value=\"天津银行\" >TJCB</option>\n<option value=\"重庆农村商行\" >CRCB</option>\n<option value=\"河北银行\" >Bank of Hebei</option>\n<option value=\"盛京银行\" >SJBC</option>\n<option value=\"大连银行\" >DLCB</option>\n<option value=\"南京银行\" >BON</option>\n<option value=\"江苏银行\" >JSBK</option>\n<option value=\"华泰证券\" >HTSC</option>\n<option value=\"国联民生证券\" >国联民生证券</option>\n<option value=\"杭州银行\" >HZCB</option>\n<option value=\"宁波银行\" >BNB</option>\n<option value=\"浙商证券股份有限公司\" >Zheshang Securities</option>\n<option value=\"杭州联合银行\" >HZCU</option>\n<option value=\"徽商银行\" >HuiShang Bank</option>\n<option value=\"福建海峡银行\" >FZCB</option>\n<option value=\"泉州银行\" >BOQZ</option>\n<option value=\"江西银行\" >NCCB</option>\n<option value=\"九江银行\" >BOJJ</option>\n<option value=\"齐鲁银行\" >JNCB</option>\n<option value=\"青岛银行\" >QDCB</option>\n<option value=\"青岛农商行\" >QDRC</option>\n<option value=\"郑州银行\" >BOZZ</option>\n<option value=\"中原银行\" >ZYBC</option>\n<option value=\"民生证券\" >民生证券</option>\n<option value=\"汉口银行\" >HKB</option>\n<option value=\"广州银行\" >GZCB</option>\n<option value=\"广东南粤银行\" >GDNY</option>\n<option value=\"东莞银行\" >DGCB</option>\n<option value=\"广东华兴银行\" >GDHX</option>\n<option value=\"广发证券\" >G F S</option>\n<option value=\"万联证券\" >万联证券</option>\n<option value=\"广东南海农商行\" >NHCU</option>\n<option value=\"广东顺德农商行\" >SDCU</option>\n<option value=\"招商证券\" >CMS</option>\n<option value=\"平安证券\" >Pingan Securities</option>\n<option value=\"天风证券\" >Tianfeng Securities</option>\n<option value=\"贵阳银行\" >GYCB</option>\n<option value=\"东方财富证券\" >东方财富证券</option>\n<option value=\"富邦华一银行\" >FSBK</option>\n<option value=\"厦门国际银行\" >XIBH</option>\n<option value=\"星展银行\" >DBS</option>\n<option value=\"美国上海\" >BAML</option>\n<option value=\"花旗银行\" >CITI</option>\n<option value=\"渣打中国\" >SCCN</option>\n<option value=\"摩根大通银行\" >JPM</option>\n<option value=\"瑞穗银行\" >MHSH</option>\n<option value=\"三菱日联银行(中国)\" >TMSH</option>\n<option value=\"东亚银行\" >东亚银行</option>\n<option value=\"农业银行\" >农业银行</option>\n",
+      "showDateCN": "09-11 20:00"
+    }
+  },
+  "issuance": {
+    "local_issues": {
+      "rows": 169,
+      "unique_market_code_pairs": 169,
+      "unique_name_date_combinations_not_verified_entities": 67,
+      "markets": {
+        "银行间债券市场": 67,
+        "深交所": 40,
+        "上交所": 62
+      },
+      "exact_local_interbank_matches": [],
+      "invalid_date_order_rows": [],
+      "missing_issue_price_rows": 0,
+      "reissue_rows": 0
+    },
+    "treasury_issues": {
+      "rows": 38,
+      "unique_market_code_pairs": 38,
+      "unique_name_date_combinations_not_verified_entities": 12,
+      "markets": {
+        "上交所": 10,
+        "深交所": 10,
+        "银行间债券市场": 12,
+        "北交所": 6
+      },
+      "exact_local_interbank_matches": [],
+      "invalid_date_order_rows": [
+        {
+          "债券代码": "261707",
+          "债券简称": "26储蓄07",
+          "发行起始日": "2026-09-19T00:00:00.000",
+          "发行终止日": "2026-09-10T00:00:00.000",
+          "计划发行总量": 248.0,
+          "实际发行总量": 248.0,
+          "发行价格": 100.0,
+          "单位面值": 100,
+          "缴款日": "2026-09-20T00:00:00.000",
+          "增发次数": 0,
+          "交易市场": "银行间债券市场",
+          "发行方式": "其他",
+          "发行对象": "个人投资者",
+          "公告日期": "2026-09-07T00:00:00.000",
+          "债券名称": "2026年第七期储蓄国债(电子式)"
+        },
+        {
+          "债券代码": "261708",
+          "债券简称": "26储蓄08",
+          "发行起始日": "2026-09-19T00:00:00.000",
+          "发行终止日": "2026-09-10T00:00:00.000",
+          "计划发行总量": 302.0,
+          "实际发行总量": 302.0,
+          "发行价格": 100.0,
+          "单位面值": 100,
+          "缴款日": "2026-09-20T00:00:00.000",
+          "增发次数": 0,
+          "交易市场": "银行间债券市场",
+          "发行方式": "其他",
+          "发行对象": "个人投资者",
+          "公告日期": "2026-09-07T00:00:00.000",
+          "债券名称": "2026年第八期储蓄国债(电子式)"
+        }
+      ],
+      "missing_issue_price_rows": 7,
+      "reissue_rows": 22
+    }
+  }
+}

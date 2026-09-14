@@ -1,0 +1,105 @@
+Traceback (most recent call last):
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+PermissionError: [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\urllib3\connectionpool.py", line 1106, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\urllib3\connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\urllib3\connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: HTTPSConnection(host='www.chinamoney.com.cn', port=443): Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\urllib3\util\retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.chinamoney.com.cn', port=443): Max retries exceeded with url: /ags/ms/cm-u-bk-currency/ClsYldCurvCurvGO (Caused by NewConnectionError("HTTPSConnection(host='www.chinamoney.com.cn', port=443): Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\akshare\bond\bond_china_money.py", line 117, in bond_china_close_return_map
+    r = requests.get(url, headers=headers)
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\requests\api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\requests\api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\code\wind工作台\scripts\verify_akshare_bonds.py", line 84, in tracked_send
+    response = original_send(session, request, **kwargs)
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\requests\adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.chinamoney.com.cn', port=443): Max retries exceeded with url: /ags/ms/cm-u-bk-currency/ClsYldCurvCurvGO (Caused by NewConnectionError("HTTPSConnection(host='www.chinamoney.com.cn', port=443): Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\code\wind工作台\scripts\verify_akshare_bonds.py", line 120, in run_case
+    frame = function(**arguments)
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\akshare\bond\bond_info_cm.py", line 192, in bond_info_detail_cm
+    bond_china_close_return_map()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\akshare\bond\bond_china_money.py", line 120, in bond_china_close_return_map
+    session = __bond_register_service()
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\akshare\bond\bond_china_money.py", line 28, in __bond_register_service
+    session.get(
+    ~~~~~~~~~~~^
+        url="https://www.chinamoney.com.cn/chinese/bkcurvclosedyhis/?bondType=CYCC000&reference=1",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        headers=headers,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\requests\sessions.py", line 671, in get
+    return self.request("GET", url, params=params, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\code\wind工作台\.tmp\akshare-venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\code\wind工作台\scripts\verify_akshare_bonds.py", line 78, in tracked_send
+    raise RuntimeError(entry["reason"])
+RuntimeError: Outside public-query allowlist, denied host, or per-case request budget
